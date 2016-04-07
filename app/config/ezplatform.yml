@@ -49,3 +49,10 @@ ezpublish:
             languages:
                 - nor-NO
                 - eng-GB
+
+ezstudio:
+    # Settings for eZ Studio UI by siteaccess
+    system:
+        default:
+            # Default template for extending in Studio UI
+            studio_template: "eZStudioDemoBundle::pagelayout.html.twig"
