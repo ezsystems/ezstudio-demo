@@ -1,0 +1,10 @@
+FROM busybox
+
+RUN mkdir -p /var/www/web/var
+ADD web/var /var/www/web/var
+# Make sure /var/www/ is owned by www-data user in app image
+RUN chown -R 1000:33 /var/www
+
+VOLUME [ "/var/www/web/var" ]
+
+CMD ["/bin/true"]
