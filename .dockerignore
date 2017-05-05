@@ -27,7 +27,7 @@ var/sessions/*
 !var/logs/.gitkeep
 !var/sessions/.gitkeep
 
-# Parameters (should be regenerated in contianer)
+# Parameters (should be regenerated in container)
 app/config/parameters.yml
 
 # Managed by Composer
@@ -41,10 +41,11 @@ var/bootstrap.php.cache
 #vendor/
 
 # Assets and user uploads
-web/bundles/
-web/css/
-web/js/
-web/uploads/
+#web/bundles/
+#web/css/
+#web/js/
+#web/uploads/
+#web/var/
 
 # Assets managed by Bower
 web/assets/vendor/

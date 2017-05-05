@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  databasedump:
+    build:
+      context: ../../
+      dockerfile: ${DATASET_DBDUMP_DOCKER_FILE}
+    image: ${DATASET_DBDUMP_IMAGE}
+
+  vardirdump:
+    build:
+      context: ../../
+      dockerfile: ${DATASET_VARDIRDUMP_DOCKER_FILE}
+    image: ${DATASET_VARDIRDUMP_IMAGE}
