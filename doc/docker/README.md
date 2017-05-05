@@ -50,17 +50,17 @@ However below environment variable `COMPOSE_FILE` is used instead since this is 
 
 ## Project setup
 
-### Production / Demo "image" use
+### Demo "image" use
 
 Using this approach, everything will run in containers and volumes. This means that if you for instance upload a image
 using the eZ Platform backend, that image will land in a volume, not somewhere below web/var/ in your project directory.
 
 From root of your projects clone of this distribution, [setup composer auth.json](#composer) and execute the following:
 ```sh
-export COMPOSE_FILE=doc/docker/base-prod.yml
+export COMPOSE_FILE=doc/docker/base-prod.yml:doc/docker/demo.yml
 
 # Optional step if you'd like to use blackfire with the setup, change <id> and <token> with your own values
-#export COMPOSE_FILE=doc/docker/base-prod.yml:doc/docker/blackfire.yml BLACKFIRE_SERVER_ID=<id> BLACKFIRE_SERVER_TOKEN=<token>
+#export COMPOSE_FILE=doc/docker/base-prod.yml:doc/docker/demo.yml:doc/docker/blackfire.yml BLACKFIRE_SERVER_ID=<id> BLACKFIRE_SERVER_TOKEN=<token>
 
 # First time: Install setup, and generate database dump:
 docker-compose -f doc/docker/install.yml up --abort-on-container-exit
@@ -122,6 +122,80 @@ docker-compose exec --user www-data app sh -c "php /scripts/wait_for_db.php; php
 ```
 docker-compose exec --user www-data app app/console ezplatform:install clean
 ```
+
+### Production use
+
+Below is an example on how to deploy eZ Platform in a swarm cluster and docker stack.
+Prerequisite:
+- A running [swarm cluster](https://docs.docker.com/engine/swarm/swarm-tutorial/) ( a one-node cluster is sufficient for running this example )
+- A running NFS server. How to configure a nfs server is distro dependent, but this [ubuntu guide](https://help.ubuntu.com/community/NFSv4Howto) might be of help
+- A running [docker registry](https://docs.docker.com/registry/deploying/#managing-with-compose) (Only required if your swarm cluster has more than one node)
+
+In this example we assume your swarm manager is named `swarmmanager` and that this hostname resolves on all swarm hosts. We also asume that the nfs server and docker registry are running on `swarmmanager`.
+
+All the commands below should be executed on your `swarmmanager`
+
+```sh
+# If not already done, install setup, and generate database dump :
+docker-compose -f doc/docker/install.yml up --abort-on-container-exit
+
+# Build my-ez-web and my-ez-web images ( nginx and php )
+docker-compose -f doc/docker/base-prod.yml build
+
+# Create dataset images ( my-ez-app-dataset-dbdump and my-ez-app-dataset-vardirdump )
+# The dataset images contains a dump of the database and a dump of the var/ files ( located in web/var )
+docker-compose -f doc/docker/create-dataset.yml build
+
+# Tag the images
+docker tag my-ez-app-dataset-dbdump swarmmanager:5000/my-ez-app-dataset-dbdump
+docker tag my-ez-app-dataset-vardirdump swarmmanager:5000/my-ez-app-dataset-vardirdump
+docker tag my-ez-web swarmmanager:5000/my-ez-web
+docker tag my-ez-app swarmmanager:5000/my-ez-app
+
+# Upload the images to the registry ( only needed if your swarm cluster has more than one node)
+docker push swarmmanager:5000/my-ez-app-dataset-dbdump
+docker push swarmmanager:5000/my-ez-app-dataset-vardirdump
+docker push swarmmanager:5000/my-ez-web
+docker push swarmmanager:5000/my-ez-app
+
+# In this example we run the database in a separate stack so that you may easily have multiple eZ Platform installations using the same database instance
+docker stack deploy --compose-file doc/docker/db-stack.yml stack-db
+
+# Now, wait a half a minute to ensure that the database is ready to accept incomming requests before continuing
+
+# Now, load the database dump into the db and the var dir to the nfs server
+docker-compose -f doc/docker/import-dataset.yml up
+
+# Finally, create the eZ Platform stack
+docker stack deploy --compose-file doc/docker/my-ez-app-stack.yml my-ez-app-stack
+```
+
+### Production use, example #2
+
+In this example we'll use docker stack to deploy a fully clustered ezplatform installation.
+The deployment will contain 1 varnish container, 2 nginx containers , 5 php_fpm containers , one db container and one redis container.
+
+This example assumes you have already performed the "Production example" in the previous chapter.
+
+# build varnish image
+
+```sh
+# Remove the stack created in the previous example
+docker stack rm my-ez-app-stack
+
+# Build varnish image
+docker-compose -f doc/docker/base-prod.yml -f doc/docker/varnish.yml build varnish
+
+# Tag the varnish image
+docker tag my_varnish swarmmanager:5000/my_varnish
+
+# Upload the varnish image to the registry (only needed if your swarm cluster has more than one node)
+docker push swarmmanager:5000/my_varnish
+
+docker stack deploy --compose-file doc/docker/my-ez-full-app-stack.yml my-ez-full-app-stack
+
+```
+
 
 ## Further info
 
