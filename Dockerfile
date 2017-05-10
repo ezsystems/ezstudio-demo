@@ -13,6 +13,7 @@ RUN if [ -d .git ]; then echo "ERROR: .dockerignore folders detected, exiting" &
 RUN mkdir -p web/var \
     # For now, only run composer in order to generate parameters.yml
     && composer run-script build --no-interaction \
+    && composer dump-autoload --optimize \
 # Clear cache again so env variables are taken into account on startup
     && rm -Rf app/logs/* app/cache/*/* \
 # Fix permissions for www-data
