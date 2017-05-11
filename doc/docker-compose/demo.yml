@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  app:
+    volumes:
+     - ${COMPOSE_DIR}/../../web/var:/var/www/web/var
+

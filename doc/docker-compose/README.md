@@ -50,8 +50,9 @@ However below environment variable `COMPOSE_FILE` is used instead since this is 
 
 From root of your projects clone of this distribution, [setup composer auth.json](#composer) and execute the following:
 ```sh
+export COMPOSE_FILE=doc/docker-compose/base-prod.yml:doc/docker-compose/demo.yml
 # Optional step if you'd like to use blackfire with the setup, change <id> and <token> with your own values
-#export COMPOSE_FILE=doc/docker-compose/base-prod.yml:doc/docker-compose/blackfire.yml BLACKFIRE_SERVER_ID=<id> BLACKFIRE_SERVER_TOKEN=<token>
+#export COMPOSE_FILE=doc/docker-compose/base-prod.yml:doc/docker-compose/demo.yml:doc/docker-compose/blackfire.yml BLACKFIRE_SERVER_ID=<id> BLACKFIRE_SERVER_TOKEN=<token>
 
 # First time: Install setup, and generate database dump:
 docker-compose -f doc/docker-compose/install.yml up --abort-on-container-exit
@@ -159,7 +160,7 @@ $ docker-compose -f doc/docker-compose/import-dataset.yml up -d
 
 # Finaly, create the eZ Platform stack
 docker stack deploy --compose-file doc/docker-compose/my-ez-app-stack.yml my-ez-app-stack
-
+```
 
 
 ## Further info
