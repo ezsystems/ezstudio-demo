@@ -1,4 +1,4 @@
-FROM ezsystems/php:7.1-v1
+FROM ezsystems/php:7.1-v1 as builder
 
 # This is prod image (for dev use just mount your application as host volume into php image we extend here)
 ENV SYMFONY_ENV=prod
@@ -10,20 +10,25 @@ COPY . /var/www
 RUN if [ -d .git ]; then echo "ERROR: .dockerignore folders detected, exiting" && exit 1; fi
 
 # Install and prepare install
-RUN mkdir -p web/var \
-    # For now, only run composer in order to generate parameters.yml
-    && composer run-script build --no-interaction \
-    && composer dump-autoload --optimize \
-# Clear cache again so env variables are taken into account on startup
-    && rm -Rf app/logs/* app/cache/*/* \
-# Fix permissions for www-data
-    && chown -R www-data:www-data app/cache app/logs web/var \
-    && find app/cache app/logs web/var -type d -print0 | xargs -0 chmod -R 775 \
-    && find app/cache app/logs web/var -type f -print0 | xargs -0 chmod -R 664 \
-# Remove var dir from image ( future : use multi-stage-builds to avoid var/ from ever reaching a layer and dereby use disk space )
-    && rm -rf var \
-# Remove composer cache to avoid it taking space in image
-    && rm -rf ~/.composer/*/*
+RUN mkdir -p web/var
+# For now, only run composer in order to generate parameters.yml
+RUN composer run-script build --no-interaction
+RUN composer dump-autoload --optimize
 
-# Declare volumes so it an can be shared with other containers
-#VOLUME /var/www/web/var
+# Next, remove everything we don't want to be copied to next build stage
+# Clear cache again so env variables are taken into account on startup
+RUN rm -Rf app/logs/* app/cache/*/*
+RUN rm -rf web/bundles web/css web/fonts web/js web/var
+
+
+FROM ezsystems/php:7.1-v1
+
+# This is prod image (for dev use just mount your application as host volume into php image we extend here)
+ENV SYMFONY_ENV=prod
+
+COPY --from=0 /var/www /var/www
+
+# Fix permissions for www-data
+RUN chown -R www-data:www-data app/cache app/logs \
+    && find app/cache app/logs -type d -print0 | xargs -0 chmod -R 775 \
+    && find app/cache app/logs -type f -print0 | xargs -0 chmod -R 664
