@@ -43,7 +43,7 @@ eZ Platform is 100% open source and is the foundation for the commercial *eZ Ent
 
 ## Install
 For manual installation instructions, see [INSTALL.md](https://github.com/ezsystems/ezplatform/blob/master/INSTALL.md).
-For simplified installation, see our Docker Tools Beta instructions in [doc/docker-compose/README.md](https://github.com/ezsystems/ezplatform/blob/master/doc/docker-compose/README.md).
+For simplified installation, see our Docker Tools Beta instructions in [doc/docker/README.md](https://github.com/ezsystems/ezplatform/blob/master/doc/docker/README.md).
 
 
 ### eZ Platform Demo

@@ -38,7 +38,7 @@ In addition the following exists but are work in progress, thus not tested yet a
 
 These can be used with `-f` argument on docker-compose, like:
 ```bash
-docker-compose -f doc/docker-compose/base-prod.yml -f doc/docker-compose/redis.yml up -d --force-recreate
+docker-compose -f doc/docker/base-prod.yml -f doc/docker/redis.yml up -d --force-recreate
 ```
 
 However below environment variable `COMPOSE_FILE` is used instead since this is also what is used to have a default in
@@ -52,10 +52,10 @@ However below environment variable `COMPOSE_FILE` is used instead since this is 
 From root of your projects clone of this distribution, [setup composer auth.json](#composer) and execute the following:
 ```sh
 # Optional step if you'd like to use blackfire with the setup, change <id> and <token> with your own values
-#export COMPOSE_FILE=doc/docker-compose/base-prod.yml:doc/docker-compose/blackfire.yml BLACKFIRE_SERVER_ID=<id> BLACKFIRE_SERVER_TOKEN=<token>
+#export COMPOSE_FILE=doc/docker/base-prod.yml:doc/docker/blackfire.yml BLACKFIRE_SERVER_ID=<id> BLACKFIRE_SERVER_TOKEN=<token>
 
 # First time: Install setup, and generate database dump:
-docker-compose -f doc/docker-compose/install.yml up --abort-on-container-exit
+docker-compose -f doc/docker/install.yml up --abort-on-container-exit
 
 # Boot up full setup:
 docker-compose up -d --force-recreate
@@ -71,13 +71,13 @@ by default under the hood, which leads to much slower IO performance.*
 
 From root of your projects clone of this distribution, [setup composer auth.json](#composer) and execute the following:
 ```sh
-export COMPOSE_FILE=doc/docker-compose/base-dev.yml
+export COMPOSE_FILE=doc/docker/base-dev.yml
 
 # Optional: If you use Docker Machine with NFS, you'll need to specify where project is, & give composer a valid directory.
-#export COMPOSE_DIR=/data/SOURCES/MYPROJECTS/ezplatform/doc/docker-compose COMPOSER_HOME=/tmp
+#export COMPOSE_DIR=/data/SOURCES/MYPROJECTS/ezplatform/doc/docker COMPOSER_HOME=/tmp
 
 # First time: Install setup, and generate database dump:
-docker-compose -f doc/docker-compose/install.yml up --abort-on-container-exit
+docker-compose -f doc/docker/install.yml up --abort-on-container-exit
 
 # Boot up full setup:
 docker-compose up -d --force-recreate
@@ -95,10 +95,10 @@ image to Docker Hub/Registry.*
 
 From root of your projects clone of this distribution, [setup composer auth.json](#composer) and execute the following:
 ```sh
-export COMPOSE_FILE=doc/docker-compose/base-prod.yml:doc/docker-compose/selenium.yml
+export COMPOSE_FILE=doc/docker/base-prod.yml:doc/docker/selenium.yml
 
 # First time: Install setup, and generate database dump:
-docker-compose -f doc/docker-compose/install.yml up --abort-on-container-exit
+docker-compose -f doc/docker/install.yml up --abort-on-container-exit
 
 # Boot up full setup:
 docker-compose up -d --force-recreate
@@ -151,7 +151,7 @@ docker-compose ps
 
 ### Database dumps
 
-Database dump is placed in `doc/docker-compose/entrypoint/mysql/`, this folder is used my mysql/mariadb which will execute
+Database dump is placed in `doc/docker/entrypoint/mysql/`, this folder is used my mysql/mariadb which will execute
 everything inside the folder. This means there should only be data represent one install in the folder at any given time.
 
 
