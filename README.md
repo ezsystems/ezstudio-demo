@@ -46,7 +46,12 @@ In short, Enterprise comes with new features and services that extend eZ Platfor
 - eZ Systems *(commercial products and services)*: [ez.no](http://ez.no)
 - eZ Community: [share.ez.no](http://ez.no)
 - eZ Platform Developer Hub: [ezplatform.com](https://ezplatform.com/)
-- [eZ Platform and Enterprise RoadMap](http://doc.ez.no/roadmap)
+- [eZ Studio and eZ Platform RoadMap](http://doc.ez.no/roadmap)
+- eZ Systems (commercial products and services): [ez.no](http://ez.no/)
+
+## Install
+For manual installation instructions, see [INSTALL.md](https://github.com/ezsystems/ezplatform/blob/master/INSTALL.md).
+For simplified installation, see our Docker Tools Beta instructions in [doc/docker/README.md](https://github.com/ezsystems/ezplatform/blob/master/doc/docker/README.md).
 
 http://ez.no/Blog/What-to-Expect-from-eZ-Studio-and-eZ-Platform
 
