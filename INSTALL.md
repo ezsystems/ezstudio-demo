@@ -1,6 +1,6 @@
 # Installation instructions
 
-NOTE: *For simplified installation, see our Docker Tools Beta instructions in [doc/docker-compose/README.md](https://github.com/ezsystems/ezplatform/blob/master/doc/docker-compose/README.md).
+NOTE: *For simplified installation, see our Docker Tools Beta instructions in [doc/docker/README.md](https://github.com/ezsystems/ezplatform/blob/master/doc/docker/README.md).
 By using those instructions you won't have to setup mysql, php, and nginx yourself, and almost all of the steps described below are done for you.*
 
 These installation instructions are kept current in the online docs here:
