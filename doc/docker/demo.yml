@@ -1,7 +1,24 @@
-version: '2'
+version: '3.3'
 
 services:
   app:
     volumes:
-     - ${COMPOSE_DIR}/../../web/var:/var/www/web/var
+     - vardir:/var/www/web/var
+    depends_on:
+     - demo-vardir
 
+  web:
+    volumes:
+     - vardir:/var/www/web/var:ro
+
+  demo-vardir:
+    build:
+      context: ../../
+      dockerfile: doc/docker/Dockerfile-demo-vardir
+    volumes:
+     - vardir:/var/www/web/var:ro
+    networks:
+     - backend
+
+volumes:
+  vardir:

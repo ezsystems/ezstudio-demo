@@ -29,8 +29,6 @@ services:
     image: ${NGINX_PROD_IMAGE}
     depends_on:
      - app
-    volumes_from:
-     - app:ro
     ports:
      - "8080:80"
     environment:
