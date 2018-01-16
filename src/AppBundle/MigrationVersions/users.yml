@@ -493,24 +493,7 @@
             limitations:
                 -
                     identifier: Section
-                    values: [reference:ref_section__standard]
-        -
-            module: content
-            function: read
-            limitations:
-                -
-                    identifier: Section
-                    values: [reference:ref_section__cuisines]
-        -
-            module: content
-            function: read
-            limitations:
-                -
-                    identifier: Section
-                    values: [reference:ref_section__media]
-                -
-                    identifier: Class
-                    values: [reference:ref_content_type_id__file, reference:ref_content_type_id__image, reference:ref_content_type_id__video]
+                    values: [reference:ref_section__standard, reference:ref_section__media, reference:ref_section__cuisines]
 
 # error: Argument 'policy' is invalid: The limitation 'Section' is not applicable on 'content/pdf'
 #        -
@@ -526,17 +509,7 @@
             limitations:
                 -
                     identifier: Section
-                    values: [reference:ref_section__standard]
-        -
-            module: content
-            function: view_embed
-            limitations:
-                -
-                    identifier: Section
-                    values: [reference:ref_section__media]
-                -
-                    identifier: Class
-                    values: [reference:ref_content_type_id__file, reference:ref_content_type_id__image, reference:ref_content_type_id__video]
+                    values: [reference:ref_section__standard, reference:ref_section__media]
     assign:
         -
             type: group
