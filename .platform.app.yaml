@@ -41,6 +41,8 @@ mounts:
     "/web/var": "shared:files/files"
     # Might want to not mount this one, it will slow down sessions, if you need cluster use memcached/redis!
     "/var/sessions": "shared:files/sessions"
+    # Installation Migrations generate files on the fly, so this is required
+    "/src/AppBundle/MigrationVersions/References": "shared:files/src/AppBundle/MigrationVersions/References"
 
 # The hooks that will be performed when the package is deployed.
 hooks:
