@@ -132,7 +132,7 @@ YUI.add('up-itemsfieldview', function (Y) {
 
             if (selector) {
                 jQuery(selector).EzTags({
-                    autocompleteUrl: '/tags/admin/field/autocomplete?',
+                    autocompleteUrl: window.Routing.generate('netgen_tags_admin_autocomplete'),
                     maxTags: 1,
                     subtreeLimit: 513,
                     hideRootTag: 1,
