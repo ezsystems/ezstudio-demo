@@ -510,7 +510,12 @@
                     values: [reference:ref_section__media]
                 -
                     identifier: Class
-                    values: [reference:ref_content_type_id__file, reference:ref_content_type_id__image, reference:ref_content_type_id__video]
+                    values:
+                        - reference:ref_content_type_id__file
+                        - reference:ref_content_type_id__image
+                        - reference:ref_content_type_id__video
+                        - reference:ref_content_type_id__folder
+                        - reference:ref_content_type_id__gallery
 
 # error: Argument 'policy' is invalid: The limitation 'Section' is not applicable on 'content/pdf'
 #        -
@@ -536,7 +541,12 @@
                     values: [reference:ref_section__media]
                 -
                     identifier: Class
-                    values: [reference:ref_content_type_id__file, reference:ref_content_type_id__image, reference:ref_content_type_id__video]
+                    values:
+                        - reference:ref_content_type_id__file
+                        - reference:ref_content_type_id__image
+                        - reference:ref_content_type_id__video
+                        - reference:ref_content_type_id__folder
+                        - reference:ref_content_type_id__gallery
     assign:
         -
             type: group

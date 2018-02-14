@@ -164,6 +164,10 @@
             disable-translation: false
             position: 100
             category: metadata
+    references:
+        -
+            identifier: ref_content_type_id__folder
+            attribute: content_type_id
 
 # Gallery content type
 -
@@ -191,6 +195,10 @@
             required: false
             searchable: true
             category: content
+    references:
+        -
+            identifier: ref_content_type_id__gallery
+            attribute: content_type_id
 
 # Image content type
 -
