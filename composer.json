@@ -7,14 +7,14 @@
     "authors": [
         {
             "name": "eZ dev-team & eZ Community",
-            "homepage": "https://github.com/ezsystems/ezplatform-ee/contributors"
+            "homepage": "https://github.com/ezsystems/ezplatform-ee-demo/contributors"
         }
     ],
     "repositories": [
         { "type": "composer", "url": "https://updates.ez.no/ttl" }
     ],
     "replace": {
-        "ezsystems/ezstudio": "*",
+        "ezsystems/ezstudio-demo": "*",
         "ezsystems/ezpublish-community": "*"
     },
     "autoload": {

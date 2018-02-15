@@ -37,6 +37,9 @@ parameters:
     # Cache DSN, see app/config/services/cache.yml for examples:
     cache_dsn: '%env(CACHE_DSN)%'
 
+    # Content types included in Recommendations from YooChoose account
+    ez_recommendation.default.recommender.included_content_types: [blog, article, place]
+
     # Settings for HttpCache
     purge_server: '%env(HTTPCACHE_PURGE_SERVER)%'
 

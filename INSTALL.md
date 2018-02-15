@@ -54,7 +54,7 @@ https://doc.ezplatform.com/en/latest/getting_started/install_using_composer/
 
        ```bash
        $ curl -sS https://getcomposer.org/installer | php
-       $ php -d memory_limit=-1 composer.phar create-project ezsystems/ezplatform-ee ezplatform ^2.0
+       $ php -d memory_limit=-1 composer.phar create-project ezsystems/ezplatform-ee-demo ezplatform ^2.0
        $ cd /ezplatform/
        ```
 
@@ -151,7 +151,7 @@ https://doc.ezplatform.com/en/latest/getting_started/install_using_composer/
     You may now complete the eZ Platform Enterprise Edition installation with ezplatform:install command, example of use:
 
     ```bash
-    $ php -d memory_limit=-1 app/console ezplatform:install --env=prod platform-ee-demo
+    $ php -d memory_limit=-1 bin/console ezplatform:install --env=prod platform-ee-demo
     ```
 
     **Note**: Password for the generated `admin` user is `publish`, this name and password is needed when you would like to login to backend Admin UI where you can and should change this.

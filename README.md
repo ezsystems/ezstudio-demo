@@ -10,7 +10,7 @@
 
 ### How to get access to eZ Platform Enterprise Edition?
 
-While this meta repository, `ezplatform-ee`, is public to ease installation and upgrades, full access can be obtained in one of three ways:
+While this meta repository, `ezplatform-ee-demo`, is public to ease installation and upgrades, full access can be obtained in one of three ways:
 - Request an online demo on [ez.no](https://ez.no/Products/eZ-Platform-Enterprise-Edition)
 - As a partner, download trial version from [Partner Portal](http://ez.no/Partner-Portal)
 - As a customer with an eZ Enterprise subscription, get full version from [Service Portal](https://support.ez.no/Downloads).
@@ -38,7 +38,7 @@ In short, Enterprise comes with new features and services that extend eZ Platfor
 - eZ Systems (commercial products and services): [ez.no](https://ez.no/)
 
 ## Install
-For manual installation instructions, see [INSTALL.md](https://github.com/ezsystems/ezplatform-ee/blob/master/INSTALL.md).
+For manual installation instructions, see [INSTALL.md](https://github.com/ezsystems/ezplatform-ee-demo/blob/master/INSTALL.md).
 For simplified installation, rather consider using [eZ Launchpad](https://ezsystems.github.io/launchpad/) which takes care about the whole setup for you.
 
 ## Requirements
