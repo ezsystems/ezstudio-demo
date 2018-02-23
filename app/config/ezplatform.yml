@@ -7,9 +7,6 @@ ezpublish:
     # Repositories configuration, setup default repository to support solr if enabled
     repositories:
         default:
-            fields_groups:
-                list: [content, seo, meta]
-                default: content
             storage: ~
             search:
                 engine: '%search_engine%'
