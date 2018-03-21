@@ -132,6 +132,11 @@ parameters:
     app.search.list.limit: 10
     app.search.list.content_types: ['article', 'place', 'blog_post', 'product']
 
+    app.migration_reference_file: '/src/AppBundle/MigrationVersions/References/references_all.yml'
+
+    app.migration.values_mapping:
+        userprofiling_block.config.tags_subtree_limit: 'ref_tag_user_segments'
+
     #menu.default.menucontentsettings.topidentifierlist: [landing_page, blog, about, subscribe, product_list]
     menu.default.menucontentsettings.topidentifierlist: [landing_page, folder, blog, about, subscribe, product_list]
 
