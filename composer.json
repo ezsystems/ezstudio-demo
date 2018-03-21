@@ -71,6 +71,7 @@
         "gregwar/captcha": "^1.1",
         "kaliop/ezmigrationbundle": "^4.0",
         "netgen/tagsbundle": "^3.1@dev",
+        "novactive/ezseobundle": "^3.0.0@rc",
         "components/bootstrap": "3.3.5",
         "components/handlebars.js": "~3.0.0",
         "ezsystems/ezstudio-personalized-block": "^1.2@rc",
