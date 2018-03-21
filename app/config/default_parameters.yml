@@ -147,3 +147,4 @@ parameters:
     eztags.default.tag_view.pagelayout: '::pagelayout.html.twig'
 
     userprofiling_block.public_dir: 'bundles/app'
+    userprofiling_block.config.tags_subtree_limit: 513

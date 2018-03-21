@@ -127,3 +127,10 @@ services:
             - '@ezpublish.api.service.tags'
         tags:
             - { name: landing_page_field_type.block_type, alias: userprofiling }
+
+    # User Profiling configuration provider
+    EzSystems\EzPlatformAdminUi\UI\Config\Provider\Value:
+        arguments:
+            - '%userprofiling_block.config.tags_subtree_limit%'
+        tags:
+            - { name: ezplatform.admin_ui.config_provider, key: 'userProfilingBlockSubTreeLimit' }
