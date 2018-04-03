@@ -36,12 +36,16 @@ ezpublish:
         # all eng-GB data to other locales first.
         site:
             languages: [eng-GB, fre-FR, ger-DE, nor-NO]
+            cache_service_name: '%cache_pool%'
         fr:
             languages: [fre-FR, eng-GB]
+            cache_service_name: '%cache_pool%'
         de:
             languages: [ger-DE, eng-GB]
+            cache_service_name: '%cache_pool%'
         no:
             languages: [nor-NO, eng-GB]
+            cache_service_name: '%cache_pool%'
         site_group:
             # Cache pool service, needs to be different per repository (database) on multi repository install.
             cache_service_name: '%cache_pool%'
