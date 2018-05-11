@@ -71,7 +71,7 @@
         "ezsystems/ezplatform-multi-file-upload": "^0.1@dev",
         "ezsystems/ezplatform-http-cache-fastly": "^1.0@dev",
         "willdurand/js-translation-bundle": "^2.6.4",
-        "netgen/tagsbundle": "^3.0",
+        "netgen/tagsbundle": "~3.2.0",
         "novactive/ezseobundle": "^2.0",
         "roave/security-advisories": "dev-master"
     },
