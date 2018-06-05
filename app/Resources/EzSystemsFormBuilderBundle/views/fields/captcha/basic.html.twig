@@ -2,7 +2,6 @@
 {% trans_default_domain "formfield" %}
 
 {% set imageId = 'captcha__' ~ field.id|replace({'-': '_'}) %}
-{% set captchaImage = ez_form_captcha_path(field) %}
 
 {% block input %}
     <div class="ezform-field-group" data-error-message="{{ 'field.is.required'|trans }}">
@@ -18,10 +17,10 @@
         </span>
     </div>
     <div class="ezform-captcha-image-wrapper">
-        <img class="ezform-captcha-image" id="{{ imageId }}" src="{{ captchaImage }}" alt="" />
+        <img class="ezform-captcha-image" id="{{ imageId }}" data-field-id="{{ field.id }}"  alt="" />
     </div>
     <div class="ezform-captcha-reload-wrapper">
-        <a class="ezform-captcha-reload btn btn-default btn-sm" href="#">{{ 'formcaptcha.reload_image'|trans }}</a>
+        <a class="ezform-captcha-reload btn btn-default btn-sm" data-field-id="{{ field.id }}" href="#">{{ 'formcaptcha.reload_image'|trans }}</a>
     </div>
 {% endblock %}
 
