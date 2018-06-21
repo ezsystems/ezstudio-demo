@@ -1,17 +1,10 @@
-.navbar {
-    height: 86px;
-}
-
 .top-menu.bg-faded,
 .navbar.bg-faded {
     background-color: #fff;
 }
 
 a.navbar-brand {
-    height: 36px;
     width: 268px;
-    padding-left: 30px;
-    padding-top: 0;
 }
 
 .top-menu,
@@ -117,5 +110,34 @@ a.navbar-brand {
     .navbar-toggleable-md .navbar-nav .nav-link {
         padding-right: 1.2rem;
         padding-left: 1.2rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    ul.navbar-nav li.nav-item a {
+        text-align: right;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .top-menu .social {
+        display: none;
+    }
+
+    a.navbar-brand {
+        width: 200px;
+    }
+
+    .top-menu, .top-menu .btn, .top-menu a {
+        font-size: 11px;
+    }
+
+    .nav-link {
+        padding: .5rem 0.5rem;
+    }
+
+    .top-menu .container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
