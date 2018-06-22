@@ -27,16 +27,14 @@
 
 .content-type-product-list .title {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 0;
     width: 100%;
-}
-
-.content-type-product-list h1.field-title {
     font-family: 'Playfair Display', 'Times New Roman', Georgia, serif;
     font-weight: bold;
     color: #fff;
     font-size: 75px;
+    line-height: 1;
 }
 
 .content-type-product-list h2 {
@@ -158,11 +156,11 @@
     border-right-width: 0;
     position: relative;
     z-index: 1;
-    padding: 16px 30px 10px;
+    padding: 16px 20px;
     line-height: 30px;
 }
 
-.section-search .btn-search {
+.section-search .input-group .input-group-append .btn-search {
     background: #fb5a2d;
     color: #fff;
     top: 0;
@@ -241,4 +239,29 @@
     margin: 16px 28px 25px 0;
     background: #fb5a2d;
     padding: 10px 45px;
+}
+
+@media (max-width: 1199.98px) {
+    .content-type-product-list .title {
+        font-size: 35px;
+        top: 20%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .content-type-product-list .title {
+        font-size: 25px;
+        top: 20%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .content-type-product-list .thumbnail img {
+        height: 100px;
+    }
+
+    .content-type-product-list .title {
+        font-size: 15px;
+        top: 20%;
+    }
 }

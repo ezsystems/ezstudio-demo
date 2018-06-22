@@ -47,3 +47,17 @@
 .form-submitted .row {
     margin-top: 100px;
 }
+
+@media (max-width: 575.98px) {
+    .content-type-subscribe h1.field-title {
+        font-size: 25px;
+    }
+
+    .content-type-subscribe .title {
+        top: 25%;
+    }
+
+    .content-type-subscribe .container {
+        padding-top: 25px;
+    }
+}

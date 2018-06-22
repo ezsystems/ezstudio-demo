@@ -132,3 +132,13 @@
 .card.content-type-article .card-img-overlay:hover h2.card-title  {
     background: #0073ae;
 }
+
+@media (max-width: 575.98px) {
+    .content-type-article h1.field-title {
+        font-size: 25px;
+    }
+
+    .content-type-article .title {
+        top: 25%;
+    }
+}

@@ -40,3 +40,18 @@
     color: #fff;
     font-size: 75px;
 }
+
+@media (max-width: 575.98px) {
+    .content-type-blog h1.field-name {
+        font-size: 25px;
+    }
+
+    .content-type-blog .title {
+        top: 25%;
+    }
+
+    .content-type-blog .banner-image,
+    .content-type-blog .banner-no-image {
+        margin-bottom: 0;
+    }
+}
