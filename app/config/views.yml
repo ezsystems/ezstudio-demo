@@ -243,3 +243,19 @@ ezpublish:
                         template: "@ezdesign/default/default.html.twig"
                         match:
                             Identifier\ContentType: [landing_page, blog, frontpage, about]
+
+                block_contentlist:
+                    place:
+                        template: "@ezdesign/blocks/contentlist/place.html.twig"
+                        match:
+                            Identifier\ContentType: [place, article]
+
+                block_item_hero:
+                    image:
+                        template: "@ezdesign/block_item_wide/image.html.twig"
+                        match:
+                            Identifier\ContentType: [place]
+                    default:
+                        template: "@ezdesign/default/default.html.twig"
+                        match:
+                            Identifier\ContentType: [landing_page, blog, frontpage, about, article, blog_post, image]

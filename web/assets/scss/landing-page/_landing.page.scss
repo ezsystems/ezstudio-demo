@@ -1,0 +1,32 @@
+.landing-page {
+    &__zones {
+        &--grid-2-1_2-1 {
+            width: 1130px;
+            margin: auto;
+            display: grid;
+            grid-template-areas:
+                'topleft topright'
+                'bottomleft bottomright';
+            grid-template-columns: 750px 350px;
+            grid-column-gap: 30px;
+        }
+    }
+
+    &__zone {
+        &--topleft {
+            grid-area: topleft;
+        }
+
+        &--topright {
+            grid-area: topright;
+        }
+
+        &--bottomleft {
+            grid-area: bottomleft;
+        }
+
+        &--bottomright {
+            grid-area: bottomright;
+        }
+    }
+}

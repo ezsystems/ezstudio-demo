@@ -179,178 +179,184 @@
         description: Places & Tastes
         page: >- #json
             {
-              "layout": "2_1",
-              "title": "Places & Tastes",
-              "zones": [
-                {
-                  "id": "z-92f425d0-b199-445b-85fd-c79a0b9ae80c",
-                  "name": "first",
-                  "blocks": [
+                "layout": "1w__2_1__2_1__1w",
+                "zones": [
                     {
-                      "id": "b-36ce56c4-e5be-eb6b-bab7-efd483d622c1",
-                      "type": "embed",
-                      "name": "Embed Block",
-                      "view": "embed",
-                      "attributes": [
-                         {
-                            "id": "",
-                            "name": "contentId",
-                            "value": [reference:ref_content_place_list__home__places_and_tastes__places]
-                         }
-                      ]
-                    },
-                    {
-                      "id": "b-36ce56c4-e5be-eb6b-bab7-efd483d622c0",
-                      "type": "embed",
-                      "name": "Embed Block",
-                      "view": "embed",
-                      "attributes": [
-                         {
-                            "id": "",
-                            "name": "contentId",
-                            "value": [reference:ref_content_folder__home__places_and_tastes__tastes]
-                         }
-                      ]
-                    },
-                    {
-                        "id": "b-294fbffd-744a-6ac6-3f29-9783799c1xb6",
-                        "type": "contentlist",
-                        "name": "Content List",
-                        "view": "places_contentlist",
-                        "compiled": "",
-                        "attributes": [
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a1",
+                        "name": "Top wide zone",
+                        "blocks": [
                             {
-                                "id": "",
-                                "name": "contentId",
-                                "value": [reference:ref_content_place_list__home__places_and_tastes__places]
-                            },
-                            {
-                                "id": "",
-                                "name": "limit",
-                                "value": "3"
-                            },
-                            {
-                                "id": "",
-                                "name": "contentType",
-                                "value": "place"
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a2",
+                                "type": "hero",
+                                "name": "Hero",
+                                "view": "image",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "text",
+                                        "value": "Brooklyn New York"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": [reference:ref_content_place__home__places_and_tastes__places__brooklyn_new_york]
+                                    }
+                                ],
+                                "visible": true
                             }
                         ]
                     },
                     {
-                        "id": "b-294fbffd-744a-6ac6-3f29-9783799c1xa5",
-                        "type": "contentlist",
-                        "name": "Content List",
-                        "view": "tastes_contentlist",
-                        "compiled": "",
-                        "attributes": [
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a3",
+                        "name": "Top left inner grid zone",
+                        "blocks": [
                             {
-                                "id": "",
-                                "name": "contentId",
-                                "value": [reference:ref_content_folder__home__places_and_tastes__tastes]
-                            },
-                            {
-                                "id": "",
-                                "name": "limit",
-                                "value": "3"
-                            },
-                            {
-                                "id": "",
-                                "name": "contentType",
-                                "value": "article"
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a4",
+                                "type": "contentlist",
+                                "name": "Content List",
+                                "view": "places",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": [reference:ref_content_place_list__home__places_and_tastes__places]
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentType",
+                                        "value": "place"
+                                    }
+                                ],
+                                "visible": true
                             }
                         ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783755c12c1",
+                        "name": "Top right inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a5",
+                                "type": "rss",
+                                "name": "eZ Blog",
+                                "view": "rss",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "url",
+                                        "value": "https://ez.no/rss/feed/blog"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "offset",
+                                        "value": "0"
+                                    }
+                                ],
+                                "visible": true
+                            },
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a6",
+                                "type": "banner",
+                                "name": "Banner",
+                                "view": "narrow",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": [reference:ref_content_image__media__images__contact_us]
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "url",
+                                        "value": "http://ez.no"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a7",
+                        "name": "Bottom left inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a8",
+                                "type": "contentlist",
+                                "name": "Content List",
+                                "view": "tastes",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": [reference:ref_content_folder__home__places_and_tastes__tastes]
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentType",
+                                        "value": "article"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a9",
+                        "name": "Bottom right inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c13a1",
+                                "type": "contentlist",
+                                "name": "Content List",
+                                "view": "cards",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": [reference:ref_content_blog__home__blog]
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentType",
+                                        "value": "blog_post"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c13a2",
+                        "name": "Bottom wide zone",
+                        "blocks": []
                     }
-                  ]
-                },
-                {
-                  "id": "second",
-                  "name": "Second zone",
-                  "blocks": [
-                    {
-                      "id": "b-3b73fd28-389a-d261-7e87-689757944c9c",
-                      "type": "banner",
-                      "name": "Banner Block",
-                      "view": "banner",
-                      "attributes": [
-                         {
-                            "id": "",
-                            "name": "contentId",
-                            "value": [reference:ref_content_image__media__images__contact_us]
-                         },
-                         {
-                            "id": "",
-                            "name": "url",
-                            "value": "http://ez.no"
-                         }
-                      ]
-                    },
-                    {
-                      "id": "b-e200906e-3ec9-ad1e-2e8b-32c713002547",
-                      "type": "rss",
-                      "name": "RSS Block",
-                      "view": "rss",
-                      "attributes": [
-                         {
-                            "id": "",
-                            "name": "url",
-                            "value": "http://ez.no/rss/feed/blog"
-                         },
-                         {
-                            "id": "",
-                            "name": "limit",
-                            "value": "6"
-                         },
-                         {
-                            "id": "",
-                            "name": "offset",
-                            "value": "0"
-                         }
-                      ]
-                    },
-                    {
-                      "id": "b-3d66d5af-57f9-1e3c-f3e2-9f26af4fb7a4",
-                      "type": "contentlist",
-                      "name": "Content List Block",
-                      "view": "contentlist",
-                      "attributes": [
-                         {
-                            "id": "",
-                            "name": "contentId",
-                            "value": [reference:ref_content_blog__home__blog]
-                         },
-                         {
-                            "id": "",
-                            "name": "contentType",
-                            "value": "blog_post"
-                         },
-                         {
-                            "id": "",
-                            "name": "limit",
-                            "value": "5"
-                         }
-                      ]
-                    },
-                    {
-                      "id": "b-eb59c8f9-b1b2-9651-473b-a897ee3d6aba",
-                      "type": "banner",
-                      "name": "Banner Block",
-                      "view": "banner",
-                      "attributes": [
-                         {
-                            "id": "",
-                            "name": "contentId",
-                            "value": [reference:ref_content_image__media__images__bottom_right_banner]
-                         },
-                         {
-                            "id": "",
-                            "name": "url",
-                            "value": "http://ez.no"
-                         }
-                      ]
-                    }
-                  ]
-                }
-              ]
+                ]
             }
     references:
         -

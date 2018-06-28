@@ -30,7 +30,7 @@
     top: 10%;
     left: 0;
     width: 100%;
-    font-family: 'Playfair Display', 'Times New Roman', Georgia, serif;
+    font-family: $font-serif;
     font-weight: bold;
     color: #fff;
     font-size: 75px;
@@ -38,8 +38,8 @@
 }
 
 .content-type-product-list h2 {
-    font-family: 'Playfair Display', 'Times New Roman', Georgia, serif;
-    color: #63605D;
+    font-family: $font-serif;
+    color: #63605d;
 }
 
 .content-type-product-list h2 {
@@ -125,7 +125,7 @@
     display: inline-block;
 }
 
-.content-type-product-list .pagination>li {
+.content-type-product-list .pagination > li {
     display: inline-block;
 }
 
@@ -216,7 +216,7 @@
     display: flex;
 }
 
-.section-filter .filters .column input[type=checkbox] {
+.section-filter .filters .column input[type='checkbox'] {
     margin: 6px 0 0;
 }
 

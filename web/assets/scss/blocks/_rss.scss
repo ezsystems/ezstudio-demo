@@ -1,47 +1,38 @@
-.block-rss h3 {
-    box-shadow: 5px 5px 10px #ccc;
-    background: #fff;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    margin-top: 0;
-}
+$block-rss: '.block-rss';
 
-.block-rss h3 a:link,
-.block-rss h3 a:visited {
-    color: #4F504E;
-}
+.block-rss {
+    &__title {
+        font-weight: 600;
+        margin: 0;
+        font-size: #{(24 / $base-font-size)}rem;
+        background: $white;
+        padding: #{(30 / $base-font-size)}rem;
+        border: #{(1 / $base-font-size)}rem solid $grey-lighter;
+        text-transform: uppercase;
 
-.block-rss-items {
-    box-shadow: 5px 5px 10px #ccc;
-    background: #fff;
-    padding: 20px;
-    list-style-type: none;
-    margin-bottom: 0;
-}
+        &,
+        #{($block-rss)}__link {
+            color: $orange-light;
+        }
+    }
 
-.block-rss-items li {
-    border-bottom: 1px solid #CFCFCF;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
+    &__items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 
-.block-rss-items li:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-}
+    &__item {
+        padding: #{(20 / $base-font-size)}rem;
+        background: $white;
+        display: flex;
+        align-items: center;
+        border: #{(1 / $base-font-size)}rem solid $grey-lighter;
+        margin-top: #{(10 / $base-font-size)}rem;
 
-.block-rss-items li a:link,
-.block-rss-items li a:visited {
-    font-weight: bold;
-    color: #4F504E;
-    font-size: 14px;
-}
-
-.block-rss-items li a:hover {
-    color: #000;
+        &-title {
+            color: $grey-dark;
+            font-weight: 600;
+        }
+    }
 }

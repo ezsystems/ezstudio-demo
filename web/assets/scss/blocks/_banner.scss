@@ -1,7 +1,6 @@
 .block-banner {
-    text-align: center;
-}
-
-.block-banner img {
-    display: inline-block;
+    &--narrow {
+        display: flex;
+        justify-content: center;
+    }
 }

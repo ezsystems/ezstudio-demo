@@ -7,6 +7,7 @@ ezplatform_page_fieldtype:
             configuration_template: '@EzPlatformPageBuilder/page_builder/block/config/embed.html.twig'
             views:
                 default: { name: 'Default block layout', template: '@ezdesign/blocks/hero.html.twig' }
+                image: { name: 'Hero image', template: '@ezdesign/blocks/hero_image.html.twig' }
             attributes:
                 text:
                     name: Text
@@ -47,3 +48,14 @@ ezplatform_page_fieldtype:
                                 pattern: '/[0-9]+/'
                             message: Choose a folder with Content items of the type Places
 
+        contentlist:
+            configuration_template: '@EzPlatformPageBuilder/page_builder/block/config/content_list.html.twig'
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#contentlist'
+            views:
+                cards: { name: 'Cards list layout', template: '@ezdesign/blocks/cards_list.html.twig' }
+                places: { name: 'Places list layout', template: '@ezdesign/blocks/places_list.html.twig' }
+                tastes: { name: 'Tastes list layout', template: '@ezdesign/blocks/tastes_list.html.twig' }
+
+        banner:
+            views:
+                narrow: { name: 'Narrow layout', template: '@ezdesign/blocks/banner/narrow.html.twig' }

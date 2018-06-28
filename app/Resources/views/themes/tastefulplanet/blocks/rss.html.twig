@@ -1,15 +1,17 @@
 {% extends ':blocks:_block.html.twig' %}
 
 {% block block_identifier %}rss{% endblock %}
-{% block block_class %}row {{ block_class }}{% endblock %}
+{% block block_class %}{{ block_class }}{% endblock %}
 
 {% block block_content %}
-    <h3><a href="{{ link }}" target="_blank">{{ title }}</a></h3>
+    <h3 class="block-rss__title">
+        <a class="block-rss__link" href="{{ link }}" target="_blank">{{ title }}</a>
+    </h3>
     {% if feeds %}
-        <ul class="block-rss-items">
+        <ul class="block-rss__items">
             {% for item in feeds %}
-                <li>
-                    <a href="{{ item.links[0] }}" title="{{ item.title }}" target="_blank">{{ item.title }}</a>
+                <li class="block-rss__item">
+                    <a class="block-rss__item-title" href="{{ item.links[0] }}" title="{{ item.title }}" target="_blank">{{ item.title }}</a>
                 </li>
             {% endfor %}
         </ul>

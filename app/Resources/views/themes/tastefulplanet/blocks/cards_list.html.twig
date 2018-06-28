@@ -1,0 +1,21 @@
+<div class="block-contentlist block-contentlist--cards-list {{ block_class }}">
+    <h3 class="block-contentlist__title">{{ parentName }}</h3>
+    {% if contentArray|length > 0 %}
+        <div class="block-contentlist__cards">
+            {% for content in contentArray %}
+                {{ fos_httpcache_tag('relation-' ~ content.content.id) }}
+                <div class="block-contentlist__card">
+                    <h4 class="block-contentlist__card-title">
+                        <a class="block-contentlist__card-link" href="{{ path(content.location) }}">{{ ez_content_name(content.content) }}</a>
+                    </h4>
+                    <div class="block-contentlist__card-body">
+                    {% if content.content.getField('intro') %}
+                        {{ ez_render_field(content.content, 'intro') }}
+                    {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    <style type="text/css">{{ block_style|raw }}</style>
+</div>

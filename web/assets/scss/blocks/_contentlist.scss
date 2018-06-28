@@ -1,44 +1,157 @@
-/*
-.block-contentlist h3 {
-    box-shadow: 5px 5px 10px #ccc;
-    background: #fff;
-    padding: 10px 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    margin-top: 0;
-}
+$block-contentlist: '.block-contentlist';
+.block-contentlist {
+    &__title {
+        font-weight: 600;
+        margin: 0;
+        font-size: #{(24 / $base-font-size)}rem;
+        color: $blue-light;
+        background: $white;
+        padding: #{(30 / $base-font-size)}rem;
+        border: #{(1 / $base-font-size)}rem solid $grey-lighter;
+        text-transform: uppercase;
+    }
 
-.block-contentlist-items {
-    height: 495px;
-    box-shadow: 5px 5px 10px #ccc;
-    background: #fff;
-    padding: 20px;
-    overflow: auto;
-}
+    &__content-wrapper {
+        padding: #{(30 / $base-font-size)}rem;
 
-.block-contentlist-child {
-    border-bottom: 1px solid #CFCFCF;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-}
+        p {
+            margin: 0;
 
-.block-contentlist-child:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
+            & + p {
+                margin-top: 1rem;
+            }
+        }
+    }
 
-.block-contentlist-child h4 a:link,
-.block-contentlist-child h4 a:visited {
-    font-weight: bold;
-    color: #4F504E;
-}
+    &__card {
+        background: $white;
+        border: #{(1 / $base-font-size)}rem solid $grey-lighter;
+        margin-top: #{(10 / $base-font-size)}rem;
 
-.block-contentlist-child p {
-    font-size: 12px;
-    color: #A9AEB4;
+        &-link {
+            color: $grey-dark;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: #{(20 / $base-font-size)}rem;
+        }
+
+        &--grid {
+            height: 100%;
+
+            #{($block-contentlist)}__card {
+                &-title {
+                    font-size: #{(24 / $base-font-size)}rem;
+                }
+
+                &-title,
+                &-link {
+                    color: $orange-dark;
+                }
+
+                &-body {
+                    color: $grey-light;
+                }
+
+                &-image {
+                    max-height: 230px;
+                    overflow: hidden;
+
+                    .ezimage-field {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__header {
+        display: grid;
+        grid-template-areas: 'icon title link';
+        grid-template-columns: 114px 1fr 106px;
+        height: #{(114 / $base-font-size)}rem;
+
+        #{($block-contentlist)} {
+            &__icon-wrapper {
+                grid-area: icon;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .ez-icon {
+                    width: 44px;
+                    height: 44px;
+                    fill: $white;
+                }
+            }
+
+            &__title {
+                grid-area: title;
+                padding: 0 #{(40 / $base-font-size)}rem;
+                background: none;
+                margin: 0;
+                color: $white;
+                font-family: $font-serif;
+                font-weight: 700;
+                text-transform: initial;
+                font-size: #{(40 / $base-font-size)}rem;
+                line-height: #{(114 / $base-font-size)}rem;
+                border: 0;
+            }
+
+            &__link {
+                &-icon {
+                    display: inline-block;
+                    padding-left: #{(15 / $base-font-size)}rem;
+                }
+
+                &:hover,
+                &:focus {
+                    #{($block-contentlist)}__link-icon {
+                        text-decoration: none;
+                    }
+                }
+
+                &--more {
+                    grid-area: link;
+                    display: flex;
+                    align-items: center;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &--cards-list {
+        color: $grey-dark;
+
+        #{($block-contentlist)}__card {
+            padding: #{(30 / $base-font-size)}rem;
+        }
+    }
+
+    &--places-list {
+        #{($block-contentlist)} {
+            &__header {
+                background: $blue-light;
+            }
+
+            &__icon-wrapper {
+                background: $blue-dark;
+            }
+        }
+    }
+
+    &--tastes-list {
+        #{($block-contentlist)} {
+            &__header {
+                background: $orange-light;
+            }
+
+            &__icon-wrapper {
+                background: $orange-dark;
+            }
+        }
+    }
 }
-*/

@@ -76,6 +76,26 @@ ezplatform_page_fieldtype:
                 third:
                     name: 'Third wide zone'
 
+        '1w__2_1__2_1__1w':
+            identifier: '1w__2_1__2_1__1w'
+            name: '6 Zones, mixed columns'
+            description: '6 Zones, mixed columns'
+            thumbnail: '/assets/images/page_builder/layouts/1w__1__1w.png'
+            template: '@ezdesign/layouts/1w__2_1__2_1__1w.html.twig'
+            zones:
+                top:
+                    name: 'Top wide zone'
+                topleft:
+                    name: 'Top left inner grid zone'
+                topright:
+                    name: 'Top right inner grid zone'
+                bottomleft:
+                    name: 'Bottom left inner grid zone'
+                bottomright:
+                    name: 'Bottom right inner grid zone'
+                bottom:
+                    name: 'Bottom wide zone'
+
     blocks:
         contentlist:
             views:
