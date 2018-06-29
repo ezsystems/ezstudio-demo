@@ -112,7 +112,7 @@ class PlacesBlockListener implements EventSubscriberInterface
 
         $tags = [];
         foreach ($contentItems as $content) {
-            $tags[] = 'relation-'.$content->id;
+            $tags[] = 'relation-' . $content->id;
         }
 
         $this->tagHandler->addTags(array_unique($tags));
