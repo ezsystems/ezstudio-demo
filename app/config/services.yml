@@ -66,3 +66,5 @@ services:
     AppBundle\Twig\YoutubeIdExtractorExtension:
         tags:
             - { name: twig.extension }
+
+    AppBundle\Event\PlacesBlockListener: ~

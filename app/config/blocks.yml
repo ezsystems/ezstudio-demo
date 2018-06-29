@@ -28,3 +28,22 @@ ezplatform_page_fieldtype:
                             options:
                                 pattern: '/[0-9]+/'
                             message: Choose a Content item
+
+        places:
+            name: Places
+            category: default
+            thumbnail: '/assets/images/page_builder/blocks/places.svg'
+            views:
+                default: { name: 'Default block layout', template: '@ezdesign/blocks/places.html.twig' }
+            attributes:
+                contentId:
+                    name: Places
+                    type: embed
+                    validators:
+                        not_blank:
+                            message: You must provide value
+                        regexp:
+                            options:
+                                pattern: '/[0-9]+/'
+                            message: Choose a folder with Content items of the type Places
+
