@@ -52,3 +52,14 @@ fieldset[disabled] .btn-primary:active,
 fieldset[disabled] .btn-primary.active {
     background-color: $orange-dark-hover;
 }
+
+blockquote {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: none;
+    font-style: italic;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    clear: both;
+}
