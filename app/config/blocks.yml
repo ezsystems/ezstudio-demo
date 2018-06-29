@@ -32,7 +32,7 @@ ezplatform_page_fieldtype:
         places:
             name: Places
             category: default
-            thumbnail: '/assets/images/page_builder/blocks/places.svg'
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#places'
             views:
                 default: { name: 'Default block layout', template: '@ezdesign/blocks/places.html.twig' }
             attributes:
