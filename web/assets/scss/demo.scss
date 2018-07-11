@@ -13,6 +13,8 @@
 @import '/assets/scss/blog';
 @import '/assets/scss/blog.post';
 @import '/assets/scss/subscribe';
+@import '/assets/scss/recommendations';
+@import '/assets/scss/personalized';
 @import '/assets/scss/tags';
 @import '/assets/scss/landing.page';
 @import '/assets/scss/user.forms';
@@ -24,3 +26,4 @@
 @import '/assets/scss/blocks/keyword';
 @import '/assets/scss/blocks/rss';
 @import '/assets/scss/landing-page/landing.page';
+@import '/bundles/ezsystemspersonalizedblock/css/personalized.css';

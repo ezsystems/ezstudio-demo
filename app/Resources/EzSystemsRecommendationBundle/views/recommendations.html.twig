@@ -1,0 +1,55 @@
+<script id="recommendations-template-{{ templateId }}" type="text/x-handlebars-template">
+    {% verbatim %}
+        <div class="row recommendations">
+            <div class="recommendations-indicator col-md-2">
+                <div class="recommendations-indicator-icon recommendations-indicator-icon-like">
+                </div>
+                <div class="recommendations-indicator-label">
+                    {% endverbatim %}{{ 'Recommended Articles'|trans }}{% verbatim %}
+                </div>
+            </div>
+
+            <div class="col-md-10 row">
+                {{validateResults '{% endverbatim %}
+                    {{ render_esi(controller(
+                        'app.controller.recommendations:getRandomJSON', {
+                            'selectedContentTypes': [
+                                'article',
+                                'place',
+                                'blog_post'
+                            ],
+                            'limit': 3
+                        }))
+                    }}
+                {% verbatim %}' this}}
+
+                {{#each this}}
+                    <article class="class-article col-md-4">
+                        <a href="{{attr.uri}}"{{#unless attr.isRandom}} onclick="return eZ.RecommendationRestClient.ping('{{clickRecommended}}')"{{/unless}}>
+                            <div class="recommendations-article row">
+                                <div class="col-md-4 recommendations-thumbnail" style="background-image: url('{{attr.image}}');">
+                                </div>
+                                <div class="col-md-8 recommendations-data">
+                                    <h3>{{attr.title}}</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                {{/each}}
+            </div>
+        </div>
+    {% endverbatim %}
+</script>
+
+<div class="container">
+    <div id="recommendations-target-{{ templateId }}">
+    </div>
+</div>
+
+{% include 'EzSystemsRecommendationBundle::show_recommendations.html.twig' with {
+    'templateId': templateId,
+    'scenario': scenario,
+    'limit': limit,
+    'contentType': contentType,
+    'contentId': contentId
+} %}

@@ -1,0 +1,11 @@
+{% javascripts
+    '%kernel.root_dir%/../vendor/components/handlebars.js/handlebars.min.js'
+    '@EzSystemsRecommendationBundle/Resources/public/js/recommendationtemplaterenderer.js'
+    '@EzSystemsRecommendationBundle/Resources/public/js/recommendationtemplatehelper.js'
+    '@EzSystemsRecommendationBundle/Resources/public/js/recommendationrestclient.js'
+%}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% if content is defined %}
+    {{ yc_track_user(content.id) }}
+{% endif %}

@@ -3,6 +3,23 @@
 {% block page_head %}
     {% set title = ez_content_name(content) ~ " - " ~ content.contentInfo.publishedDate|localizeddate('short', 'short', app.request.locale) %}
     {{ parent() }}
+
+    {% if ez_reco_enabled() and not location.isDraft %}
+        {% include '@ezdesign/parts/recommendations_header.html.twig' %}
+    {% endif %}
+{% endblock %}
+
+{% block ez_recommendations %}
+    {% if ez_reco_enabled() and not location.isDraft %}
+        {{ yc_show_recommendations(
+            contentId = content.id,
+            scenario = 'article',
+            limit = '3',
+            contentType = 'article',
+            template = 'recommendations',
+            fields = ['title', 'intro', 'image', 'uri']
+        ) }}
+    {% endif %}
 {% endblock %}
 
 {% block content %}

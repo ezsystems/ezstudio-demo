@@ -69,3 +69,19 @@ services:
             - { name: twig.extension }
 
     AppBundle\Event\PlacesBlockListener: ~
+
+    app.controller.recommendations:
+        class: AppBundle\Controller\RecommendationsController
+        public: true
+        arguments:
+            - '@ezpublish.api.service.location'
+            - '@ezpublish.api.service.search'
+            - '@ezpublish.api.service.content'
+            - '@router'
+            - '@templating'
+
+    AppBundle\Twig\RecommendationsExtension:
+        arguments:
+            - '@ezpublish.config.resolver'
+        tags:
+            - { name: twig.extension }

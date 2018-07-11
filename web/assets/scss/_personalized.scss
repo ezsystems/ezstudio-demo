@@ -1,0 +1,47 @@
+.personalized {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  margin: 0;
+}
+
+.personalized h4 {
+  padding: 5px 0 0 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.personalized .vertical-demo .row {
+  margin: 0;
+  background: #fff;
+}
+
+.personalized .vertical-demo .class-article {
+  width: 100%;
+  border-top: 1px solid #dedede;
+  padding: 15px;
+  height: 135px;
+}
+
+.personalized.horizontal-carousel-view,
+.personalized.horizontal-view {
+  min-height: 112px;
+}
+
+.personalized.horizontal-carousel-view h4,
+.personalized.horizontal-view h4 {
+  display: none;
+}
+
+.personalized .recommendations-thumbnail {
+  min-height: 110px;
+}
+
+@media (max-width: 768px) {
+  .personalized.horizontal-view {
+    height: 100%;
+  }
+
+  .personalized.horizontal-view .class-article {
+    padding: 10px;
+  }
+}
