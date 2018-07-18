@@ -11,7 +11,14 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        {
+            "type": "composer",
+            "url": "https://updates.ez.no/ttl"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:ezsystems/ezplatform-form-builder.git"
+        }
     ],
     "replace": {
         "ezsystems/ezstudio-demo": "*",
@@ -21,11 +28,18 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle/"
         },
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
     },
     "autoload-dev": {
-        "psr-4": { "Tests\\": "tests/" },
-        "files": [ "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php" ]
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+        ]
     },
     "require": {
         "php": "^7.1",
@@ -74,7 +88,8 @@
         "gregwar/captcha": "^1.1",
         "kaliop/ezmigrationbundle": "^4.0",
         "netgen/tagsbundle": "^3.1@dev",
-        "novactive/ezseobundle": "^3.0.0@rc"
+        "novactive/ezseobundle": "^3.0.0@rc",
+        "ezsystems/ezplatform-form-builder": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.4.3",
