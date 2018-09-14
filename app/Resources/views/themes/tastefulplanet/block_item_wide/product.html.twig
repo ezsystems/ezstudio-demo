@@ -1,0 +1,12 @@
+<article class="embed-wide">
+    <div class="banner-image">
+        <div class="thumbnail text-center">
+            {{ ez_render_field(content, 'image', {
+                'parameters': {'alias': 'original', 'class': 'img-fluid'}
+            }) }}
+            <div class="title">
+                <h1 class="field-title">{{ ez_render_field(content, 'title') }}</h1>
+            </div>
+        </div>
+    </div>
+</article>
