@@ -102,6 +102,7 @@ ezpublish:
                                 query_type: "AppBundle:Children"
                                 parameters:
                                     parent_location_id: '@=location.id'
+                                    included_content_type_identifier: 'product'
                                 assign_results_to: children
                         template: "@ezdesign/full/product_list.html.twig"
                         match:
@@ -154,12 +155,11 @@ ezpublish:
                         template: "@ezdesign/card/place.html.twig"
                         match:
                             Identifier\ContentType: [place]
-
+#
                     product:
                         template: "@ezdesign/card/product.html.twig"
                         match:
                             Identifier\ContentType: [product]
-
                 featured:
                     article:
                         template: "@ezdesign/featured/article.html.twig"
@@ -243,6 +243,14 @@ ezpublish:
                         template: "@ezdesign/block_item_wide/place.html.twig"
                         match:
                             Identifier\ContentType: [place]
+                    product:
+                        template: "@ezdesign/block_item_wide/product.html.twig"
+                        match:
+                            Identifier\ContentType: [product]
+                    product_list:
+                        template: "@ezdesign/block_item_wide/product_list.html.twig"
+                        match:
+                            Identifier\ContentType: [product_list]
                     default:
                         template: "@ezdesign/default/default.html.twig"
                         match:
