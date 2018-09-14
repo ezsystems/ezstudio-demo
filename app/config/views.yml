@@ -221,6 +221,10 @@ ezpublish:
                         template: "@ezdesign/block_item/product.html.twig"
                         match:
                             Identifier\ContentType: [product]
+                    product_list:
+                        template: "@ezdesign/block_item/product_list.html.twig"
+                        match:
+                            Identifier\ContentType: [product_list]
                     default:
                         template: "@ezdesign/default/default.html.twig"
                         match:
