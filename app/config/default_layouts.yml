@@ -97,8 +97,26 @@ ezplatform_page_fieldtype:
                     name: 'Bottom wide zone'
 
     blocks:
+        hero:
+            views:
+                default:
+                    name: 'Hero'
+                    template: '@ezdesign/blocks/hero_image.html.twig'
+
         contentlist:
             views:
+                cards:
+                    template: '@ezdesign/blocks/cards_list.html.twig'
+                    name: 'Cards list layout'
+
+                places:
+                    template: '@ezdesign/blocks/places_list.html.twig'
+                    name: 'Places list layout'
+
+                tastes:
+                    template: '@ezdesign/blocks/tastes_list.html.twig'
+                    name: 'Tastes list layout'
+
                 contentlist:
                     template: '@ezdesign/blocks/contentlist.html.twig'
                     name: 'Platform EE Demo contentlist'
@@ -121,6 +139,10 @@ ezplatform_page_fieldtype:
                     template: '@ezdesign/blocks/banner_container.html.twig'
                     name: 'Platform EE Demo banner in container div'
 
+                narrow:
+                    name: 'Narrow layout'
+                    template: '@ezdesign/blocks/banner/narrow.html.twig'
+
         embed:
             views:
                 embed:
@@ -133,6 +155,9 @@ ezplatform_page_fieldtype:
 
         places:
             views:
+                default:
+                    template: '@ezdesign/blocks/places.html.twig'
+                    name: 'Default block layout'
                 map:
                     template: '@ezdesign/blocks/map.html.twig'
                     name: 'Platform EE Demo places map'
