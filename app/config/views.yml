@@ -264,11 +264,7 @@ ezpublish:
                             Identifier\ContentType: [place, article]
 
                 block_item_hero:
-                    image:
-                        template: "@ezdesign/block_item_wide/image.html.twig"
-                        match:
-                            Identifier\ContentType: [place]
                     default:
-                        template: "@ezdesign/default/default.html.twig"
+                        template: "@ezdesign/block_item_hero/default.html.twig"
                         match:
-                            Identifier\ContentType: [landing_page, blog, frontpage, about, article, blog_post, image]
+                            Identifier\ContentType: [landing_page, blog, about, article, blog_post, image, place]

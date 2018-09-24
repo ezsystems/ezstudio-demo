@@ -6,8 +6,7 @@ ezplatform_page_fieldtype:
             thumbnail: '/assets/images/page_builder/blocks/hero.svg#hero'
             configuration_template: '@EzPlatformPageBuilder/page_builder/block/config/embed.html.twig'
             views:
-                default: { name: 'Default block layout', template: '@ezdesign/blocks/hero.html.twig' }
-                image: { name: 'Hero image', template: '@ezdesign/blocks/hero_image.html.twig' }
+                default: { name: 'Hero', template: '@ezdesign/blocks/hero_image.html.twig' }
             attributes:
                 text:
                     name: Text

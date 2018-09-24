@@ -184,7 +184,7 @@
                                 "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a2",
                                 "type": "hero",
                                 "name": "Hero",
-                                "view": "image",
+                                "view": "default",
                                 "compiled": "",
                                 "attributes": [
                                     {
