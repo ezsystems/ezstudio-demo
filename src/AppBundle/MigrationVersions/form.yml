@@ -26,6 +26,16 @@
             searchable: true
             category: content
         -
+            type: ezrichtext
+            name: Description
+            identifier: description
+            description: Description
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+        -
             type: ezform
             name: Form
             identifier: form
