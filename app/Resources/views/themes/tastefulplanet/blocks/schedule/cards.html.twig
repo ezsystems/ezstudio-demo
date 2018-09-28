@@ -1,0 +1,22 @@
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}schedule{% endblock %}
+{% block block_class %}{{ block_class }}{% endblock %}
+
+{% block block_content %}
+    {%  set render_empty = render_empty|default(false) %}
+    <div class="row block-header">
+        <span class="block-header__name">{{ block_name }}</span>
+    </div>
+
+    <div class="row cards-container">
+        <div class="card-deck">
+            {% for item in items %}
+                {{ render(controller('ez_content:viewLocation', {
+                    'locationId': item.id,
+                    'viewType': 'block_item_card'
+                })) }}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

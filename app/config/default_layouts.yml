@@ -202,3 +202,11 @@ ezplatform_page_fieldtype:
                     name: 'Gallery View'
                     options:
                         match: [image]
+        schedule:
+            views:
+                cards:
+                    template: '@ezdesign/blocks/schedule/cards.html.twig'
+                    name: 'Cards layout'
+                list:
+                    template: '@ezdesign/blocks/schedule/list.html.twig'
+                    name: 'List layout'

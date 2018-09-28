@@ -100,3 +100,14 @@ services:
             - '%app.premium_content.allowed_user_groups.location_ids%'
         tags:
             - { name: twig.extension }
+
+    AppBundle\Twig\ContentDescriptionExtension:
+        arguments:
+        - "@ezpublish.field_helper"
+        - "@?logger"
+        tags:
+            - { name: twig.extension }
+
+    AppBundle\Event\TemplateAttributeBlockNameListener:
+        tags:
+            - { name: kernel.event_subscriber }

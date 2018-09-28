@@ -231,6 +231,18 @@ ezpublish:
                         match:
                             Identifier\ContentType: [landing_page, blog, frontpage, about]
 
+                block_item_card:
+                    default:
+                        template: "@ezdesign/block_item/card/default.html.twig"
+                        match:
+                            Identifier\ContentType: [product, article, blog_post, article, place, product_list, image, blog, place_list, folder, file, video, about, subscribe, gallery, form, user, user_group, landing_page]
+
+                block_item_list:
+                    default:
+                        template: "@ezdesign/block_item/list/default.html.twig"
+                        match:
+                            Identifier\ContentType: [product, article, blog_post, article, place, product_list, image, blog, place_list, folder, file, video, about, subscribe, gallery, form, user, user_group, landing_page]
+
                 block_item_wide:
                     blog_post:
                         template: "@ezdesign/block_item_wide/blog_post.html.twig"
