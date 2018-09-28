@@ -43,6 +43,32 @@ ezplatform_page_fieldtype:
                                 pattern: '/[0-9]+/'
                             message: Choose a folder with Content items of the type Places
 
+        tastes:
+            name: Tastes
+            category: default
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#file'
+            attributes:
+                contentId:
+                    type: 'embed'
+                    name: Parent
+                    validators:
+                        not_blank:
+                            message: You must provide value
+                        regexp:
+                            options:
+                                pattern: '/[0-9]+/'
+                            message: Choose a Content item
+                limit:
+                    type: 'integer'
+                    name: Limit
+                    validators:
+                        not_blank:
+                            message: You must provide value
+                        regexp:
+                            options:
+                                pattern: '/^[1-9][0-9]*$/'
+                            message: Limit must be a number greater than 0
+
         contentlist:
             configuration_template: '@EzPlatformPageBuilder/page_builder/block/config/content_list.html.twig'
             thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#contentlist'

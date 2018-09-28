@@ -100,105 +100,89 @@ ezplatform_page_fieldtype:
         hero:
             views:
                 default:
+                    template: '@ezdesign/blocks/hero/default.html.twig'
                     name: 'Hero'
-                    template: '@ezdesign/blocks/hero_image.html.twig'
 
         contentlist:
             views:
                 cards:
-                    template: '@ezdesign/blocks/cards_list.html.twig'
+                    template: '@ezdesign/blocks/cards/cards_list.html.twig'
                     name: 'Cards list layout'
 
                 places:
-                    template: '@ezdesign/blocks/places_list.html.twig'
+                    template: '@ezdesign/blocks/places/cards.html.twig'
                     name: 'Places list layout'
 
                 tastes:
-                    template: '@ezdesign/blocks/tastes_list.html.twig'
+                    template: '@ezdesign/blocks/tastes/cards.html.twig'
                     name: 'Tastes list layout'
 
-                contentlist:
-                    template: '@ezdesign/blocks/contentlist.html.twig'
-                    name: 'Platform EE Demo contentlist'
-
                 tastes_contentlist:
-                    template: '@ezdesign/blocks/tastes_contentlist.html.twig'
+                    template: '@ezdesign/blocks/contentlist/tastes.html.twig'
                     name: 'Platform EE Demo tastes contentlist'
-
-                places_contentlist:
-                    template: '@ezdesign/blocks/places_contentlist.html.twig'
-                    name: 'Platform EE Demo places contentlist'
 
         banner:
             views:
                 banner:
-                    template: '@ezdesign/blocks/banner.html.twig'
-                    name: 'Platform EE Demo banner'
-
-                banner_container:
-                    template: '@ezdesign/blocks/banner_container.html.twig'
-                    name: 'Platform EE Demo banner in container div'
-
-                narrow:
-                    name: 'Narrow layout'
-                    template: '@ezdesign/blocks/banner/narrow.html.twig'
+                    template: '@ezdesign/blocks/banner/banner.html.twig'
+                    name: 'Banner'
 
         embed:
             views:
                 embed:
-                    template: '@ezdesign/blocks/embed.html.twig'
-                    name: 'Platform EE Demo embed block'
+                    template: '@ezdesign/blocks/embed/embed.html.twig'
+                    name: 'Hero'
 
                 embed_wide:
-                    template: '@ezdesign/blocks/embed_wide.html.twig'
+                    template: '@ezdesign/blocks/embed/embed_wide.html.twig'
                     name: 'Platform EE Demo wide embed block'
 
         places:
             views:
-                default:
-                    template: '@ezdesign/blocks/places.html.twig'
-                    name: 'Default block layout'
                 map:
-                    template: '@ezdesign/blocks/map.html.twig'
-                    name: 'Platform EE Demo places map'
+                    template: '@ezdesign/blocks/places/map.html.twig'
+                    name: 'Map'
 
-                places:
-                    template: '@ezdesign/blocks/places.html.twig'
-                    name: 'Platform EE Demo places'
+                cards:
+                    template: '@ezdesign/blocks/places/cards.html.twig'
+                    name: 'Cards'
+
+                list:
+                    template: '@ezdesign/blocks/places/list.html.twig'
+                    name: 'List'
+        tastes:
+            views:
+                cards:
+                    template: '@ezdesign/blocks/tastes/cards.html.twig'
+                    name: 'Cards'
 
         gallery:
             views:
                 gallery:
-                    template: '@ezdesign/blocks/gallery.html.twig'
-                    name: 'Default Gallery Block template'
+                    template: '@ezdesign/blocks/gallery/gallery.html.twig'
+                    name: 'Gallery'
 
         rss:
             views:
-                rss:
-                    template: '@ezdesign/blocks/rss.html.twig'
-                    name: 'Default RSS Block template'
-
-        tag:
-            views:
-                tag:
-                    template: '@ezdesign/blocks/tag.html.twig'
-                    name: 'Default Code Block template'
+                list:
+                    template: '@ezdesign/blocks/rss/list.html.twig'
+                    name: 'List'
 
         video:
             views:
-                video:
-                    template: '@ezdesign/blocks/video.html.twig'
-                    name: 'Default Video Block template'
+                player:
+                    template: '@ezdesign/blocks/video/player.html.twig'
+                    name: 'Player'
 
         collection:
             views:
                 content:
-                    template: '@ezdesign/blocks/collection.content.html.twig'
+                    template: '@ezdesign/blocks/collection/content.html.twig'
                     name: 'Content List View'
                     options:
                         match: [article, blog_post]
                 gallery:
-                    template: '@ezdesign/blocks/collection.content.html.twig'
+                    template: '@ezdesign/blocks/collection/content.html.twig'
                     name: 'Gallery View'
                     options:
                         match: [image]

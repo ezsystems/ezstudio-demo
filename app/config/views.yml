@@ -198,39 +198,39 @@ ezpublish:
 
                 block_item:
                     article:
-                        template: "@ezdesign/block_item/article.html.twig"
+                        template: "@ezdesign/block_item/article/default.html.twig"
                         match:
                             Identifier\ContentType: [article]
                     place:
-                        template: "@ezdesign/block_item/place.html.twig"
+                        template: "@ezdesign/block_item/place/default.html.twig"
                         match:
                             Identifier\ContentType: [place]
                     blog_post:
-                        template: "@ezdesign/block_item/blog_post.html.twig"
+                        template: "@ezdesign/block_item/blog_post/default.html.twig"
                         match:
                             Identifier\ContentType: [blog_post]
                     image:
-                        template: "@ezdesign/block_item/image.html.twig"
+                        template: "@ezdesign/block_item/image/default.html.twig"
                         match:
                             Identifier\ContentType: [image]
                     folder:
-                        template: "@ezdesign/block_item/folder.html.twig"
+                        template: "@ezdesign/block_item/folder/default.html.twig"
                         match:
                             Identifier\ContentType: [folder]
                     place_list:
-                        template: "@ezdesign/block_item/place_list.html.twig"
+                        template: "@ezdesign/block_item/place_list/default.html.twig"
                         match:
                             Identifier\ContentType: [place_list]
                     video:
-                        template: "@ezdesign/block_item/video.html.twig"
+                        template: "@ezdesign/block_item/video/default.html.twig"
                         match:
                             Identifier\ContentType: [video]
                     product:
-                        template: "@ezdesign/block_item/product.html.twig"
+                        template: "@ezdesign/block_item/product/default.html.twig"
                         match:
                             Identifier\ContentType: [product]
                     product_list:
-                        template: "@ezdesign/block_item/product_list.html.twig"
+                        template: "@ezdesign/block_item/product_list/default.html.twig"
                         match:
                             Identifier\ContentType: [product_list]
                     default:
@@ -252,23 +252,23 @@ ezpublish:
 
                 block_item_wide:
                     blog_post:
-                        template: "@ezdesign/block_item_wide/blog_post.html.twig"
+                        template: "@ezdesign/block_item/wide/blog_post.html.twig"
                         match:
                             Identifier\ContentType: [blog_post]
                     image:
-                        template: "@ezdesign/block_item_wide/image.html.twig"
+                        template: "@ezdesign/block_item/wide/image.html.twig"
                         match:
                             Identifier\ContentType: [image]
                     place:
-                        template: "@ezdesign/block_item_wide/place.html.twig"
+                        template: "@ezdesign/block_item/wide/place.html.twig"
                         match:
                             Identifier\ContentType: [place]
                     product:
-                        template: "@ezdesign/block_item_wide/product.html.twig"
+                        template: "@ezdesign/block_item/wide/product.html.twig"
                         match:
                             Identifier\ContentType: [product]
                     product_list:
-                        template: "@ezdesign/block_item_wide/product_list.html.twig"
+                        template: "@ezdesign/block_item/wide/product_list.html.twig"
                         match:
                             Identifier\ContentType: [product_list]
                     default:
@@ -282,8 +282,13 @@ ezpublish:
                         match:
                             Identifier\ContentType: [place, article]
 
+                    article:
+                        template: "@ezdesign/blocks/contentlist/tastes.html.twig"
+                        match:
+                            Identifier\ContentType: [article]
+
                 block_item_hero:
                     default:
-                        template: "@ezdesign/block_item_hero/default.html.twig"
+                        template: "@ezdesign/block_item/hero/default.html.twig"
                         match:
                             Identifier\ContentType: [landing_page, blog, about, article, blog_post, image, place]

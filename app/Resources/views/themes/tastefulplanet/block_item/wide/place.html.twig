@@ -1,0 +1,25 @@
+<article class="embed-wide content-type-place-item-container">
+    <div class="banner-image">
+        <div class="thumbnail text-center">
+            {{ ez_render_field(content, 'image', {
+                'parameters': {'alias': 'original', 'class': 'img-fluid w-100'}
+            }) }}
+            <div class="panel-container">
+                <div class="container">
+                    <div class="info-panel">
+                        <h3 class="field-header">{{ 'Top Place to Go'|trans }}</h3>
+                        <span class="field-intro">{{ ez_render_field(content, 'intro') }}</span>
+                        {% set description = ez_render_field(content, 'description')|striptags %}
+                        <span class="field-caption">
+                             {{ description|length > 340 ? description|slice(0, 340) ~ '...' : description }}
+                         </span>
+
+                        <span class="link">
+                             <a href="{{ path(location) }}">{{ 'Lets go'|trans }} {{ ez_render_field(content, 'name') }}</a>
+                         </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

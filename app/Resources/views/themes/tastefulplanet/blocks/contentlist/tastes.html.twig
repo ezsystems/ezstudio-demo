@@ -6,7 +6,7 @@
 {% block block_content %}
     <h3>{{ 'Find Out More'|trans }}</h3>
     <h2>{{ 'Beautiful Cuisines & Destinations'|trans }}</h2>
-    {% if contentArray|length > 0 %}
+    {% if contentArray is defined and contentArray|length > 0 %}
         <div class="row block-contentlist-items">
             {% for item in contentArray %}
                 <div class="col-md-4 block-contentlist-child">

@@ -241,7 +241,7 @@
                                 "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a5",
                                 "type": "rss",
                                 "name": "eZ Blog",
-                                "view": "rss",
+                                "view": "list",
                                 "compiled": "",
                                 "attributes": [
                                     {
@@ -266,7 +266,7 @@
                                 "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a6",
                                 "type": "banner",
                                 "name": "Banner",
-                                "view": "narrow",
+                                "view": "banner",
                                 "compiled": "",
                                 "attributes": [
                                     {
@@ -290,9 +290,9 @@
                         "blocks": [
                             {
                                 "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a8",
-                                "type": "contentlist",
-                                "name": "Content List",
-                                "view": "tastes",
+                                "type": "tastes",
+                                "name": "Tastes",
+                                "view": "cards",
                                 "compiled": "",
                                 "attributes": [
                                     {
@@ -304,11 +304,6 @@
                                         "id": "",
                                         "name": "limit",
                                         "value": "4"
-                                    },
-                                    {
-                                        "id": "",
-                                        "name": "contentType",
-                                        "value": "article"
                                     }
                                 ],
                                 "visible": true
