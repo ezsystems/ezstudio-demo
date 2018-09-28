@@ -316,6 +316,7 @@ h4.header {
     padding: 0;
 }
 
+.map-container.leaflet-container,
 .landing-page--dynamic .places-background,
 .landing-page__block.block_places {
     background-color: #261B2F;
@@ -419,7 +420,7 @@ h4.header {
     text-align: center;
 }
 
-.places-map-block-view .places-map {
+.map-container {
     min-height: 646px;
 }
 

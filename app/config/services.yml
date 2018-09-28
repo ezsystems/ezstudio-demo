@@ -85,3 +85,7 @@ services:
             - '@ezpublish.config.resolver'
         tags:
             - { name: twig.extension }
+
+    AppBundle\Twig\SearchResultExtractorExtension:
+        tags:
+            - { name: twig.extension }
