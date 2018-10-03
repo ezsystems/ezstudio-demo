@@ -17,5 +17,6 @@ class EnterpriseDemoEnvironmentConstants extends EnterpriseEnvironmentConstants
         $this->values['ARTICLE_MAIN_FIELD_NAME'] = 'Summary';
         $this->values['CREATE_REGISTRATION_ROLE_POLICIES'] = 'user/login,content/read,tags/read';
         $this->values['REGISTRATION_CONFIRMATION_MESSAGE'] = 'Registration completed';
+        $this->values['MAIN_LANDING_PAGE_HEADER'] = 'Explore Tastes and Places of the World';
     }
 }
