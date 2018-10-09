@@ -29,6 +29,10 @@ class ContentDescriptionExtension extends Twig_Extension
      */
     protected $logger;
 
+    /**
+     * @param \eZ\Publish\Core\Helper\FieldHelper $fieldHelper
+     * @param \Psr\Log\LoggerInterface|null $logger
+     */
     public function __construct(
         FieldHelper $fieldHelper,
         LoggerInterface $logger = null
@@ -62,6 +66,13 @@ class ContentDescriptionExtension extends Twig_Extension
         return 'app.content';
     }
 
+    /**
+     * Returns description field Identifier or first Richtext field.
+     *
+     * @param Content $content
+     *
+     * @return null|string
+     */
     public function getDescriptionOrFirstRichtextFieldName(Content $content): ?string
     {
         if ($field = $content->getField('description')) {
