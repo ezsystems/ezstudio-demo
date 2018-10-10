@@ -3,7 +3,7 @@ ezpublish:
         admin_group:
             fieldtypes:
                 ezrichtext:
-                    custom_tags: [ezyoutube, eztwitter, ezfacebook]
+                    custom_tags: [ezyoutube, eztwitter, ezfacebook, ezform]
 
     ezrichtext:
         # Define Custom Tags
@@ -71,3 +71,12 @@ ezpublish:
                         required: true
                     width:
                         type: 'number'
+
+            ezform:
+                template: '@ezdesign/fields/ezrichtext/custom_tags/ezform.html.twig'
+                icon: '/bundles/ezplatformadminui/img/ez-icons.svg#form'
+                attributes:
+                    form:
+                        type: 'string'
+                        default_value: 'Form id'
+                        required: true
