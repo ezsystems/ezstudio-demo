@@ -6,3 +6,11 @@ services:
             - '@ez_migration_bundle.reference_resolver.customreference'
         tags:
             - { name: ez_migration_bundle.complex_field, fieldtype: ezlandingpage, priority: 0 }
+
+    ez_migration_bundle.complex_field.ezform:
+        parent: ez_migration_bundle.complex_field
+        class: '%ez_migration_bundle.complex_field.ezrichtext.class%'
+        arguments:
+        - '@ez_migration_bundle.reference_resolver.customreference'
+        tags:
+        - { name: ez_migration_bundle.complex_field, fieldtype: ezform, priority: 0 }
