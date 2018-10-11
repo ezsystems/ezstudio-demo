@@ -5,6 +5,7 @@ ezpublish:
 
             field_templates:
                 - {template: "@ezdesign/fields/eztags_field.html.twig", priority: 20}
+                - {template: '@ezdesign/fields/ezform_field.html.twig', priority: 30}
 
             user:
                 layout: "@ezdesign/pagelayout.html.twig"
@@ -107,6 +108,12 @@ ezpublish:
                         template: "@ezdesign/full/product_list.html.twig"
                         match:
                             Identifier\ContentType: [product_list]
+
+                    form:
+                        template: "@ezdesign/full/form.html.twig"
+                        match:
+                            Identifier\ContentType: [form]
+
                     landing_page:
                         template: "@ezdesign/full/landing_page.html.twig"
                         match:

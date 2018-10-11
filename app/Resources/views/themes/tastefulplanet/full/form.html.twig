@@ -1,0 +1,20 @@
+{% extends "@ezdesign/pagelayout.html.twig" %}
+
+{% block content %}
+    <section class="content-type-form full-view">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="field-description">
+                        {{ ez_render_field(content, 'description') }}
+                    </div>
+
+                    <div class="field-form">
+                        {{ ez_render_field(content, 'form') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}
