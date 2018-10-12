@@ -1,0 +1,213 @@
+$dark: #222222;
+$grey: #999999;
+
+.content-type-form {
+  background: $white;
+  padding-top: 25px;
+}
+
+.form-check-input {
+  margin-top: 0.5rem;
+
+  &:checked:before {
+    background-color: #F15A22!important;
+   // background-color: red!important;
+  }
+}
+
+form {
+  label, legend {
+    color: $dark;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+
+  .form-control {
+    color: $dark;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  ::placeholder {
+    color: $grey!important;
+    opacity: 1;
+  }
+
+  :-ms-input-placeholder {
+    color: $grey!important;
+  }
+
+  ::-ms-input-placeholder {
+    color: $grey!important;
+  }
+}
+
+.form-check {
+  label {
+    font-weight: normal;
+  }
+}
+
+input[type="checkbox"]:after {
+  box-shadow: none !important;
+  background: red;
+}
+
+.form-check-label::before {
+  background-color: #F15A22!important;
+}
+
+.btn--radius {
+  border-radius: 25px;
+}
+
+.btn--outline {
+  background-color: #fff;
+  border: 1px solid #C6C6C6;
+  color: #777777;
+
+  &:hover {
+    background-color: #F0F0F0;
+  }
+
+  &:active {
+    background-color: #E6E6E6;
+  }
+
+  &:disabled {
+    background-color: #F7F7F7;
+    border: 1px solid #DEDEDE;
+    color: #C8C8C8;
+  }
+}
+
+.btn--dark {
+  background-color: #505050;
+  border: none;
+  color: #D4D4D4;
+
+  &:hover {
+    background-color: #454646;
+  }
+
+  &:active {
+    background-color: #393A3A;
+  }
+
+  &:disabled {
+    background-color: #CACACA;
+    border: 1px solid #DEDEDE;
+    color: #FFF;
+  }
+}
+
+.btn-secondary, .btn--primary {
+  background-color: #F15A22;
+  border: none!important;
+  color: #FFF;
+
+  &:hover {
+    background-color: #D54510!important;
+    border: none!important;
+  }
+
+  &:focus, &:active {
+    background-color: #B63708!important;
+    border: none!important;
+  }
+
+  &:disabled {
+    background-color: #FFD6C7;
+    color: #FFF;
+  }
+
+  min-width: 140px;
+  height: 43px;
+}
+
+.btn--info {
+  background-color: #14B0E6;
+  border: none;
+  color: #FFF;
+
+  &:hover {
+    background-color: #0096D0;
+  }
+
+  &:active {
+    background-color: #008ABE;
+  }
+
+  &:disabled {
+    background-color: #BCE7F8;
+    color: #FFF;
+  }
+}
+
+.btn--success {
+  background-color: #32B030;
+  border: none;
+  color: #FFF;
+
+  &:hover {
+    background-color: #2CA12B;
+  }
+
+  &:active {
+    background-color: #249023;
+  }
+
+  &:disabled {
+    background-color: #C2E8C2;
+    color: #FFF;
+  }
+}
+
+.btn--warning {
+  background-color: #F7941E;
+  border: none;
+  color: #FFF;
+
+  &:hover {
+    background-color: #E98100;
+  }
+
+  &:active {
+    background-color: #E17000;
+  }
+
+  &:disabled {
+    background-color: #FDDEBF;
+    color: #FFF;
+  }
+}
+
+.btn--danger {
+  background-color: #EF4E4D;
+  border: none;
+  color: #FFF;
+
+  &:hover {
+    background-color: #DE3A37;
+  }
+
+  &:active {
+    background-color: #CD2D2A;
+  }
+
+  &:disabled {
+    background-color: #FFC5C5;
+    color: #FFF;
+  }
+}
+
+.form-error-icon {
+  position: relative;
+  top: -1px;
+  margin-right: 10px;
+}
+
+.captcha_image {
+  margin: 0 0 10px 10px;
+}
