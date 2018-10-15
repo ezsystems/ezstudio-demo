@@ -1,0 +1,22 @@
+{% use "bootstrap_4_layout.html.twig" %}
+
+{%- block form_widget_simple -%}
+     {%- set type = type|default('text') -%}
+     {% if type == 'file' %}
+         <div class="ezform_file_widget">
+             <div class="file_input">
+                 {{ parent() }}
+             </div>
+             <div class="file_input_container">
+                 <span class="file_input_container--image">
+                     <img src="{{ asset('assets/images/form/field_file.png') }}"/>
+                 </span>
+                 <span class="file_input_container--button">
+                     <div class="btn btn-primary">Browse File</div>
+                 </span>
+             </div>
+         </div>
+     {% else %}
+         {{ parent() }}
+     {% endif %}
+{%- endblock form_widget_simple -%}

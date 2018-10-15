@@ -4,7 +4,7 @@
     {% set formValue = field.value.getForm() %}
     {% if formValue %}
         {% set form = formValue.createView() %}
-        {% form_theme form 'bootstrap_4_layout.html.twig' %}
+        {% form_theme form '@ezdesign/fields/bootstrap_4_layout.html.twig' %}
         {% spaceless %}
             {% if not ez_is_field_empty(content, field) %}
                 {{ form(form) }}
