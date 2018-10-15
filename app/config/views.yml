@@ -252,23 +252,23 @@ ezpublish:
 
                 block_item_wide:
                     blog_post:
-                        template: "@ezdesign/block_item/wide/blog_post.html.twig"
+                        template: "@ezdesign/block_item/blog_post/wide.html.twig"
                         match:
                             Identifier\ContentType: [blog_post]
                     image:
-                        template: "@ezdesign/block_item/wide/image.html.twig"
+                        template: "@ezdesign/block_item/image/wide.html.twig"
                         match:
                             Identifier\ContentType: [image]
                     place:
-                        template: "@ezdesign/block_item/wide/place.html.twig"
+                        template: "@ezdesign/block_item/place/wide.html.twig"
                         match:
                             Identifier\ContentType: [place]
                     product:
-                        template: "@ezdesign/block_item/wide/product.html.twig"
+                        template: "@ezdesign/block_item/product/wide.html.twig"
                         match:
                             Identifier\ContentType: [product]
                     product_list:
-                        template: "@ezdesign/block_item/wide/product_list.html.twig"
+                        template: "@ezdesign/block_item/product_list/wide.html.twig"
                         match:
                             Identifier\ContentType: [product_list]
                     default:
