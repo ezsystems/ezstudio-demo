@@ -15,12 +15,12 @@
             {{ 'More'|trans }}
         </a>
     </div>
-    {% if contentArray|length > 0 %}
+    {% if contentArray is defined and contentArray|length > 0 %}
         <div class="row block-contentlist__cards">
             {% for item in contentArray %}
                 <div class="col-md-6 pb-3">
                     {{ render_esi(controller('ez_content:viewAction', {
-                        locationId: item.contentInfo.mainLocationId,
+                        locationId: item.contentInfo is defined ? item.contentInfo.mainLocationId : item.content.contentInfo.mainLocationId,
                         viewType: 'block_contentlist'
                     })) }}
                 </div>
