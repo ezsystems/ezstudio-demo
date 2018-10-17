@@ -1,5 +1,5 @@
 {% set description_field = ez_get_description_or_first_richtext_field_name(content) %}
 
 {% if description_field is not empty %}
-    {{ ez_render_field(content, description_field)|striptags|truncate(180) }}
+    {{ ez_render_field(content, description_field)|striptags|truncate(180)|raw }}
 {% endif %}
