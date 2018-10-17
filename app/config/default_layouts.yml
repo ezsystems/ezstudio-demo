@@ -105,21 +105,9 @@ ezplatform_page_fieldtype:
 
         contentlist:
             views:
-                cards:
-                    template: '@ezdesign/blocks/cards/cards_list.html.twig'
-                    name: 'Cards list layout'
-
-                places:
-                    template: '@ezdesign/blocks/places/cards.html.twig'
-                    name: 'Places list layout'
-
-                tastes:
-                    template: '@ezdesign/blocks/tastes/cards.html.twig'
-                    name: 'Tastes list layout'
-
-                tastes_contentlist:
-                    template: '@ezdesign/blocks/contentlist/tastes.html.twig'
-                    name: 'Platform EE Demo tastes contentlist'
+                blog:
+                    template: '@ezdesign/blocks/contentlist/blog.html.twig'
+                    name: 'Blog list layout'
 
         banner:
             views:
@@ -155,6 +143,10 @@ ezplatform_page_fieldtype:
                 cards:
                     template: '@ezdesign/blocks/tastes/cards.html.twig'
                     name: 'Cards'
+
+                home:
+                    template: '@ezdesign/blocks/tastes/home.html.twig'
+                    name: 'Home page layout - tastes list'
 
         gallery:
             views:

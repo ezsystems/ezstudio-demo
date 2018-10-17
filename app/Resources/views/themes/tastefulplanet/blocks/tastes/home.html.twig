@@ -11,8 +11,8 @@
             {% for item in contentArray %}
                 <div class="col-md-4 block-contentlist-child">
                     {{ render_esi(controller('ez_content:viewAction', {
-                        locationId: item.location.id,
-                        viewType: 'card'
+                        locationId: item.contentInfo is defined ? item.contentInfo.mainLocationId : item.content.contentInfo.mainLocationId,
+                        viewType: 'embed'
                     })) }}
                 </div>
             {% endfor %}

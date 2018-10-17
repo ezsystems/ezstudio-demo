@@ -82,9 +82,9 @@
                             },
                             {
                                 "id": "b-294fbffd-744a-6ac6-3f29-9783799c10b3",
-                                "type": "contentlist",
-                                "name": "Content List",
-                                "view": "tastes_contentlist",
+                                "type": "tastes",
+                                "name": "Tastes Home Page",
+                                "view": "home",
                                 "compiled": "",
                                 "attributes": [
                                     {
@@ -96,11 +96,6 @@
                                         "id": "",
                                         "name": "limit",
                                         "value": "3"
-                                    },
-                                    {
-                                        "id": "",
-                                        "name": "contentType",
-                                        "value": "article"
                                     }
                                 ]
                             }
@@ -137,6 +132,11 @@
                                         "id": "",
                                         "name": "contentId",
                                         "value": "[reference:ref_content_place_list__home__places_and_tastes__places]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
                                     }
                                 ]
                             }
@@ -208,9 +208,9 @@
                         "blocks": [
                             {
                                 "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a4",
-                                "type": "contentlist",
-                                "name": "Content List",
-                                "view": "places",
+                                "type": "places",
+                                "name": "Places cards",
+                                "view": "cards",
                                 "compiled": "",
                                 "attributes": [
                                     {
@@ -222,11 +222,6 @@
                                         "id": "",
                                         "name": "limit",
                                         "value": "4"
-                                    },
-                                    {
-                                        "id": "",
-                                        "name": "contentType",
-                                        "value": "place"
                                     }
                                 ],
                                 "visible": true
@@ -317,8 +312,8 @@
                             {
                                 "id": "b-294fbffd-744a-6ac6-3f40-9783799c13a1",
                                 "type": "contentlist",
-                                "name": "Content List",
-                                "view": "cards",
+                                "name": "Blog List",
+                                "view": "blog",
                                 "compiled": "",
                                 "attributes": [
                                     {

@@ -146,6 +146,12 @@ ezpublish:
                         match:
                             Identifier\ContentType: [folder]
 
+                embed:
+                    home_tastes:
+                        template: "@ezdesign/embed/home_tastes.html.twig"
+                        match:
+                            Identifier\ContentType: [article]
+
                 line:
                     blog_post:
                         template: "@ezdesign/line/blog_post.html.twig"
@@ -275,17 +281,6 @@ ezpublish:
                         template: "@ezdesign/default/default.html.twig"
                         match:
                             Identifier\ContentType: [landing_page, blog, frontpage, about]
-
-                block_contentlist:
-                    place:
-                        template: "@ezdesign/blocks/contentlist/place.html.twig"
-                        match:
-                            Identifier\ContentType: [place, article]
-
-                    article:
-                        template: "@ezdesign/blocks/contentlist/tastes.html.twig"
-                        match:
-                            Identifier\ContentType: [article]
 
                 block_item_hero:
                     default:
