@@ -1,1 +1,12 @@
-{% include '@ezdesign/blocks/list/default.html.twig' with { 'contentArray': contentArray } only %}
+<div class="col-md-12">
+    <div class="block-schedule {{ block_class }}">
+        {% for location in items %}
+            {{ fos_httpcache_tag('relation-location-' ~ location.id) }}
+            {{ render(controller('ez_content:viewLocation', {
+                'locationId': location.id,
+                'viewType': 'embed'
+            })) }}
+        {% endfor %}
+        <style type="text/css">{{ block_style|raw }}</style>
+    </div>
+</div>
