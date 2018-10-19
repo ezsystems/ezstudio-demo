@@ -172,12 +172,8 @@ ezplatform_page_fieldtype:
                     template: '@ezdesign/blocks/collection/content.html.twig'
                     name: 'Content List View'
                     options:
-                        match: [article, blog_post]
-                gallery:
-                    template: '@ezdesign/blocks/collection/content.html.twig'
-                    name: 'Gallery View'
-                    options:
-                        match: [image]
+                        match: [article, blog_post, image]
+
         schedule:
             views:
                 cards:
