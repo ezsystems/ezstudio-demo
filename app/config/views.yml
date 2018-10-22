@@ -280,7 +280,7 @@ ezpublish:
                     default:
                         template: "@ezdesign/default/default.html.twig"
                         match:
-                            Identifier\ContentType: [landing_page, blog, frontpage, about]
+                            Identifier\ContentType: [landing_page, blog, frontpage, about, article]
 
                 block_item_hero:
                     default:
