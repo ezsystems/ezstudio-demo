@@ -113,3 +113,5 @@ services:
     AppBundle\Event\TemplateAttributeBlockNameListener:
         tags:
             - { name: kernel.event_subscriber }
+
+    AppBundle\Event\PageFieldType\Attribute\AttributeSerializationSubscriber: ~

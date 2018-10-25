@@ -7,3 +7,11 @@ services:
         tags:
             - { name: ezplatform.installer, type: ezplatform-ee-demo }
             - { name: ezplatform.installer, type: platform-ee-demo }
+
+    app.installer.demo-test-layouts_installer:
+        parent: ezplatform.installer.db_based_installer
+        class: AppBundle\Installer\PlatformEEDemoTestLayoutsInstaller
+        calls:
+            - [setEnvironment, ["%kernel.environment%"]]
+        tags:
+            - { name: ezplatform.installer, type: demo-test-layouts }

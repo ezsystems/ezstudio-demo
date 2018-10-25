@@ -1,0 +1,127 @@
+<div class="container-fluid">
+    <div class="landing-page__zones">
+        <div class="landing-page__zone landing-page__zone--{{ zones[0].id }}" data-ez-zone-id="{{ zones[0].id }}">
+            <span class="test-zone-name">Zone full-width</span>
+
+            {% if zones[0].blocks %}
+                {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[0].blocks} %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="landing-page__zones">
+        <div class="landing-page__zone landing-page__zone--{{ zones[1].id }}" data-ez-zone-id="{{ zones[1].id }}">
+            <span class="test-zone-name">Zone standard</span>
+
+            {% if zones[1].blocks %}
+                {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[1].blocks} %}
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row landing-page__zones">
+        <div class="col-md-12">
+            <div class="landing-page__zone landing-page__zone--{{ zones[2].id }}" data-ez-zone-id="{{ zones[2].id }}">
+                <span class="test-zone-name">Zone col-md-12</span>
+                {% if zones[2].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[2].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row landing-page__zones">
+        <div class="col-md-4">
+            <div class="landing-page__zone landing-page__zone--{{ zones[3].id }} landing-page__zone--left" data-ez-zone-id="{{ zones[3].id }}">
+                <span class="test-zone-name">Zone col-md-4</span>
+
+                {% if zones[3].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[3].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="landing-page__zone landing-page__zone--{{ zones[4].id }} landing-page__zone--right" data-ez-zone-id="{{ zones[4].id }}">
+                <span class="test-zone-name">Zone col-md-8</span>
+
+                {% if zones[4].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[4].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row landing-page__zones">
+        <div class="col-md-6">
+            <div class="landing-page__zone landing-page__zone--{{ zones[5].id }} landing-page__zone--left" data-ez-zone-id="{{ zones[5].id }}">
+                <span class="test-zone-name">Zone col-md-6</span>
+
+                {% if zones[5].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[5].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="landing-page__zone landing-page__zone--{{ zones[6].id }} landing-page__zone--right" data-ez-zone-id="{{ zones[6].id }}">
+                <span class="test-zone-name">Zone col-md-6</span>
+
+                {% if zones[6].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[6].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="landing-page__zones">
+    <div class="landing-page__zone landing-page__zone--{{ zones[7].id }}" data-ez-zone-id="{{ zones[7].id }}">
+        <span class="test-zone-name">Default zone (no bootstrap)</span>
+
+        {% if zones[7].blocks %}
+            {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[7].blocks} %}
+        {% endif %}
+    </div>
+</div>
+
+<div class="container">
+    <div class="landing-page__zones landing-page__zones--grid-2-1_2-1">
+        <div class="bs-col-8">
+            <div class="landing-page__zone landing-page__zone--{{ zones[8].id }}" data-ez-zone-id="{{ zones[8].id }}">
+                <span class="test-zone-name">Zone grid 1</span>
+
+                {% if zones[8].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[8].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="bs-col-4">
+            <div class="landing-page__zone landing-page__zone--{{ zones[9].id }}" data-ez-zone-id="{{ zones[9].id }}">
+                <span class="test-zone-name">Zone grid 2</span>
+
+                {% if zones[9].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[9].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="bs-col-8">
+            <div class="landing-page__zone landing-page__zone--{{ zones[10].id }}" data-ez-zone-id="{{ zones[10].id }}">
+                <span class="test-zone-name">Zone grid 3</span>
+
+                {% if zones[10].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[10].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="bs-col-4">
+            <div class="landing-page__zone landing-page__zone--{{ zones[11].id }}" data-ez-zone-id="{{ zones[11].id }}">
+                <span class="test-zone-name">Zone grid 4</span>
+
+                {% if zones[11].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[11].blocks} %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -96,6 +96,38 @@ ezplatform_page_fieldtype:
                 bottom:
                     name: 'Bottom wide zone'
 
+        'test_layout':
+            identifier: 'test_layout'
+            name: 'Test Layout'
+            description: 'Test layout - all possible zones'
+            thumbnail: '/assets/images/page_builder/layouts/test.png'
+            template: '@ezdesign/layouts/test_layout.html.twig'
+            zones:
+                wide:
+                    name: 'Wide zone'
+                standard:
+                    name: 'Standard zone'
+                col_12:
+                    name: 'col-12 zone'
+                'col_4_1':
+                    name: 'col-4 first zone'
+                'col_8_2':
+                    name: 'col-8 second zone'
+                'col_6_1':
+                    name: 'col-6 first zone'
+                'col_6_2':
+                    name: 'col-6 second zone'
+                default_no_bs:
+                    name: 'Default zone - no bootstrap'
+                grid_1:
+                    name: 'Grid zone 1'
+                grid_2:
+                    name: 'Grid zone 2'
+                grid_3:
+                    name: 'Grid zone 3'
+                grid_4:
+                    name: 'Grid zone 4'
+
     blocks:
         hero:
             views:
