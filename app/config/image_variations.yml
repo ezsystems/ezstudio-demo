@@ -43,5 +43,4 @@ ezpublish:
                 card_view:
                     reference: null
                     filters:
-                        - {name: geometry/scalewidth, params: [255]}
-                        - {name: geometry/crop, params: [255, 175, 0, 0]}
+                        - {name: geometry/scalewidth, params: [450]}

@@ -30,8 +30,16 @@ $cards-container: '.cards-container';
       margin-bottom: 35px;
       flex: 0 0 calc(25% - 30px);
 
+      .card-img {
+        object-fit: cover;
+      }
+
       .card-img-top {
         height: 175px;
+
+        .ezimage-field, .card-img {
+          height: 100%;
+        }
       }
 
       .card-body {
