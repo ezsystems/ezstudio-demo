@@ -5,15 +5,18 @@
 
 {% block block_content %}
     <div class="places-map-block-view container">
-
         <div class="title">Destinations</div>
 
-        <div class="map-container"></div>
+        {% set map_container_id = 'map_container_id_' ~ random() %}
+        <div class="map-container" id="{{ map_container_id }}"></div>
+
+        {% include '@ezdesign/parts/map.html.twig' with {
+            'map_container_id': map_container_id,
+            'contentArray': contentArray
+        } only %}
+
         <div class="explore">
             <a href="{{ path(location) }}" class="btn btn-primary btn-lg btn-block">{{ 'Explore destinations'|trans }}</a>
         </div>
     </div>
-
-    {% include '@ezdesign/parts/map.html.twig' with {'contentArray': contentArray} only %}
-
 {% endblock %}

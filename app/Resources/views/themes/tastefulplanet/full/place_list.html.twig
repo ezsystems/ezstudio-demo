@@ -19,8 +19,13 @@
                 </div>
             </div>
         {% else %}
-            <div class="map-container"></div>
-            {% include '@ezdesign/parts/map.html.twig' with {'contentArray': app_search_result_extract(places)} only %}
+            {% set map_container_id = 'map_container_id_' ~ random() %}
+            <div class="map-container" id="{{ map_container_id }}"></div>
+
+            {% include '@ezdesign/parts/map.html.twig' with {
+                'map_container_id': map_container_id,
+                'contentArray': app_search_result_extract(places)
+            } only %}
         {% endif %}
         <div class="container">
             <div class="row">
