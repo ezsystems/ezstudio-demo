@@ -5,6 +5,12 @@ $grey: #999999;
   background: $white;
   padding-top: 25px;
 
+  &__header {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2b2b2b;
+  }
+
   form {
     label, legend {
       color: $dark;
@@ -133,12 +139,7 @@ $grey: #999999;
     border: none;
     color: #FFF;
 
-    &:hover {
-      background-color: #D54510;
-      border: none;
-    }
-
-    &:focus, &:active {
+    &:hover, &:focus, &:active {
       background-color: #B63708!important;
       border: none!important;
     }
@@ -240,7 +241,7 @@ $grey: #999999;
   }
 
   .ezform_file_widget {
-    width: 361px;
+    max-width: 361px;
     height: 169px;
     border: 1px solid #d3d3d3;
     position: relative;

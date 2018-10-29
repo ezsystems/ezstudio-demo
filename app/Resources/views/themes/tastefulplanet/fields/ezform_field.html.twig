@@ -7,7 +7,7 @@
         {% form_theme form '@ezdesign/fields/bootstrap_4_layout.html.twig' %}
         {% spaceless %}
             {% if not ez_is_field_empty(content, field) %}
-                {{ form(form) }}
+                {{ form(form.children.fields is defined ? form.children.fields : form) }}
             {% endif %}
         {% endspaceless %}
     {% endif %}
