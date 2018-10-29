@@ -437,12 +437,12 @@ h4.header {
 }
 
 /* place embed wide */
-.landing-page__block.block_embed {
+.landing-page__block .block_embed {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.landing-page__block.block_embed .places-to-go {
+.landing-page__block .block_embed .places-to-go {
     background-color: #261B2F;
     margin-bottom: 0;
     padding: 0;
