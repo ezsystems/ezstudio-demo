@@ -376,34 +376,33 @@ h4.header {
 }
 
 /* blog post */
-.content-type-blog-post.embed .thumbnail img {
+.content-type-blog-post.embed .banner-image img {
     max-height: 450px;
     object-fit: cover;
 }
-.content-type-blog-post.embed .thumbnail {
+
+.content-type-blog-post.embed .banner-image {
     max-height: 450px;
 }
 
-.content-type-blog-post.embed .title {
-    background: #3c3330;
-    position: absolute;
-    bottom: 47px;
-    height: 97px;
-    width: 421px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content-type-blog-post.embed .card-img-overlay {
+    padding-left: 0;
 }
 
-.content-type-blog-post.embed .title a {
+.content-type-blog-post.embed h2 {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 30px;
     color: #fff;
-    font-size: 32px;
+    background: #3c3330;
+    margin-bottom: 0;
+    padding: 15px 40px;
+    position: absolute;
+    bottom: 25px;
 }
 
-.content-type-blog-post.embed .title a:hover {
-    text-decoration: none;
+.content-type-blog-post.embed .card-img-overlay:hover h2.card-title {
+    background: #0073ae;
 }
-
 
 .landing-page__zone .places-map-block-view .explore {
     display: flex;
