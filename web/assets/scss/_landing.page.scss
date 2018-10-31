@@ -512,3 +512,25 @@ h4.header {
     line-height: 25px;
     color: #fff;
 }
+
+@media (max-width: 575.98px) {
+    .landing-page__block .block-embed.places-to-go .field-intro,
+    .landing-page__block .block-embed.places-to-go .field-caption {
+        display: none;
+    }
+
+    .landing-page__block .block-embed.places-to-go {
+        height: 200px;
+    }
+
+    .content-type-place-item-container.embed-wide .info-panel {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .content-type-place-item-container.embed-wide .info-panel .field-header {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
