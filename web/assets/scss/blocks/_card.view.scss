@@ -92,10 +92,11 @@ $cards-container: '.cards-container';
   }
 }
 
-.landing-page__zone {
-  &.col-4,
-  &.bs-col-4 {
-    #{($cards-container)} {
+.landing-page__zones {
+  .col-4,
+  .col-md-4,
+  .bs-col-4 {
+    .landing-page__zone #{($cards-container)} {
       .card-deck .card {
         flex: 0 0 calc(100% - 30px);
       }
@@ -122,56 +123,57 @@ $cards-container: '.cards-container';
     }
   }
 
-  &.col-6,
-  &.bs-col-6 {
-    #{($cards-container)} {
-      .card-deck .card {
-        flex: 0 0 calc(50% - 30px);
+  .col-6,
+  .col-md-6,
+  .bs-col-6 {
+    .landing-page__zone #{($cards-container)} .card-deck .card {
+      flex: 0 0 calc(50% - 30px);
 
-        &--horizontal {
-          flex: initial;
-          width: 540px;
+      &--horizontal {
+        flex: initial;
+        width: 540px;
 
-          .card-img {
-            flex: 0 0 230px;
+        .card-img {
+          flex: 0 0 230px;
 
-            &+.card-body {
-              width: 306px;
-            }
+          &+.card-body {
+            width: 306px;
           }
         }
       }
     }
   }
 
-  &.col-8,
-  &.bs-col-8 {
-    #{($cards-container)} {
-      .card-deck .card {
-        flex: 0 0 calc(50% - 30px);
+  .col-8,
+  .col-md-8,
+  .bs-col-8 {
+    .landing-page__zone #{($cards-container)} .card-deck .card {
+      flex: 0 0 calc(50% - 30px);
 
-        &--horizontal {
-          width: 365px;
+      &--horizontal {
+        width: 365px;
 
-          .card-img {
-            flex: 0 0 150px;
+        .card-img {
+          flex: 0 0 150px;
 
-            &+.card-body {
-              width: 213px;
-            }
+          &+.card-body {
+            width: 213px;
           }
         }
       }
     }
   }
 
-  &.col-4,
-  &.col-6,
-  &.col-8,
-  &.bs-col-4,
-  &.bs-col-6,
-  &.bs-col-8 {
-    #{($cards-container)} .card-deck .card .ezimage-field {
+  .col-4,
+  .col-6,
+  .col-8,
+  .col-md-4,
+  .col-md-6,
+  .col-md-8,
+  .bs-col-4,
+  .bs-col-6,
+  .bs-col-8 {
+    .landing-page__zone #{($cards-container)} .card-deck .card .ezimage-field {
       overflow: hidden;
       height: 100%;
     }

@@ -177,7 +177,7 @@
             </section>
     references:
         -
-            identifier: product_list
+            identifier: ref_location_product_list__home__products
             attribute: location_id
         -
             identifier: ref_content_product_list__home__products
@@ -239,7 +239,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -329,6 +329,9 @@
         -
             identifier: ref_content_product__home__cheesecake
             attribute: content_id
+        -
+            identifier: ref_location_product__home__cheesecake
+            attribute: location_id
 
 # product content Cheesecake - fre-FR
 -
@@ -666,7 +669,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -762,6 +765,9 @@
         -
             identifier: ref_content_product__home__grilled_thai_spice_chicken_sliders
             attribute: content_id
+        -
+            identifier: ref_location_product__home__grilled_thai_spice_chicken_sliders
+            attribute: location_id
 
 # product content Grilled Thai spice chicken sliders - fre-FR
 -
@@ -1109,7 +1115,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -1198,6 +1204,9 @@
         -
             identifier: ref_content_product__home__korean_bibimbap
             attribute: content_id
+        -
+            identifier: ref_location_product__home__korean_bibimbap
+            attribute: location_id
 
 # product content Korean Bibimbap - fre-FR
 -
@@ -1536,7 +1545,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -1620,6 +1629,9 @@
         -
             identifier: ref_content_product__home__thai_chicken_cashews
             attribute: content_id
+        -
+            identifier: ref_location_product__home__thai_chicken_cashews
+            attribute: location_id
 
 # product content Thai chicken with cashews - fre-FR
 -
@@ -1940,7 +1952,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -2021,6 +2033,9 @@
         -
             identifier: ref_content_product__home__cheesecake_cherry
             attribute: content_id
+        -
+            identifier: ref_location_product__home__cheesecake_cherry
+            attribute: location_id
 
 # product content Cherry lemon cheesecake - fre-FR
 -
@@ -2317,7 +2332,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -2402,6 +2417,9 @@
         -
             identifier: ref_content_product__home__cookies_chocolate
             attribute: content_id
+        -
+            identifier: ref_location_product__home__cookies_chocolate
+            attribute: location_id
 
 # product content Double chocolate macadamia nut cookies- fre-FR
 -
@@ -2716,7 +2734,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -2808,6 +2826,9 @@
         -
             identifier: ref_content_product__home__moroccan_couscous
             attribute: content_id
+        -
+            identifier: ref_location_product__home__moroccan_couscous
+            attribute: location_id
 
 # product content Moroccan vegetarian couscous- fre-FR
 -
@@ -3143,7 +3164,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -3200,6 +3221,9 @@
         -
             identifier: ref_content_product__home__yogurt_parfait
             attribute: content_id
+        -
+            identifier: ref_location_product__home__yogurt_parfait
+            attribute: location_id
 
 # product content Granola, yogurt, berry parfait- fre-FR
 -
@@ -3411,7 +3435,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -3482,6 +3506,9 @@
         -
             identifier: ref_content_product__home__spanish_tortilla
             attribute: content_id
+        -
+            identifier: ref_location_product__home__spanish_tortilla
+            attribute: location_id
 
 # product content Spanish tortilla - fre-FR
 -
@@ -3775,7 +3802,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -3851,6 +3878,9 @@
         -
             identifier: ref_content_product__home__pasta_seafood
             attribute: content_id
+        -
+            identifier: ref_location_product__home__pasta_seafood
+            attribute: location_id
 
 # product content Spaghetti with clams and shrimps - fre-FR
 -
@@ -4152,7 +4182,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -4214,6 +4244,9 @@
         -
             identifier: ref_content_product__home__pizza_robertas
             attribute: content_id
+        -
+            identifier: ref_location_product__home__pizza_robertas
+            attribute: location_id
 
 # product content Pizza - fre-FR
 -
@@ -4465,7 +4498,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -4547,6 +4580,9 @@
         -
             identifier: ref_content_product__home__salad_spinach
             attribute: content_id
+        -
+            identifier: ref_location_product__home__salad_spinach
+            attribute: location_id
 
 # product content Chicken, pomegranate and spinach salad - fre-FR
 -
@@ -4851,7 +4887,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -4927,6 +4963,9 @@
         -
             identifier: ref_content_product__home__salmon_teriyaki
             attribute: content_id
+        -
+            identifier: ref_location_product__home__salmon_teriyaki
+            attribute: location_id
 
 # product content Salmon teriyaki - fre-FR
 -
@@ -5218,7 +5257,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -5375,6 +5414,9 @@
         -
             identifier: ref_content_product__home__soup_tonkotsu
             attribute: content_id
+        -
+            identifier: ref_location_product__home__soup_tonkotsu
+            attribute: location_id
 
 # product content Japanese tonkotsu ramen soup - fre-FR
 -
@@ -6006,7 +6048,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -6101,6 +6143,9 @@
         -
             identifier: ref_content_product__home__cheesecake_figs
             attribute: content_id
+        -
+            identifier: ref_location_product__home__cheesecake_figs
+            attribute: location_id
 
 # product content Spanish seafood paella - fre-FR
 -
@@ -6481,7 +6526,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -6573,6 +6618,9 @@
         -
             identifier: ref_content_product__home__fish_chips
             attribute: content_id
+        -
+            identifier: ref_location_product__home__fish_chips
+            attribute: location_id
 
 # product content Beer batter English-style fish and chips - fre-FR
 -
@@ -6933,7 +6981,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -7018,6 +7066,9 @@
         -
             identifier: ref_content_product__home__soup_squash
             attribute: content_id
+        -
+            identifier: ref_location_product__home__soup_squash
+            attribute: location_id
 
 # product content Roasted butternut squash, lime and coconut soup - fre-FR
 -
@@ -7344,7 +7395,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -7453,6 +7504,9 @@
         -
             identifier: ref_content_product__home__thai_padthai
             attribute: content_id
+        -
+            identifier: ref_location_product__home__thai_padthai
+            attribute: location_id
 
 # product content Pad Thai - fre-FR
 -
@@ -7877,7 +7931,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -7962,6 +8016,9 @@
         -
             identifier: ref_content_product__home__soup_tomato
             attribute: content_id
+        -
+            identifier: ref_location_product__home__soup_tomato
+            attribute: location_id
 
 # product content Tomato soup - fre-FR
 -
@@ -8281,7 +8338,7 @@
     type: content
     mode: create
     content_type: product
-    parent_location: 'reference:product_list'
+    parent_location: 'reference:ref_location_product_list__home__products'
     section: 1
     owner: 14
     attributes:
@@ -8358,6 +8415,9 @@
         -
             identifier: ref_content_product__home__greek_salad
             attribute: content_id
+        -
+            identifier: ref_location_product__home__greek_salad
+            attribute: location_id
 
 # product content Greek salad with red cabbage - fre-FR
 -

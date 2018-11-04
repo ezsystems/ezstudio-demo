@@ -173,6 +173,10 @@ ezpublish:
                         template: "@ezdesign/card/product.html.twig"
                         match:
                             Identifier\ContentType: [product]
+                    default:
+                        template: "@ezdesign/default/default.html.twig"
+                        match:
+                            Identifier\ContentType: [form, landing_page]
 
                 featured:
                     article:

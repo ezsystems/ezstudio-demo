@@ -123,6 +123,10 @@ $block-contentlist: '.block-contentlist';
         }
     }
 
+    &__cards {
+        padding-top: 30px;
+    }
+
     &--cards-list {
         color: $grey-dark;
 

@@ -35,4 +35,7 @@ jQuery(() => {
             }, 500);
         }
     });
+
+    $('.landing-page__zones .landing-page__block:last').addClass('pb-0');
+    $('.landing-page__block:has(.block-embed.places-to-go)').addClass('pb-0');
 });

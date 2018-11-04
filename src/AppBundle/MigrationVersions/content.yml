@@ -3472,6 +3472,13 @@
         tags:
             - { tag_keyword:'New York (city, US)' }
             - { tag_keyword:'Writing Tips' }
+    references:
+        -
+            identifier: ref_location_blog_post__home__blog__where_we_get_our_best_writing_done
+            attribute: location_id
+        -
+            identifier: ref_content_blog_post__home__blog__where_we_get_our_best_writing_done
+            attribute: content_id
 
 # blog post - Travel literature
 -
@@ -3518,6 +3525,9 @@
         tags:
             - { tag_keyword:'Travel Journal' }
     references:
+        -
+            identifier: ref_location_blog_post__home__blog__travel_literature
+            attribute: location_id
         -
             identifier: ref_content_blog_post__home__blog__travel_literature
             attribute: content_id
