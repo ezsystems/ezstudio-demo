@@ -4,15 +4,6 @@
     {% include '@ezdesign/parts/recommendations_header.html.twig' %}
 {% endblock %}
 
-{% block javascripts %}
-    {{ parent() }}
-    {% javascripts
-        '@EzSystemsPersonalizedBlockBundle/Resources/public/js/slick-min.js'
-    %}
-        <script type="text/javascript" src="{{ asset_url }}"></script>
-    {% endjavascripts %}
-{% endblock %}
-
 {% block content %}
     <section class="content-type-landing-page full-view">
         {{ ez_render_field(content, 'page', {

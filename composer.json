@@ -73,7 +73,7 @@
         "ezsystems/ezplatform-demo-assets": "^1.0",
         "ezsystems/comments-bundle": "^6.0@dev",
         "ezsystems/recommendation-bundle": "~2.2@rc",
-        "ezsystems/ezstudio-personalized-block": "~2.0@rc",
+        "ezsystems/ezstudio-personalized-block": "~2.1@rc",
         "ramsey/uuid": "^3.5",
         "gregwar/captcha": "^1.1",
         "kaliop/ezmigrationbundle": "^4.0",

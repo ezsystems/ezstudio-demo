@@ -1,6 +1,5 @@
 .personalized {
   background: #fff;
-  border: 1px solid #e2e2e2;
   margin: 0;
 }
 
@@ -22,12 +21,10 @@
   height: 135px;
 }
 
-.personalized.horizontal-carousel-view,
 .personalized.horizontal-view {
   min-height: 112px;
 }
 
-.personalized.horizontal-carousel-view h4,
 .personalized.horizontal-view h4 {
   display: none;
 }
@@ -43,5 +40,21 @@
 
   .personalized.horizontal-view .class-article {
     padding: 10px;
+  }
+}
+
+.landing-page__zones {
+  .col-4,
+  .col-md-4,
+  .bs-col-4,
+  .col-6,
+  .col-md-6,
+  .bs-col-6 {
+    .landing-page__zone .recommendations {
+      flex-direction: column;
+      .class-article {
+        width: 100%;
+      }
+    }
   }
 }
