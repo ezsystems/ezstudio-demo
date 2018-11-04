@@ -150,6 +150,11 @@ $block-contentlist: '.block-contentlist';
             }
 
             &__icon-wrapper {
+                .ez-icon {
+                    width: 32px;
+                    height: 32px;
+                }
+
                 background: $orange-dark;
             }
         }

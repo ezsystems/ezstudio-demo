@@ -56,7 +56,7 @@ ezplatform_page_fieldtype:
         tastes:
             name: Tastes
             category: default
-            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#file'
+            thumbnail: '/assets/images/page_builder/blocks/tastes.svg#tastes'
             attributes:
                 contentId:
                     type: 'embed'

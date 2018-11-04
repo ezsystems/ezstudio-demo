@@ -157,7 +157,7 @@ ezplatform_page_fieldtype:
 
                 home:
                     template: '@ezdesign/blocks/tastes/home.html.twig'
-                    name: 'Home page layout - tastes list'
+                    name: 'Home page'
 
         gallery:
             views:
