@@ -10,25 +10,33 @@
 
 <div class="container">
     <div class="landing-page__zones landing-page__zones--grid-2-1_2-1">
-        <div class="landing-page__zone landing-page__zone--{{ zones[1].id }}" data-ez-zone-id="{{ zones[1].id }}">
-            {% if zones[1].blocks %}
-                {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[1].blocks} %}
-            {% endif %}
+        <div class="bs-col-8">
+            <div class="landing-page__zone landing-page__zone--{{ zones[1].id }}" data-ez-zone-id="{{ zones[1].id }}">
+                {% if zones[1].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[1].blocks} %}
+                {% endif %}
+            </div>
         </div>
-        <div class="landing-page__zone landing-page__zone--{{ zones[2].id }}" data-ez-zone-id="{{ zones[2].id }}">
-            {% if zones[2].blocks %}
-                {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[2].blocks} %}
-            {% endif %}
+        <div class="bs-col-4">
+            <div class="landing-page__zone landing-page__zone--{{ zones[2].id }}" data-ez-zone-id="{{ zones[2].id }}">
+                {% if zones[2].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[2].blocks} %}
+                {% endif %}
+            </div>
         </div>
-        <div class="landing-page__zone landing-page__zone--{{ zones[3].id }}" data-ez-zone-id="{{ zones[3].id }}">
-            {% if zones[3].blocks %}
-                {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[3].blocks} %}
-            {% endif %}
+        <div class="bs-col-8">
+            <div class="landing-page__zone landing-page__zone--{{ zones[3].id }}" data-ez-zone-id="{{ zones[3].id }}">
+                {% if zones[3].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[3].blocks} %}
+                {% endif %}
+            </div>
         </div>
-        <div class="landing-page__zone landing-page__zone--{{ zones[4].id }}" data-ez-zone-id="{{ zones[4].id }}">
-            {% if zones[4].blocks %}
-                {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[4].blocks} %}
-            {% endif %}
+        <div class="bs-col-4">
+            <div class="landing-page__zone landing-page__zone--{{ zones[4].id }}" data-ez-zone-id="{{ zones[4].id }}">
+                {% if zones[4].blocks %}
+                    {% include '@ezdesign/zone/zone.html.twig' with {'blocks': zones[4].blocks} %}
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
