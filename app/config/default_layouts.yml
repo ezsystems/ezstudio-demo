@@ -137,10 +137,6 @@ ezplatform_page_fieldtype:
 
         contentlist:
             views:
-                blog:
-                    template: '@ezdesign/blocks/contentlist/blog.html.twig'
-                    name: 'Blog list'
-
                 cards:
                     template: '@ezdesign/blocks/contentlist/cards.html.twig'
                     name: 'Cards'
@@ -148,6 +144,11 @@ ezplatform_page_fieldtype:
                 list:
                     template: '@ezdesign/blocks/contentlist/list.html.twig'
                     name: 'List'
+
+                blog:
+                    template: '@ezdesign/blocks/contentlist/blog.html.twig'
+                    name: 'Blog'
+
         banner:
             views:
                 banner:
@@ -211,15 +212,15 @@ ezplatform_page_fieldtype:
 
         collection:
             views:
-                list:
-                    template: '@ezdesign/blocks/collection/list.html.twig'
-                    name: 'List'
-                    options:
-                        match: [article, blog_post, image, product, place]
-
                 cards:
                     template: '@ezdesign/blocks/collection/cards.html.twig'
                     name: 'Cards'
+                    options:
+                        match: [article, blog_post, image, product, place]
+
+                list:
+                    template: '@ezdesign/blocks/collection/list.html.twig'
+                    name: 'List'
                     options:
                         match: [article, blog_post, image, product, place]
 
