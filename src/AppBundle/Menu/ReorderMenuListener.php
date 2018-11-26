@@ -20,6 +20,10 @@ class ReorderMenuListener
     {
         $menu = $event->getMenu();
 
+        if (!$menu->getChild('eztags')) {
+            return;
+        }
+
         $manipulator = new MenuManipulator();
         $manipulator->moveToLastPosition($menu['eztags']);
     }
