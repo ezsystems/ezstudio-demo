@@ -54,6 +54,15 @@
     margin: 0;
 }
 
+.carousel-item {
+    height: 500px;
+
+    .ezimage-field img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
 .col-cuisine {
     margin: 0;
     padding: 0;
