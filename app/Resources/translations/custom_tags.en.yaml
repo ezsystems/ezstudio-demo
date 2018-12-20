@@ -24,3 +24,13 @@ ezrichtext.custom_tags.ezfacebook.label: Facebook
 ezrichtext.custom_tags.ezfacebook.description: ''
 ezrichtext.custom_tags.ezfacebook.attributes.post_url.label: 'Post URL'
 ezrichtext.custom_tags.ezfacebook.attributes.width.label: Width
+
+# factbox
+ezrichtext.custom_tags.factbox.label: Factbox
+ezrichtext.custom_tags.factbox.description: ''
+ezrichtext.custom_tags.factbox.attributes.title.label: Title
+
+# call to action
+ezrichtext.custom_tags.call_to_action.label: 'Call to action'
+ezrichtext.custom_tags.call_to_action.description: ''
+ezrichtext.custom_tags.call_to_action.attributes.style.label: 'Button color'
