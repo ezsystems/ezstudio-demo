@@ -1,0 +1,46 @@
+ezpublish:
+    system:
+        default:
+            workflows:
+                article_workflow:
+                    name: 'Article Workflow'
+                    matchers:
+                        content_type: article
+                        content_status: draft
+                    stages:
+                        draft:
+                            label: 'Draft'
+                            color: '#aaa'
+                        design:
+                            label: 'Design'
+                            color: '#9ff'
+                        proofread:
+                            label: 'Proofread'
+                            color: '#99f'
+                        done:
+                            color: '#0f0'
+                            last_stage: true
+                    initial_stage: draft
+                    transitions:
+                        to_design:
+                            from: draft
+                            to: design
+                            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#approved'
+                            label: 'Send to Design'
+                        to_proofread:
+                            from: design
+                            to: proofread
+                            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#approved'
+                            label: 'Send to Proofread'
+                        done:
+                            from: proofread
+                            to: done
+                            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#approved'
+                        back_to_draft:
+                            reverse: to_design
+                            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#rejected'
+                            label: 'Back to Draft'
+                        back_to_design:
+                            reverse: to_proofread
+                            icon: '/bundles/ezplatformadminui/img/ez-icons.svg#rejected'
+                            label: 'Back to Design'
