@@ -16,7 +16,7 @@ ezpublish:
                             color: '#cf3d84'
                         proofread:
                             label: 'Proofread'
-                            color: '#99f'
+                            color: '#079992'
                         done:
                             color: '#0f0'
                             last_stage: true
