@@ -13,7 +13,7 @@ ezpublish:
                             color: '#4a69bd'
                         design:
                             label: 'Design'
-                            color: '#9ff'
+                            color: '#cf3d84'
                         proofread:
                             label: 'Proofread'
                             color: '#99f'
