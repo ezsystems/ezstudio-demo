@@ -10,7 +10,7 @@ ezpublish:
                     stages:
                         draft:
                             label: 'Draft'
-                            color: '#aaa'
+                            color: '#4a69bd'
                         design:
                             label: 'Design'
                             color: '#9ff'
