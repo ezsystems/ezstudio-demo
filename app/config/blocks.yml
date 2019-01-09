@@ -1,5 +1,9 @@
 ezplatform_page_fieldtype:
     blocks:
+        richtext:
+
+        embed:
+
         hero:
             name: Hero
             category: default
@@ -26,6 +30,18 @@ ezplatform_page_fieldtype:
                             options:
                                 pattern: '/[0-9]+/'
                             message: Choose a Content item
+
+        banner:
+
+        contentlist:
+
+        collection:
+
+        schedule:
+
+        gallery:
+
+        video:
 
         places:
             name: Places
@@ -79,6 +95,8 @@ ezplatform_page_fieldtype:
                                 pattern: '/^[1-9][0-9]*$/'
                             message: Limit must be a number greater than 0
 
-        contentlist:
-            configuration_template: '@EzPlatformPageBuilder/page_builder/block/config/content_list.html.twig'
-            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#contentlist'
+        form:
+
+        rss:
+
+        tag:
