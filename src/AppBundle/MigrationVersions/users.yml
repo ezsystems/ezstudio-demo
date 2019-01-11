@@ -31,6 +31,12 @@
 #    identifier: ref_section__media
 #    value: 3
 
+-
+    type: reference
+    mode: set
+    identifier: ref_location__media
+    value: 43 #locationId
+
 # user content type
 -
     type: content_type
@@ -188,6 +194,42 @@
     references:
         -
             identifier: ref_user_group__app_contributors
+            attribute: user_group_id
+
+-
+    type: user_group
+    mode: create
+    parent_group_id: 4
+    priority: 0
+    section: 2
+    name: 'Redactors'
+    references:
+        -
+            identifier: ref_user_group__redactors
+            attribute: user_group_id
+
+-
+    type: user_group
+    mode: create
+    parent_group_id: 4
+    priority: 0
+    section: 2
+    name: 'Designers'
+    references:
+        -
+            identifier: ref_user_group__designers
+            attribute: user_group_id
+
+-
+    type: user_group
+    mode: create
+    parent_group_id: 4
+    priority: 0
+    section: 2
+    name: 'Proofreaders'
+    references:
+        -
+            identifier: ref_user_group__proofreaders
             attribute: user_group_id
 
 # users
@@ -359,6 +401,51 @@
          signature: George
          interests:
             - { tag_id: reference:ref_tag_user_segments__chef }
+
+-
+    type: user
+    mode: create
+    first_name: Gerard
+    last_name: Riddle
+    username: gerard
+    email: gerard.riddle@example.com
+    password: publish
+    user_content_type: user
+    groups: [reference:ref_user_group__redactors]
+    references:
+        -
+            identifier: ref_user_gerard
+            attribute: user_id
+
+-
+    type: user
+    mode: create
+    first_name: Nat
+    last_name: Handsoff
+    username: nat
+    email: nat.handsoff@example.com
+    password: publish
+    user_content_type: user
+    groups: [reference:ref_user_group__designers]
+    references:
+        -
+            identifier: ref_user_nat
+            attribute: user_id
+
+-
+    type: user
+    mode: create
+    first_name: Tom
+    last_name: Agree
+    username: tom
+    email: tom.agree@example.com
+    password: publish
+    user_content_type: user
+    groups: [reference:ref_user_group__proofreaders]
+    references:
+        -
+            identifier: ref_user_tom
+            attribute: user_id
 
 ## Roles and permissions
 -
@@ -546,6 +633,165 @@
         -
             type: user
             ids: [reference:ref_user_christine]
+
+-
+    type: role
+    mode: create
+    name: 'Redactor'
+    policies:
+        -
+            module: user
+            function: login
+            limitations: {  }
+        -
+            module: content
+            function: read
+            limitations: {  }
+        -
+            module: content
+            function: versionread
+            limitations: {  }
+        -
+            module: content
+            function: reverserelatedlist
+        -
+            module: tags
+            function: read
+        -
+            module: tags
+            function: view
+        -
+            module: notification
+            function: use
+        -
+            module: section
+            function: view
+        -
+            module: content
+            function: create
+            limitations:
+                - { identifier: Class, values: [article] }
+        -
+            module: content
+            function: edit
+            limitations:
+                - { identifier: WorkflowStage, values: ['article_workflow:draft'] }
+        -
+            module: workflow
+            function: change_stage
+            limitations:
+                - { identifier: WorkflowTransition, values: ['article_workflow:to_design'] }
+
+    assign:
+        -
+            type: group
+            ids: [reference:ref_user_group__redactors]
+
+-
+    type: role
+    mode: create
+    name: 'Designer'
+    policies:
+        -
+            module: user
+            function: login
+            limitations: {  }
+        -
+            module: content
+            function: read
+            limitations: {  }
+        -
+            module: content
+            function: versionread
+            limitations: {  }
+        -
+            module: content
+            function: reverserelatedlist
+        -
+            module: tags
+            function: read
+        -
+            module: tags
+            function: view
+        -
+            module: notification
+            function: use
+        -
+            module: section
+            function: view
+        -
+            module: content
+            function: create
+            limitations:
+                - { identifier: Class, values: [gallery, image] }
+                - { identifier: Node, values: [reference:ref_location__media] }
+        -
+            module: content
+            function: publish
+            limitations:
+                - { identifier: Class, values: [gallery, image] }
+                - { identifier: Node, values: [reference:ref_location__media] }
+        -
+            module: content
+            function: edit
+            limitations:
+                - { identifier: WorkflowStage, values: ['article_workflow:design'] }
+        -
+            module: workflow
+            function: change_stage
+            limitations:
+                - { identifier: WorkflowTransition, values: ['article_workflow:to_proofread', 'article_workflow:back_to_draft'] }
+    assign:
+        -
+            type: group
+            ids: [reference:ref_user_group__designers]
+
+-
+    type: role
+    mode: create
+    name: 'Proofreader'
+    policies:
+        -
+            module: user
+            function: login
+            limitations: {  }
+        -
+            module: content
+            function: read
+            limitations: {  }
+        -
+            module: content
+            function: versionread
+            limitations: {  }
+        -
+            module: content
+            function: reverserelatedlist
+        -
+            module: tags
+            function: read
+        -
+            module: tags
+            function: view
+        -
+            module: notification
+            function: use
+        -
+            module: section
+            function: view
+        -
+            module: content
+            function: edit
+            limitations:
+                - { identifier: WorkflowStage, values: ['article_workflow:proofread'] }
+        -
+            module: workflow
+            function: change_stage
+            limitations:
+                - { identifier: WorkflowTransition, values: ['article_workflow:done', 'article_workflow:back_to_design',  'article_workflow:back_to_draft'] }
+    assign:
+        -
+            type: group
+            ids: [reference:ref_user_group__proofreaders]
 
 -
     type: reference

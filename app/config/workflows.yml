@@ -6,7 +6,6 @@ ezpublish:
                     name: 'Article Workflow'
                     matchers:
                         content_type: article
-                        content_status: draft
                     stages:
                         draft:
                             label: 'Draft'

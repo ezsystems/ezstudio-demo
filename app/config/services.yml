@@ -119,3 +119,9 @@ services:
     AppBundle\Menu\ReorderMenuListener:
         tags:
             - { name: kernel.event_listener, event: ezplatform_admin_ui.menu_configure.main_menu, method: moveTagsToLast, priority: -45 }
+
+    AppBundle\Event\Workflow\PublishOnLastStageSubscriber:
+        arguments:
+            $publishOnLastStageWorkflows: '%app.workflow.publish_on_last_stage%'
+
+    AppBundle\Event\Subscriber\EndWorkflowSubscriber: ~
