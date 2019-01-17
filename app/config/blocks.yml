@@ -1,8 +1,8 @@
 ezplatform_page_fieldtype:
     blocks:
-        richtext:
+        richtext: ~
 
-        embed:
+        embed: ~
 
         hero:
             name: Hero
@@ -31,17 +31,17 @@ ezplatform_page_fieldtype:
                                 pattern: '/[0-9]+/'
                             message: Choose a Content item
 
-        banner:
+        banner: ~
 
-        contentlist:
+        contentlist: ~
 
-        collection:
+        collection: ~
 
-        schedule:
+        schedule: ~
 
-        gallery:
+        gallery: ~
 
-        video:
+        video: ~
 
         places:
             name: Places
@@ -95,8 +95,8 @@ ezplatform_page_fieldtype:
                                 pattern: '/^[1-9][0-9]*$/'
                             message: Limit must be a number greater than 0
 
-        form:
+        form: ~
 
-        rss:
+        rss: ~
 
-        tag:
+        tag: ~
