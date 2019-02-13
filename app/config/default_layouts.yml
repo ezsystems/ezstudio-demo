@@ -136,6 +136,7 @@ ezplatform_page_fieldtype:
                     name: 'Hero'
 
         contentlist:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#contentlist'
             views:
                 cards:
                     template: '@ezdesign/blocks/contentlist/cards.html.twig'
@@ -150,12 +151,14 @@ ezplatform_page_fieldtype:
                     name: 'Blog'
 
         banner:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#banner'
             views:
                 banner:
                     template: '@ezdesign/blocks/banner/banner.html.twig'
                     name: 'Banner'
 
         embed:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#embed'
             views:
                 embed:
                     template: '@ezdesign/blocks/embed/embed.html.twig'
@@ -193,24 +196,28 @@ ezplatform_page_fieldtype:
                     name: 'Home page'
 
         gallery:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#gallery'
             views:
                 gallery:
                     template: '@ezdesign/blocks/gallery/gallery.html.twig'
                     name: 'Gallery'
 
         rss:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#rss'
             views:
                 list:
                     template: '@ezdesign/blocks/rss/list.html.twig'
                     name: 'List'
 
         video:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#video'
             views:
                 player:
                     template: '@ezdesign/blocks/video/player.html.twig'
                     name: 'Player'
 
         collection:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#collection'
             views:
                 cards:
                     template: '@ezdesign/blocks/collection/cards.html.twig'
@@ -225,6 +232,7 @@ ezplatform_page_fieldtype:
                         match: [article, blog_post, image, product, place]
 
         schedule:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#schedule'
             views:
                 cards:
                     template: '@ezdesign/blocks/schedule/cards.html.twig'
@@ -233,3 +241,9 @@ ezplatform_page_fieldtype:
                 list:
                     template: '@ezdesign/blocks/schedule/list.html.twig'
                     name: 'List'
+
+        tag:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#tag'
+
+        richtext:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#paragraph'

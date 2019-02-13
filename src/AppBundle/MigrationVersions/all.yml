@@ -447,7 +447,7 @@
             type: ezstring
             name: Title
             description: 'Shown at the top of blog post.'
-            required: false
+            required: true
             searchable: true
             info-collector: false
             disable-translation: false
@@ -469,7 +469,7 @@
             type: ezrichtext
             name: Body
             description: 'Content of the blog post.'
-            required: false
+            required: true
             searchable: true
             info-collector: false
             disable-translation: false

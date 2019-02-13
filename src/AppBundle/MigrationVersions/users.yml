@@ -571,7 +571,7 @@
             limitations:
                 -
                     identifier: Section
-                    values: [reference:ref_section__standard, reference:ref_section__media, reference:ref_section__cuisines]
+                    values: [reference:ref_section__standard, reference:ref_section__media, reference:ref_section__cuisines, reference:ref_section__form]
 
 # error: Argument 'policy' is invalid: The limitation 'Section' is not applicable on 'content/pdf'
 #        -

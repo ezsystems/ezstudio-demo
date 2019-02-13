@@ -56,8 +56,8 @@ class AppKernel extends Kernel
             new Lolautruche\EzCoreExtraBundle\EzCoreExtraBundle(),
             new Netgen\TagsBundle\NetgenTagsBundle(),
             // eZ Platform EE
-            new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
             new EzSystems\EzPlatformPageFieldTypeBundle\EzPlatformPageFieldTypeBundle(),
+            new EzSystems\EzPlatformPageBuilderBundle\EzPlatformPageBuilderBundle(),
             new EzSystems\EzPlatformFormBuilderBundle\EzPlatformFormBuilderBundle(),
             new EzSystems\DateBasedPublisherBundle\EzSystemsDateBasedPublisherBundle(),
             new EzSystems\FlexWorkflowBundle\EzSystemsFlexWorkflowBundle(),
