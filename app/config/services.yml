@@ -55,16 +55,6 @@ services:
         arguments:
             $queryType: '@AppBundle\QueryType\BlockQueryType'
 
-    app.controller.recommendations:
-        class: AppBundle\Controller\RecommendationsController
-        public: true
-        arguments:
-            - '@ezpublish.api.service.location'
-            - '@ezpublish.api.service.search'
-            - '@ezpublish.api.service.content'
-            - '@router'
-            - '@templating'
-
     AppBundle\Twig\RecommendationsExtension:
         arguments:
             - '@ezpublish.config.resolver'
@@ -101,8 +91,7 @@ services:
 
     AppBundle\Event\Listener\RenderMenuListener:
         arguments:
-            $personalizationCustomerId: '%ez_recommendation.default.yoochoose.customer_id%'
-            $personalizationLicenseKey: '%ez_recommendation.default.yoochoose.license_key%'
+            $credentialsChecker: '@EzSystems\EzRecommendationClient\Config\EzRecommendationClientCredentialsChecker'
         tags:
             - { name: kernel.event_listener, event: ezplatform_admin_ui.menu_configure.main_menu, method: renderMenu, priority: -45 }
 

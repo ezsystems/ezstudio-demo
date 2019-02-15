@@ -54,8 +54,8 @@ class RecommendationsExtension extends Twig_Extension
      */
     public function isRecommendationsEnabled()
     {
-        if ($this->configResolver->hasParameter('yoochoose.license_key', 'ez_recommendation') &&
-            !empty($this->configResolver->getParameter('yoochoose.license_key', 'ez_recommendation'))) {
+        if ($this->configResolver->hasParameter('recommendation.license_key', 'ez_recommendation') &&
+            !empty($this->configResolver->getParameter('recommendation.license_key', 'ez_recommendation'))) {
             return true;
         }
 

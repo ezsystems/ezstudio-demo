@@ -33,5 +33,4 @@ return PhpCsFixer\Config::create()
                 'ezpublish_legacy',
             ])
             ->files()->name('*.php')
-    )
-;
+    );

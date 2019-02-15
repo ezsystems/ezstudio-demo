@@ -247,3 +247,14 @@ ezplatform_page_fieldtype:
 
         richtext:
             thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#paragraph'
+
+        personalized:
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#personalize-block'
+            views:
+                cards:
+                    template: '@ezdesign/blocks/personalized/cards.html.twig'
+                    name: 'Cards'
+
+                list:
+                    template: '@ezdesign/blocks/personalized/list.html.twig'
+                    name: 'List'

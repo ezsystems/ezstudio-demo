@@ -11,14 +11,16 @@
 
 {% block ez_recommendations %}
     {% if ez_reco_enabled() and not location.isDraft %}
-        {{ yc_show_recommendations(
-            contentId = content.id,
-            scenario = 'blog',
-            limit = '3',
-            contentType = 'blog_post',
-            template = 'recommendations',
-            fields = ['title', 'intro', 'image', 'uri']
-        ) }}
+        <div class="container">
+            {{ render_esi(controller('EzSystemsPersonalizedBlockBundle:Personalized:showRecommendations', {
+                'contextItems': content.id,
+                'scenario': 'front',
+                'outputTypeId': 'blog_post',
+                'limit': 3,
+                'template': 'EzRecommendationClientBundle::recommendations.html.twig',
+                'attributes': ['title', 'intro', 'image', 'uri']
+            })) }}
+        </div>
     {% endif %}
 {% endblock %}
 

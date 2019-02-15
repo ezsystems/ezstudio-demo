@@ -62,7 +62,7 @@ ezplatform.ee.workflow:
     resource: '@EzPlatformWorkflowBundle/Resources/config/routing.yml'
 
 recommendationBundleRestRoutes:
-    resource: "@EzSystemsRecommendationBundle/Resources/config/routing_rest.yml"
+    resource: "@EzRecommendationClientBundle/Resources/config/routing_rest.yml"
     prefix:   %ezpublish_rest.path_prefix%
 
 fos.js_routing:

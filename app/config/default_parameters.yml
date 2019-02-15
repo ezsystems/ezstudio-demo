@@ -58,9 +58,10 @@ parameters:
     ezplatform.session.save_path: '%env(SESSION_SAVE_PATH)%'
 
     # Recommendation Bundle params
-    ez_recommendation.default.yoochoose.customer_id: '%env(int:RECOMMENDATIONS_CUSTOMER_ID)%'
-    ez_recommendation.default.yoochoose.license_key: '%env(RECOMMENDATIONS_LICENSE_KEY)%'
+    ez_recommendation.default.recommendation.customer_id: '%env(int:RECOMMENDATION_CUSTOMER_ID)%'
+    ez_recommendation.default.recommendation.license_key: '%env(RECOMMENDATION_LICENSE_KEY)%'
     ez_recommendation.default.server_uri: '%env(PUBLIC_SERVER_URI)%'
+    ez_recommendation.response.random_content_types: []
 
     # Fallback values for when environment variables do not exist
 
@@ -91,8 +92,8 @@ parameters:
 
     env(SESSION_SAVE_PATH): '%kernel.project_dir%/var/sessions/%kernel.environment%'
 
-    env(RECOMMENDATIONS_CUSTOMER_ID):   ~
-    env(RECOMMENDATIONS_LICENSE_KEY):   ~
+    env(RECOMMENDATION_CUSTOMER_ID):   ~
+    env(RECOMMENDATION_LICENSE_KEY):   ~
     env(PUBLIC_SERVER_URI):             ~
 
     # set here for BC reasons, change them in parameters.yml

@@ -11,7 +11,9 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" },
+        { "type": "vcs", "url": "https://github.com/ciastektk/ezrecommendation-client" },
+        { "type": "vcs", "url": "https://github.com/ciastektk/ezstudio-personalized-block" }
     ],
     "replace": {
         "ezsystems/ezstudio-demo": "*",
@@ -62,9 +64,9 @@
         "ezsystems/ezplatform-user": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^1.1@dev",
         "ezsystems/ezpublish-kernel": "^7.5@dev",
-        "ezsystems/ezstudio-personalized-block": "~2.1@rc",
+        "ezsystems/ezstudio-personalized-block": "dev-ezplatform-personalized-block",
         "ezsystems/flex-workflow": "^3.2@dev",
-        "ezsystems/recommendation-bundle": "~2.2@rc",
+        "ezsystems/ezrecommendation-client": "dev-EZEE-2706-EzRecommendationClient",
         "ezsystems/repository-forms": "^2.5@dev",
         "ezsystems/symfony-tools": "~1.0.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",
@@ -90,7 +92,7 @@
         "symfony/thanks": "^1.1.0",
         "symfony/webpack-encore-bundle": "^1.0.0",
         "twig/extensions": "^1.5.3",
-        "twig/twig": "^2.5",
+        "twig/twig": "2.7.1",
         "white-october/pagerfanta-bundle": "^1.2.2",
         "willdurand/js-translation-bundle": "^2.6.6"
     },

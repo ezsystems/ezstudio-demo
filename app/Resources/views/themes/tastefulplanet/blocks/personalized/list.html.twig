@@ -1,0 +1,23 @@
+{% extends ':blocks:_block.html.twig' %}
+
+{% block block_identifier %}personalized{% endblock %}
+{% block block_class %}{{ block_class }}{% endblock %}
+
+{% block block_content %}
+    {% if block_name is defined %}
+        <div class="row block-header">
+            <span class="block-header__name">{{ block_name }}</span>
+        </div>
+    {% endif %}
+
+    <div class="personalized">
+        {{ render_esi(controller('EzSystemsPersonalizedBlockBundle:Personalized:showRecommendations', {
+            'contextItems': block_context.content is defined ? block_context.content.id : '',
+            'scenario': scenario,
+            'outputTypeId': output,
+            'limit': number,
+            'template': '@ezdesign/personalized/list.html.twig',
+            'attributes': ['title', 'intro', 'image', 'uri']
+        })) }}
+    </div>
+{% endblock %}

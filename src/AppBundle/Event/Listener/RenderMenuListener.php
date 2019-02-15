@@ -11,6 +11,7 @@ namespace AppBundle\Event\Listener;
 use AppBundle\User\UserGroups;
 use eZ\Publish\Core\MVC\Symfony\Security\Authorization\Attribute;
 use EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent;
+use EzSystems\EzRecommendationClient\Config\CredentialsCheckerInterface;
 use Knp\Menu\ItemInterface;
 use Knp\Menu\Util\MenuManipulator;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
@@ -25,37 +26,31 @@ class RenderMenuListener
     /** @var \Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface */
     private $authorizationChecker;
 
+    /** @var \EzSystems\EzRecommendationClient\Config\CredentialsCheckerInterface */
+    private $credentialsChecker;
+
     /** @var \AppBundle\User\UserGroups */
     private $userGroups;
 
     /** @var \Symfony\Component\Translation\TranslatorInterface */
     private $translator;
 
-    /** @var string */
-    private $personalizationLicenseKey;
-
-    /** @var int */
-    private $personalizationCustomerId;
-
     /**
      * @param \Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface $authorizationChecker
+     * @param \EzSystems\EzRecommendationClient\Config\CredentialsCheckerInterface $credentialsChecker
      * @param \AppBundle\User\UserGroups $userGroups
      * @param \Symfony\Component\Translation\TranslatorInterface $translator
-     * @param int|null $personalizationCustomerId
-     * @param string|null $personalizationLicenseKey
      */
     public function __construct(
         AuthorizationCheckerInterface $authorizationChecker,
+        CredentialsCheckerInterface $credentialsChecker,
         UserGroups $userGroups,
-        TranslatorInterface $translator,
-        ?int $personalizationCustomerId,
-        ?string $personalizationLicenseKey
+        TranslatorInterface $translator
     ) {
         $this->authorizationChecker = $authorizationChecker;
+        $this->credentialsChecker = $credentialsChecker;
         $this->userGroups = $userGroups;
         $this->translator = $translator;
-        $this->personalizationCustomerId = $personalizationCustomerId;
-        $this->personalizationLicenseKey = $personalizationLicenseKey;
     }
 
     /** @param \EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent $event */
@@ -87,7 +82,7 @@ class RenderMenuListener
     {
         $attribute = new Attribute(self::PERSONALIZATION_MODULE, self::PERSONALIZATION_FUNCTION);
 
-        if ($this->authorizationChecker->isGranted($attribute) && $this->hasPersonalizationCredentials()) {
+        if ($this->authorizationChecker->isGranted($attribute) && $this->credentialsChecker->hasCredentials()) {
             $item->addChild(self::PERSONALIZATION_MODULE, [
                 'label' => $this->translator->trans('Personalization'),
                 'uri' => 'https://admin.yoochoose.net/?ez.no=1#/scenarios/',
@@ -99,11 +94,5 @@ class RenderMenuListener
 
             $menuManipulator->moveToLastPosition($item[self::PERSONALIZATION_MODULE]);
         }
-    }
-
-    /** @return bool */
-    private function hasPersonalizationCredentials(): bool
-    {
-        return !empty($this->personalizationCustomerId) && !empty($this->personalizationLicenseKey);
     }
 }
