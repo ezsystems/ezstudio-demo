@@ -1,0 +1,53 @@
+tables:
+    # NetGen Tags Bundle
+    eztags:
+        indexes:
+            idx_eztags_keyword_id: { fields: [keyword, id] }
+            idx_eztags_keyword: { fields: [keyword] }
+        uniqueConstraints:
+            idx_eztags_remote_id: { fields: [remote_id] }
+        id:
+            id: { type: integer, nullable: false, options: { autoincrement: true } }
+        fields:
+            parent_id: { type: integer, nullable: false, options: { default: '0' } }
+            main_tag_id: { type: integer, nullable: false, options: { default: '0' } }
+            keyword: { type: string, nullable: false, length: 255, options: { default: '' } }
+            depth: { type: integer, nullable: false, options: { default: '1' } }
+            path_string: { type: string, nullable: false, length: 255, options: { default: '' } }
+            modified: { type: integer, nullable: false, options: { default: '0' } }
+            remote_id: { type: string, nullable: false, length: 100, options: { default: '' } }
+            main_language_id: { type: integer, nullable: false, options: { default: '0' } }
+            language_mask: { type: integer, nullable: false, options: { default: '0' } }
+    eztags_attribute_link:
+        indexes:
+            idx_eztags_attr_link_kid_oaid_oav: { fields: [keyword_id, objectattribute_id, objectattribute_version] }
+            idx_eztags_attr_link_kid_oid: { fields: [keyword_id, object_id] }
+            idx_eztags_attr_link_oaid_oav: { fields: [objectattribute_id, objectattribute_version] }
+            idx_eztags_attr_link_keyword_id: { fields: [keyword_id] }
+        id:
+            id: { type: integer, nullable: false, options: { autoincrement: true } }
+        fields:
+            keyword_id: { type: integer, nullable: false, options: { default: '0' } }
+            objectattribute_id: { type: integer, nullable: false, options: { default: '0' } }
+            objectattribute_version: { type: integer, nullable: false, options: { default: '0' } }
+            object_id: { type: integer, nullable: false, options: { default: '0' } }
+            priority: { type: integer, nullable: false, options: { default: '0' } }
+    eztags_keyword:
+        id:
+            keyword_id: { type: integer, nullable: false, options: { default: '0' } }
+            locale: { type: string, nullable: false, length: 255, options: { default: '' } }
+        fields:
+            language_id: { type: integer, nullable: false, options: { default: '0' } }
+            keyword: { type: string, nullable: false, length: 255, options: { default: '' } }
+            status: { type: integer, nullable: false, options: { default: '0' } }
+
+    # Nova eZ SEO Bundle
+    novaseo_meta:
+        indexes:
+            novaseo_idx_content: { fields: [objectattribute_id, objectattribute_version] }
+        id:
+            objectattribute_id: { type: bigint, nullable: false }
+            meta_name: { type: string, nullable: false, length: 255 }
+            objectattribute_version: { type: integer, nullable: false }
+        fields:
+            meta_content: { type: string, nullable: false, length: 255 }
