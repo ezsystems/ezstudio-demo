@@ -784,10 +784,15 @@
             limitations:
                 - { identifier: WorkflowStage, values: ['article_workflow:proofread'] }
         -
+            module: content
+            function: publish
+            limitations:
+                - { identifier: Class, values: [article] }
+        -
             module: workflow
             function: change_stage
             limitations:
-                - { identifier: WorkflowTransition, values: ['article_workflow:done', 'article_workflow:back_to_design',  'article_workflow:back_to_draft'] }
+                - { identifier: WorkflowTransition, values: ['article_workflow:back_to_design',  'article_workflow:back_to_draft'] }
     assign:
         -
             type: group

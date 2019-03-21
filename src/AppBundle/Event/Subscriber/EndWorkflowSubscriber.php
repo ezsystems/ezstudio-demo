@@ -103,12 +103,6 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
             }
 
             $workflowCurrentState = !empty($workflowMetadata->markings) ? end($workflowMetadata->markings)->name : '';
-            $workflowInitialState = $workflowMetadata->workflow->getDefinition()->getInitialPlace();
-
-            if ($workflowCurrentState !== $workflowInitialState) {
-                continue;
-            }
-
             $transitions = $workflowMetadata->workflow->getDefinition()->getTransitions();
             $lastStage = $this->getLastStage($transitions, $workflow->getName());
 
