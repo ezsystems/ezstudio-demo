@@ -2,8 +2,8 @@ ezplatform_page_fieldtype:
     layouts:
         '1':
             identifier: '1'
-            name: '1 Zone, 1 Column'
-            description: 'One zone in one column'
+            name: '1 Column'
+            description: '1 Column'
             thumbnail: '/assets/images/page_builder/layouts/1.png'
             template: '@ezdesign/layouts/1.html.twig'
             zones:
@@ -12,8 +12,8 @@ ezplatform_page_fieldtype:
 
         '1_2':
             identifier: '1_2'
-            name: '2 Zone, 2 Column'
-            description: 'Two zones in columns, narrow left, wide right'
+            name: '2 Columns'
+            description: '2 Columns'
             thumbnail: '/assets/images/page_builder/layouts/1_2.png'
             template: '@ezdesign/layouts/1_2.html.twig'
             zones:
@@ -22,24 +22,10 @@ ezplatform_page_fieldtype:
                 second:
                     name: 'Second zone'
 
-        '1_2__1':
-            identifier: '1_2__1'
-            name: '3 Zone, 2+1 Column'
-            description: 'Three zones, two columns, narrow left, wide right in first row and one row'
-            thumbnail: '/assets/images/page_builder/layouts/1_2__1.png'
-            template: '@ezdesign/layouts/1_2__1.html.twig'
-            zones:
-                first:
-                    name: 'First zone'
-                second:
-                    name: 'Second zone'
-                third:
-                    name: 'Third zone'
-
         '2_1':
             identifier: '2_1'
-            name: '2 Zone, 2 Column'
-            description: 'Two zones in columns, wide left, narrow right'
+            name: '2 Columns'
+            description: '2 Columns'
             thumbnail: '/assets/images/page_builder/layouts/2_1.png'
             template: '@ezdesign/layouts/2_1.html.twig'
             zones:
@@ -48,12 +34,26 @@ ezplatform_page_fieldtype:
                 second:
                     name: 'Second zone'
 
-        '2_1__1':
-            identifier: '2_1__1'
-            name: '3 Zone, 2+1 Column'
-            description: 'Three zones, two columns, wide left, narrow right in first row and one row'
-            thumbnail: '/assets/images/page_builder/layouts/2_1__1.png'
-            template: '@ezdesign/layouts/2_1__1.html.twig'
+        '1__1_2':
+            identifier: '1__1_2'
+            name: '2 columns, wide top'
+            description: '2 columns, wide top'
+            thumbnail: '/assets/images/page_builder/layouts/1__1_2.png'
+            template: '@ezdesign/layouts/1__1_2.html.twig'
+            zones:
+                first:
+                    name: 'First zone'
+                second:
+                    name: 'Second zone'
+                third:
+                    name: 'Third zone'
+
+        '1__2_1':
+            identifier: '1__2_1'
+            name: '2 columns, wide top'
+            description: '2 columns, wide top'
+            thumbnail: '/assets/images/page_builder/layouts/1__2_1.png'
+            template: '@ezdesign/layouts/1__2_1.html.twig'
             zones:
                 first:
                     name: 'First zone'
@@ -65,7 +65,7 @@ ezplatform_page_fieldtype:
         '1w__1__1w':
             identifier: '1w__1__1w'
             name: '3 Zone, 1 Column'
-            description: 'Three zones, one column, two wide zones'
+            description: '1 column, 3 zones'
             thumbnail: '/assets/images/page_builder/layouts/1w__1__1w.png'
             template: '@ezdesign/layouts/1w__1__1w.html.twig'
             zones:
@@ -78,9 +78,9 @@ ezplatform_page_fieldtype:
 
         '1w__2_1__2_1__1w':
             identifier: '1w__2_1__2_1__1w'
-            name: '6 Zones, mixed columns'
-            description: '6 Zones, mixed columns'
-            thumbnail: '/assets/images/page_builder/layouts/1w__1__1w.png'
+            name: 'Mixed columns, 6 Zones'
+            description: 'Mixed columns, 6 Zones'
+            thumbnail: '/assets/images/page_builder/layouts/1w__2_1__2_1__1w.png'
             template: '@ezdesign/layouts/1w__2_1__2_1__1w.html.twig'
             zones:
                 top:
