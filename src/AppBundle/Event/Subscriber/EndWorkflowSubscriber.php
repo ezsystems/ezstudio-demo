@@ -147,6 +147,10 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
                 break;
             }
 
+            if (in_array($matched[0]->getName(), $path, true)) {
+                break;
+            }
+
             $path[] = $matched[0]->getName();
 
             if (in_array($workflowCurrentState, $matched[0]->getFroms(), true)) {
