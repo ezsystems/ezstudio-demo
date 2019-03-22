@@ -141,6 +141,12 @@ $block-contentlist: '.block-contentlist';
                 background: $blue-light;
             }
 
+            &__cards {
+                .ezimage-field {
+                    height: 233px;
+                }
+            }
+
             &__icon-wrapper {
                 background: $blue-dark;
             }
