@@ -2,8 +2,8 @@ ezplatform_page_fieldtype:
     layouts:
         '1':
             identifier: '1'
-            name: '1 Column'
-            description: '1 Column'
+            name: '1 column'
+            description: '1 column'
             thumbnail: '/assets/images/page_builder/layouts/1.png'
             template: '@ezdesign/layouts/1.html.twig'
             zones:
@@ -12,8 +12,8 @@ ezplatform_page_fieldtype:
 
         '1_2':
             identifier: '1_2'
-            name: '2 Columns'
-            description: '2 Columns'
+            name: '2 columns'
+            description: '2 columns'
             thumbnail: '/assets/images/page_builder/layouts/1_2.png'
             template: '@ezdesign/layouts/1_2.html.twig'
             zones:
@@ -24,8 +24,8 @@ ezplatform_page_fieldtype:
 
         '2_1':
             identifier: '2_1'
-            name: '2 Columns'
-            description: '2 Columns'
+            name: '2 columns'
+            description: '2 columns'
             thumbnail: '/assets/images/page_builder/layouts/2_1.png'
             template: '@ezdesign/layouts/2_1.html.twig'
             zones:
