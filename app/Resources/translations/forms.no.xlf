@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="3a3450054504dad40b3b692f31b5447555493c54" resname="role.policy.personalization">
+        <source>Personalization</source>
+        <target>Personalization</target>
+        <note>key: role.policy.content</note>
+      </trans-unit>
+      <trans-unit id="15a05b8d0f16962be7057e2fbe43504567783a1e" resname="role.policy.personalization.all_functions">
+        <source>Personalization / All functions</source>
+        <target>Personalization / All functions</target>
+        <note>key: role.policy.personalization.all_functions</note>
+      </trans-unit>
+      <trans-unit id="70a9e2cd11d0d2cf5f8569815f31a08e83c91474" resname="role.policy.personalization.view">
+        <source>Personalization / Show menu item</source>
+        <target>Personalization / Show menu item</target>
+        <note>key: role.policy.personalization.view</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
