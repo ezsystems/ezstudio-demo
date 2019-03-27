@@ -17,7 +17,7 @@
         <note>key: role.policy.personalization.all_functions</note>
       </trans-unit>
       <trans-unit id="edafc6d69ed57b5971c704c6092e404d460c86d3" resname="role.policy.personalization.view">
-        <source>Personalization / Show menu item</source>
+        <source>Personalization / View</source>
         <target>Personnalisation / Voir</target>
         <note>key: role.policy.personalization.view</note>
       </trans-unit>
