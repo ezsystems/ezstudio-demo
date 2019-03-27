@@ -9,6 +9,8 @@ declare(strict_types=1);
 namespace AppBundle\Event\Subscriber;
 
 use eZ\Publish\API\Repository\ContentService;
+use eZ\Publish\API\Repository\PermissionResolver;
+use eZ\Publish\API\Repository\Repository;
 use eZ\Publish\Core\MVC\Symfony\Event\SignalEvent;
 use eZ\Publish\Core\MVC\Symfony\MVCEvents;
 use eZ\Publish\Core\SignalSlot\Signal\ContentService\PublishVersionSignal;
@@ -16,6 +18,7 @@ use EzSystems\EzPlatformWorkflow\Exception\NotFoundException;
 use EzSystems\EzPlatformWorkflow\Registry\WorkflowDefinitionMetadataRegistry;
 use EzSystems\EzPlatformWorkflow\Registry\WorkflowRegistryInterface;
 use EzSystems\EzPlatformWorkflow\Service\WorkflowServiceInterface;
+use EzSystems\EzPlatformWorkflow\Value\WorkflowMetadata;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Workflow\Transition;
 
@@ -33,22 +36,34 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
     /** @var \EzSystems\EzPlatformWorkflow\Registry\WorkflowDefinitionMetadataRegistry */
     private $workflowMetadataRegistry;
 
+    /** @var \EzSystems\FlexWorkflow\API\Repository\RepositoryInterface */
+    private $repository;
+
+    /** @var \eZ\Publish\API\Repository\PermissionResolver */
+    private $permissionResolver;
+
     /**
      * @param \EzSystems\EzPlatformWorkflow\Service\WorkflowServiceInterface $workflowService
      * @param \EzSystems\EzPlatformWorkflow\Registry\WorkflowRegistryInterface $workflowRegistry
      * @param \eZ\Publish\API\Repository\ContentService $contentService
      * @param \EzSystems\EzPlatformWorkflow\Registry\WorkflowDefinitionMetadataRegistry $workflowMetadataRegistry
+     * @param \eZ\Publish\API\Repository\Repository $repository
+     * @param \eZ\Publish\API\Repository\PermissionResolver $permissionResolver
      */
     public function __construct(
         WorkflowServiceInterface $workflowService,
         WorkflowRegistryInterface $workflowRegistry,
         ContentService $contentService,
-        WorkflowDefinitionMetadataRegistry $workflowMetadataRegistry
+        WorkflowDefinitionMetadataRegistry $workflowMetadataRegistry,
+        Repository $repository,
+        PermissionResolver $permissionResolver
     ) {
         $this->workflowService = $workflowService;
         $this->workflowRegistry = $workflowRegistry;
         $this->contentService = $contentService;
         $this->workflowMetadataRegistry = $workflowMetadataRegistry;
+        $this->repository = $repository;
+        $this->permissionResolver = $permissionResolver;
     }
 
     /**
@@ -57,9 +72,7 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            MVCEvents::API_SIGNAL => [
-                ['onPublishVersionSignal', 0],
-            ],
+            MVCEvents::API_SIGNAL => ['onPublishVersionSignal', 0],
         ];
     }
 
@@ -97,7 +110,6 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
         foreach ($supportedWorkflows as $workflow) {
             try {
                 $workflowMetadata = $this->workflowService->loadWorkflowMetadataForContent($content, $workflow->getName());
-
             } catch (NotFoundException $e) {
                 continue;
             }
@@ -111,16 +123,23 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
             }
 
             $transitionsToMake = $this->findPathToInitialStage($transitions, $workflowCurrentState, $lastStage);
-
-            foreach ($transitionsToMake as $transitionToMake) {
-                if ($workflow->can($content, $transitionToMake)) {
-                    $workflow->apply($content, $transitionToMake);
-                }
-            }
+            $this->applyTransitions($transitionsToMake, $workflowMetadata);
         }
     }
 
-    public function getLastStage(array $transitions, string $workflowName)
+    private function applyTransitions(array $transitionsToMake, WorkflowMetadata $workflowMetadata): void
+    {
+        foreach ($transitionsToMake as $transitionToMake) {
+            $this->permissionResolver->sudo(function () use ($workflowMetadata, $transitionToMake) {
+                if ($this->workflowService->can($workflowMetadata, $transitionToMake)) {
+                    $this->workflowService->apply($workflowMetadata, $transitionToMake, '');
+
+                }
+            }, $this->repository);
+        }
+    }
+
+    private function getLastStage(array $transitions, string $workflowName): ?Transition
     {
         $workflowDefinitionMetadata = $this->workflowMetadataRegistry->getWorkflowMetadata($workflowName);
 
