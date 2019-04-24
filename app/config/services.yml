@@ -68,9 +68,15 @@ services:
         tags:
             - { name: twig.extension }
 
-    AppBundle\Event\PlacesBlockListener: ~
+    AppBundle\QueryType\BlockQueryType: ~
 
-    AppBundle\Event\TastesBlockListener: ~
+    AppBundle\Event\Subscriber\PlacesBlockSubscriber:
+        arguments:
+            $queryType: '@AppBundle\QueryType\BlockQueryType'
+
+    AppBundle\Event\Subscriber\TastesBlockSubscriber:
+        arguments:
+            $queryType: '@AppBundle\QueryType\BlockQueryType'
 
     app.controller.recommendations:
         class: AppBundle\Controller\RecommendationsController
