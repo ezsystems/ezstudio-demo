@@ -11,9 +11,7 @@
         }
     ],
     "repositories": [
-        { "type": "composer", "url": "https://updates.ez.no/ttl" },
-        { "type": "vcs", "url": "https://github.com/ciastektk/ezrecommendation-client" },
-        { "type": "vcs", "url": "https://github.com/ciastektk/ezstudio-personalized-block" }
+        { "type": "composer", "url": "https://updates.ez.no/ttl" }
     ],
     "replace": {
         "ezsystems/ezstudio-demo": "*",
@@ -64,9 +62,9 @@
         "ezsystems/ezplatform-user": "^1.0@dev",
         "ezsystems/ezplatform-workflow": "^1.1@dev",
         "ezsystems/ezpublish-kernel": "^7.5@dev",
-        "ezsystems/ezstudio-personalized-block": "dev-ezplatform-personalized-block",
+        "ezsystems/ezstudio-personalized-block": "^3.0@dev",
         "ezsystems/flex-workflow": "^3.2@dev",
-        "ezsystems/ezrecommendation-client": "dev-EZEE-2706-EzRecommendationClient",
+        "ezsystems/ezrecommendation-client": "^1.0@dev",
         "ezsystems/repository-forms": "^2.5@dev",
         "ezsystems/symfony-tools": "~1.0.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^1.6.3",

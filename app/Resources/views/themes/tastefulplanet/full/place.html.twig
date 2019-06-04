@@ -4,15 +4,15 @@
     {% set title = ez_content_name(content) ~ " - " ~ content.contentInfo.publishedDate|localizeddate('short', 'short', app.request.locale) %}
     {{ parent() }}
 
-    {% if ez_reco_enabled() and not location.isDraft %}
+    {% if ez_recommendation_enabled() and not location.isDraft %}
         {% include '@ezdesign/parts/recommendations_header.html.twig' %}
     {% endif %}
 {% endblock %}
 
 {% block ez_recommendations %}
-    {% if ez_reco_enabled() and not location.isDraft %}
+    {% if ez_recommendation_enabled() and not location.isDraft %}
         <div class="container">
-            {{ render_esi(controller('EzSystemsPersonalizedBlockBundle:Personalized:showRecommendations', {
+            {{ render_esi(controller('EzRecommendationClientBundle:Recommendation:showRecommendations', {
                 'contextItems': content.id,
                 'scenario': 'visited',
                 'outputTypeId': 'place',

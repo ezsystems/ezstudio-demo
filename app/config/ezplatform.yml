@@ -169,3 +169,18 @@ nova_ezseo:
                     label: "Twitter - Image"
                     default_pattern: "<image|picture>"
                     icon: "twitter-square"
+
+ezrecommendation:
+    system:
+        default:
+            authentication:
+                customer_id: '%env(int:RECOMMENDATION_CUSTOMER_ID)%'
+                license_key: '%env(RECOMMENDATION_LICENSE_KEY)%'
+            included_content_types: [blog_post, article]
+            random_content_types: [blog_post, article]
+            host_uri: '%env(RECOMMENDATION_HOST_URI)%'
+            export:
+                authentication:
+                    method: 'basic'
+                    login: '%env(int:RECOMMENDATION_CUSTOMER_ID)%'
+                    password: '%env(RECOMMENDATION_LICENSE_KEY)%'
