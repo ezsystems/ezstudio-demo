@@ -9,11 +9,11 @@
                     <div class="info-panel">
                         <h3 class="field-header">{{ 'Top Place to Go'|trans }}</h3>
                         <span class="field-intro">{{ ez_render_field(content, 'intro') }}</span>
-                        {% set description = ez_render_field(content, 'description')|striptags %}
+                        {% set description = ez_render_field(content, 'description') %}
                         <span class="field-caption">
-                             {{ description|length > 340 ? description|slice(0, 340) ~ '...' : description }}
-                         </span>
-
+                            {% set description = description|length > 340 ? description|slice(0, 340) ~ '...' : description %}
+                            {{ description|raw }}
+                        </span>
                         <span class="link">
                              <a href="{{ path(location) }}">{{ 'Lets go'|trans }} {{ ez_render_field(content, 'name') }}</a>
                          </span>
