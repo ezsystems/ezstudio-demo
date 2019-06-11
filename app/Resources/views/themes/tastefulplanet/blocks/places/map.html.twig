@@ -16,7 +16,7 @@
         } only %}
 
         <div class="explore">
-            <a href="{{ path(location) }}" class="btn btn-primary btn-lg btn-block">{{ 'Explore destinations'|trans }}</a>
+            <a href="{{ path( "ez_urlalias", {"contentId": contentId}) }}" class="btn btn-primary btn-lg btn-block">{{ 'Explore destinations'|trans }}</a>
         </div>
     </div>
 {% endblock %}
