@@ -74,7 +74,7 @@
         "kaliop/ezmigrationbundle": "^5.9",
         "knplabs/knp-menu-bundle": "^2.2.1",
         "leafo/scssphp": "^0.7.7",
-        "netgen/tagsbundle": "^3.4",
+        "netgen/tagsbundle": "^3.4.1",
         "novactive/ezseobundle": "^3.0.0@rc",
         "oneup/flysystem-bundle": "^3.0",
         "overblog/graphql-bundle": "^0.11.11",
