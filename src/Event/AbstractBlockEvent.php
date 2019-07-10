@@ -17,7 +17,7 @@ use eZ\Publish\API\Repository\Exceptions\InvalidArgumentException;
 use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\Exceptions\UnauthorizedException;
 use eZ\Publish\Core\QueryType\QueryType as QueryTypeInterface;
-//use EzSystems\PlatformHttpCacheBundle\Handler\TagHandlerInterface;
+use EzSystems\PlatformHttpCacheBundle\Handler\TagHandler;
 
 abstract class AbstractBlockEvent
 {
@@ -30,30 +30,25 @@ abstract class AbstractBlockEvent
     /** @var \eZ\Publish\Core\QueryType\QueryType */
     protected $queryType;
 
-//    /** @var \EzSystems\PlatformHttpCacheBundle\Handler\TagHandlerInterface */
-//    protected $tagHandler;
+    /** @var \EzSystems\PlatformHttpCacheBundle\Handler\TagHandler */
+    protected $tagHandler;
 
     /**
      * @param \App\Helper\LocationHelper $locationHelper
      * @param \App\Helper\ContentHelper $contentHelper
      * @param \eZ\Publish\Core\QueryType\QueryType $queryType
-     * @param \EzSystems\PlatformHttpCacheBundle\Handler\TagHandlerInterface $tagHandler
+     * @param \EzSystems\PlatformHttpCacheBundle\Handler\TagHandler $tagHandler
      */
-//    public function __construct(
-//        LocationHelper $locationHelper,
-//        ContentHelper $contentHelper,
-//        QueryTypeInterface $queryType,
-//        TagHandlerInterface $tagHandler
-//    )
     public function __construct(
         LocationHelper $locationHelper,
         ContentHelper $contentHelper,
-        QueryTypeInterface $queryType
+        QueryTypeInterface $queryType,
+        TagHandler $tagHandler
     ) {
         $this->locationHelper = $locationHelper;
         $this->contentHelper = $contentHelper;
         $this->queryType = $queryType;
-//        $this->tagHandler = $tagHandler;
+        $this->tagHandler = $tagHandler;
     }
 
     /**
@@ -94,8 +89,8 @@ abstract class AbstractBlockEvent
             $tags[] = 'relation-' . $content->id;
         }
 
-//        $this->tagHandler->addTags(array_unique($tags));
-//        $this->tagHandler->tagResponse($blockValueObject->response);
+        $this->tagHandler->addTags(array_unique($tags));
+        $this->tagHandler->tagSymfonyResponse($blockValueObject->response);
     }
 
     /**

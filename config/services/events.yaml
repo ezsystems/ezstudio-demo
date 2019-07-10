@@ -10,10 +10,12 @@ services:
     App\Event\Subscriber\PlacesBlockSubscriber:
         arguments:
             $queryType: '@App\QueryType\BlockQueryType'
+            $tagHandler: '@ezplatform.http_cache.fos_tag_handler.xkey'
 
     App\Event\Subscriber\TastesBlockSubscriber:
         arguments:
             $queryType: '@App\QueryType\BlockQueryType'
+            $tagHandler: '@ezplatform.http_cache.fos_tag_handler.xkey'
 
     App\Event\TemplateAttributeBlockNameListener:
         tags:
