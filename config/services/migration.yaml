@@ -1,0 +1,32 @@
+services:
+    ez_migration_bundle.complex_field.ezlandingpage:
+        parent: ez_migration_bundle.complex_field
+        class: '%ez_migration_bundle.complex_field.ezxmltext.class%'
+        autowire: true
+        autoconfigure: false
+        arguments:
+            - '@ez_migration_bundle.reference_resolver.customreference'
+        tags:
+            - { name: ez_migration_bundle.complex_field, fieldtype: ezlandingpage, priority: 0 }
+
+    ez_migration_bundle.complex_field.ezform:
+        parent: ez_migration_bundle.complex_field
+        class: '%ez_migration_bundle.complex_field.ezrichtext.class%'
+        autowire: true
+        autoconfigure: false
+        arguments:
+            - '@ez_migration_bundle.reference_resolver.customreference'
+        tags:
+            - { name: ez_migration_bundle.complex_field, fieldtype: ezform, priority: 0 }
+
+    ez_migration_bundle.complex_field.ezimageasset:
+        parent: ez_migration_bundle.complex_field
+        class: App\Migration\FieldHandler\EzImageAsset
+        autowire: true
+        autoconfigure: false
+        tags:
+            - { name: ez_migration_bundle.complex_field, fieldtype: ezimageasset, priority: 0 }
+
+    # hack for migration bundle
+    ezpublish.fieldType.ezpage.pageService:
+        synthetic: true

@@ -1,0 +1,22 @@
+{% extends 'blocks/_block.html.twig' %}
+
+{% block block_identifier %}tastes{% endblock %}
+{% block block_class %}tastes-content-list {{ block_class }}{% endblock %}
+
+{% block block_content %}
+    <h3>{{ 'Find Out More'|trans }}</h3>
+    <h2>{{ 'Beautiful Cuisines & Destinations'|trans }}</h2>
+    {% if contentArray is defined and contentArray|length > 0 %}
+        <div class="row block-contentlist-items">
+            {% for item in contentArray %}
+                <div class="col-md-4 block-contentlist-child">
+                    {{ render(controller('ez_content:viewAction', {
+                        locationId: item.contentInfo is defined ? item.contentInfo.mainLocationId : item.content.contentInfo.mainLocationId,
+                        viewType: 'embed'
+                    })) }}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}
+

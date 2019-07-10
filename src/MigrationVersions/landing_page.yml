@@ -1,0 +1,365 @@
+# references
+-
+    type: reference
+    mode: load
+    file: 'src/MigrationVersions/References/references.yml'
+    overwrite: true
+
+## Home page content
+-
+    type: content
+    mode: create
+    content_type: image
+    section: reference:ref_section__media
+    parent_location: reference:ref_folder__media__images
+    attributes:
+        name: Homepage hero
+        image: 'public/assets/images/landing_page/Homepage-banner.jpg'
+    references:
+        -
+            identifier: ref_location_image__media__images__homepage_hero
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__homepage_hero
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: landing_page
+    parent_location: 2
+    section: 1
+    owner: admin
+    attributes:
+        name: Home
+        description: Home page
+        page: >- #json
+            {
+                "layout": "1w__1__1w",
+                "zones": [
+                    {
+                        "id": "z-b92bce84-97f8-4f22-a539-5ba47db391b1",
+                        "name": "First wide zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f29-9783799c10b1",
+                                "type": "hero",
+                                "name": "Hero wide",
+                                "view": "default",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "text",
+                                        "value": "Explore Tastes and Places of the World"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_image__media__images__homepage_hero]"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "z-b92bce84-97f8-4f22-a539-5ba47db391b2",
+                        "name": "Second zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f29-9783799c10b2",
+                                "type": "embed",
+                                "name": "Embed NYC",
+                                "view": "embed",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_blog_post__home__blog__why_we_love_nyc]"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f29-9783799c10b3",
+                                "type": "tastes",
+                                "name": "Tastes Home Page",
+                                "view": "home",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_folder__home__places_and_tastes__tastes]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "z-b92bce84-97f8-4f22-a539-5ba47db391b3",
+                        "name": "Third wide zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f29-9783799c10b4",
+                                "type": "embed",
+                                "name": "Embed amsterdam",
+                                "view": "embed_wide",
+                                "class": "places-to-go",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_place__home__places_and_tastes__places__amsterdam_netherlands]"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f29-9783799c10b5",
+                                "type": "places",
+                                "name": "Places",
+                                "view": "map",
+                                "class":"places-background",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_place_list__home__places_and_tastes__places]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+    references:
+        -
+            identifier: ref_content_landing_page__home
+            attribute: content_id
+        -
+            identifier: ref_location_landing_page__home
+            attribute: location_id
+
+-
+    type: location
+    mode: update
+    match:
+        location_id: reference:ref_location_folder__home
+    swap_with_location: reference:ref_location_landing_page__home
+
+
+## Places & Tastes landing page
+-
+    type: content
+    mode: create
+    content_type: landing_page
+    #parent_location: [reference:ref_location_landing_page__home]
+    parent_location: 2
+    section: 1
+    owner: admin
+    attributes:
+        name: Places & Tastes
+        description: Places & Tastes
+        page: >- #json
+            {
+                "layout": "1w__2_1__2_1__1w",
+                "zones": [
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a1",
+                        "name": "Top wide zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a2",
+                                "type": "hero",
+                                "name": "Hero",
+                                "view": "default",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "text",
+                                        "value": "Brooklyn New York"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_place__home__places_and_tastes__places__brooklyn_new_york]"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a3",
+                        "name": "Top left inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a4",
+                                "type": "places",
+                                "name": "Places cards",
+                                "view": "cards",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_place_list__home__places_and_tastes__places]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783755c12c1",
+                        "name": "Top right inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a5",
+                                "type": "rss",
+                                "name": "eZ Blog",
+                                "view": "list",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "url",
+                                        "value": "https://ez.no/rss/feed/blog"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "offset",
+                                        "value": "0"
+                                    }
+                                ],
+                                "visible": true
+                            },
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a6",
+                                "type": "banner",
+                                "name": "Banner",
+                                "view": "banner",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_image__media__images__contact_us]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "url",
+                                        "value": "http://ez.no"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a7",
+                        "name": "Bottom left inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a8",
+                                "type": "tastes",
+                                "name": "Tastes",
+                                "view": "cards",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_folder__home__places_and_tastes__tastes]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "4"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c12a9",
+                        "name": "Bottom right inner grid zone",
+                        "blocks": [
+                            {
+                                "id": "b-294fbffd-744a-6ac6-3f40-9783799c13a1",
+                                "type": "contentlist",
+                                "name": "Blog List",
+                                "view": "blog",
+                                "compiled": "",
+                                "attributes": [
+                                    {
+                                        "id": "",
+                                        "name": "contentId",
+                                        "value": "[reference:ref_content_blog__home__blog]"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "limit",
+                                        "value": "3"
+                                    },
+                                    {
+                                        "id": "",
+                                        "name": "contentType",
+                                        "value": "blog_post"
+                                    }
+                                ],
+                                "visible": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b-294fbffd-744a-6ac6-3f40-9783799c13a2",
+                        "name": "Bottom wide zone",
+                        "blocks": []
+                    }
+                ]
+            }
+    references:
+        -
+            identifier: ref_content_landing_page__home__places_and_tastes
+            attribute: content_id
+        -
+            identifier: ref_location_landing_page__home__places_and_tastes
+            attribute: location_id
+
+-
+    type: location
+    mode: update
+    match:
+        location_id: reference:ref_location_folder__home__places_and_tastes
+    swap_with_location: reference:ref_location_landing_page__home__places_and_tastes
+
+-
+    type: reference
+    mode: save
+    file: 'src/MigrationVersions/References/references.yml'
+    overwrite: true

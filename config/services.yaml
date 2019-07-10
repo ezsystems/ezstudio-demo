@@ -1,0 +1,69 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+
+imports:
+    - { resource: services/controllers.yaml }
+    - { resource: services/events.yaml }
+    - { resource: services/helpers.yaml }
+    - { resource: services/installer.yaml }
+    - { resource: services/migration.yaml }
+    - { resource: services/query_types.yaml }
+
+parameters:
+    locale: 'en'
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+    App\Mail\Sender:
+        public: true
+        arguments:
+            - '@mailer'
+            - '@translator'
+            - '@templating'
+            - '%app.contact_form.sender_email%'
+            - '%app.contact_form.recipient_email%'
+
+    App\Twig\ContentInfoByLocationIdExtension:
+        arguments:
+            - '@ezpublish.api.service.location'
+            - '@ezpublish.api.service.content'
+
+    App\Twig\YoutubeIdExtractorExtension:
+        tags:
+            - { name: twig.extension }
+
+    App\Twig\RecommendationsExtension:
+        arguments:
+            - '@ezpublish.config.resolver'
+        tags:
+            - { name: twig.extension }
+
+    App\Twig\SearchResultExtractorExtension:
+        tags:
+            - { name: twig.extension }
+
+    App\PremiumContent\HtmlRenderer: ~
+
+    App\User\UserGroups: ~
+
+    App\Twig\PremiumContentExtension:
+        arguments:
+            $allowedUserGroupsLocationIds: '%app.premium_content.allowed_user_groups.location_ids%'
+        tags:
+            - { name: twig.extension }
+
+    App\Twig\ContentDescriptionExtension:
+        arguments:
+            - "@ezpublish.field_helper"
+            - "@?logger"
+        tags:
+            - { name: twig.extension }

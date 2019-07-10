@@ -1,0 +1,23 @@
+services:
+    App\Event\Subscriber\BuildDemoSchemaSubscriber:
+        autoconfigure: true
+        arguments:
+            - 'src/Resources/schema/demo.yaml'
+
+    App\Installer\PlatformEEDemoInstaller:
+        autowire: true
+        autoconfigure: false
+        parent: ezplatform.installer.db_based_installer
+        calls:
+            - [setEnvironment, ["%kernel.environment%"]]
+        tags:
+            - { name: ezplatform.installer, type: ezplatform-ee-demo }
+
+    App\Installer\PlatformEEDemoTestLayoutsInstaller:
+        autowire: true
+        autoconfigure: false
+        parent: ezplatform.installer.db_based_installer
+        calls:
+            - [setEnvironment, ["%kernel.environment%"]]
+        tags:
+            - { name: ezplatform.installer, type: demo-test-layouts }
