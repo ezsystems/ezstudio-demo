@@ -23,20 +23,5 @@ services:
         arguments:
             $contentViewQueryTypeMapper: '@ezpublish.query_type_content_view_mapper'
 
-#    App\Controller\ContactFormController:
-#        public: true
-#        arguments:
-#            - '@form.factory'
-#            - '@app.mail.sender'
-#            - '@templating'
-#            - '@hautelook.router.template'
-#
-
-#    App\Controller\RecommendationsController:
-#        public: true
-#        arguments:
-#            - '@ezpublish.api.service.location'
-#            - '@ezpublish.api.service.search'
-#            - '@ezpublish.api.service.content'
-#            - '@router'
-#            - '@templating'
+    App\Controller\ContactFormController:
+        public: true

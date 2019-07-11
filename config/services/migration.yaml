@@ -19,9 +19,7 @@ services:
         tags:
             - { name: ez_migration_bundle.complex_field, fieldtype: ezform, priority: 0 }
 
-    ez_migration_bundle.complex_field.ezimageasset:
-        parent: ez_migration_bundle.complex_field
-        class: App\Migration\FieldHandler\EzImageAsset
+    App\Migration\FieldHandler\EzImageAsset:
         autowire: true
         autoconfigure: false
         tags:
