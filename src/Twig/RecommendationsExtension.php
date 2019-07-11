@@ -5,14 +5,14 @@
  */
 namespace App\Twig;
 
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 use eZ\Publish\Core\MVC\ConfigResolverInterface as ConfigResolver;
 
 /**
  * Recommendations Twig helper for additional integration with RecommendationBundle.
  */
-class RecommendationsExtension extends Twig_Extension
+class RecommendationsExtension extends AbstractExtension
 {
     /** var \eZ\Publish\Core\MVC\ConfigResolverInterface */
     private $configResolver;
@@ -30,20 +30,18 @@ class RecommendationsExtension extends Twig_Extension
      *
      * @return string the extension name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'recommendations_extension';
     }
 
     /**
-     * Returns a list of functions to add to the existing list.
-     *
-     * @return array
+     * @inheritDoc
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
-            new Twig_SimpleFunction('ez_reco_enabled', [$this, 'isRecommendationsEnabled']),
+            new TwigFunction('ez_reco_enabled', [$this, 'isRecommendationsEnabled']),
         ];
     }
 
@@ -52,7 +50,7 @@ class RecommendationsExtension extends Twig_Extension
      *
      * @return bool
      */
-    public function isRecommendationsEnabled()
+    public function isRecommendationsEnabled(): bool
     {
         if ($this->configResolver->hasParameter('yoochoose.license_key', 'ez_recommendation') &&
             !empty($this->configResolver->getParameter('yoochoose.license_key', 'ez_recommendation'))) {

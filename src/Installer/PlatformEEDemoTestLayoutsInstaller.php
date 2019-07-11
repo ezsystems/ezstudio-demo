@@ -5,10 +5,9 @@
  */
 namespace App\Installer;
 
-use EzSystems\PlatformInstallerBundle\Installer\CleanInstaller;
-use Symfony\Component\Filesystem\Filesystem;
+use EzSystems\PlatformInstallerBundle\Installer\CoreInstaller;
 
-class PlatformEEDemoTestLayoutsInstaller extends CleanInstaller
+class PlatformEEDemoTestLayoutsInstaller extends CoreInstaller
 {
     use InstallerCommandExecuteTrait;
 

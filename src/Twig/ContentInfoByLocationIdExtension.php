@@ -6,15 +6,15 @@
 namespace App\Twig;
 
 use eZ\Publish\API\Repository\Values\Content\ContentInfo;
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 use eZ\Publish\API\Repository\LocationService as LocationServiceInterface;
 use eZ\Publish\API\Repository\ContentService as ContentServiceInterface;
 
 /**
  * Twig helper for fetching ContentInfo Based on Location Id.
  */
-class ContentInfoByLocationIdExtension extends Twig_Extension
+class ContentInfoByLocationIdExtension extends AbstractExtension
 {
     /** var \eZ\Publish\API\Repository\LocationService */
     private $locationService;
@@ -39,21 +39,19 @@ class ContentInfoByLocationIdExtension extends Twig_Extension
      *
      * @return string the extension name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'app.content_info';
     }
 
     /**
-     * Returns a list of functions to add to the existing list.
-     *
-     * @return array
+     * @inheritDoc
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
-            new Twig_SimpleFunction('app_content_info_by_location_id', [$this, 'contentInfoByLocationId']),
-            new Twig_SimpleFunction('app_content_info_by_content_id', [$this, 'contentInfoByContentId']),
+            new TwigFunction('app_content_info_by_location_id', [$this, 'contentInfoByLocationId']),
+            new TwigFunction('app_content_info_by_content_id', [$this, 'contentInfoByContentId']),
         ];
     }
 
@@ -62,9 +60,12 @@ class ContentInfoByLocationIdExtension extends Twig_Extension
      *
      * @param $locationId int
      *
-     * @return ContentInfo
+     * @return \eZ\Publish\API\Repository\Values\Content\ContentInfo
+
+     * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
+     * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
      */
-    public function contentInfoByLocationId($locationId)
+    public function contentInfoByLocationId(int $locationId): ContentInfo
     {
         return $this->locationService->loadLocation($locationId)->getContentInfo();
     }
@@ -74,9 +75,12 @@ class ContentInfoByLocationIdExtension extends Twig_Extension
      *
      * @param $contentId int
      *
-     * @return ContentInfo
+     * @return \eZ\Publish\API\Repository\Values\Content\ContentInfo
+     *
+     * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
+     * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
      */
-    public function contentInfoByContentId($contentId)
+    public function contentInfoByContentId(int $contentId): ContentInfo
     {
         return $this->contentService->loadContent($contentId)->getVersionInfo()->getContentInfo();
     }

@@ -5,18 +5,20 @@
  */
 namespace App\Twig;
 
-use Twig_Extension;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
 /**
  * Twig helper for extract video id from youtube url.
  */
-class YoutubeIdExtractorExtension extends Twig_Extension
+class YoutubeIdExtractorExtension extends AbstractExtension
 {
     /**
-     * @inheritdoc
+     * Returns the name of the extension.
+     *
+     * @return string the extension name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'app.youtube_extract_id';
     }
@@ -24,19 +26,21 @@ class YoutubeIdExtractorExtension extends Twig_Extension
     /**
      * @inheritdoc
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
-            new Twig_SimpleFunction('app_youtube_extract_id', [$this, 'extractId']),
+            new TwigFunction('app_youtube_extract_id', [$this, 'extractId']),
         ];
     }
 
     /**
      * Returns youtube video id.
      *
+     * @param string $string
+     *
      * @return string|null
      */
-    public function extractId($string)
+    public function extractId(string $string): ?string
     {
         $regexp = '/(?:https?:)?(?:\/\/)?(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube(?:-nocookie)?\.com\S*?[^\w\s-])'
                 . '(?P<id>[\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:[\'"][^<>]*>|<\/a>))[?=&+%\w.-]*/i';

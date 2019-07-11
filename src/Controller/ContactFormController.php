@@ -13,7 +13,7 @@ use eZ\Publish\Core\MVC\Symfony\View\View;
 use App\Form\Type\ContactType;
 use App\Mail\Sender;
 use Symfony\Component\Routing\RouterInterface;
-use Symfony\Component\Templating\EngineInterface;
+use Twig\Environment;
 
 class ContactFormController
 {
@@ -38,7 +38,7 @@ class ContactFormController
     public function __construct(
         FormFactoryInterface $formFactory,
         Sender $sender,
-        EngineInterface $templating,
+        Environment $templating,
         RouterInterface $router
     ) {
         $this->formFactory = $formFactory;

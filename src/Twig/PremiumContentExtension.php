@@ -5,21 +5,21 @@
  */
 namespace App\Twig;
 
+use App\Helper\UserGroupHelper;
 use App\PremiumContent\HtmlRenderer;
-use App\User\UserGroups;
-use Twig_Extension;
-use Twig_SimpleFilter;
-use Twig_SimpleFunction;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+use Twig\TwigFunction;
 
 /**
  * Twig helper for premium content.
  */
-class PremiumContentExtension extends Twig_Extension
+class PremiumContentExtension extends AbstractExtension
 {
     /** @var \App\PremiumContent\HtmlRenderer */
     private $htmlRenderer;
 
-    /** @var \App\User\UserGroups */
+    /** @var \App\Helper\UserGroupHelper */
     private $userGroups;
 
     /** @var int[] */
@@ -30,12 +30,12 @@ class PremiumContentExtension extends Twig_Extension
 
     /**
      * @param \App\PremiumContent\HtmlRenderer $htmlRenderer
-     * @param \App\User\UserGroups $userGroups
+     * @param \App\Helper\UserGroupHelper $userGroups
      * @param array $allowedUserGroupsLocationIds
      */
     public function __construct(
         HtmlRenderer $htmlRenderer,
-        UserGroups $userGroups,
+        UserGroupHelper $userGroups,
         array $allowedUserGroupsLocationIds
     ) {
         $this->htmlRenderer = $htmlRenderer;
@@ -48,32 +48,28 @@ class PremiumContentExtension extends Twig_Extension
      *
      * @return string The extension name
      */
-    public function getName()
+    public function getName(): string
     {
         return 'premium_content_extension';
     }
 
     /**
-     * Returns a list of functions to add to the existing list.
-     *
-     * @return Twig_SimpleFunction[]
+     * @inheritDoc
      */
-    public function getFunctions()
+    public function getFunctions(): array
     {
         return [
-            new Twig_SimpleFunction('ez_has_access_to_premium_content', [$this, 'hasAccessToPremiumContent']),
+            new TwigFunction('ez_has_access_to_premium_content', [$this, 'hasAccessToPremiumContent']),
         ];
     }
 
     /**
-     * Returns a list of filters to add to the existing list.
-     *
-     * @return Twig_SimpleFilter[]
+     * @inheritDoc
      */
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
-            new Twig_SimpleFilter('previewPremiumContent', [$this, 'previewPremiumContent'], ['is_safe' => ['html']]),
+            new TwigFilter('previewPremiumContent', [$this, 'previewPremiumContent'], ['is_safe' => ['html']]),
         ];
     }
 

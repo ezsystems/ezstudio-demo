@@ -6,17 +6,17 @@
 namespace App\Mail;
 
 use App\Model\Contact;
-use Symfony\Bundle\TwigBundle\TwigEngine as Templating;
-use Symfony\Component\Translation\TranslatorInterface;
 use Swift_Mailer;
 use Swift_Message;
+use Symfony\Contracts\Translation\TranslatorInterface;
+use Twig\Environment as Templating;
 
 class Sender
 {
     /** @var \Swift_Mailer */
     protected $mailer;
 
-    /** @var  \Symfony\Component\Translation\TranslatorInterface */
+    /** @var \Symfony\Component\Translation\TranslatorInterface|TranslatorInterface */
     protected $translator;
 
     /** @var \Symfony\Bundle\TwigBundle\TwigEngine */
@@ -31,7 +31,7 @@ class Sender
     /**
      * @param \Swift_Mailer $mailer
      * @param \Symfony\Component\Translation\TranslatorInterface $translator
-     * @param \Symfony\Bundle\TwigBundle\TwigEngine $templating
+     * @param \Twig\Environment $templating
      * @param string $senderEmail
      * @param string $recipientEmail
      */
@@ -50,9 +50,14 @@ class Sender
     }
 
     /**
-     * @param Contact $contact
+     * @param \App\Model\Contact $contact
+     *
+     * @throws \Twig\Error\Error
+     * @throws \Twig\Error\LoaderError
+     * @throws \Twig\Error\RuntimeError
+     * @throws \Twig\Error\SyntaxError
      */
-    public function send(Contact $contact)
+    public function send(Contact $contact): void
     {
         $title = $this->translator->trans('You have a new message from %from%', ['%from%' => $contact->getFrom()]);
         $message = Swift_Message::newInstance($title, $contact->getMessage())

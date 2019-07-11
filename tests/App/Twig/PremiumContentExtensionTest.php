@@ -3,7 +3,7 @@
 namespace Tests\App\Twig;
 
 use App\PremiumContent\HtmlRenderer;
-use App\User\UserGroups;
+use App\Helper\UserGroupHelper;
 use App\Twig\PremiumContentExtension;
 use PHPUnit\Framework\TestCase;
 
@@ -11,7 +11,7 @@ class PremiumContentExtensionTest extends TestCase
 {
     public function testHasAccessToPremiumContent()
     {
-        $userGroups = $this->createMock(UserGroups::class);
+        $userGroups = $this->createMock(UserGroupHelper::class);
 
         $userGroupsLocationIds = [24];
 
@@ -33,7 +33,7 @@ class PremiumContentExtensionTest extends TestCase
 
     public function testHasAccessToPremiumContentWithWrongIds()
     {
-        $userGroups = $this->createMock(UserGroups::class);
+        $userGroups = $this->createMock(UserGroupHelper::class);
 
         $userGroupsLocationIds = [36];
 
@@ -66,7 +66,7 @@ class PremiumContentExtensionTest extends TestCase
 
         $subject = new PremiumContentExtension(
             $htmlRenderer,
-            $this->createMock(UserGroups::class),
+            $this->createMock(UserGroupHelper::class),
             []
         );
 

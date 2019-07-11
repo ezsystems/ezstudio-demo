@@ -8,13 +8,13 @@ declare(strict_types=1);
 
 namespace App\Event\Listener;
 
-use App\User\UserGroups;
 use eZ\Publish\Core\MVC\Symfony\Security\Authorization\Attribute;
 use EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent;
 use Knp\Menu\ItemInterface;
 use Knp\Menu\Util\MenuManipulator;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
-use Symfony\Component\Translation\TranslatorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
+
 
 class RenderMenuListener
 {
@@ -25,10 +25,7 @@ class RenderMenuListener
     /** @var \Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface */
     private $authorizationChecker;
 
-    /** @var \App\User\UserGroups */
-    private $userGroups;
-
-    /** @var \Symfony\Component\Translation\TranslatorInterface */
+    /** @var \Symfony\Contracts\Translation\TranslatorInterface */
     private $translator;
 
     /** @var string */
@@ -39,26 +36,25 @@ class RenderMenuListener
 
     /**
      * @param \Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface $authorizationChecker
-     * @param \App\User\UserGroups $userGroups
-     * @param \Symfony\Component\Translation\TranslatorInterface $translator
+     * @param \Symfony\Contracts\Translation\TranslatorInterface $translator
      * @param int|null $personalizationCustomerId
      * @param string|null $personalizationLicenseKey
      */
     public function __construct(
         AuthorizationCheckerInterface $authorizationChecker,
-        UserGroups $userGroups,
         TranslatorInterface $translator,
         ?int $personalizationCustomerId,
         ?string $personalizationLicenseKey
     ) {
         $this->authorizationChecker = $authorizationChecker;
-        $this->userGroups = $userGroups;
         $this->translator = $translator;
         $this->personalizationCustomerId = $personalizationCustomerId;
         $this->personalizationLicenseKey = $personalizationLicenseKey;
     }
 
-    /** @param \EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent $event */
+    /**
+     * @param \EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent $event
+     */
     public function renderMenu(ConfigureMenuEvent $event): void
     {
         $menu = $event->getMenu();
@@ -101,7 +97,9 @@ class RenderMenuListener
         }
     }
 
-    /** @return bool */
+    /**
+     * @return bool
+     */
     private function hasPersonalizationCredentials(): bool
     {
         return !empty($this->personalizationCustomerId) && !empty($this->personalizationLicenseKey);

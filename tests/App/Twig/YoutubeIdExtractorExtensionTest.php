@@ -4,7 +4,7 @@ namespace Tests\App\Twig;
 
 use App\Twig\YoutubeIdExtractorExtension;
 use PHPUnit\Framework\TestCase;
-use Twig_Function;
+use Twig\TwigFunction;
 
 class YoutubeIdExtractorExtensionTest extends TestCase
 {
@@ -59,11 +59,11 @@ class YoutubeIdExtractorExtensionTest extends TestCase
     {
         $subject = new YoutubeIdExtractorExtension();
 
-        /** @var Twig_Function[] $result */
+        /** @var TwigFunction[] $result */
         $result = $subject->getFunctions();
 
         $this->assertIsArray($result);
-        $this->assertInstanceOf('Twig_Function', $result[0]);
+        $this->assertInstanceOf(TwigFunction::class, $result[0]);
         $this->assertEquals('app_youtube_extract_id', $result[0]->getName());
     }
 }
