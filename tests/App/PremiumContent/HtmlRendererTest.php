@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\AppBundle\PremiumContent;
+namespace Tests\App\PremiumContent;
 
-use AppBundle\PremiumContent\HtmlRenderer;
+use App\PremiumContent\HtmlRenderer;
 use PHPUnit\Framework\TestCase;
 
 class HtmlRendererTest extends TestCase

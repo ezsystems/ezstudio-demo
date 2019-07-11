@@ -4,7 +4,7 @@
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  */
-namespace Tests\AppBundle\Behat\PageElement;
+namespace Tests\App\Behat\PageElement;
 
 use EzSystems\Behat\Browser\Context\BrowserContext;
 use EzSystems\Behat\Browser\Element\Element;
@@ -25,24 +25,24 @@ use EzSystems\EzPlatformPageBuilder\Tests\Behat\PageElement\Blocks\EmbedBlock;
 use EzSystems\EzPlatformPageBuilder\Tests\Behat\PageElement\Blocks\GalleryBlock;
 use EzSystems\EzPlatformPageBuilder\Tests\Behat\PageElement\Blocks\VideoBlock;
 use EzSystems\EzPlatformPageBuilder\Tests\Behat\PageElement\EnterpriseElementFactory;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoBannerPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoCollectionPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoContentListPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoContentSchedulerPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoEmbedPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoGalleryPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoRSSPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\DemoVideoPreview;
-use Tests\AppBundle\Behat\PageElement\BlockPreview\HeroPreview;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoBannerBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoCodeBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoCollectionBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoContentListBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoContentSchedulerBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoEmbedBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoGalleryBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\DemoVideoBlock;
-use Tests\AppBundle\Behat\PageElement\Blocks\HeroBlock;
+use Tests\App\Behat\PageElement\BlockPreview\DemoBannerPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoCollectionPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoContentListPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoContentSchedulerPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoEmbedPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoGalleryPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoRSSPreview;
+use Tests\App\Behat\PageElement\BlockPreview\DemoVideoPreview;
+use Tests\App\Behat\PageElement\BlockPreview\HeroPreview;
+use Tests\App\Behat\PageElement\Blocks\DemoBannerBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoCodeBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoCollectionBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoContentListBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoContentSchedulerBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoEmbedBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoGalleryBlock;
+use Tests\App\Behat\PageElement\Blocks\DemoVideoBlock;
+use Tests\App\Behat\PageElement\Blocks\HeroBlock;
 
 class DemoEnterpriseElementFactory extends EnterpriseElementFactory
 {

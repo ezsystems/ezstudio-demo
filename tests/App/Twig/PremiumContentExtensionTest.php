@@ -1,10 +1,10 @@
 <?php
 
-namespace Tests\AppBundle\Twig;
+namespace Tests\App\Twig;
 
-use AppBundle\PremiumContent\HtmlRenderer;
-use AppBundle\User\UserGroups;
-use AppBundle\Twig\PremiumContentExtension;
+use App\PremiumContent\HtmlRenderer;
+use App\User\UserGroups;
+use App\Twig\PremiumContentExtension;
 use PHPUnit\Framework\TestCase;
 
 class PremiumContentExtensionTest extends TestCase

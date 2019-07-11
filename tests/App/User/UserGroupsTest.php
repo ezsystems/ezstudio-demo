@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\AppBundle\User;
+namespace Tests\App\User;
 
-use AppBundle\User\UserGroups;
+use App\User\UserGroups;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use eZ\Publish\Core\Repository\Repository;
