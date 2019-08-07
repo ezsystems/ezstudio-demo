@@ -144,6 +144,8 @@ parameters:
     # 12 - members, 13 administrator_users, 14 - editors
     app.premium_content.allowed_user_groups.location_ids: [12, 13, 14]
 
+    app.members_user_group_id: 11
+
     app.migration_reference_file: '/src/AppBundle/MigrationVersions/References/references.yml'
     
     app.migration.values_mapping:

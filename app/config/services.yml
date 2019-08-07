@@ -111,3 +111,7 @@ services:
             $publishOnLastStageWorkflows: '%app.workflow.publish_on_last_stage%'
 
     AppBundle\Event\Subscriber\EndWorkflowSubscriber: ~
+
+    AppBundle\Event\Subscriber\Recommendation\UserCollectionSubscriber:
+        arguments:
+            $membersUserGroupId: '%app.members_user_group_id%'
