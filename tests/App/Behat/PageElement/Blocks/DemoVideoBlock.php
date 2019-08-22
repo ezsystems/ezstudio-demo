@@ -19,6 +19,6 @@ class DemoVideoBlock extends VideoBlock
 
     public function getDefaultPreviewData(): array
     {
-        return ['parameter1' => '/var/site/storage/images/7/7/6/1/1677-1-eng-GB/Our-Picks.jpg'];
+        return ['parameter1' => '/var/site/storage/images/9/3/4/1/1439-1-eng-GB/Our-Picks.jpg'];
     }
 }
