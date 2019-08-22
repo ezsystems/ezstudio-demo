@@ -12,6 +12,14 @@ Encore.setOutputPath('web/assets/build')
     .enableReactPreset()
     .enableSingleRuntimeChunk();
 
+eZConfigManager.add({
+    eZConfig,
+    entryName: 'ezplatform-admin-ui-layout-js',
+    newItems: [
+        path.resolve(__dirname, './web/assets/js/hotjar.js'),
+    ],
+});
+
 Encore.addEntry('demo', [
     path.resolve(__dirname, './web/assets/scss/demo.scss'),
     path.resolve(__dirname, './web/assets/js/blocks/placesMapLoader.js'),

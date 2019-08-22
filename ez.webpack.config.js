@@ -2,6 +2,7 @@ const path = require('path');
 const bundles = require('./var/encore/ez.config.js');
 const eZConfigManager = require('./ez.webpack.config.manager.js');
 const configManagers = require('./var/encore/ez.config.manager.js');
+const dotenv = require('dotenv-webpack');
 
 module.exports = (Encore) => {
     Encore.setOutputPath('web/assets/ezplatform/build')
@@ -17,7 +18,8 @@ module.exports = (Encore) => {
         })
         .enableSassLoader()
         .enableReactPreset()
-        .enableSingleRuntimeChunk();
+        .enableSingleRuntimeChunk()
+        .addPlugin(new dotenv({systemvars: true}));
 
     bundles.forEach((configPath) => {
         const addEntries = require(configPath);
