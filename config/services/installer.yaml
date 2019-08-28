@@ -7,7 +7,7 @@ services:
     App\Installer\PlatformEEDemoInstaller:
         autowire: true
         autoconfigure: false
-        parent: ezplatform.installer.db_based_installer
+        parent: EzSystems\PlatformInstallerBundle\Installer\DbBasedInstaller
         calls:
             - [setEnvironment, ["%kernel.environment%"]]
         tags:
@@ -16,7 +16,7 @@ services:
     App\Installer\PlatformEEDemoTestLayoutsInstaller:
         autowire: true
         autoconfigure: false
-        parent: ezplatform.installer.db_based_installer
+        parent: EzSystems\PlatformInstallerBundle\Installer\DbBasedInstaller
         calls:
             - [setEnvironment, ["%kernel.environment%"]]
         tags:
