@@ -86,12 +86,6 @@ final class ContentPaginationExtension extends AbstractExtension
     }
 
     /**
-     * @param \eZ\Publish\API\Repository\Values\Content\ContentInfo $content
-     * @param int $parentLocationId
-     * @param string $siblingContentPosition
-     *
-     * @return \eZ\Publish\API\Repository\Values\Content\Content|null
-     *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */
     private function getSiblingContent(
@@ -112,11 +106,6 @@ final class ContentPaginationExtension extends AbstractExtension
         return $result->valueObject ?? null;
     }
 
-    /**
-     * @param \App\ValueObject\ContentSiblingQueryParameters $queryParameters
-     *
-     * @return \eZ\Publish\API\Repository\Values\Content\Query
-     */
     private function getQuery(ContentSiblingQueryParameters $queryParameters): Query
     {
         return $this->contentSiblingQueryType->getQuery([
@@ -128,9 +117,6 @@ final class ContentPaginationExtension extends AbstractExtension
         ]);
     }
 
-    /**
-     * @param \eZ\Publish\API\Repository\Values\Content\Content $content
-     */
     private function getSiblingContentURL(Content $content): string
     {
         return $this->router->generate('ez_urlalias', [

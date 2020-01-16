@@ -40,14 +40,6 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
     /** @var \eZ\Publish\API\Repository\PermissionResolver */
     private $permissionResolver;
 
-    /**
-     * @param \EzSystems\EzPlatformWorkflow\Service\WorkflowServiceInterface $workflowService
-     * @param \EzSystems\EzPlatformWorkflow\Registry\WorkflowRegistryInterface $workflowRegistry
-     * @param \eZ\Publish\API\Repository\ContentService $contentService
-     * @param \EzSystems\EzPlatformWorkflow\Registry\WorkflowDefinitionMetadataRegistry $workflowMetadataRegistry
-     * @param \eZ\Publish\API\Repository\Repository $repository
-     * @param \eZ\Publish\API\Repository\PermissionResolver $permissionResolver
-     */
     public function __construct(
         WorkflowServiceInterface $workflowService,
         WorkflowRegistryInterface $workflowRegistry,
@@ -76,8 +68,6 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
 
     /**
      * Automatically starts supported workflows after publishing content.
-     *
-     * @param \eZ\Publish\API\Repository\Events\Content\PublishVersionEvent $event
      */
     public function onPublishVersion(PublishVersionEvent $event): void
     {
@@ -114,7 +104,6 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
                 function () use ($workflowMetadata, $transitionToMake) {
                     if ($this->workflowService->can($workflowMetadata, $transitionToMake)) {
                         $this->workflowService->apply($workflowMetadata, $transitionToMake, '');
-
                     }
                 },
                 $this->repository
@@ -149,13 +138,13 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
                 break;
             }
 
-            if (in_array($matched[0]->getName(), $path, true)) {
+            if (\in_array($matched[0]->getName(), $path, true)) {
                 break;
             }
 
             $path[] = $matched[0]->getName();
 
-            if (in_array($workflowCurrentState, $matched[0]->getFroms(), true)) {
+            if (\in_array($workflowCurrentState, $matched[0]->getFroms(), true)) {
                 break;
             }
 
@@ -166,8 +155,6 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
     }
 
     /**
-     * @param array $transitions
-     * @param Transition $baseTransition
      * @return Transition[]
      */
     private function getMatchedTransitions(array $transitions, Transition $baseTransition): array
@@ -176,7 +163,7 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
 
         foreach ($baseTransition->getFroms() as $from) {
             /** @var Transition $transition */
-            foreach($transitions as $transition) {
+            foreach ($transitions as $transition) {
                 foreach ($transition->getTos() as $to) {
                     if ($from === $to) {
                         $return[] = $transition;

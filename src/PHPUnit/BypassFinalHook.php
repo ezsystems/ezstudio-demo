@@ -13,9 +13,6 @@ use PHPUnit\Runner\BeforeTestHook;
 
 final class BypassFinalHook implements BeforeTestHook
 {
-    /**
-     * @param string $test
-     */
     public function executeBeforeTest(string $test): void
     {
         BypassFinals::enable();

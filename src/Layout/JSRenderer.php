@@ -16,7 +16,7 @@ final class JSRenderer extends AbstractRenderer implements LayoutRendererInterfa
     public const JS_TAG = '<script>%s</script>';
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException

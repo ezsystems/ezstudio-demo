@@ -8,14 +8,14 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Form\Type\ContactType;
+use App\Mail\Sender;
 use Exception;
+use eZ\Publish\Core\MVC\Symfony\View\View;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use eZ\Publish\Core\MVC\Symfony\View\View;
-use App\Form\Type\ContactType;
-use App\Mail\Sender;
 use Symfony\Component\Routing\RouterInterface;
 use Twig\Environment;
 
@@ -33,12 +33,6 @@ final class ContactFormController
     /** @var \Symfony\Component\Routing\RouterInterface */
     private $router;
 
-    /**
-     * @param \Symfony\Component\Form\FormFactoryInterface $formFactory
-     * @param \App\Mail\Sender $sender
-     * @param \Twig\Environment $twigEnvironment
-     * @param \Symfony\Component\Routing\RouterInterface $router
-     */
     public function __construct(
         FormFactoryInterface $formFactory,
         Sender $sender,
@@ -53,9 +47,6 @@ final class ContactFormController
 
     /**
      * Displays contact form and sends e-mail message when using POST request.
-     *
-     * @param \eZ\Publish\Core\MVC\Symfony\View\View $view
-     * @param \Symfony\Component\HttpFoundation\Request $request
      *
      * @return \eZ\Publish\Core\MVC\Symfony\View\View|\Symfony\Component\HttpFoundation\RedirectResponse
      */
@@ -91,10 +82,6 @@ final class ContactFormController
 
     /**
      * Displays confirmation page after successful contact form submission.
-     *
-     * @param string $template
-     *
-     * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError

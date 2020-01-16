@@ -10,10 +10,10 @@ namespace App\Form\Type;
 
 use App\Model\Contact;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 final class ContactType extends AbstractType
@@ -30,17 +30,11 @@ final class ContactType extends AbstractType
             ->add('message', TextareaType::class);
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return 'app_contact';
     }
 
-    /**
-     * @param \Symfony\Component\OptionsResolver\OptionsResolver $resolver
-     */
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults(['data_class' => Contact::class]);

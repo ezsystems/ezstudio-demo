@@ -34,7 +34,6 @@ final class ContentHelper
     /**
      * Returns content object based on content id.
      *
-     * @return \eZ\Publish\API\Repository\Values\Content\Content
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
      */

@@ -14,7 +14,6 @@ final class LocationTreeBuilder
 {
     /**
      * @param \eZ\Publish\API\Repository\Values\Content\Location[]
-     * @param int $parentLocationId
      * @return MenuItem[]
      */
     public static function build(array &$locations, int $parentLocationId = 0): array

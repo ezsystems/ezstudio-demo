@@ -5,7 +5,7 @@ use eZ\Publish\API\Repository\Repository;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
-require dirname(__DIR__).'/config/bootstrap.php';
+require dirname(__DIR__) . '/config/bootstrap.php';
 
 // Environment is taken from "APP_ENV" variable, if not set, defaults to "prod"
 $environment = getenv('APP_ENV');
@@ -44,7 +44,6 @@ $roleId = 1;
 /** @var \eZ\Publish\Core\Repository\Values\User\Role $role */
 $repository->sudo(
     function (Repository $repository) use ($roleId) {
-
         /* @var $repository \eZ\Publish\Core\Repository\Repository */
         $role = $repository->getRoleService()->loadRole($roleId);
 
@@ -54,9 +53,9 @@ $repository->sudo(
             'limitations' => [
                 [
                     'identifier' => 'Subtree',
-                    'values' => ["/1/43/51/", "/1/43/53/"],
-                ]
-            ]
+                    'values' => ['/1/43/51/', '/1/43/53/'],
+                ],
+            ],
         ];
 
         $roleService = $repository->getRoleService();
@@ -65,7 +64,6 @@ $repository->sudo(
 
         if (array_key_exists('limitations', $policy)) {
             foreach ($policy['limitations'] as $limitation) {
-
                 $limitationType = $roleService->getLimitationType($limitation['identifier']);
                 $limitationObject = $limitationType->buildValue($limitation['values']);
                 $policyCreateStruct->addLimitation($limitationObject);

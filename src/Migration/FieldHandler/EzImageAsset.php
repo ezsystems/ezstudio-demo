@@ -21,9 +21,6 @@ final class EzImageAsset extends AbstractFieldHandler implements FieldValueConve
     /** @var \Kaliop\eZMigrationBundle\Core\ReferenceResolver\PrefixBasedResolverInterface */
     private $resolver;
 
-    /**
-     * @param \Kaliop\eZMigrationBundle\Core\ReferenceResolver\PrefixBasedResolverInterface $resolver
-     */
     public function __construct(PrefixBasedResolverInterface $resolver)
     {
         $this->resolver = $resolver;
@@ -68,26 +65,16 @@ final class EzImageAsset extends AbstractFieldHandler implements FieldValueConve
     /**
      * Throws an exception if value structure is not of expected format.
      *
-     * @param \eZ\Publish\Core\FieldType\Value $value
-     *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException If the value does not match the expected structure.
      */
     private function checkFieldValueStructure(BaseValue $value): void
     {
-        if (!is_int($value->destinationContentId) && !is_string($value->destinationContentId)) {
-            throw new InvalidArgumentType(
-                '$value->destinationContentId',
-                'string|int',
-                $value->destinationContentId
-            );
+        if (!\is_int($value->destinationContentId) && !\is_string($value->destinationContentId)) {
+            throw new InvalidArgumentType('$value->destinationContentId', 'string|int', $value->destinationContentId);
         }
 
-        if ($value->alternativeText !== null && !is_string($value->alternativeText)) {
-            throw new InvalidArgumentType(
-                '$value->alternativeText',
-                'null|string',
-                $value->alternativeText
-            );
+        if ($value->alternativeText !== null && !\is_string($value->alternativeText)) {
+            throw new InvalidArgumentType('$value->alternativeText', 'null|string', $value->alternativeText);
         }
     }
 }

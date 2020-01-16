@@ -3,14 +3,14 @@
 namespace Tests\App\Helper;
 
 use App\Helper\UserGroupHelper;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
-use eZ\Publish\Core\Repository\Repository;
-use eZ\Publish\API\Repository\Values\User\User as APIUser;
 use eZ\Publish\API\Repository\Values\Content\ContentInfo;
+use eZ\Publish\API\Repository\Values\User\User as APIUser;
 use eZ\Publish\Core\MVC\Symfony\Security\User;
+use eZ\Publish\Core\Repository\Repository;
 use eZ\Publish\Core\Repository\Values\Content\Content;
 use eZ\Publish\Core\Repository\Values\Content\VersionInfo;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
 
 class UserGroupsTest extends TestCase
@@ -34,7 +34,7 @@ class UserGroupsTest extends TestCase
 
         $result = $subject->isCurrentUserInOneOfTheGroups($userGroupsLocationIds);
 
-        $this->assertEquals(false, $result);
+        $this->assertFalse($result);
     }
 
     public function testIsCurrentUserInOneOfTheGroupsWithLoggedUser()
@@ -45,7 +45,7 @@ class UserGroupsTest extends TestCase
         $token = new UsernamePasswordToken('foo', 'bar', 'provider');
         $tokenStorage->expects($this->once())
             ->method('getToken')
-            ->will($this->returnValue($token));
+            ->willReturn($token);
 
         $userGroupsLocationIds = [36];
 
@@ -56,7 +56,7 @@ class UserGroupsTest extends TestCase
 
         $result = $subject->isCurrentUserInOneOfTheGroups($userGroupsLocationIds);
 
-        $this->assertEquals(false, $result);
+        $this->assertFalse($result);
     }
 
     public function testIsCurrentUserInOneOfTheGroupsWithLoggedEzUser()
@@ -73,7 +73,7 @@ class UserGroupsTest extends TestCase
                         ]),
                     ]),
                     'internalFields' => [],
-                ])
+                ]),
             ]),
             new \eZ\Publish\Core\Repository\Values\User\UserGroup([
                 'content' => new Content([
@@ -84,7 +84,7 @@ class UserGroupsTest extends TestCase
                         ]),
                     ]),
                     'internalFields' => [],
-                ])
+                ]),
             ]),
         ];
 
@@ -100,8 +100,7 @@ class UserGroupsTest extends TestCase
 
         $tokenStorage->expects($this->once())
             ->method('getToken')
-            ->will($this->returnValue($token));
-
+            ->willReturn($token);
 
         $userGroupsLocationIds = [36, 15];
 
@@ -112,6 +111,6 @@ class UserGroupsTest extends TestCase
 
         $result = $subject->isCurrentUserInOneOfTheGroups($userGroupsLocationIds);
 
-        $this->assertEquals(true, $result);
+        $this->assertTrue($result);
     }
 }

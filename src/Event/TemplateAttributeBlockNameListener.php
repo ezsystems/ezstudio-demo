@@ -24,9 +24,6 @@ final class TemplateAttributeBlockNameListener implements EventSubscriberInterfa
         ];
     }
 
-    /**
-     * @param \EzSystems\EzPlatformPageFieldType\FieldType\Page\Block\Renderer\Event\PreRenderEvent $event
-     */
     public function onBlockPreRender(PreRenderEvent $event)
     {
         $blockValue = $event->getBlockValue();

@@ -8,11 +8,11 @@ declare(strict_types=1);
 
 namespace App\QueryType;
 
-use eZ\Publish\Core\QueryType\QueryType;
-use eZ\Publish\API\Repository\Values\Content\Query;
 use eZ\Publish\API\Repository\Values\Content\LocationQuery;
+use eZ\Publish\API\Repository\Values\Content\Query;
 use eZ\Publish\API\Repository\Values\Content\Query\Criterion\Operator as CriterionOperator;
 use eZ\Publish\API\Repository\Values\Content\Query\SortClause;
+use eZ\Publish\Core\QueryType\QueryType;
 
 final class MenuQueryType implements QueryType
 {
@@ -29,8 +29,6 @@ final class MenuQueryType implements QueryType
 
     /**
      * @param string[] $parameters
-     *
-     * @return \eZ\Publish\API\Repository\Values\Content\LocationQuery
      */
     public function getQuery(array $parameters = []): LocationQuery
     {
@@ -62,18 +60,13 @@ final class MenuQueryType implements QueryType
         return new LocationQuery($options);
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'App:Menu';
     }
 
     /**
-     * Returns array of required parameters
-     *
-     * @return array
+     * Returns array of required parameters.
      */
     public function getSupportedParameters(): array
     {

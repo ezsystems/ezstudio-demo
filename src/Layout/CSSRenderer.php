@@ -16,7 +16,7 @@ final class CSSRenderer extends AbstractRenderer implements LayoutRendererInterf
     public const CSS_TAG = '<style>%s</style>';
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException

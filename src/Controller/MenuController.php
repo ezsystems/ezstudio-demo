@@ -8,9 +8,9 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
-use eZ\Publish\API\Repository\SearchService;
 use App\QueryType\MenuQueryType;
+use eZ\Publish\API\Repository\SearchService;
+use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment as TwigEnvironment;
 
 final class MenuController
@@ -30,13 +30,6 @@ final class MenuController
     /** @var array */
     private $topMenuContentTypeIdentifier;
 
-    /**
-     * @param \Twig\Environment $twig
-     * @param \eZ\Publish\API\Repository\SearchService $searchService
-     * @param \App\QueryType\MenuQueryType $menuQueryType
-     * @param int $topMenuParentLocationId
-     * @param array $topMenuContentTypeIdentifier
-     */
     public function __construct(
         TwigEnvironment $twig,
         SearchService $searchService,
@@ -53,11 +46,6 @@ final class MenuController
 
     /**
      * Renders top menu with child items.
-     *
-     * @param string $template
-     * @param string|null $pathString
-     *
-     * @return \Symfony\Component\HttpFoundation\Response
      *
      * @throws \Twig\Error\Error
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
@@ -76,7 +64,7 @@ final class MenuController
             $menuItems[] = $hit->valueObject;
         }
 
-        $pathArray = $pathString ? explode("/", $pathString) : [];
+        $pathArray = $pathString ? explode('/', $pathString) : [];
 
         $response = new Response();
         $response->setVary('X-User-Hash');

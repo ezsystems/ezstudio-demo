@@ -24,7 +24,7 @@ class YoutubeIdExtractorExtension extends AbstractExtension
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getFunctions(): array
     {
@@ -35,10 +35,6 @@ class YoutubeIdExtractorExtension extends AbstractExtension
 
     /**
      * Returns youtube video id.
-     *
-     * @param string $string
-     *
-     * @return string|null
      */
     public function extractId(string $string): ?string
     {

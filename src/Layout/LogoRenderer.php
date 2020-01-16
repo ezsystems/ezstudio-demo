@@ -12,8 +12,7 @@ use App\Helper\ContentHelper;
 use eZ\Publish\API\Repository\Repository as RepositoryInterface;
 use Twig\Extension\RuntimeExtensionInterface;
 
-final class LogoRenderer extends AbstractRenderer
-    implements LayoutRendererInterface, RuntimeExtensionInterface
+final class LogoRenderer extends AbstractRenderer implements LayoutRendererInterface, RuntimeExtensionInterface
 {
     public const LOGO_FIELD_NAME = 'logo';
 
@@ -30,7 +29,7 @@ final class LogoRenderer extends AbstractRenderer
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException

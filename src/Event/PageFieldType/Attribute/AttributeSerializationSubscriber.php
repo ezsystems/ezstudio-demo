@@ -15,7 +15,6 @@ use EzSystems\EzPlatformPageFieldType\ScheduleBlock\Timeline\Event\AbstractEvent
 use EzSystems\EzPlatformPageFieldType\ScheduleBlock\Timeline\Event\ItemAddedEvent;
 use Ramsey\Uuid\Uuid;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use function is_array;
 
 final class AttributeSerializationSubscriber implements EventSubscriberInterface
 {
@@ -29,9 +28,6 @@ final class AttributeSerializationSubscriber implements EventSubscriberInterface
         ];
     }
 
-    /**
-     * @param \EzSystems\EzPlatformPageFieldType\Event\AttributeSerializationEvent $event
-     */
     public function onAttributeSerialization(AttributeSerializationEvent $event): void
     {
         if ($event->getAttributeIdentifier() !== 'events') {
@@ -40,7 +36,7 @@ final class AttributeSerializationSubscriber implements EventSubscriberInterface
 
         $deserializedValue = $event->getDeserializedValue();
 
-        if ($deserializedValue === null || !is_array($deserializedValue)) {
+        if ($deserializedValue === null || !\is_array($deserializedValue)) {
             return;
         }
 

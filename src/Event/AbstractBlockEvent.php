@@ -33,12 +33,6 @@ abstract class AbstractBlockEvent
     /** @var \EzSystems\PlatformHttpCacheBundle\Handler\TagHandler */
     protected $tagHandler;
 
-    /**
-     * @param \App\Helper\LocationHelper $locationHelper
-     * @param \App\Helper\ContentHelper $contentHelper
-     * @param \eZ\Publish\Core\QueryType\QueryType $queryType
-     * @param \EzSystems\PlatformHttpCacheBundle\Handler\TagHandler $tagHandler
-     */
     public function __construct(
         LocationHelper $locationHelper,
         ContentHelper $contentHelper,
@@ -52,8 +46,6 @@ abstract class AbstractBlockEvent
     }
 
     /**
-     * @param \App\Value\PageBuilderBlockValueObject $blockValueObject
-     *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
@@ -94,10 +86,6 @@ abstract class AbstractBlockEvent
     }
 
     /**
-     * @param \App\Value\PageBuilderBlockValueObject $blockValueObject
-     *
-     * @return array
-     *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException

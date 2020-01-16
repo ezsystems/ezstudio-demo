@@ -32,8 +32,6 @@ final class PremiumContentExtension extends AbstractExtension
     private $hasAccess;
 
     /**
-     * @param \App\PremiumContent\HtmlRenderer $htmlRenderer
-     * @param \App\Helper\UserGroupHelper $userGroups
      * @param int[] $allowedUserGroupsLocationIds
      */
     public function __construct(
@@ -57,7 +55,7 @@ final class PremiumContentExtension extends AbstractExtension
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function getFunctions(): array
     {
@@ -67,7 +65,7 @@ final class PremiumContentExtension extends AbstractExtension
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function getFilters(): array
     {
@@ -78,11 +76,6 @@ final class PremiumContentExtension extends AbstractExtension
 
     /**
      * Allows to display certain number of paragraphs.
-     *
-     * @param string $document
-     * @param int $numberOfDisplayedElements
-     *
-     * @return string
      */
     public function previewPremiumContent(string $document, int $numberOfDisplayedElements = 2): string
     {
@@ -91,8 +84,6 @@ final class PremiumContentExtension extends AbstractExtension
 
     /**
      * Checks if user has access to premium content.
-     *
-     * @return bool
      *
      * @throws \Exception
      */

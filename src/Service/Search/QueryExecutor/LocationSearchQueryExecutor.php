@@ -37,7 +37,7 @@ final class LocationSearchQueryExecutor
         $query = $this->menuQueryType->getQuery([
             'path_string' => $pathString,
             'included_content_type_identifier' => self::MENU_CONTENT_TYPES,
-            'depth' => self::MENU_CONTENT_DEPTH
+            'depth' => self::MENU_CONTENT_DEPTH,
         ]);
 
         $query->limit = self::MENU_ITEM_LIMIT;

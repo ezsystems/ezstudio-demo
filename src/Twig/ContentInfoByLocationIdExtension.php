@@ -8,13 +8,13 @@ declare(strict_types=1);
 
 namespace App\Twig;
 
+use eZ\Publish\API\Repository\ContentService as ContentServiceInterface;
+use eZ\Publish\API\Repository\LocationService as LocationServiceInterface;
 use eZ\Publish\API\Repository\Values\Content\Content;
 use eZ\Publish\API\Repository\Values\Content\ContentInfo;
 use eZ\Publish\API\Repository\Values\Content\Location;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
-use eZ\Publish\API\Repository\LocationService as LocationServiceInterface;
-use eZ\Publish\API\Repository\ContentService as ContentServiceInterface;
 
 /**
  * Twig helper for fetching ContentInfo Based on Location Id.
@@ -27,10 +27,6 @@ final class ContentInfoByLocationIdExtension extends AbstractExtension
     /** var \eZ\Publish\API\Repository\ContentService */
     private $contentService;
 
-    /**
-     * @param \eZ\Publish\API\Repository\LocationService $locationService
-     * @param \eZ\Publish\API\Repository\ContentService $contentService
-     */
     public function __construct(
         LocationServiceInterface $locationService,
         ContentServiceInterface $contentService
@@ -51,8 +47,6 @@ final class ContentInfoByLocationIdExtension extends AbstractExtension
 
     /**
      * Returns a list of functions to add to the existing list.
-     *
-     * @return array
      */
     public function getFunctions(): array
     {
@@ -65,11 +59,9 @@ final class ContentInfoByLocationIdExtension extends AbstractExtension
     }
 
     /**
-     * Return ContentInfo based on Location Id
+     * Return ContentInfo based on Location Id.
      *
      * @param $locationId
-     *
-     * @return \eZ\Publish\API\Repository\Values\Content\ContentInfo
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
@@ -80,11 +72,9 @@ final class ContentInfoByLocationIdExtension extends AbstractExtension
     }
 
     /**
-     * Return ContentInfo based on Content Id
+     * Return ContentInfo based on Content Id.
      *
      * @param $contentId
-     *
-     * @return \eZ\Publish\API\Repository\Values\Content\ContentInfo
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException

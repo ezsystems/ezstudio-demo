@@ -6,7 +6,6 @@
 namespace Tests\App\Behat\PageObject;
 
 use EzSystems\Behat\Core\Environment\EnvironmentConstants;
-use EzSystems\Behat\Browser\Context\BrowserContext;
 use EzSystems\EzPlatformPageBuilder\Tests\Behat\PageObject\LandingPagePreview;
 
 class DemoLandingPagePreview extends LandingPagePreview

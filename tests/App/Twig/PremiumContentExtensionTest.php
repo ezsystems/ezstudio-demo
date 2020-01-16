@@ -18,7 +18,7 @@ class PremiumContentExtensionTest extends TestCase
         $userGroups->expects($this->once())
             ->method('isCurrentUserInOneOfTheGroups')
             ->with($userGroupsLocationIds)
-            ->will($this->returnValue(true));
+            ->willReturn(true);
 
         $subject = new PremiumContentExtension(
             $this->createMock(HtmlRenderer::class),
@@ -28,7 +28,7 @@ class PremiumContentExtensionTest extends TestCase
 
         $result = $subject->hasAccessToPremiumContent();
 
-        $this->assertEquals(true, $result);
+        $this->assertTrue($result);
     }
 
     public function testHasAccessToPremiumContentWithWrongIds()
@@ -40,7 +40,7 @@ class PremiumContentExtensionTest extends TestCase
         $userGroups->expects($this->once())
             ->method('isCurrentUserInOneOfTheGroups')
             ->with($userGroupsLocationIds)
-            ->will($this->returnValue(false));
+            ->willReturn(false);
 
         $subject = new PremiumContentExtension(
             $this->createMock(HtmlRenderer::class),
@@ -50,7 +50,7 @@ class PremiumContentExtensionTest extends TestCase
 
         $result = $subject->hasAccessToPremiumContent();
 
-        $this->assertEquals(false, $result);
+        $this->assertFalse($result);
     }
 
     public function testPreviewPremiumContent()
@@ -62,7 +62,7 @@ class PremiumContentExtensionTest extends TestCase
         $htmlRenderer->expects($this->once())
             ->method('renderElements')
             ->with($htmlDocument, 5)
-            ->will($this->returnValue($htmlDocument));
+            ->willReturn($htmlDocument);
 
         $subject = new PremiumContentExtension(
             $htmlRenderer,

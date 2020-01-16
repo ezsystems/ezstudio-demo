@@ -10,10 +10,5 @@ namespace App\Layout;
 
 interface LayoutRendererInterface
 {
-    /**
-     * @param int|null $contentId
-     *
-     * @return string
-     */
     public function render(?int $contentId = null): string;
 }

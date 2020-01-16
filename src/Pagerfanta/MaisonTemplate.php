@@ -13,15 +13,12 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class MaisonTemplate extends TwitterBootstrap4Template
 {
-    /**
-     * @param \Symfony\Contracts\Translation\TranslatorInterface $translator
-     */
     public function __construct(TranslatorInterface $translator)
     {
         parent::__construct();
 
         $nextMessage = $translator->trans(
-        /** @Desc("Next") */
+            /** @Desc("Next") */
             'pagination.next_message',
             [],
             'pagination'

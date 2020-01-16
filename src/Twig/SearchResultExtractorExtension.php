@@ -14,7 +14,7 @@ use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
 /**
- * Twig helper for extract SearchResult object and returns array
+ * Twig helper for extract SearchResult object and returns array.
  */
 final class SearchResultExtractorExtension extends AbstractExtension
 {
@@ -32,16 +32,12 @@ final class SearchResultExtractorExtension extends AbstractExtension
     public function getFunctions(): array
     {
         return [
-            new TwigFunction('app_search_result_extract', [$this, 'extractSearchResult'])
+            new TwigFunction('app_search_result_extract', [$this, 'extractSearchResult']),
         ];
     }
 
     /**
-     * Returns extracted SearchResult object as array
-     *
-     * @param \eZ\Publish\API\Repository\Values\Content\Search\SearchResult $searchResult
-     *
-     * @return array
+     * Returns extracted SearchResult object as array.
      */
     public function extractSearchResult(SearchResult $searchResult): array
     {

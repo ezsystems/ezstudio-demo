@@ -27,8 +27,6 @@ final class BuildDemoSchemaSubscriber implements EventSubscriberInterface
 
     /**
      * Returns an array of events this subscriber wants to listen to.
-     *
-     * @return array
      */
     public static function getSubscribedEvents(): array
     {
@@ -37,9 +35,6 @@ final class BuildDemoSchemaSubscriber implements EventSubscriberInterface
         ];
     }
 
-    /**
-     * @param \EzSystems\DoctrineSchema\API\Event\SchemaBuilderEvent $event
-     */
     public function onBuildSchema(SchemaBuilderEvent $event): void
     {
         $event

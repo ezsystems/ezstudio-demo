@@ -41,9 +41,6 @@ final class RenderMenuListener
         $this->credentialsResolver = $credentialsResolver;
     }
 
-    /**
-     * @param \EzSystems\EzPlatformAdminUi\Menu\Event\ConfigureMenuEvent $event
-     */
     public function renderMenu(ConfigureMenuEvent $event): void
     {
         $menu = $event->getMenu();
@@ -53,10 +50,6 @@ final class RenderMenuListener
         $this->configurePersonalization($menu, $manipulator);
     }
 
-    /**
-     * @param \Knp\Menu\ItemInterface $item
-     * @param \Knp\Menu\Util\MenuManipulator $menuManipulator
-     */
     private function configureEzTags(ItemInterface $item, MenuManipulator $menuManipulator): void
     {
         if ($item->getChild(self::EZTAGS_MENU_ITEM)) {
@@ -64,10 +57,6 @@ final class RenderMenuListener
         }
     }
 
-    /**
-     * @param \Knp\Menu\ItemInterface $item
-     * @param \Knp\Menu\Util\MenuManipulator $menuManipulator
-     */
     private function configurePersonalization(ItemInterface $item, MenuManipulator $menuManipulator): void
     {
         $attribute = new Attribute(self::PERSONALIZATION_MODULE, self::PERSONALIZATION_FUNCTION);
@@ -78,8 +67,8 @@ final class RenderMenuListener
                 'uri' => 'https://admin.yoochoose.net/?ez.no=1#/scenarios/',
                 'linkAttributes' => [
                     'target' => '_blank',
-                    'rel' => 'noopener noreferrer'
-                ]
+                    'rel' => 'noopener noreferrer',
+                ],
             ]);
 
             $menuManipulator->moveToLastPosition($item[self::PERSONALIZATION_MODULE]);

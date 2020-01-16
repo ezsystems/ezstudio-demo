@@ -31,13 +31,6 @@ final class Sender
     /** @var string */
     private $recipientEmail;
 
-    /**
-     * @param \Swift_Mailer $mailer
-     * @param \Symfony\Contracts\Translation\TranslatorInterface $translator
-     * @param \Twig\Environment $twig
-     * @param string $senderEmail
-     * @param string $recipientEmail
-     */
     public function __construct(
         Swift_Mailer $mailer,
         TranslatorInterface $translator,
@@ -53,8 +46,6 @@ final class Sender
     }
 
     /**
-     * @param \App\Model\Contact $contact
-     *
      * @throws \Twig\Error\Error
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
@@ -70,7 +61,7 @@ final class Sender
             ->setReplyTo($this->recipientEmail)
             ->setBody(
                 $this->twig->render('/themes/tastefulplanet/mail/contact.html.twig', [
-                    'contact' => $contact
+                    'contact' => $contact,
                 ])
             );
 

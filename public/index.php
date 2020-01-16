@@ -5,7 +5,7 @@ use App\Kernel;
 use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
-require dirname(__DIR__).'/config/bootstrap.php';
+require dirname(__DIR__) . '/config/bootstrap.php';
 
 // Environment is taken from "APP_ENV" variable, if not set, defaults to "prod"
 $environment = getenv('APP_ENV');
@@ -56,7 +56,7 @@ $request = Request::createFromGlobals();
 $frontControllerScript = preg_quote(basename($request->server->get('SCRIPT_FILENAME')));
 if (preg_match("<^/([^/]+/)?$frontControllerScript([/?#]|$)>", $request->getRequestUri(), $matches) === 1) {
     http_response_code(400);
-    echo('<html><head><title>400 Bad Request</title></head><body><h1>400 Bad Request</h1></center></body></html>');
+    echo '<html><head><title>400 Bad Request</title></head><body><h1>400 Bad Request</h1></center></body></html>';
     die;
 }
 

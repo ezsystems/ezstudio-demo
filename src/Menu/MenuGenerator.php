@@ -49,7 +49,7 @@ final class MenuGenerator
 
         $item->expiresAfter((int) $this->cacheService->getCacheExpirationTime());
         $item->set($menu);
-        $item->tag('location-'.$rootLocationId);
+        $item->tag('location-' . $rootLocationId);
 
         $this->cacheService->save($item);
 

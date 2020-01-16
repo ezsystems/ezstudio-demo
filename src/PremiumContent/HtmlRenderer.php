@@ -15,11 +15,6 @@ final class HtmlRenderer
 {
     /**
      * Allows to display certain number of elements.
-     *
-     * @param string $document
-     * @param int $numberOfDisplayedElements
-     *
-     * @return string
      */
     public function renderElements(string $document, int $numberOfDisplayedElements = 2): string
     {
@@ -52,11 +47,6 @@ final class HtmlRenderer
         return $this->removeXmlHeader($doc->saveXML());
     }
 
-    /**
-     * @param string $html
-     *
-     * @return string
-     */
     private function removeXmlHeader(string $html): string
     {
         return str_replace('<?xml version="1.0" standalone="yes"?>' . "\n", null, $html);

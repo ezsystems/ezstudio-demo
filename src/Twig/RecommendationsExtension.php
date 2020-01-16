@@ -5,9 +5,9 @@
  */
 namespace App\Twig;
 
+use eZ\Publish\Core\MVC\ConfigResolverInterface as ConfigResolver;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
-use eZ\Publish\Core\MVC\ConfigResolverInterface as ConfigResolver;
 
 /**
  * Recommendations Twig helper for additional integration with RecommendationBundle.
@@ -17,9 +17,6 @@ class RecommendationsExtension extends AbstractExtension
     /** var \eZ\Publish\Core\MVC\ConfigResolverInterface */
     private $configResolver;
 
-    /**
-     * @param \eZ\Publish\Core\MVC\ConfigResolverInterface $configResolver
-     */
     public function __construct(ConfigResolver $configResolver)
     {
         $this->configResolver = $configResolver;
@@ -36,7 +33,7 @@ class RecommendationsExtension extends AbstractExtension
     }
 
     /**
-     * @inheritDoc
+     * {@inheritdoc}
      */
     public function getFunctions(): array
     {
@@ -47,8 +44,6 @@ class RecommendationsExtension extends AbstractExtension
 
     /**
      * Checks if YooChoose license key is provided.
-     *
-     * @return bool
      */
     public function isRecommendationsEnabled(): bool
     {

@@ -87,10 +87,8 @@ final class ContentSiblingQueryParameters extends ValueObject
      */
     private function isAllowedOperator(string $operator): bool
     {
-        if (!in_array($operator, self::ALLOWED_OPERATORS)) {
-            throw new InvalidArgumentException('$operator', sprintf(
-                'Not allowed query operator: %s', $operator
-            ));
+        if (!\in_array($operator, self::ALLOWED_OPERATORS)) {
+            throw new InvalidArgumentException('$operator', sprintf('Not allowed query operator: %s', $operator));
         }
 
         return true;

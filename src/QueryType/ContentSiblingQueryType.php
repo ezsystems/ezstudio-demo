@@ -13,9 +13,6 @@ use eZ\Publish\Core\QueryType\QueryType;
 
 final class ContentSiblingQueryType implements QueryType
 {
-    /**
-     * @return \eZ\Publish\API\Repository\Values\Content\Query
-     */
     public function getQuery(array $parameters = []): Query
     {
         $query = new Query();
@@ -37,7 +34,7 @@ final class ContentSiblingQueryType implements QueryType
             'modificationDate',
             'sortDirection',
             'limit',
-            'operator'
+            'operator',
         ];
     }
 

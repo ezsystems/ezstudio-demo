@@ -18,9 +18,6 @@ trait InstallerCommandExecuteTrait
     /** @var string */
     private $environment;
 
-    /**
-     * @param string $environment
-     */
     public function setEnvironment(string $environment): void
     {
         $this->environment = $environment;
@@ -33,10 +30,8 @@ trait InstallerCommandExecuteTrait
      *
      * Based on {@see \Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::executeCommand}.
      *
-     * @param \Symfony\Component\Console\Output\OutputInterface $output
      * @param string $cmd eZ Platform command to execute, like 'ezplatform:solr_create_index'
      *               Escape any user provided arguments, like: 'assets:install '.escapeshellarg($webDir)
-     * @param int $timeout
      */
     private function executeCommand(OutputInterface $output, string $cmd, int $timeout = 300): void
     {

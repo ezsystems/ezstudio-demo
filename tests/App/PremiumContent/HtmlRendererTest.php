@@ -8,9 +8,6 @@ use PHPUnit\Framework\TestCase;
 class HtmlRendererTest extends TestCase
 {
     /**
-     * @param string $inputDocument
-     * @param int $numberOfDisplayedElements
-     * @param string $expectedResult
      * @dataProvider htmlRendererDataProvider
      */
     public function testRenderElements(string $inputDocument, int $numberOfDisplayedElements, string $expectedResult)
@@ -18,7 +15,7 @@ class HtmlRendererTest extends TestCase
         $subject = new HtmlRenderer();
 
         $result = $subject->renderElements($inputDocument, $numberOfDisplayedElements);
-        
+
         $this->assertEquals($expectedResult, $result);
     }
 

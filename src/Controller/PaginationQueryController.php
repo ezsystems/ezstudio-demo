@@ -32,12 +32,6 @@ final class PaginationQueryController
         $this->contentViewQueryTypeMapper = $contentViewQueryTypeMapper;
     }
 
-    /**
-     * @param \eZ\Publish\Core\MVC\Symfony\View\ContentView $view
-     * @param \Symfony\Component\HttpFoundation\Request $request
-     *
-     * @return \eZ\Publish\Core\MVC\Symfony\View\ContentView
-     */
     public function contentQueryAction(ContentView $view, Request $request): ContentView
     {
         $pagerfanta = $this->getPagerfanta(
@@ -53,13 +47,6 @@ final class PaginationQueryController
         return $view;
     }
 
-    /**
-     * @param \eZ\Publish\API\Repository\Values\Content\Query $query
-     * @param int $limit
-     * @param int $currentPage
-     *
-     * @return \Pagerfanta\Pagerfanta
-     */
     private function getPagerfanta(Query $query, int $limit, int $currentPage): Pagerfanta
     {
         $pagerfanta = new Pagerfanta(

@@ -38,8 +38,6 @@ final class AppLayoutExtension extends AbstractExtension
 
     /**
      * Returns a list of functions to add to the existing list.
-     *
-     * @return array
      */
     public function getFunctions(): array
     {

@@ -20,8 +20,8 @@ final class PersonalizationPolicyProvider implements PolicyProviderInterface
     {
         $configBuilder->addConfig([
             'personalization' => [
-                'view' => null
-            ]
+                'view' => null,
+            ],
         ]);
     }
 }

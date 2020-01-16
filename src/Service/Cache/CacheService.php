@@ -22,10 +22,6 @@ final class CacheService implements CacheServiceInterface
     /** @var int */
     private $cacheExpirationTime;
 
-    /**
-     * @param \Symfony\Component\Cache\Adapter\TagAwareAdapterInterface $cacheItemPool
-     * @param int $cacheExpirationTime
-     */
     public function __construct(TagAwareAdapterInterface $cacheItemPool, int $cacheExpirationTime)
     {
         $this->cache = $cacheItemPool;
