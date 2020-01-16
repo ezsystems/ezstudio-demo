@@ -10,7 +10,7 @@ namespace App\Service\Search;
 
 use eZ\Publish\API\Repository\Values\Content\Search\SearchResult;
 
-class SearchResultLocationExtractor
+final class SearchResultLocationExtractor
 {
     public static function extract(SearchResult $locationSearchResults): array
     {

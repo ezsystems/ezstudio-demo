@@ -15,10 +15,10 @@ use Twig\Environment as TwigEnvironment;
 final class ProfessionalsController
 {
     /** @var \Twig\Environment */
-    protected $twig;
+    private $twig;
 
     /** @var \App\Menu\MenuGenerator */
-    protected $menuGenerator;
+    private $menuGenerator;
 
     public function __construct(
         TwigEnvironment $twig,
@@ -48,6 +48,11 @@ final class ProfessionalsController
         ]);
     }
 
+    /**
+     * @throws \Twig\Error\LoaderError
+     * @throws \Twig\Error\RuntimeError
+     * @throws \Twig\Error\SyntaxError
+     */
     private function response(string $template, array $data): Response
     {
         $response = new Response();

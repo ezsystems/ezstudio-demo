@@ -27,7 +27,6 @@ return [
     Gregwar\CaptchaBundle\GregwarCaptchaBundle::class => ['all' => true],
     Lexik\Bundle\JWTAuthenticationBundle\LexikJWTAuthenticationBundle::class => ['all' => true],
     FOS\HttpCacheBundle\FOSHttpCacheBundle::class => ['all' => true],
-    // eZ Platform
     eZ\Bundle\EzPublishCoreBundle\EzPublishCoreBundle::class => ['all' => true],
     EzSystems\EzPlatformCoreBundle\EzPlatformCoreBundle::class => ['all' => true],
     eZ\Bundle\EzPublishLegacySearchEngineBundle\EzPublishLegacySearchEngineBundle::class => ['all' => true],
@@ -66,4 +65,6 @@ return [
     Overblog\GraphQLBundle\OverblogGraphQLBundle::class => ['all' => true],
     Overblog\GraphiQLBundle\OverblogGraphiQLBundle::class => ['dev' => true],
     Kaliop\eZMigrationBundle\eZMigrationBundle::class => ['all' => true],
+    EzSystems\EzRecommendationClientBundle\EzRecommendationClientBundle::class => ['all' => true],
+    EzSystems\PersonalizedBlockBundle\EzSystemsPersonalizedBlockBundle::class => ['all' => true],
 ];

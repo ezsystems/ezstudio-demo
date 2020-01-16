@@ -16,19 +16,19 @@ use Twig\Environment as TwigEnvironment;
 final class MenuController
 {
     /** @var \Twig\Environment */
-    protected $twig;
+    private $twig;
 
     /** @var \eZ\Publish\API\Repository\SearchService */
-    protected $searchService;
+    private $searchService;
 
     /** @var \App\QueryType\MenuQueryType */
-    protected $menuQueryType;
+    private $menuQueryType;
 
     /** @var int */
-    protected $topMenuParentLocationId;
+    private $topMenuParentLocationId;
 
     /** @var array */
-    protected $topMenuContentTypeIdentifier;
+    private $topMenuContentTypeIdentifier;
 
     /**
      * @param \Twig\Environment $twig

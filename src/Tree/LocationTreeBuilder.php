@@ -10,7 +10,7 @@ namespace App\Tree;
 
 use App\Tree\Values\MenuItem;
 
-class LocationTreeBuilder
+final class LocationTreeBuilder
 {
     /**
      * @param \eZ\Publish\API\Repository\Values\Content\Location[]

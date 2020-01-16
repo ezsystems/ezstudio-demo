@@ -19,7 +19,7 @@ use LogicException;
 final class EzImageAsset extends AbstractFieldHandler implements FieldValueConverterInterface
 {
     /** @var \Kaliop\eZMigrationBundle\Core\ReferenceResolver\PrefixBasedResolverInterface */
-    protected $resolver;
+    private $resolver;
 
     /**
      * @param \Kaliop\eZMigrationBundle\Core\ReferenceResolver\PrefixBasedResolverInterface $resolver
@@ -72,7 +72,7 @@ final class EzImageAsset extends AbstractFieldHandler implements FieldValueConve
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException If the value does not match the expected structure.
      */
-    protected function checkFieldValueStructure(BaseValue $value): void
+    private function checkFieldValueStructure(BaseValue $value): void
     {
         if (!is_int($value->destinationContentId) && !is_string($value->destinationContentId)) {
             throw new InvalidArgumentType(

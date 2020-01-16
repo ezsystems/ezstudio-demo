@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace App\ValueObject;
 
+use DateTime;
 use eZ\Publish\API\Repository\Values\Content\Query;
 use eZ\Publish\API\Repository\Values\Content\Query\Criterion\Operator;
 use eZ\Publish\API\Repository\Values\ValueObject;
@@ -40,7 +41,7 @@ final class ContentSiblingQueryParameters extends ValueObject
 
     public function __construct(
         int $parentLocationId,
-        \DateTime $modificationDate,
+        DateTime $modificationDate,
         string $operator,
         int $limit
     ) {
@@ -57,7 +58,7 @@ final class ContentSiblingQueryParameters extends ValueObject
         return $this->parentLocationId;
     }
 
-    public function getModificationDate(): \DateTime
+    public function getModificationDate(): DateTime
     {
         return $this->modificationDate;
     }

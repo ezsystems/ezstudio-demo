@@ -12,7 +12,7 @@ use EzSystems\EzPlatformPageFieldType\FieldType\Page\Block\Renderer\BlockRenderE
 use EzSystems\EzPlatformPageFieldType\FieldType\Page\Block\Renderer\Event\PreRenderEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-class TemplateAttributeBlockNameListener implements EventSubscriberInterface
+final class TemplateAttributeBlockNameListener implements EventSubscriberInterface
 {
     /**
      * @return array The event names to listen to

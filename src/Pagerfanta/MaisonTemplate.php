@@ -11,7 +11,7 @@ namespace App\Pagerfanta;
 use Pagerfanta\View\Template\TwitterBootstrap4Template;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-class MaisonTemplate extends TwitterBootstrap4Template
+final class MaisonTemplate extends TwitterBootstrap4Template
 {
     /**
      * @param \Symfony\Contracts\Translation\TranslatorInterface $translator

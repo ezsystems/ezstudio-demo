@@ -16,10 +16,10 @@ use Twig\TwigFunction;
 /**
  * Twig content extension for eZ Publish Demo specific usage.
  */
-class ContentDescriptionExtension extends AbstractExtension
+final class ContentDescriptionExtension extends AbstractExtension
 {
     /** @var \Psr\Log\LoggerInterface */
-    protected $logger;
+    private $logger;
 
     /**
      * @param \Psr\Log\LoggerInterface|null $logger

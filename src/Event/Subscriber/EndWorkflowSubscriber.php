@@ -11,7 +11,7 @@ namespace App\Event\Subscriber;
 use eZ\Publish\API\Repository\ContentService;
 use eZ\Publish\API\Repository\Events\Content\PublishVersionEvent;
 use eZ\Publish\API\Repository\PermissionResolver;
-use eZ\Publish\API\Repository\Repository;
+use eZ\Publish\API\Repository\Repository as RepositoryInterface;
 use EzSystems\EzPlatformWorkflow\Exception\NotFoundException;
 use EzSystems\EzPlatformWorkflow\Registry\WorkflowDefinitionMetadataRegistry;
 use EzSystems\EzPlatformWorkflow\Registry\WorkflowRegistryInterface;
@@ -20,7 +20,7 @@ use EzSystems\EzPlatformWorkflow\Value\WorkflowMetadata;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Workflow\Transition;
 
-class EndWorkflowSubscriber implements EventSubscriberInterface
+final class EndWorkflowSubscriber implements EventSubscriberInterface
 {
     /** @var \EzSystems\EzPlatformWorkflow\Service\WorkflowServiceInterface */
     private $workflowService;
@@ -34,7 +34,7 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
     /** @var \EzSystems\EzPlatformWorkflow\Registry\WorkflowDefinitionMetadataRegistry */
     private $workflowMetadataRegistry;
 
-    /** @var \EzSystems\FlexWorkflow\API\Repository\RepositoryInterface */
+    /** @var \eZ\Publish\API\Repository\Repository */
     private $repository;
 
     /** @var \eZ\Publish\API\Repository\PermissionResolver */
@@ -53,7 +53,7 @@ class EndWorkflowSubscriber implements EventSubscriberInterface
         WorkflowRegistryInterface $workflowRegistry,
         ContentService $contentService,
         WorkflowDefinitionMetadataRegistry $workflowMetadataRegistry,
-        Repository $repository,
+        RepositoryInterface $repository,
         PermissionResolver $permissionResolver
     ) {
         $this->workflowService = $workflowService;

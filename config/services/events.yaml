@@ -13,9 +13,8 @@ services:
 
     App\Event\PageFieldType\Attribute\AttributeSerializationSubscriber: ~
 
-#    App\Event\Listener\RenderMenuListener:
-#        arguments:
-#            $personalizationCustomerId: '%ez_recommendation.default.yoochoose.customer_id%'
-#            $personalizationLicenseKey: '%ez_recommendation.default.yoochoose.license_key%'
-#        tags:
-#            - { name: kernel.event_listener, event: ezplatform_admin_ui.menu_configure.main_menu, method: renderMenu, priority: -45 }
+    App\Event\Listener\RenderMenuListener:
+        arguments:
+            $credentialsResolver: '@EzSystems\EzRecommendationClient\Config\EzRecommendationClientCredentialsResolver'
+        tags:
+            - { name: kernel.event_listener, event: ezplatform_admin_ui.menu_configure.main_menu, method: renderMenu, priority: -45 }

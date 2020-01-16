@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\Values\Content\Query;
 use eZ\Publish\API\Repository\Values\Content\Query\Criterion;
 use eZ\Publish\Core\QueryType\QueryType as QueryTypeInterface;
 
-class BlockQueryType implements QueryTypeInterface
+final class BlockQueryType implements QueryTypeInterface
 {
     /**
      * @param array $parameters
