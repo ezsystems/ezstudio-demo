@@ -9,30 +9,19 @@ declare(strict_types=1);
 namespace App\Layout;
 
 use App\Helper\ContentHelper;
-use Psr\Container\ContainerInterface;
-use Symfony\Contracts\Service\ServiceSubscriberInterface;
 
-abstract class AbstractRenderer implements ServiceSubscriberInterface
+abstract class AbstractRenderer
 {
-    /** @var \Psr\Container\ContainerInterface */
-    protected $locator;
-
     /** @var \App\Helper\ContentHelper */
-    protected $contentHelper;
+    private $contentHelper;
 
-    public function __construct(ContainerInterface $locator)
+    public function __construct(ContentHelper $contentHelper)
     {
-        $this->locator = $locator;
-        $this->contentHelper = $locator->get(ContentHelper::class);
+        $this->contentHelper = $contentHelper;
     }
 
-    /**
-     * @inheritDoc
-     */
-    public static function getSubscribedServices(): array
+    protected function getContentHelper(): ContentHelper
     {
-        return [
-            ContentHelper::class
-        ];
+        return $this->contentHelper;
     }
 }

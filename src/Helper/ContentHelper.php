@@ -10,17 +10,14 @@ namespace App\Helper;
 
 use eZ\Publish\API\Repository\ContentService as ContentServiceInterface;
 use eZ\Publish\API\Repository\Values\Content\Content;
-use Psr\Container\ContainerInterface;
-use Symfony\Contracts\Service\ServiceSubscriberInterface;
 
-final class ContentHelper implements ServiceSubscriberInterface
+final class ContentHelper
 {
-    /** @var \Psr\Container\ContainerInterface */
-    private $locator;
+    private $contentService;
 
-    public function __construct(ContainerInterface $locator)
+    public function __construct(ContentServiceInterface $contentService)
     {
-        $this->locator = $locator;
+        $this->contentService = $contentService;
     }
 
     /**
@@ -43,16 +40,6 @@ final class ContentHelper implements ServiceSubscriberInterface
      */
     public function loadContent(int $contentId): Content
     {
-        return $this->locator->get(ContentServiceInterface::class)->loadContent($contentId);
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public static function getSubscribedServices(): array
-    {
-        return [
-            ContentServiceInterface::class,
-        ];
+        return $this->contentService->loadContent($contentId);
     }
 }

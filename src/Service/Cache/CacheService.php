@@ -14,7 +14,7 @@ use Symfony\Component\Cache\Adapter\TagAwareAdapterInterface;
 /**
  * Class CacheService.
  */
-class CacheService implements CacheServiceInterface
+final class CacheService implements CacheServiceInterface
 {
     /** @var \Symfony\Component\Cache\Adapter\TagAwareAdapterInterface */
     private $cache;

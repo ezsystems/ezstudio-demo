@@ -23,7 +23,7 @@ final class CSSRenderer extends AbstractRenderer implements LayoutRendererInterf
      */
     public function render(?int $contentId = null): string
     {
-        $cssText = $this->contentHelper->getContentFieldValue($contentId, self::CSS_FIELD_NAME);
+        $cssText = $this->getContentHelper()->getContentFieldValue($contentId, self::CSS_FIELD_NAME);
 
         return $cssText ? sprintf(self::CSS_TAG, $cssText) : '';
     }

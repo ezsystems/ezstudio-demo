@@ -23,7 +23,7 @@ final class JSRenderer extends AbstractRenderer implements LayoutRendererInterfa
      */
     public function render(?int $contentId = null): string
     {
-        $jsText = $this->contentHelper->getContentFieldValue($contentId, self::JS_FIELD_NAME);
+        $jsText = $this->getContentHelper()->getContentFieldValue($contentId, self::JS_FIELD_NAME);
 
         return $jsText ? sprintf(self::JS_TAG, $jsText) : '';
     }
