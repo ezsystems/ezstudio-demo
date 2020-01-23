@@ -44,8 +44,11 @@
         "ezsystems/ezplatform-user": "^2.0@dev",
         "ezsystems/ezplatform-workflow": "^2.0@dev",
         "ezsystems/ezpublish-kernel": "^8.0@dev",
+        "ezsystems/repository-forms": "^3.0@dev",
         "ezsystems/ezplatform-content-forms": "^1.0@dev",
         "ezsystems/ezplatform-content-comparison": "^1.0@dev",
+        "ezsystems/ezrecommendation-client": "^2.0@dev",
+        "ezsystems/ezstudio-personalized-block": "^3.0@dev",
         "friendsofsymfony/jsrouting-bundle": "^2.3",
         "knplabs/knp-menu-bundle": "^2.2",
         "monolog/monolog": "^1.25.2",
@@ -92,6 +95,7 @@
         "ezsystems/allure-behat": "^3.0",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "^1.1@dev",
         "ezsystems/behatbundle": "^8.0@dev",
+        "ezsystems/ezplatform-code-style": "^0.1.0",
         "liuggio/fastest": "^1.6",
         "overblog/graphiql-bundle": "^0.1.2",
         "phpunit/phpunit": "8.2",
@@ -141,7 +145,8 @@
             "@php bin/console ezplatform:install ezplatform-ee-demo",
             "@php bin/console ezplatform:graphql:generate-schema",
             "@php bin/tmp_fix_roles.php"
-        ]
+        ],
+        "fix-cs": "@php ./bin/php-cs-fixer fix -v --show-progress=estimating"
     },
     "config": {
         "process-timeout": 0,
