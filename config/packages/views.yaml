@@ -90,13 +90,7 @@ ezplatform:
                         match:
                             Identifier\ContentType: professional
 
-                    inspiration:
-                        template: "@ezdesign/card/inspiration.html.twig"
-                        match:
-                            Identifier\ContentType: inspiration
-
-                catalog_card:
-                    folder:
-                        template: "@ezdesign/catalog_card/folder.html.twig"
+                    professional_catalog:
+                        template: "@ezdesign/card/professional_catalog.html.twig"
                         match:
                             Identifier\ContentType: folder

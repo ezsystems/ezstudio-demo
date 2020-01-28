@@ -34,11 +34,11 @@ ezpublish:
                         - {name: geometry/scalewidth, params: [281]}
                         - {name: geometry/crop, params: [281, 181, 0, 0]}
 
-                inspiration_small_card:
+                professional_photo_small:
                     reference: null
                     filters:
-                        - {name: geometry/scaleheight, params: [80]}
-                        - {name: geometry/crop, params: [80, 80, 0, 0]}
+                        - {name: geometry/scaleheight, params: [90]}
+                        - {name: geometry/crop, params: [90, 90, 0, 0]}
 
                 professional_photo:
                     reference: null
