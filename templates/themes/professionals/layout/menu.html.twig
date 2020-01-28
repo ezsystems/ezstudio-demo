@@ -1,44 +1,39 @@
 {% set parentLocationId = app_location_by_location_id(currentLocationId).parentLocationId %}
 {% set parentParentLocationId = app_location_by_location_id(parentLocationId).parentLocationId %}
 
-<ul class="menu">
-{% for item in menuItems %}
-    {% set class = item.locationId in [parentParentLocationId, parentLocationId] ? 'expand' : 'collapse' %}
-
-    <li class="{{ class }} show" data-location-id="{{ item.locationId }}">
-        {% set activeClass = item.locationId in [parentParentLocationId, parentLocationId] ? 'active' %}
-
-        <div class="menu__item">
-            <span class="menu__item__name {{ activeClass }}">{{ item.name }}</span>
-            <span class="menu__item__toggler"></span>
-        </div>
-
-        <ul class="submenu">
-        {% for subitem in item.children %}
-            {% set activeSubitem = subitem.locationId in [currentLocationId, parentLocationId] %}
-            {% set subitemClass = activeSubitem ? 'active expand' : 'collapse' %}
-
-            <li class="{{ subitemClass }} show" data-location-id="{{ subitem.locationId }}">
-                <div class="submenu__item">
-                    <span class="submenu__item__name">
-                        <a href="{{ path('ez_urlalias', {'locationId': subitem.locationId}) }}">{{ subitem.name }}</a>
-                    </span>
-                    <span class="submenu__item__toggler"></span>
+<nav class="navbar">
+    <ul class="nav flex-column menu-list w-100">
+        {% for item in menuItems %}
+            {% set class = item.locationId in [parentParentLocationId, parentLocationId] ? 'expand' : 'collapse' %}
+            <li class="{{ class }} show menu-list-item menu-list-item--has-sub-items" data-location-id="{{ item.locationId }}">
+                {% set activeClass = item.locationId in [parentParentLocationId, parentLocationId] ? 'active' %}
+                <div class="menu-list-item__label">
+                    <span class="menu-list-item__name {{ activeClass }}">{{ item.name }}</span>
+                    <span class="menu-list-item__toggler toggler--arrow"></span>
                 </div>
-
-                <ul class="subsubmenu {{ activeSubitem ? 'show' : 'hide' }}">
-                    {% for subsubitem in subitem.children %}
-
-                        {% set active = subsubitem.locationId in [currentLocationId, parentLocationId] ? 'active' %}
-
-                        <li class="{{ active }}" data-location-id="{{ subsubitem.locationId }}">
-                            <a href="{{ path('ez_urlalias', {'locationId': subsubitem.locationId}) }}">{{ subsubitem.name }}</a>
+                <ul class="menu-list">
+                    {% for subitem in item.children %}
+                        {% set activeSubitem = subitem.locationId in [currentLocationId, parentLocationId] %}
+                        {% set subitemClass = activeSubitem ? 'active expand' : 'collapse' %}
+                        <li class="{{ subitemClass }} show menu-list-item menu-list-item--has-sub-items" data-location-id="{{ subitem.locationId }}" data-tree-root-location-id="{{ item.locationId }}">
+                            <div class="menu-list-item__label">
+                                <span class="menu-list-item__name">
+                                    <a href="{{ path('ez_urlalias', {'locationId': subitem.locationId}) }}" class="menu-list-item__link">{{ subitem.name }}</a>
+                                </span>
+                                <span class="menu-list-item__toggler toggler--plus"></span>
+                            </div>
+                            <ul class="{{ activeSubitem ? 'show' : 'hide' }} menu-list">
+                                {% for subsubitem in subitem.children %}
+                                    {% set active = subsubitem.locationId in [currentLocationId, parentLocationId] ? 'active' %}
+                                    <li class="{{ active }} menu-list-item" data-location-id="{{ subsubitem.locationId }}" data-tree-root-location-id="{{ item.locationId }}">
+                                        <a href="{{ path('ez_urlalias', {'locationId': subsubitem.locationId}) }}" class="menu-list-item__link">{{ subsubitem.name }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
                         </li>
                     {% endfor %}
                 </ul>
             </li>
         {% endfor %}
-        </ul>
-    </li>
-{% endfor %}
-</ul>
+    </ul>
+</nav>
