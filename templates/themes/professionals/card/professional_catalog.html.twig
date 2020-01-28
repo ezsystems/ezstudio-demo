@@ -1,5 +1,5 @@
-<div class="catalog_card">
-    <div class="catalog_card__image">
+<div class="card box-shadow mb-3">
+    <div class="card__image">
         {% if not ez_field_is_empty( content, 'image' ) %}
             {{ ez_render_field(content, 'image', {
                 parameters: {
@@ -9,7 +9,7 @@
             }) }}
         {% endif %}
     </div>
-    <div class="catalog_card__link">
-        <a href="{{ path(location) }}">{{ ez_content_name(content) }}</a>
+    <div class="card__text text-center font-weight-bold">
+        <a href="{{ path(location) }}" class="card__link d-flex flex-column p-3">{{ ez_content_name(content) }}</a>
     </div>
 </div>

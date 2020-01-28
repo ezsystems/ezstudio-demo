@@ -1,0 +1,26 @@
+{% for item in menuItems %}
+    <div class="row">
+        <div class="col-12">
+            <h2 class="heading-md">{{ item.name }}</h2>
+            <div class="row">
+                {% for subitem in item.children %}
+                    <div class="col-lg-4 col-md-6 col-xl-3">
+                        {{ render_esi(controller('ez_content:viewAction', {
+                            locationId: subitem.locationId,
+                            viewType: 'card'
+                        })) }}
+                        <ul class="content-list list-unstyled">
+                            {% for subsubitem in subitem.children %}
+                                <li data-location-id="{{ subsubitem.locationId }}" class="mb-2">
+                                    <a href="{{ path('ez_urlalias', {'locationId': subsubitem.locationId}) }}" class="card__link">
+                                        {{ subsubitem.name }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endfor %}

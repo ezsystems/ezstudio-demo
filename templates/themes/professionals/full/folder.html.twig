@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-<div class="page page__professionals">
-    <h1 class="text-center">Professionals!</h1>
+<div class="page bg-white-smoke p-5">
+    <h1 class="heading-lg text-center">Professionals!</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -20,7 +20,7 @@
             </div>
             <div class="col-md-9">
                 {% if professionals is defined and professionals|length > 0  %}
-                    <div class="professionals_list">
+                    <div class="row">
                         {% for professional in professionals %}
                             {{ render_esi(controller('ez_content:viewAction', {
                                 locationId: professional.valueObject.contentInfo.mainLocationId,
@@ -28,14 +28,16 @@
                             })) }}
                         {% endfor %}
                     </div>
-                    {% if professionals.haveToPaginate() %}
-                        <div class="col-12">
-                            {{ pagerfanta(professionals, 'maison_template', {
-                                routeName: location,
-                                routeParams: ezplatform.requestStack.masterRequest.query.all
-                            }) }}
-                        </div>
-                    {% endif %}
+                    <div class="row">
+                        {% if professionals.haveToPaginate() %}
+                            <div class="col-12 d-flex justify-content-center">
+                                {{ pagerfanta(professionals, 'maison_template', {
+                                    routeName: location,
+                                    routeParams: ezplatform.requestStack.masterRequest.query.all
+                                }) }}
+                            </div>
+                        {% endif %}
+                    </div>
                 {% endif %}
             </div>
         </div>
