@@ -1,0 +1,58 @@
+$card: '.card';
+
+#{($card)} {
+    &__inspirations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .ezimageasset-field {
+            width: 33%;
+            figure {
+                img {
+                    border-radius: 6px;
+                    max-width: 100%;
+                    object-fit: cover;
+                    height: auto;
+                    min-height: 80px;
+                }
+            }
+        }
+    }
+    &__image {
+        .ezimage-field {
+            margin: 0;
+        }
+    }
+    &__text {
+        font-size: 14px;
+    }
+    &__desc {
+        font-size: 13px;
+        padding-bottom: 0;
+    }
+    &__link {
+        color: $grey-light;
+    }
+    &--professional {
+        background-color: $white;
+        border-radius: 4px;
+        box-shadow: 0 0 30px 0 rgba(0,0,0,0.07);
+
+        #{($card)}__text {
+            top: -28px;
+            position: relative;
+        }
+        #{($card)}__image {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -28px;
+
+            img {
+                border-radius: 55px;
+                border: 5px solid $white;
+            }
+        }
+    }
+}

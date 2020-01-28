@@ -6,6 +6,12 @@
     }
 }
 
+.img-rounded-container {
+    img {
+        @include rounded(50%);
+    }
+}
+
 .icon {
     max-width: 15px;
     height: auto;

@@ -14,18 +14,25 @@ $orange: #f06d1a;
     color: $black;
 }
 
-.bg-blue-light {
-    background-color: $blue-lighter;
+.grey-light {
+    color: $grey-light;
 }
 
 .blue-lighter {
     color: $blue-lighter;
 }
 
+.bg-blue-lighter {
+    background-color: $blue-lighter;
+}
+.bg-blue-light {
+    background-color: $blue-light;
+}
+
 .bg-grey-very-light {
     background-color: $grey-very-light;
 }
 
-.grey-light {
-    color: $grey-light;
+.bg-white-smoke {
+    background-color: $white-smoke;
 }

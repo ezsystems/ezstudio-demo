@@ -3,3 +3,9 @@
     -moz-transform: translateX($x) translateY($y);
     transform: translateX($x) translateY($y);
 }
+
+@mixin rounded($x) {
+    border-radius: $x;
+    -webkit-border-radius: $x;
+    -moz-border-radius: $x;
+}

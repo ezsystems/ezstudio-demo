@@ -1,0 +1,15 @@
+.banner {
+    position: relative;
+    z-index: 1;
+
+    &--full-width {
+        height: 306px;
+    }
+    &__title {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        @include transform(-50%, -25%);
+        color: $grey-light;
+    }
+}
