@@ -28,6 +28,9 @@ services:
     App\Controller\ProfessionalsController:
         public: true
 
+    App\Controller\InspirationMenuController:
+        public: true
+
     App\Controller\ContactFormController:
         public: true
 

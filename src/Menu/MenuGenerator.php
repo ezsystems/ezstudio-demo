@@ -13,11 +13,10 @@ use App\Service\Search\QueryExecutor\LocationSearchQueryExecutor;
 use App\Service\Search\SearchResultLocationExtractor;
 use App\Tree\LocationTreeBuilder;
 use App\Tree\Values\MenuItem;
+use App\Value\MenuQueryParameters;
 
-final class MenuGenerator
+final class MenuGenerator implements MenuGeneratorInterface
 {
-    const CACHE_KEY_MENU = 'app_professionals_listing_menu';
-
     /** @var \App\Service\Cache\CacheServiceInterface */
     private $cacheService;
 
@@ -33,26 +32,39 @@ final class MenuGenerator
     }
 
     /**
-     * @return MenuItem[]
+     * @inheritDoc
+     *
+     * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */
-    public function generate(string $pathString, int $rootLocationId): array
+    public function fromCache(MenuQueryParameters $queryParameters, string $cacheKey): array
     {
-        $item = $this->cacheService->getItem(self::CACHE_KEY_MENU);
+        $item = $this->cacheService->getItem($cacheKey);
 
         if ($item->isHit()) {
             return $item->get();
         }
 
-        $locationSearchResults = $this->executor->getResults($pathString);
-        $menuItems = SearchResultLocationExtractor::extract($locationSearchResults);
-        $menu = LocationTreeBuilder::build($menuItems, $rootLocationId);
+        $menu = $this->generate($queryParameters);
 
         $item->expiresAfter((int) $this->cacheService->getCacheExpirationTime());
         $item->set($menu);
-        $item->tag('location-' . $rootLocationId);
+        $item->tag('location-' . $queryParameters->getRootLocationId());
 
         $this->cacheService->save($item);
 
         return $menu;
+    }
+
+    /**
+     * @inheritDoc
+     *
+     * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
+     */
+    public function generate(MenuQueryParameters $queryParameters): array
+    {
+        $locationSearchResults = $this->executor->getResults($queryParameters);
+        $menuItems = SearchResultLocationExtractor::extract($locationSearchResults);
+
+        return LocationTreeBuilder::build($menuItems, $queryParameters->getRootLocationId());
     }
 }
