@@ -13,6 +13,166 @@
     is_hidden: false
     sort_field: name
     sort_order: ASC
+    remote_id: 745e333be7b8750797653c45e2868699
+    location_remote_id: a309bbcd1000c34b21c4a69f07ab93df
+    section: 3
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    always_available: true
+    attributes:
+        name: kitchen.png
+        caption:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        image:
+            path: public/assets/icons/kitchen.png
+            filename: kitchen.png
+            alternativeText: ''
+    references:
+        -
+            identifier: ref_location_image__media__images__inspirations__category_kitchen
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__inspirations__category_kitchen
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: image
+    parent_location: reference:ref_folder__media__images
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
+    remote_id: 9f1f4bbf4719ccff5ed499274de2ecfb
+    location_remote_id: 22547ceec943287157e9c53a9153018b
+    section: 3
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    always_available: true
+    attributes:
+        name: bathroom.png
+        caption:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        image:
+            path: public/assets/icons/bathroom.png
+            filename: bathroom.png
+            alternativeText: ''
+    references:
+        -
+            identifier: ref_location_image__media__images__inspirations__category_bathroom
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__inspirations__category_bathroom
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: image
+    parent_location: reference:ref_folder__media__images
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
+    remote_id: 189f0c5cb502e7ddd843b42bbe8c94a4
+    location_remote_id: 244c5d571fa828c6217adec04c759c14
+    section: 3
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    always_available: true
+    attributes:
+        name: bedroom.png
+        caption:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        image:
+            path: public/assets/icons/bedroom.png
+            filename: bedroom.png
+            alternativeText: ''
+    references:
+        -
+            identifier: ref_location_image__media__images__inspirations__category_bedroom
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__inspirations__category_bedroom
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: image
+    parent_location: reference:ref_folder__media__images
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
+    remote_id: 8f3487bcedf5b356329735e5c465f5a9
+    location_remote_id: 2cfbed6d6ef2f7eea46c66856232e84c
+    section: 3
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    always_available: true
+    attributes:
+        name: home-office.png
+        caption:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        image:
+            path: public/assets/icons/home-office.png
+            filename: home-office.png
+            alternativeText: ''
+    references:
+        -
+            identifier: ref_location_image__media__images__inspirations__category_home_office
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__inspirations__category_home_office
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: image
+    parent_location: reference:ref_folder__media__images
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
+    remote_id: 7d7ca4a968b8843540bada4ab87f8839
+    location_remote_id: b8f67aa0e390c2f8a0863c48bfa2d671
+    section: 3
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    always_available: true
+    attributes:
+        name: living-room.png
+        caption:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        image:
+            path: public/assets/icons/living-room.png
+            filename: living-room.png
+            alternativeText: ''
+    references:
+        -
+            identifier: ref_location_image__media__images__inspirations__category_living_room
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__inspirations__category_living_room
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: image
+    parent_location: reference:ref_folder__media__images
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
     remote_id: be0116fe387b6a1b429faf7bb3f22afd
     location_remote_id: 6e7a0d390006b9b018228dbea82381e0
     section: 3

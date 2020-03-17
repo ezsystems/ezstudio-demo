@@ -12,7 +12,7 @@ ezplatform:
                             Identifier\ContentType: home
 
                     inspiration_list:
-                        controller: "App\\Controller\\PaginationQueryController:contentQueryAction"
+                        controller: "ez_query:pagingQueryAction"
                         template: "@ezdesign/full/inspiration_list.html.twig"
                         match:
                             Identifier\ContentType: inspiration_list
@@ -21,7 +21,8 @@ ezplatform:
                             query:
                                 query_type: "App:Children"
                                 parameters:
-                                    parent_location_id: "@=location.id"
+                                    path_string: "@=location.pathString"
+                                    depth: 5
                                     included_content_type_identifier: 'inspiration'
                                 assign_results_to: inspirations
                     inspiration:

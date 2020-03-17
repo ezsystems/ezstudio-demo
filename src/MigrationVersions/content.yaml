@@ -29,12 +29,230 @@
             identifier: ref_content_folder__sites__maison__inspirations
             attribute: content_id
 
+#Inspiration category content
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: f7125604b6afb59f62cd8fcaba622732
+    location_remote_id: b07634f3e91ae0b89e420f2aee204ebc
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Kitchen'
+        icon:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__category_kitchen
+            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_kitchen
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_kitchen
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: 602fd126ccd32d124d302f6e802ffcf7
+    location_remote_id: 3d21aefea7854434c31b6cd2be487f40
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Home office'
+        icon:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__category_home_office
+            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_home_office
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_home_office
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: d11d7a17bc53dbcc3eb52ae21cc6d736
+    location_remote_id: a1c9f416ba1807722f44eea6b08e405b
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Living room'
+        icon:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__category_living_room
+            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_living_room
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_living_room
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: c4ca1185a344509ee6fd382ec6e113ee
+    location_remote_id: d9e090eba6065504a48393a4b805bef4
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Bathroom'
+        icon:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__category_bathroom
+            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_bathroom
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_bathroom
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: d4f83cc2cda9ddd6f8e84d1796781dea
+    location_remote_id: 1783492a3b866e9d9d8b633a8f9d568b
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Bedroom'
+        icon:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__category_bedroom
+            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_bedroom
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_bedroom
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: 7ad736139dae95d25b50c19ae5bd0ad2
+    location_remote_id: 24e8825db3aa53b90327aa50c3951ac7
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Business'
+    #        icon:
+    #            destinationContentId: reference:ref_content_image__media__images__inspirations__category_kitchen
+    #            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_business
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_business
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: inspiration_category
+    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: 84fa5fa2500d43b0991e5c93366a52be
+    location_remote_id: 5b1732225d535b7e401b469090a64ca6
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1566930271
+    publication_date: 1564761554
+    always_available: true
+    attributes:
+        name: 'Outdoor'
+    #        icon:
+    #            destinationContentId: reference:ref_content_image__media__images__inspirations__category_kitchen
+    #            alternativeText: null
+    references:
+        -
+            identifier: ref_location_inspiration__sites__maison__inspirations__category_outdoor
+            attribute: location_id
+        -
+            identifier: ref_content_inspiration__sites__maison__inspirations__category_outdoor
+            attribute: content_id
+
 #Inspiration content
 -
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_kitchen
     priority: 0
     is_hidden: false
     sort_field: published
@@ -67,7 +285,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_home_office
     priority: 0
     is_hidden: false
     sort_field: published
@@ -100,7 +318,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_living_room
     priority: 0
     is_hidden: false
     sort_field: published
@@ -133,7 +351,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_bathroom
     priority: 0
     is_hidden: false
     sort_field: published
@@ -166,7 +384,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_bedroom
     priority: 0
     is_hidden: false
     sort_field: published
@@ -199,7 +417,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_business
     priority: 0
     is_hidden: false
     sort_field: published
@@ -232,7 +450,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_kitchen
     priority: 0
     is_hidden: false
     sort_field: published
@@ -265,7 +483,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_outdoor
     priority: 0
     is_hidden: false
     sort_field: published
@@ -298,7 +516,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_home_office
     priority: 0
     is_hidden: false
     sort_field: published
@@ -331,7 +549,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_living_room
     priority: 0
     is_hidden: false
     sort_field: published
@@ -364,7 +582,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_outdoor
     priority: 0
     is_hidden: false
     sort_field: published
@@ -397,7 +615,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_business
     priority: 0
     is_hidden: false
     sort_field: published
@@ -430,7 +648,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_outdoor
     priority: 0
     is_hidden: false
     sort_field: published
@@ -463,7 +681,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_bathroom
     priority: 0
     is_hidden: false
     sort_field: published
@@ -496,7 +714,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_kitchen
     priority: 0
     is_hidden: false
     sort_field: name
@@ -529,7 +747,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_home_office
     priority: 0
     is_hidden: false
     sort_field: name
@@ -562,7 +780,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_living_room
     priority: 0
     is_hidden: false
     sort_field: name
@@ -595,7 +813,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_bedroom
     priority: 0
     is_hidden: false
     sort_field: name
@@ -628,7 +846,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_kitchen
     priority: 0
     is_hidden: false
     sort_field: name
@@ -661,7 +879,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_outdoor
     priority: 0
     is_hidden: false
     sort_field: name
@@ -694,7 +912,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_home_office
     priority: 0
     is_hidden: false
     sort_field: name
@@ -727,7 +945,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_living_room
     priority: 0
     is_hidden: false
     sort_field: name
@@ -760,7 +978,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_outdoor
     priority: 0
     is_hidden: false
     sort_field: name
@@ -793,7 +1011,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_business
     priority: 0
     is_hidden: false
     sort_field: name
@@ -826,7 +1044,7 @@
     type: content
     mode: create
     content_type: inspiration
-    parent_location: reference:ref_location_folder__sites__maison__inspirations
+    parent_location: reference:ref_location_inspiration__sites__maison__inspirations__category_outdoor
     priority: 0
     is_hidden: false
     sort_field: name

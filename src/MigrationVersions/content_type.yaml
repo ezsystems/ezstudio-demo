@@ -32,6 +32,50 @@
             validator-configuration:
                 StringLengthValidator: { maxStringLength: null, minStringLength: null }
 
+#inspiration_category content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: inspiration_category
+    name:
+        eng-GB: Inspiration category
+    description: {  }
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    lang: eng-GB
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: icon
+            type: ezimageasset
+            name:
+                eng-GB: Icon
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+
 #inspiration content type
 -
     type: content_type
