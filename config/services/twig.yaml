@@ -6,6 +6,8 @@ services:
 
     App\Twig\ContentInfoByLocationIdExtension: ~
 
+    App\Twig\ImageExtension: ~
+
     App\Twig\SearchResultExtractorExtension: ~
 
     App\Twig\PremiumContentExtension:
