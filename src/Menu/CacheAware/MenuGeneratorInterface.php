@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace App\Menu;
+namespace App\Menu\CacheAware;
 
 use App\Value\MenuQueryParameters;
 
@@ -15,10 +15,5 @@ interface MenuGeneratorInterface
     /**
      * @return \App\Tree\Values\MenuItem[]
      */
-    public function fromCache(MenuQueryParameters $queryParameters, string $cacheKey): array;
-
-    /**
-     * @return \App\Tree\Values\MenuItem[]
-     */
-    public function generate(MenuQueryParameters $queryParameters): array;
+    public function generate(MenuQueryParameters $queryParameters, string $key): array;
 }

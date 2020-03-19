@@ -6,13 +6,12 @@
  */
 declare(strict_types=1);
 
-namespace App\Menu;
+namespace App\Menu\CacheAware;
 
 use App\Service\Cache\CacheServiceInterface;
-use App\Service\Search\QueryExecutor\LocationSearchQueryExecutor;
+use App\Service\Search\QueryExecutorInterface;
 use App\Service\Search\SearchResultLocationExtractor;
 use App\Tree\LocationTreeBuilder;
-use App\Tree\Values\MenuItem;
 use App\Value\MenuQueryParameters;
 
 final class MenuGenerator implements MenuGeneratorInterface
@@ -20,12 +19,12 @@ final class MenuGenerator implements MenuGeneratorInterface
     /** @var \App\Service\Cache\CacheServiceInterface */
     private $cacheService;
 
-    /** @var \App\Service\Search\QueryExecutor\LocationSearchQueryExecutor */
+    /** @var \App\Service\Search\QueryExecutorInterface */
     private $executor;
 
     public function __construct(
         CacheServiceInterface $cacheService,
-        LocationSearchQueryExecutor $executor
+        QueryExecutorInterface $executor
     ) {
         $this->cacheService = $cacheService;
         $this->executor = $executor;
@@ -36,15 +35,18 @@ final class MenuGenerator implements MenuGeneratorInterface
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */
-    public function fromCache(MenuQueryParameters $queryParameters, string $cacheKey): array
+    public function generate(MenuQueryParameters $queryParameters, string $key): array
     {
-        $item = $this->cacheService->getItem($cacheKey);
+        $item = $this->cacheService->getItem($key);
 
         if ($item->isHit()) {
             return $item->get();
         }
 
-        $menu = $this->generate($queryParameters);
+        $locationSearchResults = $this->executor->getResults($queryParameters);
+        $menuItems = SearchResultLocationExtractor::extract($locationSearchResults);
+
+        $menu = LocationTreeBuilder::build($menuItems, $queryParameters->getRootLocationId());
 
         $item->expiresAfter((int) $this->cacheService->getCacheExpirationTime());
         $item->set($menu);
@@ -53,18 +55,5 @@ final class MenuGenerator implements MenuGeneratorInterface
         $this->cacheService->save($item);
 
         return $menu;
-    }
-
-    /**
-     * @inheritDoc
-     *
-     * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
-     */
-    public function generate(MenuQueryParameters $queryParameters): array
-    {
-        $locationSearchResults = $this->executor->getResults($queryParameters);
-        $menuItems = SearchResultLocationExtractor::extract($locationSearchResults);
-
-        return LocationTreeBuilder::build($menuItems, $queryParameters->getRootLocationId());
     }
 }

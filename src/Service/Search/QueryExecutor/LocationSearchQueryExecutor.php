@@ -9,11 +9,13 @@ declare(strict_types=1);
 namespace App\Service\Search\QueryExecutor;
 
 use App\QueryType\MenuQueryType;
+use App\Service\Search\QueryExecutorInterface;
 use App\Value\MenuQueryParameters;
+use App\Value\QueryParameters;
 use eZ\Publish\API\Repository\SearchService as SearchServiceInterface;
 use eZ\Publish\API\Repository\Values\Content\Search\SearchResult;
 
-final class LocationSearchQueryExecutor
+final class LocationSearchQueryExecutor implements QueryExecutorInterface
 {
     /** @var \eZ\Publish\API\Repository\SearchService */
     private $searchService;
@@ -34,15 +36,16 @@ final class LocationSearchQueryExecutor
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */
-    public function getResults(MenuQueryParameters $queryParameters): SearchResult
+    public function getResults(QueryParameters $queryParameters): SearchResult
     {
+        /** @var MenuQueryParameters $queryParameters */
         $query = $this->menuQueryType->getQuery([
             'path_string' => $queryParameters->getPathString(),
             'included_content_type_identifier' => $queryParameters->getIncludedContentTypeIdentifiers(),
             'depth' => $queryParameters->getDepth(),
         ]);
 
-        $query->limit = $queryParameters->getQueryLimit();
+        $query->limit = $queryParameters->getLimit();
 
         return $this->searchService->findLocations($query);
     }

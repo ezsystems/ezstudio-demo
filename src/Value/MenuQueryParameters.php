@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace App\Value;
 
-final class MenuQueryParameters
+final class MenuQueryParameters extends QueryParameters
 {
     /** @var string */
     private $pathString;
@@ -22,21 +22,19 @@ final class MenuQueryParameters
     /** @var int */
     private $rootLocationId;
 
-    /** @var int */
-    private $queryLimit;
-
     public function __construct(
         string $pathString,
         int $rootLocationId,
         array $includedContentTypeIdentifiers,
         int $depth,
-        int $queryLimit = 25) {
+        int $limit = 25) {
 
         $this->pathString = $pathString;
         $this->rootLocationId = $rootLocationId;
         $this->includedContentTypeIdentifiers = $includedContentTypeIdentifiers;
         $this->depth = $depth;
-        $this->queryLimit = $queryLimit;
+
+        parent::__construct($limit);
     }
 
     /**
@@ -69,13 +67,5 @@ final class MenuQueryParameters
     public function getDepth(): int
     {
         return $this->depth;
-    }
-
-    /**
-     * @return int
-     */
-    public function getQueryLimit(): int
-    {
-        return $this->queryLimit;
     }
 }
