@@ -15,7 +15,7 @@ ezplatform:
                         controller: "ez_query:pagingQueryAction"
                         template: "@ezdesign/full/inspiration_list.html.twig"
                         match:
-                            Identifier\ContentType: inspiration_list
+                            Identifier\ContentType: [inspiration_list, inspiration_category]
                         params:
                             limit: 10
                             query:
