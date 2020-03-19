@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Menu\MenuProviderInterface;
+use App\Menu\MenuProviderStrategy;
 use eZ\Bundle\EzPublishCoreBundle\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -16,7 +16,7 @@ final class MenuController extends Controller
 {
     private $provider;
 
-    public function __construct(MenuProviderInterface $provider)
+    public function __construct(MenuProviderStrategy $provider)
     {
         $this->provider = $provider;
     }
@@ -26,6 +26,7 @@ final class MenuController extends Controller
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */
     public function getMenuAction(
+        string $type,
         string $template,
         string $pathString,
         int $rootLocationId,
@@ -35,7 +36,7 @@ final class MenuController extends Controller
         $response->setVary('X-User-Hash');
 
         return $this->render($template, [
-            'menuItems' => $this->provider->get($pathString, $rootLocationId),
+            'menuItems' => $this->provider->get($type, $pathString, $rootLocationId),
             'currentLocationId' => $currentLocationId,
         ],
             $response

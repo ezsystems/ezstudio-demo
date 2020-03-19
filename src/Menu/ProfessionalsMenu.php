@@ -8,27 +8,15 @@ declare(strict_types=1);
 
 namespace App\Menu;
 
-use App\Menu\CacheAware\MenuGeneratorInterface;
 use App\Value\MenuQueryParameters;
 
-final class ProfessionalsMenu extends MenuDecorator
+final class ProfessionalsMenu extends AbstractMenuProvider implements MenuProviderInterface
 {
-    private const CACHE_KEY_MENU = 'app_professionals_listing_menu';
+    private const MENU_NAME = 'professionals';
+    private const CACHE_KEY_MENU = 'app_' . self::MENU_NAME . '_listing_menu';
     private const MENU_ITEM_LIMIT = 400;
     private const MENU_CONTENT_TYPES = ['folder'];
     private const MENU_CONTENT_DEPTH = 5;
-
-    /** @var \App\Menu\CacheAware\MenuGeneratorInterface */
-    private $menuGenerator;
-
-    public function __construct(
-        MenuProviderInterface $menuProvider,
-        MenuGeneratorInterface $menuGenerator
-    ) {
-        parent::__construct($menuProvider);
-
-        $this->menuGenerator = $menuGenerator;
-    }
 
     public function get(string $pathString, int $rootLocationId): array
     {
@@ -42,5 +30,10 @@ final class ProfessionalsMenu extends MenuDecorator
             ),
             self::CACHE_KEY_MENU
         );
+    }
+
+    public function supports(string $type): bool
+    {
+        return self::MENU_NAME === $type;
     }
 }

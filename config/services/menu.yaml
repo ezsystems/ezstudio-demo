@@ -1,0 +1,18 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    _instanceof:
+        App\Menu\MenuProviderInterface:
+            tags: ['menu_provider_supported_strategy']
+
+    App\Menu\:
+        resource: '../../src/Menu/*'
+
+    App\Menu\MenuProviderStrategy:
+        arguments:
+            $providers: !tagged_iterator 'menu_provider_supported_strategy'
+
+    App\Menu\CacheAware\MenuGenerator: ~

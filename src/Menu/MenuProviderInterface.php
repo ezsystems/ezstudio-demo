@@ -11,4 +11,6 @@ namespace App\Menu;
 interface MenuProviderInterface
 {
     public function get(string $pathString, int $rootLocationId): array;
+
+    public function supports(string $type): bool;
 }

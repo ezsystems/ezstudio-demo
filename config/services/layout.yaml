@@ -18,5 +18,3 @@ services:
     App\Layout\JSRenderer:
         tags:
             - { name: layout.renderer, key: 'js' }
-
-    App\Menu\MenuGenerator: ~

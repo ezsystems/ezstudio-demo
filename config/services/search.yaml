@@ -5,3 +5,5 @@ services:
         public: false
 
     App\Service\Search\QueryExecutor\LocationSearchQueryExecutor: ~
+
+    App\Service\Search\QueryExecutorInterface: '@App\Service\Search\QueryExecutor\LocationSearchQueryExecutor'
