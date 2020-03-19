@@ -30,14 +30,16 @@ trait InstallerCommandExecuteTrait
      *
      * Based on {@see \Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::executeCommand}.
      *
+     * @param OutputInterface $output
      * @param string $cmd eZ Platform command to execute, like 'ezplatform:solr_create_index'
      *               Escape any user provided arguments, like: 'assets:install '.escapeshellarg($webDir)
+     * @param int $timeout
      */
     private function executeCommand(OutputInterface $output, string $cmd, int $timeout = 300): void
     {
         $phpFinder = new PhpExecutableFinder();
         if (!$phpPath = $phpFinder->find(false)) {
-            throw new RuntimeException('The php executable could not be found, add it to your PATH environment variable and try again');
+            throw new \RuntimeException('The php executable could not be found. Add it to your PATH environment variable and try again');
         }
 
         // We don't know which php arguments where used so we gather some to be on the safe side
@@ -66,10 +68,17 @@ trait InstallerCommandExecuteTrait
 
         $console .= ' --env=' . escapeshellarg($this->environment);
 
-        $process = new Process($php . ' ' . $console . ' ' . $cmd, null, null, null, $timeout);
+        $process = Process::fromShellCommandline(
+            implode(' ', [$php, $console, $cmd]),
+            null,
+            null,
+            null,
+            $timeout
+        );
+
         $process->run(function ($type, $buffer) use ($output) { $output->write($buffer, false); });
-        if (!$process->isSuccessful()) {
-            throw new RuntimeException(sprintf('An error occurred when executing the "%s" command.', escapeshellarg($cmd)));
+        if (!$process->getExitCode() === 1) {
+            throw new \RuntimeException(sprintf('An error occurred when executing the "%s" command.', escapeshellarg($cmd)));
         }
     }
 }

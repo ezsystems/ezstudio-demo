@@ -69,6 +69,10 @@ parameters:
     eztags.default.tag_view.pagelayout: '@@ezdesign/pagelayout.html.twig'
     eztags.default.tag_view.template: '@@NetgenTags/tag/view.html.twig'
 
+    env(RECOMMENDATION_CUSTOMER_ID): '0'
+    env(RECOMMENDATION_LICENSE_KEY): ''
+    env(RECOMMENDATION_HOST_URI): ''
+
 ezplatform:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'http' you can point it to Varnish
     http_cache:
@@ -202,13 +206,13 @@ framework:
         #       default session name will be set to "eZSESSID{siteaccess_hash}" (unique session name per siteaccess)
         #       Further reading on sessions: http://doc.ezplatform.com/en/latest/guide/sessions/
     http_method_override: true
-#    cache:
-#        pools:
-#            cache.array:
-#                adapter: cache.adapter.array
-#                default_lifetime: 3600
-#                public: true
-#                tags: true
+    cache:
+        pools:
+            cache.array:
+                adapter: cache.adapter.array
+                default_lifetime: 3600
+                public: true
+                tags: true
 
 ezrecommendation:
     system:
