@@ -18,12 +18,16 @@ $carousel: '.carousel';
     &__menu-link {
         color: $grey-dark;
         padding: 15px;
-        display: flex;
         height: 100%;
 
         &:hover {
             color: $blue-lighter;
             text-decoration: none;
+        }
+
+        img {
+            max-width: 62px;
+            max-height: 62px;
         }
     }
 }

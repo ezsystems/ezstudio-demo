@@ -22,6 +22,10 @@ services:
     App\Controller\MenuController:
         public: true
 
+    app_menu:
+        alias: App\Controller\MenuController
+        public: true
+
     App\Controller\ContactFormController:
         public: true
 

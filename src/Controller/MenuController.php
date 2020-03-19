@@ -22,8 +22,7 @@ final class MenuController extends Controller
     }
 
     /**
-     * @throws \Twig\Error\Error
-     * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
+     * @throws \App\Exception\MenuStrategyNotFoundException
      */
     public function getMenuAction(
         string $type,
