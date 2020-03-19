@@ -173,6 +173,38 @@
     is_hidden: false
     sort_field: name
     sort_order: ASC
+    remote_id: 6c0904c6a0a8d9b0e1dbd7554cef9fe6
+    location_remote_id: 170c4dd7490bfef3a3127f67f9769946
+    section: 3
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    always_available: true
+    attributes:
+        name: outdoor.png
+        caption:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        image:
+            path: public/assets/icons/outdoor.png
+            filename: outdoor.png
+            alternativeText: ''
+    references:
+        -
+            identifier: ref_location_image__media__images__inspirations__category_outdoor
+            attribute: location_id
+        -
+            identifier: ref_content_image__media__images__inspirations__category_outdoor
+            attribute: content_id
+
+-
+    type: content
+    mode: create
+    content_type: image
+    parent_location: reference:ref_folder__media__images
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
     remote_id: be0116fe387b6a1b429faf7bb3f22afd
     location_remote_id: 6e7a0d390006b9b018228dbea82381e0
     section: 3
