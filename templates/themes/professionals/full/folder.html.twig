@@ -11,7 +11,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                {{ render_esi(controller('App\\Controller\\ProfessionalsController::getMenuAction', {
+                {{ render_esi(controller('app_menu::getMenuAction', {
+                    type: 'professionals',
                     template: '@ezdesign/layout/menu.html.twig',
                     pathString: ezplatform.rootLocation.pathString,
                     rootLocationId: ezplatform.rootLocation.id,

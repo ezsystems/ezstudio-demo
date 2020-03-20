@@ -28,10 +28,7 @@
 </head>
 <body>
 {% block header %}
-    {{ render_esi(controller('App\\Controller\\MenuController::getChildNodesAction', {
-        template: '@ezdesign/layout/header.html.twig',
-        pathString: location is defined ? location.pathString
-    })) }}
+    {% include '@ezdesign/layout/header.html.twig' %}
 {% endblock %}
 
 <main>
@@ -40,10 +37,7 @@
 </main>
 
 {% block footer %}
-    {{ render_esi(controller('App\\Controller\\MenuController::getChildNodesAction', {
-        template: '@ezdesign/layout/footer.html.twig',
-        pathString: location is defined ? location.pathString
-    })) }}
+    {% include '@ezdesign/layout/footer.html.twig' %}
 {% endblock %}
 
 {% block javascripts %}
