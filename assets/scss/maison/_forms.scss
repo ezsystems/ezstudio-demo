@@ -19,4 +19,35 @@
             font-size: 30px;
         }
     }
+    &--contact {
+        input.form-control,
+        textarea.form-control {
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            border-bottom: solid 1px #979797;
+            padding: 0;
+        }
+        textarea {
+            resize: none;
+        }
+        ::placeholder {
+            color: $grey-lighter;
+        }
+        :-ms-input-placeholder {
+            color: $grey-lighter;
+        }
+        ::-ms-input-placeholder {
+            color: $grey-lighter;
+        }
+        label {
+            color: $grey-lighter;
+        }
+        .form-inline .form-group {
+            width: 45%;
+        }
+        .form-inline .form-group:nth-last-child(2n) {
+            margin-right: 10%;
+        }
+    }
 }

@@ -1,0 +1,51 @@
+{% extends "@ezdesign/pagelayout.html.twig" %}
+
+{% block page_head %}
+    {% set title = ez_content_name(content) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <section class="page py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 pr-5 border-right">
+                    <div class="form form--contact">
+                        <h1>{{ ez_render_field(content, 'title') }}</h1>
+                        {{ form_start(form) }}
+                        <div class="form-inline mt-5">
+                            <div class="form-group">
+                                {{ form_widget(form.firstName) }}
+                                <div class="form-error">
+                                    {{ form_errors(form.firstName) }}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                {{ form_widget(form.lastName) }}
+                                <div class="form-error">
+                                    {{ form_errors(form.lastName) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-5">
+                            {{ form_widget(form.email) }}
+                            <div class="form-error">
+                                {{ form_errors(form.email) }}
+                            </div>
+                        </div>
+                        <div class="form-group mt-5">
+                            {{ form_label(form.message) }}
+                            {{ form_widget(form.message) }}
+                            <div class="form-error">
+                                {{ form_errors(form.message) }}
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn--blue btn-lg mt-5">{{ 'Send Message'|trans }}</button>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 "></div>
+        </div>
+    </section>
+{% endblock %}

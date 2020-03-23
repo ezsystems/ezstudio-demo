@@ -25,9 +25,30 @@ final class ContactType extends AbstractType
     {
         $builder
             ->setMethod('post')
-            ->add('name', TextType::class)
-            ->add('email', EmailType::class)
-            ->add('message', TextareaType::class);
+            ->add('firstName', TextType::class, [
+                'attr' => [
+                    'class' => 'form-control',
+                    'placeholder' => 'First name'
+                ],
+            ])
+            ->add('lastName', TextType::class, [
+                'attr' => [
+                    'class' => 'form-control',
+                    'placeholder' => 'Last name'
+                ],
+            ])
+            ->add('email', EmailType::class, [
+                'attr' => [
+                    'class' => 'form-control',
+                    'placeholder' => 'Email'
+                ],
+            ])
+            ->add('message', TextareaType::class, [
+                'label' => 'How can we help you?',
+                'attr' => [
+                    'class' => 'form-control',
+                ]
+            ]);
     }
 
     public function getName(): string

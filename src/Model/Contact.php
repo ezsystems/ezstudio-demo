@@ -13,57 +13,92 @@ use Symfony\Component\Validator\Constraints as Assert;
 final class Contact
 {
     /**
-     * Sender's name.
-     *
      * @var string
+     *
      * @Assert\NotBlank()
      */
-    private $name;
+    private $firstName;
 
     /**
-     * Sender's e-mail address.
-     *
      * @var string
+     *
+     * @Assert\NotBlank()
+     */
+    private $lastName;
+
+    /**
+     * @var string
+     *
      * @Assert\Email()
      */
     private $email;
 
     /**
-     * Sender's message.
-     *
      * @var string
+     *
      * @Assert\NotBlank()
      */
     private $message;
 
     /**
-     * @param string $name
+     * @return string
      */
-    public function setName($name): void
+    public function getFirstName(): string
     {
-        $this->name = $name;
+        return $this->firstName;
     }
 
-    public function getName(): ?string
+    /**
+     * @param string $firstName
+     */
+    public function setFirstName(string $firstName): void
     {
-        return $this->name;
+        $this->firstName = $firstName;
     }
 
+    /**
+     * @return string
+     */
+    public function getLastName(): string
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param string $lastName
+     */
+    public function setLastName(string $lastName): void
+    {
+        $this->lastName = $lastName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param string $email
+     */
     public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function getMessage(): ?string
+    /**
+     * @return string
+     */
+    public function getMessage(): string
     {
         return $this->message;
     }
 
+    /**
+     * @param string $message
+     */
     public function setMessage(string $message): void
     {
         $this->message = $message;
@@ -71,6 +106,10 @@ final class Contact
 
     public function getFrom(): string
     {
-        return sprintf('%s <%s>', $this->getName(), $this->getEmail());
+        return sprintf('%s %s <%s>',
+            $this->getFirstName(),
+            $this->getLastName(),
+            $this->getEmail()
+        );
     }
 }
