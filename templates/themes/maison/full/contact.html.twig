@@ -9,8 +9,8 @@
     <section class="page py-5">
         <div class="container py-5">
             <div class="row">
-                <div class="col-lg-6 pr-5 border-right">
-                    <div class="form form--contact">
+                <div class="col-lg-6 pr-lg-5 border-right">
+                    <div class="form form--contact pr-lg-5">
                         <h1>{{ ez_render_field(content, 'title') }}</h1>
                         {{ form_start(form) }}
                         <div class="form-inline mt-5">
@@ -40,12 +40,18 @@
                                 {{ form_errors(form.message) }}
                             </div>
                         </div>
-                        <button type="submit" class="btn btn--blue btn-lg mt-5">{{ 'Send Message'|trans }}</button>
+                        <div class="mt-5">
+                            <button type="submit" class="btn btn--blue btn--lg mt-5">{{ 'Send Message'|trans }}</button>
+                        </div>
                         {{ form_end(form) }}
                     </div>
                 </div>
+                <div class="col-lg-6 pl-lg-5 mt-xs-5">
+                    <div class="pl-lg-5">
+                        {% include '@ezdesign/parts/find_professionals.html.twig' %}
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-1 "></div>
         </div>
     </section>
 {% endblock %}
