@@ -533,6 +533,29 @@
 #            category: metadata
 #            position: 100
 
+# Contact content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: contact
+    name: 'Contact'
+    description: 'Contact page.'
+    name_pattern: '<title>'
+    url_name_pattern: ''
+    is_container: false
+    attributes:
+        -
+            identifier: title
+            type: ezstring
+            name: Title
+            description: 'Shown at the top of contact page.'
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
 
 # delete previous file content type
 -

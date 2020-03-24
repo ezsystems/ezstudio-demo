@@ -1502,6 +1502,31 @@
             height: 0
         opensince: null
 
+#Contact content
+-
+    type: content
+    mode: create
+    content_type: contact
+    parent_location: reference:ref_location_folder__sites__maison
+    priority: 0
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    remote_id: 29889feadd7f4699cba63499fa7ffe17
+    location_remote_id: 2d22427165f4148be86ec2c435f77437
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        title: Connect with us
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__contact
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__contact
+            attribute: content_id
+
 -
     type: reference
     mode: save
