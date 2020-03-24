@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a href="{{ path(ezplatform.rootLocation()) }}" class="navbar-brand">
+            <a href="{{ ez_path(ezplatform.rootLocation()) }}" class="navbar-brand">
                 {% include '@ezdesign/layout/logo.html.twig' with {'contentId': ezplatform.rootLocation.content.id} %}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenuNavbar" aria-controls="mainMenuNavbar" aria-expanded="false" aria-label="Toggle navigation">

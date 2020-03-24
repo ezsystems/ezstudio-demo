@@ -4,7 +4,7 @@
             {% set type = fieldSettings.mediaType %}
             {% set value = field.value %}
             {% set route_reference = ez_route( 'ez_content_download', {'content': content, 'fieldIdentifier': field.fieldDefIdentifier} ) %}
-            {% set download = path( route_reference ) %}
+            {% set download = ez_path( route_reference ) %}
             {% set width = value.width > 0 ? 'width="' ~ value.width ~ '"' : "" %}
             {% set height = value.height > 0 ? 'height="' ~ value.height ~ '"' : "" %}
             <div {{ block( 'field_attributes' ) }}>

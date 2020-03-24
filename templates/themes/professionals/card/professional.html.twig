@@ -1,6 +1,6 @@
 <div class="col-lg-4 mb-4">
     <div class="card card--professional p-1 h-100">
-        <a href="{{ path(location) }}" class="card__link">
+        <a href="{{ ez_path(location) }}" class="card__link">
             <div class="card__inspirations">
                 {% set inspirations = ez_field_value(content, 'inspirations').destinationContentIds|slice(0, 3) %}
 
