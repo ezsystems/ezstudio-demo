@@ -28,8 +28,3 @@ services:
 
     App\Controller\ContactFormController:
         public: true
-
-    App\Controller\PaginationQueryController:
-        public: true
-        arguments:
-            $contentViewQueryTypeMapper: '@ezpublish.query_type_content_view_mapper'
