@@ -28,3 +28,9 @@ services:
 
     App\Controller\ContactFormController:
         public: true
+        arguments:
+            $mailer: '@App\Mail\Mailer'
+            $sender: '%app.contact_form.sender_email%'
+            $recipients: ['%app.contact_form.recipient_email%']
+        calls:
+            - ['setLogger', ['@logger']]
