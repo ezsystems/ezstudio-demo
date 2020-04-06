@@ -1,5 +1,7 @@
 {% extends "@ezdesign/pagelayout.html.twig" %}
 
+{% trans_default_domain 'maison' %}
+
 {% block page_head %}
     {% set title = ez_content_name(content) %}
     {{ parent() }}

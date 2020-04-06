@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="84add5b2952787581cb9a8851eef63d1ec75d22b" resname="Email">
+        <source>Email</source>
+        <target state="new">Email</target>
+        <note>key: Email</note>
+      </trans-unit>
+      <trans-unit id="7e568a90221d853052b3466e581eb5f7c030b901" resname="First name">
+        <source>First name</source>
+        <target state="new">First name</target>
+        <note>key: First name</note>
+      </trans-unit>
+      <trans-unit id="339139a85743fd3ba78316ad7db894e4307b6f0c" resname="How can we help you?">
+        <source>How can we help you?</source>
+        <target state="new">How can we help you?</target>
+        <note>key: How can we help you?</note>
+      </trans-unit>
+      <trans-unit id="adec36a821f81a6990b1e65d9e4ac5fb8ee2a205" resname="Last name">
+        <source>Last name</source>
+        <target state="new">Last name</target>
+        <note>key: Last name</note>
+      </trans-unit>
+      <trans-unit id="f203458ed70f830ecf62ab5ec4fd43db183fc0d2" resname="Personalization">
+        <source>Personalization</source>
+        <target state="new">Personalization</target>
+        <note>key: Personalization</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

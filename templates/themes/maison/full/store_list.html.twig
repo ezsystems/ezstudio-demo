@@ -1,5 +1,7 @@
 {% extends "@ezdesign/pagelayout.html.twig" %}
 
+{% trans_default_domain 'maison' %}
+
 {% block page_head %}
     {% set title = ez_content_name(content) %}
     {{ parent() }}
@@ -22,7 +24,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h2 class="text-center heading heading-sm mt-4">
-                            {{ 'All Maison Stores'| trans }}
+                            {{ 'maison.all_maison_stores'|trans|desc('All Maison Stores') }}
                         </h2>
                     </div>
                 </div>
@@ -44,9 +46,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <h4 class="heading-lg">{{ 'Find a professional to help you with'| trans }}</h4>
-                        <h5 class="heading-sm mt-4">{{ 'delivery, assembling, painting, renovation, etc.'| trans }}</h5>
-                        <a href="#" class="btn btn--lg btn--blue mt-5">{{ 'Find Professionals'|trans }}</a>
+                        <h4 class="heading-lg">
+                            {{ 'maison.find_a_professional_to_help_you_with'|trans|desc('Find a professional to help you with') }}
+                        </h4>
+                        <h5 class="heading-sm mt-4">
+                            {{ 'maison.delivery_assembling_painting_renovation_etc.'|trans
+                            |desc('delivery, assembling, painting, renovation, etc.') }}
+                        </h5>
+                        <a href="#" class="btn btn--lg btn--blue mt-5">
+                            {{ 'maison.find_professionals'|trans|desc('Find Professionals') }}
+                        </a>
                     </div>
                     <div class="col-md-4 col--img d-lg-block d-none">
                         <img src="{{ asset('assets/images/store-col-img1.png') }}">
@@ -61,11 +70,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-lg-center my-5">
-                        <h4 class="heading-lg">{{ 'Become a Maison Pro'| trans }}</h4>
-                        <p class="mt-4">{{ 'We\'re always looking for outstanding local contractors!'| raw | trans }}</p>
-                        <a href="" class="btn btn--lg btn--blue mt-4">{{ 'Apply Now' | trans }}</a>
-                        <p class="mt-5">{{ 'Click here to view <a href="%path%">Maison licensing information</a>'|trans({
-                                '%path%': '#' })|raw }}
+                        <h4 class="heading-lg">{{ 'maison.become_a_maison_pro'|trans|desc('Become a Maison Pro') }}</h4>
+                        <p class="mt-4">
+                            {{ 'maison.we_are_always_looking_for_outstanding_local_contractors!'|trans|desc( 'We\'re always looking for outstanding local contractors!')|raw }}
+                        </p>
+                        <a href="" class="btn btn--lg btn--blue mt-4">
+                            {{ 'maison.apply_now'|trans|desc('Apply Now') }}
+                        </a>
+                        <p class="mt-5">
+                            {{ 'maison.click_here_to_view_maison_licensing_information'|trans({
+                                '%link_open%': '<a href="#">',
+                                '%link_close%': '</a>',
+                            })|desc('Click here to view %link_open% Maison licensing information %link_close%')|raw }}
                         </p>
                     </div>
                 </div>

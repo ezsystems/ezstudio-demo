@@ -1,3 +1,5 @@
+{% trans_default_domain 'maison' %}
+
 <nav class="navbar navbar--carousel-nav box-shadow">
     <div class="row mx-auto my-auto w-100">
         <div id="menuCarousel" class="carousel carousel--menu slide w-100" data-ride="carousel" data-interval="false">
@@ -6,7 +8,7 @@
                     <div class="col-lg-2 col-md-3 carousel__menu-item">
                         <a href="/inspirations" class="carousel__menu-link d-flex flex-column align-items-center">
                             <img src="{{ asset('assets/icons/all-ideas.png') }}">
-                            <span class="mt-auto">All ideas</span>
+                            <span class="mt-auto">{{ 'maison.all_ideas'|trans|desc('All ideas') }}</span>
                         </a>
                     </div>
                 </div>

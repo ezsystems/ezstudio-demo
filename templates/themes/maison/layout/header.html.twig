@@ -1,3 +1,5 @@
+{% trans_default_domain 'maison' %}
+
 <header class="header">
     <nav class="navbar navbar-expand-lg header__top">
         <div class="container">
@@ -24,7 +26,7 @@
                 <li class="nav-item d-none d-sm-block">
                     <a href="/stores" class="nav-link">
                         <i class="material-icons-outlined item-store-locators-pin">room</i>
-                        {{ 'Store Locators'|trans }}
+                        {{ 'maison.store_locators'|trans|desc('Store Locators') }}
                     </a>
                 </li>
             </ul>
@@ -32,7 +34,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link nav-signin">
                         <i class="user-icon material-icons-outlined">account_circle</i>
-                        Sign in
+                        {{ 'maison.sign_in'|trans|desc('Sign in') }}
                     </a>
                 </li>
                 <li class="nav-item">

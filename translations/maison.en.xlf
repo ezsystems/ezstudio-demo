@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="8ec8597060c84496ace11255a92df79fe0763881" resname="maison.about_our_store">
+        <source>About our store</source>
+        <target state="new">About our store</target>
+        <note>key: maison.about_our_store</note>
+      </trans-unit>
+      <trans-unit id="6953b33ef851389d0f6fe8b0fe734d2bc1f40f22" resname="maison.address">
+        <source>Address</source>
+        <target state="new">Address</target>
+        <note>key: maison.address</note>
+      </trans-unit>
+      <trans-unit id="9f8eef9df553fc2951aa5a1cb3dd65b64d8afbb0" resname="maison.all_ideas">
+        <source>All ideas</source>
+        <target state="new">All ideas</target>
+        <note>key: maison.all_ideas</note>
+      </trans-unit>
+      <trans-unit id="24f315b5b0861658eb3714f277da103575966abe" resname="maison.all_maison_stores">
+        <source>All Maison Stores</source>
+        <target state="new">All Maison Stores</target>
+        <note>key: maison.all_maison_stores</note>
+      </trans-unit>
+      <trans-unit id="5d527af9a9d6a4a0bb6606642b8cf504f2c71984" resname="maison.apply_now">
+        <source>Apply Now</source>
+        <target state="new">Apply Now</target>
+        <note>key: maison.apply_now</note>
+      </trans-unit>
+      <trans-unit id="50fa04f784a70b977dc7923b2b42689e39c3d466" resname="maison.back_to_inspirations">
+        <source>Back to Inspirations</source>
+        <target state="new">Back to Inspirations</target>
+        <note>key: maison.back_to_inspirations</note>
+      </trans-unit>
+      <trans-unit id="6a18e57129ae74685dc026ba6389e02ba5ec4dd7" resname="maison.become_a_maison_pro">
+        <source>Become a Maison Pro</source>
+        <target state="new">Become a Maison Pro</target>
+        <note>key: maison.become_a_maison_pro</note>
+      </trans-unit>
+      <trans-unit id="3faff6db6b5d67f711a41af39aaa172d82908c0e" resname="maison.click_here_to_view_maison_licensing_information">
+        <source>Click here to view %link_open% Maison licensing information %link_close%</source>
+        <target state="new">Click here to view %link_open% Maison licensing information %link_close%</target>
+        <note>key: maison.click_here_to_view_maison_licensing_information</note>
+      </trans-unit>
+      <trans-unit id="892a5fcf8b691c1a3f51ddd8788bcb5ecb558825" resname="maison.delivery_assembling_painting_renovation_etc.">
+        <source>delivery, assembling, painting, renovation, etc.</source>
+        <target state="new">delivery, assembling, painting, renovation, etc.</target>
+        <note>key: maison.delivery_assembling_painting_renovation_etc.</note>
+      </trans-unit>
+      <trans-unit id="c46c55822a635c77541d853dcf24f3644bc1136a" resname="maison.email">
+        <source>E-mail</source>
+        <target state="new">E-mail</target>
+        <note>key: maison.email</note>
+      </trans-unit>
+      <trans-unit id="ef6ced0375a6050e449569f9115357963a72000e" resname="maison.everything_your_business_needs_in_one_central_place">
+        <source>Everything your business needs in one central place</source>
+        <target state="new">Everything your business needs in one central place</target>
+        <note>key: maison.everything_your_business_needs_in_one_central_place</note>
+      </trans-unit>
+      <trans-unit id="c535630dcf93bc77e918971ddce2c5d173fe4d5b" resname="maison.find_a_professional_to_help_you_with">
+        <source>Find a professional to help you with</source>
+        <target state="new">Find a professional to help you with</target>
+        <note>key: maison.find_a_professional_to_help_you_with</note>
+      </trans-unit>
+      <trans-unit id="12ba1ad60e9a127439877b401ba1fffdc1da2383" resname="maison.find_professionals">
+        <source>Find Professionals</source>
+        <target state="new">Find Professionals</target>
+        <note>key: maison.find_professionals</note>
+      </trans-unit>
+      <trans-unit id="7ebbbd513b41ce3aeb67ea902556e8e2d0638e2c" resname="maison.floors">
+        <source>Floors</source>
+        <target state="new">Floors</target>
+        <note>key: maison.floors</note>
+      </trans-unit>
+      <trans-unit id="66d8e481c539f452bcff2c6b610eb1b03200e04a" resname="maison.from">
+        <source>From</source>
+        <target state="new">From</target>
+        <note>key: maison.from</note>
+      </trans-unit>
+      <trans-unit id="057bd31e64a9ba2a55daf55080ebf33a6baf65ca" resname="maison.home_design_ideas_and_tips">
+        <source><![CDATA[Home Design Ideas & Tips]]></source>
+        <target state="new"><![CDATA[Home Design Ideas & Tips]]></target>
+        <note>key: maison.home_design_ideas_and_tips</note>
+      </trans-unit>
+      <trans-unit id="b543699fb8a628e960467d33f456f36149b3dbc9" resname="maison.message">
+        <source>Message</source>
+        <target state="new">Message</target>
+        <note>key: maison.message</note>
+      </trans-unit>
+      <trans-unit id="c77d41846b3a89533da7220e94c795331096d433" resname="maison.next_idea">
+        <source>Next Idea</source>
+        <target state="new">Next Idea</target>
+        <note>key: maison.next_idea</note>
+      </trans-unit>
+      <trans-unit id="d4fda1d83b6eb2f0e02da1ad28123f4e986c5db3" resname="maison.phone">
+        <source>Phone</source>
+        <target state="new">Phone</target>
+        <note>key: maison.phone</note>
+      </trans-unit>
+      <trans-unit id="f422837de89747c1a13f08b03099338fb486c1a0" resname="maison.previous_idea">
+        <source>Previous Idea</source>
+        <target state="new">Previous Idea</target>
+        <note>key: maison.previous_idea</note>
+      </trans-unit>
+      <trans-unit id="0d6760f28d554e8baf9fc1fc626c6aa36ce397eb" resname="maison.products">
+        <source>Products</source>
+        <target state="new">Products</target>
+        <note>key: maison.products</note>
+      </trans-unit>
+      <trans-unit id="fdadd0fff35628f9e120debbd0c496ef8ee68b69" resname="maison.professionals">
+        <source>Professionals</source>
+        <target state="new">Professionals</target>
+        <note>key: maison.professionals</note>
+      </trans-unit>
+      <trans-unit id="bc61818eb1ac517a6b99f054b0eec36b8d1c3d2e" resname="maison.send_an_email">
+        <source>Send an Email</source>
+        <target state="new">Send an Email</target>
+        <note>key: maison.send_an_email</note>
+      </trans-unit>
+      <trans-unit id="c093121ceaf72b507fbe1935bd4d21f8f22224b5" resname="maison.send_message">
+        <source>Send Message</source>
+        <target state="new">Send Message</target>
+        <note>key: maison.send_message</note>
+      </trans-unit>
+      <trans-unit id="71e9bd004171c951e880adc3687d44b58125bf86" resname="maison.sf">
+        <source>SF</source>
+        <target state="new">SF</target>
+        <note>key: maison.sf</note>
+      </trans-unit>
+      <trans-unit id="af0b6ccbc502f23f52886f4e309baa4e7f533412" resname="maison.sign_in">
+        <source>Sign in</source>
+        <target state="new">Sign in</target>
+        <note>key: maison.sign_in</note>
+      </trans-unit>
+      <trans-unit id="aa4a5d4add004c4f9eb4daa2f81e5b5744f7d5cf" resname="maison.store_categories">
+        <source>Store Categories</source>
+        <target state="new">Store Categories</target>
+        <note>key: maison.store_categories</note>
+      </trans-unit>
+      <trans-unit id="5c402b4d20a3f5f2b74ab9d8e371257f3b05724f" resname="maison.store_details">
+        <source>Store details</source>
+        <target state="new">Store details</target>
+        <note>key: maison.store_details</note>
+      </trans-unit>
+      <trans-unit id="ed2cb4645ac742d64eabedf34efb225baa44f73b" resname="maison.store_facts">
+        <source>Store Facts</source>
+        <target state="new">Store Facts</target>
+        <note>key: maison.store_facts</note>
+      </trans-unit>
+      <trans-unit id="ceb2994486c98d5182b6fae0ef07f52155f945a9" resname="maison.store_locators">
+        <source>Store Locators</source>
+        <target state="new">Store Locators</target>
+        <note>key: maison.store_locators</note>
+      </trans-unit>
+      <trans-unit id="d5a376738cbe359a96facf33ddb69dbc2bd9e134" resname="maison.trending_in_your_store">
+        <source>Trending In Your Store</source>
+        <target state="new">Trending In Your Store</target>
+        <note>key: maison.trending_in_your_store</note>
+      </trans-unit>
+      <trans-unit id="be782e4476dffadced9b46f315c68434fc05f0ec" resname="maison.trustworthy_and_fast_services">
+        <source>Trustworthy and fast services</source>
+        <target state="new">Trustworthy and fast services</target>
+        <note>key: maison.trustworthy_and_fast_services</note>
+      </trans-unit>
+      <trans-unit id="68237d47a9c0fa056a5955f95286c11e4597a91a" resname="maison.visit_store_page">
+        <source>Visit store page</source>
+        <target state="new">Visit store page</target>
+        <note>key: maison.visit_store_page</note>
+      </trans-unit>
+      <trans-unit id="4edc20ba7b013356ab227c75d607827239aaa761" resname="maison.we_are_always_looking_for_outstanding_local_contractors!">
+        <source>We're always looking for outstanding local contractors!</source>
+        <target state="new">We're always looking for outstanding local contractors!</target>
+        <note>key: maison.we_are_always_looking_for_outstanding_local_contractors!</note>
+      </trans-unit>
+      <trans-unit id="e364206f2f25ff0bce597b01da92a1a7c11bfa36" resname="maison.we_will_reply_to_you">
+        <source>We will reply to you as soon as possible.</source>
+        <target state="new">We will reply to you as soon as possible.</target>
+        <note>key: maison.we_will_reply_to_you</note>
+      </trans-unit>
+      <trans-unit id="9f4c65223db95e326eb6395c420ac6b3fa45d350" resname="maison.work_hours">
+        <source>Work Hours</source>
+        <target state="new">Work Hours</target>
+        <note>key: maison.work_hours</note>
+      </trans-unit>
+      <trans-unit id="a9c35077538f3e5221c8f86e791fc2c1dc4cd339" resname="maison.you_have_a_new_message_from_maison.">
+        <source>You have a new message from Maison</source>
+        <target state="new">You have a new message from Maison</target>
+        <note>key: maison.you_have_a_new_message_from_maison.</note>
+      </trans-unit>
+      <trans-unit id="73b533ffa8756fc840fc2216002cd4dfd1c25c29" resname="maison.your_message_has_been_sent">
+        <source>Your message has been sent, thank you</source>
+        <target state="new">Your message has been sent, thank you</target>
+        <note>key: maison.your_message_has_been_sent</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

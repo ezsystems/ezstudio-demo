@@ -1,9 +1,11 @@
+{% trans_default_domain 'maison' %}
+
 <p>
-    {{ 'You have a new message from ezplatform demo.'|trans }}
+    {{ 'maison.you_have_a_new_message_from_maison.'|trans|desc('You have a new message from Maison') }}
 </p>
 <p>
-    <strong>{{ 'From'|trans }} :</strong> {{ contact.from }}
-    <strong>{{ 'Message'|trans }} :</strong>
+    <strong>{{ 'maison.from'|trans|desc('From') }} :</strong> {{ contact.from }}
+    <strong>{{ 'maison.message'|trans|desc('Message') }} :</strong>
 
     {{ contact.message|nl2br }}
 </p>

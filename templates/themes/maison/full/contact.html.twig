@@ -1,5 +1,7 @@
 {% extends "@ezdesign/pagelayout.html.twig" %}
 
+{% trans_default_domain 'maison' %}
+
 {% block page_head %}
     {% set title = ez_content_name(content) %}
     {{ parent() }}
@@ -41,7 +43,9 @@
                             </div>
                         </div>
                         <div class="mt-5">
-                            <button type="submit" class="btn btn--blue btn--lg mt-5">{{ 'Send Message'|trans }}</button>
+                            <button type="submit" class="btn btn--blue btn--lg mt-5">
+                                {{ 'maison.send_message'|trans|desc('Send Message') }}
+                            </button>
                         </div>
                         {{ form_end(form) }}
                     </div>

@@ -111,7 +111,11 @@ final class ContactFormController extends Controller
     private function createEmail(Contact $contact): Email
     {
         return $this->mailer->create(
-            $this->translator->trans('You have a new message from %from%', ['%from%' => $contact->getFrom()]),
+            $this->translator->trans(
+                'you_have_a_new_message_from_sender',
+                ['%sender%' => $contact->getFrom()],
+                'forms'
+            ),
             $this->renderView('@ezdesign/mail/contact.html.twig', [
                 'contact' => $contact,
             ]),

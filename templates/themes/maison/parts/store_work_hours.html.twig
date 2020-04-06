@@ -1,5 +1,7 @@
+{% trans_default_domain 'maison' %}
+
 {% set workHours = ez_field_value(content, 'workinghours').rows %}
-<p class="m-0 font-weight-bold">{{ 'Work Hours'|trans }}</p>
+<p class="m-0 font-weight-bold">{{ 'maison.work_hours'|trans|desc('Work Hours') }}</p>
 {% if workHours|length > 0 %}
     {% for workHour in workHours %}
         <p class="mb-0">{{ workHour.cells['day'] }} | {{ workHour.cells['from'] }} - {{ workHour.cells['to'] }} </p>

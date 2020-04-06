@@ -1,5 +1,7 @@
 {% extends "@ezdesign/pagelayout.html.twig" %}
 
+{% trans_default_domain 'professionals' %}
+
 {% block page_head %}
     {% set title = ez_content_name(content) %}
     {{ parent() }}
@@ -9,7 +11,7 @@
 <div class="page bg-white-smoke">
     <section class="section banner banner--full-width bg-blue-lighter">
         <div class="banner__title container">
-            <h1 class="text-center text-white">Professionals</h1>
+            <h1 class="text-center text-white">{{ 'professionals.professionals'|trans|desc('Professionals') }}</h1>
         </div>
     </section>
     <section class="section section--overlap pb-5">
