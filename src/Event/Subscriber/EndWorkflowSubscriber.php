@@ -86,13 +86,13 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
 
             $workflowCurrentState = !empty($workflowMetadata->markings) ? end($workflowMetadata->markings)->name : '';
             $transitions = $workflowMetadata->workflow->getDefinition()->getTransitions();
-            $lastStage = $this->getLastStage($transitions, $workflow->getName());
+            $transitionToLastStage = $this->getTransitionToLastStage($transitions, $workflow->getName());
 
             if (!$lastStage) {
                 continue;
             }
 
-            $transitionsToMake = $this->findPathToInitialStage($transitions, $workflowCurrentState, $lastStage);
+            $transitionsToMake = $this->findPathToLastStage($transitions, $workflowCurrentState, $transitionToLastStage);
             $this->applyTransitions($transitionsToMake, $workflowMetadata);
         }
     }
@@ -111,7 +111,7 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
         }
     }
 
-    private function getLastStage(array $transitions, string $workflowName): ?Transition
+    private function getTransitionToLastStage(array $transitions, string $workflowName): ?Transition
     {
         $workflowDefinitionMetadata = $this->workflowMetadataRegistry->getWorkflowMetadata($workflowName);
 
@@ -127,7 +127,7 @@ final class EndWorkflowSubscriber implements EventSubscriberInterface
         return null;
     }
 
-    private function findPathToInitialStage(array $transitions, string $workflowCurrentState, Transition $transition)
+    private function findPathToLastStage(array $transitions, string $workflowCurrentState, Transition $transition)
     {
         $path = [$transition->getName()];
 
