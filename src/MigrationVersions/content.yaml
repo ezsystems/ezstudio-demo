@@ -1502,6 +1502,286 @@
             height: 0
         opensince: null
 
+# Blog content
+-
+    type: content
+    mode: create
+    content_type: blog
+    parent_location: reference:ref_location_folder__sites__maison
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        name: Blog
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__blog
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__blog
+            attribute: content_id
+
+#5 Patio Arrangements to Inspire Your Outdoor Room - Blog Post eng-GB
+-
+    type: content
+    mode: create
+    content_type: blog_post
+    parent_location: reference:ref_location_folder__sites__maison__blog
+    priority: 0
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        name: '5 Patio Arrangements to Inspire Your Outdoor Room'
+        intro: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>If you’re planning to invest in a new patio set or looking for a fresh way to rearrange your current furniture, take a peek at these eight setups, each offering an invitation to get outside. All include combinations of outdoor furniture — cafe tables, chairs, benches, lounges and more — and at least one other garden element that makes the scene that much more enticing.</para>
+            </section>
+        description: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>1. Pattern Play in Southern California</para>
+                <para>The fabulous patterned tile floor may be the first thing that catches your eye in this outdoor room by Genius Home Landscape in Orange County. However, as soon as the sun goes down, it’s the enveloping warmth of the fireplace and the — surprising — heated bench that would draw you in.</para>
+                <para>The curved bench, made by Galanter &amp; Jones from cast stone and powder-coated stainless steel, can be plugged in and cranked up to 120 degrees Fahrenheit, making a seat away from the hearth just as toasty as one close to the fireplace.</para>
+                <para>A small, portable gas-burning fire pit is much less expensive than a permanent fireplace or outdoor hearth, and it offers the same warmth and anchoring factor.</para>
+                <para>Cozy up outdoor furniture by laying down sheepskins (faux or real) on the seats and draping throws on the backs.</para>
+                <para> </para>
+                <para>2. Vine-Covered Terrace in Seattle</para>
+                <para>Covered by a trellis dripping in wisteria, this seating area by AHBL almost feels as if it’s in a magical world.</para>
+                <para>The furniture (a Richard Schultz set, part of the 1966 collection by Knoll) and built-in fireplace are simple and clean-lined, bringing focus to the garden beds filled with purple allium, lady’s mantle and, of course, the hanging blooms of the white wisteria.</para>
+                <para>Add more romance to any patio space with the addition of a shade trellis covered in flowering vines.</para>
+                <para> </para>
+                <para>3. Built-In Benches in London</para>
+                <para>Built-in seating that flanks an outdoor wood-burning fireplace makes an inviting space in this London backyard by Gotham Interiors. Keeping the benches around the edges saves floor space and makes the patio feel more open and expansive. Printed Moroccan-style throw pillows and a sheepskin add color and softness to the wooden bench seats.</para>
+                <para>Built-in benches can also be used as one side of seating for an outdoor table, if you’d like to turn a built-in lounge seating area into a dining spot later on.</para>
+                <para> </para>
+                <para>4. Gravel Patio in Palo Alto</para>
+                <para>The furniture in this San Francisco Bay Area backyard by Randy Thueme Design, complete with a gravel terrace bordered by olive trees and crisscrossing cafe lights overhead, is practically arranged as an open-plan living room.</para>
+                <para>An outdoor kitchen and pizza oven sit on one side of the terrace, with an outdoor dining table for six within easy distance for bringing plates to the table. On the other side of the patio, two accent chairs drawn up to the fire feature are almost the outdoor equivalent of cushy armchairs next to a hearth.</para>
+                <para>This space feels welcoming for a number of reasons — the open layout and good-looking furniture, for starters — but it’s the twinkling glow of the cafe lights that really sets the mood.</para>
+                <para>If you’re looking for string lights for your patio, skip the widely available ones at home stores and invest in waterproof hospitality-quality ones that will last for a decade. These types of string lights, usually sold by outdoor lighting stores, often come with the cord and bulbs separately.</para>
+                <para> </para>
+                <para>5. Tropical Terrace in Toronto</para>
+                <para>Surrounded by vine-covered walls and colorful summer containers, this secluded backyard terrace by Terra Firma Design in Toronto is a leafy retreat. The patio has just enough room for a seating area around a coffee table, a chaise lounge (out of view), a round dining table for four and a small sideboard staging table.</para>
+                <para>Bold prints, red accents and dark furniture materials help set an almost tropical feel.</para>
+                <para>In warm and sunny climates, there’s hardly anything more inviting than having a seat in the shade with a cool drink. In this St. Helena garden by Katharine Webster, a pergola topped with a lattice of willow branches casts light shade over an outdoor lounge of cushy sofas, armchairs and ottomans.</para>
+                <para>Even though this urban garden is small in square footage, the terraced design and separate seating areas for different uses — one for lounging and one for outdoor dining — create a dynamic setup for outdoor living. Together, the simple wood-and-white slingback chairs and whitewashed metal bistro dining furniture set a casual, country-style feel. Combined with the lavender plants, the space feels like a slice of Provence in London.</para>
+            </section>
+        publication_date: 2020-04-08 14:33:00
+        image:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__living_room
+            alternativeText: null
+        author:
+            -
+                name: 'Yura Rajzer'
+                email: yura.rajzer@example.com
+        authors_position: 'Content Marketing Editor'
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__blog__5_patio_arrangements_to_inspire_your_outdoor_room
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__blog__5_patio_arrangements_to_inspire_your_outdoor_room
+            attribute: content_id
+
+#Bathroom of the Week - Blog Post eng-GB
+-
+    type: content
+    mode: create
+    content_type: blog_post
+    parent_location: reference:ref_location_folder__sites__maison__blog
+    priority: 0
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        name: 'Bathroom of the Week'
+        intro: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>When bathroom designer Michelle Fee decided it was time to remodel the master bath in her 1980s Atlanta home, it turned out to be way more complicated than designing someone else’s bathroom. “I’ve seen everything, so I kept thinking, ‘What do I choose?’ ” Fee says.</para>
+            </section>
+        description: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>First she got stuck trying to maintain the room’s original floor plan. Then she struggled with what style to choose: contemporary or more “mountain house” like the rest of the home? Selecting materials — marble? ceramic tile? wood? — was yet another problem.</para><para>It all finally came together when she decided to slightly shrink the room, add walls — including a natural wood wall filled with living plants — for a cozier feel and an eclectic style. “Now it’s my current favorite of all the bathrooms I’ve ever done,” she says.</para>
+                <para>Once Fee settled on a style — “eclectic with some rounded midcentury modern edges,” she calls it — she had to choose materials. “One of the most important things to me is living in nature and bringing nature in,” she says. She decided to make a “living wall” of oak timbers from old barns, with niches for live plants.</para>
+                <para>Porcelain floors and walls make for easy maintenance. The walls mimic statuary marble, while the shower niche and bathroom entrance are trimmed in actual statuary marble.</para>
+                <para>Fee says the original bathroom floor plan, the drawing at top in this image, was “very poorly laid out.” The toilet in the middle of the room ate up a lot of space, and a door next to the shower provided an awkward exit to the living room. Fee’s new design, at bottom, closed up the existing doorways, created a new doorway by the windows and installed walls to create a toilet closet. The new design also provides a natural spot for a tub. (The original bathroom had a shower only.) The dimensions of the entire room didn’t change much (from 162 square feet to 158 square feet), Fee says, and making the room smaller actually allowed her to make the shower bigger.</para>
+                <para>The 30-square-inch porcelain floor tiles mimic concrete. “I wanted something plain but that had a little visual interest,” she says. “We considered pouring concrete, but the weight and durability and maintenance of porcelain far exceed concrete.”</para>
+                <para>The floors are also heated. “Porcelain is always cold,” Fee says. “The heated floor makes such a difference.”</para>
+                <para>A standard bathtub wouldn’t fit in the space between the wall and the new water closet. “Turning it at an angle would have worked,” Fee says, “but that look wouldn’t give the balance I wanted.” When she stumbled across this compact circular design, she knew she’d found the solution.</para>
+                <para>The tub is a solid-surface stone and can hold 121 gallons, so Fee added supports beneath the floor joists to accommodate the full weight of the tub (365 pounds when empty) and the water. “It’s like a humongous soup bowl,” she says.</para>
+                <para>The custom vanity fits neatly into the niche between the water closet and living wall. It includes pullout drawers on either end, doors that swing open beneath the sinks and a pullout trash can in the middle.</para>
+                <para>“I love the textured wall above the vanity,” Fee says. “I didn’t want something that took away from the wood wall or plant wall, but I didn’t want something too bold, either. This is the perfect mix of simple and elegant.”</para>
+            </section>
+        publication_date: 2020-04-08 15:42:00
+        image:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__bathroom
+            alternativeText: null
+        author:
+            -
+                name: 'Yura Rajzer'
+                email: yura.rajzer@example.com
+        authors_position: 'Content Marketing Editor'
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__blog__bathroom_of_the_week
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__blog__bathroom_of_the_week
+            attribute: content_id
+
+#How to Remodel Your Kitchen - Blog Post eng-GB
+-
+    type: content
+    mode: create
+    content_type: blog_post
+    parent_location: reference:ref_location_folder__sites__maison__blog
+    priority: 0
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        name: 'How to Remodel Your Kitchen'
+        intro: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>Follow these 7 steps to a successful kitchen remodel, from figuring out what you need to signing off on the final review</para>
+            </section>
+        description: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+            <para>You’ve decided to remodel your kitchen. Now what? Not knowing where to start, many homeowners start by looking at kitchen appliances. Others collect inspiring kitchen photos. Some homeowners decide they need more room. Others simply want to upgrade their current kitchen. Homeowners may find themselves in this exploration stage for a year or longer before they start interviewing kitchen designers or general contractors.</para>
+            <para>Once you’ve pondered long enough and you’re ready to green-light a kitchen remodeling project, then what? We’ll start with the first nine steps in this article and then get into the nitty-gritty details in other kitchen workbook stories.</para>
+            <para>1. Think About What You Need in Your Kitchen Remodel</para><para>This step is all about figuring out how you use your kitchen, and finding the layout and features that fit your household’s lifestyle. Get ideas from Houzz kitchen guides, photos and discussions.</para>
+            <para>Think about your priorities and ask yourself some questions. How many people will be cooking and gathering here? How will they need to move around? Do you need an addition, or can you work with your existing kitchen footprint?</para>
+            <para>If you haven’t done so already, start saving photos of kitchens with features that suit your style. Your collection can be organized and beautiful like a scrapbook might be, or it can be filled with unorganized images. I like to randomly stuff images into my folders and ideabooks and go back to them later for edits.</para>
+            <para> </para>
+            <para>2. Research and Plan</para><para>Ready to green-light that project and take the plunge? The best place to start is by formulating what’s commonly referred to as the scope of work and figuring out your preliminary budget.</para>
+            <para>Both of these may be subject to change, so don’t feel as though you have only one chance at this. Budget and scope are intertwined and often change many times during the kitchen design process as you become more educated and able to reconcile what you want and what you can afford. As a homeowner, you’re not expected to walk into this knowing what everything should cost. Remember, this is an educational process.</para>
+            <para> </para>
+            <para>3. Find the Professionals You Will Need</para>
+            <para>Unless you’re building your own kitchen cabinets and doing your own electrical and plumbing, you’re going to work with a professional at some point.</para>
+            <para>The Houzz pro directory offers a list of design, remodeling and service professionals throughout the U.S. and internationally. You can search by your ZIP code and the category of professional you seek. Click on pros’ profiles to learn more about them, see photos of projects they’ve completed and read reviews of their work by other homeowners.</para>
+            <para>Some homeowners start a kitchen remodel by hiring an architect or interior designer. Some go with a kitchen designer. Still others might work on their own with a builder or contractor. Pros are available to help you with everything from contracts and permits to space planning, budgets, choosing finishes and fixtures, shopping, ordering products and managing your project from start to finish.</para>
+            <para> </para>
+            <para>4. Settle on a Schematic Design</para><para>This phase includes sketches, space planning, preliminary floor plans and elevations showing the layout and cabinet sizes. I try to keep my clients focused more on layout and space planning, even though the temptation is to talk about what the kitchen will look like. But I find that getting caught up in the look too early can distract from the space planning phase.</para>
+            <para>Plus, you need a plan to figure out what materials will go where, and how many square feet you will need, and ultimately how much this will cost. I like to begin the contractor interview process early and give them a preliminary drawing packet and scope of work so we can get some ballpark construction numbers. At the same time you can be sending out drawings for estimates on some top choices of kitchen finishes and fixtures.</para>
+            <para> </para>
+            <para>5. Specify Fixtures and Finishes</para><para>Throughout this process, and probably long before, you have been saving photos of kitchens you love into your ideabooks and folders. You’ve found your kitchen style, whether it’s modern, classic, traditional, cottage or a personal style in between. You probably know if you want a white kitchen, a natural wood kitchen or some color.</para>
+            <para> </para>
+            <para>6. Work on Design Development and Construction Documents</para><para>This is the stage where you finalize the design and prepare final floor plans, elevations, details and, if applicable, mechanical and electrical drawings, lighting switch plans, and exterior elevations.</para>
+            <para>This is where your final permit set or construction drawings come into play. It’s important to have finishes and fixtures selected at this time, since this is what will be considered in the final pricing from the contractor.</para><para>You’ll submit drawings for permits. These have a lead time, so check the timing with your local village. You’ll need an architect, designer or licensed contractor signed up to finalize the paperwork and pick up your permits, so get ready to hire someone in the next step. I often find that we’re submitting for permits around the same time or a little bit after we’ve placed the cabinet order, due to similar lead times.</para>
+            <para> </para>
+            <para>7. Get Contractor Estimates</para><para>If you don’t already have a licensed contractor on your project, your next step is to find one to carry the project through. I always recommend to my clients to get at least three contractor estimates. I like to do preliminary walk-throughs with the contractors once the schematic designs are done so we can get some ballpark estimates and find out if we’re on the right track or need to pull back some to fit the budget.</para>
+            </section>
+        publication_date: 2020-04-07 16:20:00
+        image:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__kitchen_4
+            alternativeText: null
+        author:
+            -
+                name: 'Yura Rajzer'
+                email: yura.rajzer@example.com
+        authors_position: 'Content Marketing Editor'
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__blog__how_to_remodel_your_kitchen
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__blog__how_to_remodel_your_kitchen
+            attribute: content_id
+
+#How to Remodel Your Bathroom - Blog Post eng-GB
+-
+    type: content
+    mode: create
+    content_type: blog_post
+    parent_location: reference:ref_location_folder__sites__maison__blog
+    priority: 0
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        name: 'How to Remodel Your Bathroom'
+        intro: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>This master bathroom uses dark wooden and gray floors paired with white walls for a timeless traditional bathroom.</para>
+            </section>
+        description: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+            <para>Minneapolis – this master bathroom uses dark wooden and gray floors paired with white walls for a timeless traditional bathroom.
+                  We believe that homes should perfectly reflect the people who live in them – there is no such thing as a one-size-fits-all perfect home. If your home looks how you want it, everything works how you want it too and living there makes you feel good – that is your perfect place. And it needn’t cost you a fortune! So you have the time to make your home exactly the way you want it we have collected lots of inspirational ideas from décor to storage, to home organization and even tips on becoming more green.</para>
+            </section>
+        publication_date: 2020-04-07 16:20:00
+        image:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__bathroom_2
+            alternativeText: null
+        author:
+            -
+                name: 'Yura Rajzer'
+                email: yura.rajzer@example.com
+        authors_position: 'Content Marketing Editor'
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__blog__how_to_remodel_your_bathroom
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__blog__how_to_remodel_your_bathroom
+            attribute: content_id
+
+#Kitchen of the week - Blog Post eng-GB
+-
+    type: content
+    mode: create
+    content_type: blog_post
+    parent_location: reference:ref_location_folder__sites__maison__blog
+    priority: 0
+    is_hidden: false
+    sort_field: path
+    sort_order: ASC
+    section: reference:ref_section__standard
+    owner: 14
+    always_available: true
+    attributes:
+        name: 'Kitchen of the week'
+        intro: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+                <para>This inspirational remodeled kitchen in Austin pairs a light wood with the beige floor. Traditional features like a farmhouse sink, coupled with classic white shaker cabinets and offset with gray backsplash, ceramic tiling, and black counter-tops gives a timeless yet modern feel.</para>
+            </section>
+        description: >-
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+            <para>This inspirational remodeled kitchen in Austin pairs a light wood with the beige floor. Traditional features like a farmhouse sink, coupled with classic white shaker cabinets and offset with gray backsplash, ceramic tiling, and black counter-tops gives a timeless yet modern feel.
+                  We believe that homes should perfectly reflect the people who live in them – there is no such thing as a one-size-fits-all perfect home. If your home looks how you want it, everything works how you want it too and living there makes you feel good – that is your perfect place. And it needn’t cost you a fortune! So you have the time to make your home exactly the way you want it we have collected lots of inspirational ideas from décor to storage, to home organization and even tips on becoming more green.</para>
+            </section>
+        publication_date: 2020-04-06 16:20:00
+        image:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__kitchen_2
+            alternativeText: null
+        author:
+            -
+                name: 'Yura Rajzer'
+                email: yura.rajzer@example.com
+        authors_position: 'Content Marketing Editor'
+    references:
+        -
+            identifier: ref_location_folder__sites__maison__blog__kitchen_of_the_week
+            attribute: location_id
+        -
+            identifier: ref_content_folder__sites__maison__blog__kitchen_of_the_week
+            attribute: content_id
+
 #Contact content
 -
     type: content

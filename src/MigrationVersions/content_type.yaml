@@ -447,6 +447,126 @@
             field-settings: {}
             validator-configuration: {  }
 
+
+# Blog content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: blog
+    name: Blog
+    description: 'Defines a structure for storing blog posts (short articles by a single person and/or on a particular topic).'
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name: Name
+            description: 'Name or title of the blog.'
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+
+# blog post content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: blog_post
+    name: 'Blog post'
+    description: 'These are individual blog posts and are created beneath Blog Content Types.'
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name: Name
+            description: 'Shown at the top of blog post.'
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+        -
+            identifier: intro
+            type: ezrichtext
+            name: Intro
+            description: 'Shown at the Schedule block view.'
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+        -
+            identifier: description
+            type: ezrichtext
+            name: Description
+            description: 'Content of the blog post.'
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: image
+            type: ezimageasset
+            name: Image
+            description: ''
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+        -
+            identifier: publication_date
+            type: ezdatetime
+            name: 'Publication date'
+            description: 'Schedule here the date when this blog post is published.'
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 5
+            default-value: 1507544622
+            field-settings:
+                defaultType: 1
+                useSeconds: false
+                dateInterval: null
+        -
+            identifier: author
+            type: ezauthor
+            name: Author
+            description: 'Blog post author'
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 6
+        -
+            identifier: authors_position
+            type: ezstring
+            name: 'Author''s position'
+            description: 'Position of author'
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 7
+
 #professional content type
 -
     type: content_type
