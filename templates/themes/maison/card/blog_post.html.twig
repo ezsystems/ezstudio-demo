@@ -1,0 +1,17 @@
+<div class="card box-shadow h-100">
+    <div class="card__image card__image--wide">
+        {{ ez_render_field(content, 'image') }}
+    </div>
+    <div class="card__text p-5">
+        <div class="card__title">
+            <h2 class="heading-md">{{ ez_render_field(content, 'name') }}</h2>
+        </div>
+        <div class="card__body">
+            {% set intro = ez_render_field(content, 'intro')|striptags %}
+            <p>
+                {{ intro|slice(0, 150)|trim|raw }}{{ intro|length > 150 ? '...' }}
+                <a href="{{ ez_url(content) }}">{{ 'maison.read_more'|trans|desc('read more') }}</a>
+            </p>
+        </div>
+    </div>
+</div>

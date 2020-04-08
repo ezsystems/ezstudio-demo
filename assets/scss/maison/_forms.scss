@@ -50,4 +50,10 @@
             margin-right: 10%;
         }
     }
+    &--subscribe {
+        input[type="email"] {
+            height: 54px;
+            border-right: none;
+        }
+    }
 }

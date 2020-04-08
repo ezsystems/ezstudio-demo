@@ -15,12 +15,48 @@ use eZ\Publish\Core\QueryType\QueryType;
 final class ChildrenQueryType implements QueryType
 {
     /**
-     * @param string[] $parameters
+     * @return \eZ\Publish\API\Repository\Values\Content\Query
      */
     public function getQuery(array $parameters = []): Query
     {
-        $options = [];
+        $query = new Query();
+        $query->filter = new Query\Criterion\LogicalAnd(
+            $this->prepareCriteria($parameters)
+        );
+        $query->limit = $parameters['limit'] ?? 10;
+        $query->sortClauses = [new Query\SortClause\DatePublished(
+            $parameters['sortClauses'] ?? Query::SORT_DESC
+        )];
 
+        if (!empty($parameters['depth'])) {
+            return new LocationQuery([
+                'filter' => $query->filter,
+                'sortClauses' => $query->sortClauses,
+                'limit' => $query->limit,
+            ]);
+        }
+
+        return $query;
+    }
+
+    public static function getName(): string
+    {
+        return 'App:Children';
+    }
+
+    public function getSupportedParameters(): array
+    {
+        return [
+            'parent_location_id',
+            'limit',
+        ];
+    }
+
+    /**
+     * @return \eZ\Publish\API\Repository\Values\Content\Query\Criterion[]
+     */
+    private function prepareCriteria(array $parameters = []): array
+    {
         $criteria = [
             new Query\Criterion\Visibility(Query\Criterion\Visibility::VISIBLE),
         ];
@@ -50,31 +86,7 @@ final class ChildrenQueryType implements QueryType
             );
         }
 
-        $options['filter'] = new Query\Criterion\LogicalAnd($criteria);
-
-        if (isset($parameters['limit'])) {
-            $options['limit'] = $parameters['limit'];
-        }
-
-        $options['sortClauses'] = [new Query\SortClause\DatePublished(Query::SORT_DESC)];
-
-        if (!empty($parameters['depth'])) {
-            return new LocationQuery($options);
-        }
-
-        return new Query($options);
+        return $criteria;
     }
 
-    public static function getName(): string
-    {
-        return 'App:Children';
-    }
-
-    public function getSupportedParameters(): array
-    {
-        return [
-            'parent_location_id',
-            'limit',
-        ];
-    }
 }

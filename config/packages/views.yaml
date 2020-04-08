@@ -48,6 +48,26 @@ ezplatform:
                         match:
                             Identifier\ContentType: store
 
+                    blog:
+                        controller: "ez_query:pagingQueryAction"
+                        template: "@ezdesign/full/blog.html.twig"
+                        match:
+                            Identifier\ContentType: blog
+                        params:
+                            limit: 2
+                            query:
+                                query_type: "App:Children"
+                                parameters:
+                                    parent_location_id: "@=location.id"
+                                    included_content_type_identifier: 'blog_post'
+                                    sortClauses: 'ascending'
+                                assign_results_to: blog_post_list
+
+                    blog_post:
+                        template: "@ezdesign/full/blog_post.html.twig"
+                        match:
+                            Identifier\ContentType: blog_post
+
                     contact:
                         controller: App\Controller\ContactFormController:showContactFormAction
                         template: "@ezdesign/full/contact.html.twig"
@@ -64,6 +84,12 @@ ezplatform:
                         template: "@ezdesign/card/store.html.twig"
                         match:
                             Identifier\ContentType: store
+
+                    blog_post:
+                        template: "@ezdesign/card/blog_post.html.twig"
+                        match:
+                            Identifier\ContentType: blog_post
+
         professionals:
             content_view:
                 full:

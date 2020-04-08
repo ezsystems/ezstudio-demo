@@ -30,7 +30,7 @@ $card: '.card';
         transform: scale(1.2);
     }
     &__image {
-        height: 320px;
+        max-height: 320px;
         overflow: hidden;
         border-radius: 8px;
 
@@ -42,6 +42,14 @@ $card: '.card';
         &.img-fluid-container {
             img {
                 height: 320px;
+            }
+        }
+        &--wide {
+            img {
+                width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                height: auto;
             }
         }
     }

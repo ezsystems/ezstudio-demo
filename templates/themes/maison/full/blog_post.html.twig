@@ -1,0 +1,46 @@
+{% extends "@ezdesign/pagelayout.html.twig" %}
+
+{% trans_default_domain 'maison' %}
+
+{% block page_head %}
+    {% set title = ez_content_name(content) ~ " - " ~ content.contentInfo.publishedDate|format_datetime( 'short', 'short', locale=app.request.locale ) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <section class="page mt-5">
+        <div class="container">
+            <article class="article article--full-page">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="article__title text-center w-50 m-auto">
+                            {{ ez_render_field(content, 'name') }}
+                        </h2>
+                        <div class="mt-3 text-center">
+                            <div class="d-inline-flex align-items-center text-center">
+                                <div class="border-right pr-3">{{ ez_render_field(content, 'publication_date') }}</div>
+                                <div class="pl-3 blue-lighter">
+                                    {{ ez_field_value(content, 'author') }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__image img-fluid-container">
+                            {{ ez_render_field(content, 'image') }}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="article__intro font-weight-bold heading-sm">
+                            {{ ez_render_field(content, 'intro') }}
+                        </div>
+                        <div class="article__desc">
+                            {{ ez_render_field(content, 'description') }}
+                        </div>
+                    </div>
+                </div>
+            </article>
+            {% include '@ezdesign/parts/subscribe.html.twig' %}
+        </div>
+    </section>
+{% endblock %}

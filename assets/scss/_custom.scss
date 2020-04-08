@@ -61,6 +61,10 @@ $col: '.col';
         margin-top: $calc;
         margin-bottom: $calc;
     }
+    .mb-#{$i} {
+        margin-top: $calc;
+        margin-bottom: $calc;
+    }
 }
 
 // Additional border-radius (rounded) classes
