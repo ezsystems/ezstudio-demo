@@ -19,3 +19,5 @@ services:
     App\Twig\AppLayoutExtension:
         arguments:
             $renderers: !tagged { tag: layout.renderer, index_by: key }
+
+    App\Twig\AppLocationExtension: ~

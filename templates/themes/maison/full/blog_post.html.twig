@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </article>
-            {% include '@ezdesign/parts/subscribe.html.twig' %}
+            {% include '@ezdesign/parts/subscribe.html.twig' with {'subscribe_form_remote_id': subscribe_form_remote_id} only %}
         </div>
     </section>
 {% endblock %}

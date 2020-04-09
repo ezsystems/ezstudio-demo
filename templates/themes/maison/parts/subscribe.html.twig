@@ -1,20 +1,11 @@
 <div class="row my-7 text-center">
     <div class="col-12">
         <div class="d-flex bg-grey-very-light flex-column p-5">
-            <h3 class="heading-lg">
-                {{ 'maison.subscribe_to_our_newsletter'|trans|desc('Subscribe to our newsletter') }}
-            </h3>
-            <p>
-                {{ 'maison.subscribe_to_our_newsletter_join'|trans|desc('Join 140,000+ creative professionals already receiving case studies, in-depth guides, and more.') }}
-            </p>
-            <div class="col-8 offset-2 mt-4">
-                <form class="form form--subscribe">
-                    <div class="input-group">
-                        <input type="email" class="form-control">
-                        <input type="submit" class="btn btn--lg rounded-left rounded-right-3 btn--blue" value="{{ 'maison.subscribe'|trans|desc('Subscribe') }}">
-                    </div>
-                </form>
-            </div>
+            {% set location = app_location_by_remote_id(subscribe_form_remote_id) %}
+            {{ render_esi(controller('ez_content:viewAction', {
+                locationId: location.id,
+                viewType: 'embed'
+            })) }}
         </div>
     </div>
 </div>

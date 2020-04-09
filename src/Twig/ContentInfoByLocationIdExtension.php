@@ -84,10 +84,7 @@ final class ContentInfoByLocationIdExtension extends AbstractExtension
         return $this->contentService->loadContent($contentId)->getVersionInfo()->getContentInfo();
     }
 
-    public function locationByLocationId($locationId): Location
-    {
-        return $this->locationService->loadLocation($locationId);
-    }
+
 
     public function contentByContentId(int $contentId): Content
     {

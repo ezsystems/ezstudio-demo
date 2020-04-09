@@ -1,0 +1,20 @@
+<h3 class="heading-lg">
+    {{ ez_render_field(content, 'title') }}
+</h3>
+<p>
+    {{ ez_render_field(content, 'description') }}
+</p>
+<div class="col-8 offset-2 mt-4">
+    <form class="form form--subscribe">
+        <div class="input-group">
+            {% set formValue = ez_field_value(content, 'form').getForm() %}
+            {% if formValue %}
+                {% set form = formValue.createView() %}
+                {% form_theme form '@ezdesign/fields/bootstrap_4_layout_field_inline.html.twig' %}
+                {% apply spaceless %}
+                   {{ form(form) }}
+                {% endapply %}
+            {% endif %}
+        </div>
+    </form>
+</div>

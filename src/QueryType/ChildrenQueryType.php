@@ -25,7 +25,7 @@ final class ChildrenQueryType implements QueryType
         );
         $query->limit = $parameters['limit'] ?? 10;
         $query->sortClauses = [new Query\SortClause\DatePublished(
-            $parameters['sortClauses'] ?? Query::SORT_DESC
+            $parameters['sort_clauses'] ?? Query::SORT_DESC
         )];
 
         if (!empty($parameters['depth'])) {

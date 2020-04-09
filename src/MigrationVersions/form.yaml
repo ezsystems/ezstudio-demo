@@ -63,41 +63,26 @@
             identifier: ref_content_folder__forms
             attribute: content_id
 
-# form - Book a tour
+#Subscribe to newsletter Form
 -
     type: content
     mode: create
     content_type: form
     section: reference:ref_section__form
     parent_location: reference:ref_location_folder__forms
+    remote_id: subscribe_to_newsletter
     attributes:
-        title: 'Book a tour'
+        title: 'Subscribe to our newsletter'
         description: >-
             <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
                xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml"
                xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom"
                version="5.0-variant ezpublish-1.0">
-                    <para>If you would like to book a tour please fill in the form</para>
+                    <para>Join 140,000+ creative professionals already receiving case studies, in-depth guides, and more.</para>
             </section>
         form: >-
             {
                 "fields": [
-                    {
-                        "identifier": "single_line",
-                        "name": "Name",
-                        "attributes": [
-                            { "identifier": "placeholder", "value": "" },
-                            { "identifier": "help", "value": "" },
-                            { "identifier": "default_value", "value": "" }
-                        ],
-                        "validators": [
-                            { "identifier": "required", "value": "" },
-                            { "identifier": "min_length", "value": "0" },
-                            { "identifier": "max_length", "value": "0" },
-                            { "identifier": "regex", "value": "" }
-                        ],
-                        "id": "f39ba579-7188-467f-b6a4-cc7539d86686"
-                    },
                     {
                         "identifier": "email",
                         "name": "Email",
@@ -106,28 +91,14 @@
                             { "identifier": "help", "value": "" }
                         ],
                         "validators": [
-                            { "identifier": "required", "value": "" },
+                            { "identifier": "required", "value": true },
                             { "identifier": "regex", "value": "" }
                         ],
                         "id": "8882245c-4931-4021-955b-bbf6699bb3cb"
                     },
                     {
-                        "identifier": "checkbox_list",
-                        "name": "Interest",
-                        "attributes": [
-                            { "identifier": "help", "value": "" },
-                            { "identifier": "options", "value": "[\"Adventure\",\"Cultural\",\"Food\"]" }
-                        ],
-                        "validators": [
-                            { "identifier": "required", "value": "" },
-                            { "identifier": "min_choices", "value": "0" },
-                            { "identifier": "max_choices", "value": "0" }
-                        ],
-                        "id": "adb3a4a1-f53b-4b94-bfc1-41f4aad24f78"
-                    },
-                    {
                         "identifier": "button",
-                        "name": "Send",
+                        "name": "Subscribe",
                         "attributes": [
                             {
                                 "identifier": "action",
@@ -142,10 +113,10 @@
             }
     references:
         -
-            identifier: ref_location_form__forms__book_a_tour
+            identifier: ref_location_form__forms__subscribe
             attribute: location_id
         -
-            identifier: ref_content_form__forms__book_a_tour
+            identifier: ref_content_form__forms__subscribe
             attribute: content_id
 
 -

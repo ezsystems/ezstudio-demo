@@ -73,6 +73,8 @@ parameters:
     env(RECOMMENDATION_LICENSE_KEY): ''
     env(RECOMMENDATION_HOST_URI): ''
 
+    app.subscribe_form.remote_id: subscribe_to_newsletter
+
 ezplatform:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish
     http_cache:
