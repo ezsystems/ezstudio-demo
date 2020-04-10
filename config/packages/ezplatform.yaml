@@ -73,6 +73,8 @@ parameters:
     env(RECOMMENDATION_LICENSE_KEY): ''
     env(RECOMMENDATION_HOST_URI): ''
 
+    app.search.criterion_content_types: [inspiration, store, blog_post]
+
     app.subscribe_form.remote_id: subscribe_to_newsletter
 
 ezplatform:

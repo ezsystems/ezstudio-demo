@@ -1,5 +1,10 @@
 @import "assets/scss/_fonts.scss";
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: $fira-sans;
     color: $grey-light;

@@ -31,6 +31,11 @@
         <target state="new">Personalization</target>
         <note>key: Personalization</note>
       </trans-unit>
+      <trans-unit id="6d7a30a931a35ef0373a28fc4507bf29ba239fda" resname="Search...">
+        <source>Search...</source>
+        <target state="new">Search...</target>
+        <note>key: Search...</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

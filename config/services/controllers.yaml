@@ -26,6 +26,13 @@ services:
         alias: App\Controller\MenuController
         public: true
 
+    App\Controller\SearchController:
+        public: true
+
+    app_search:
+        alias: App\Controller\SearchController
+        public: true
+
     App\Controller\ContactFormController:
         public: true
         arguments:

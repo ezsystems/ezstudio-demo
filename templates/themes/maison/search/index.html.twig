@@ -1,0 +1,59 @@
+{% extends '@ezdesign/pagelayout.html.twig' %}
+
+{% trans_default_domain 'maison' %}
+
+{% block content %}
+    <section class="page py-5">
+        <div class="container">
+            <div class="row">
+                {% if results is defined and results|length > 0 %}
+                    <div class="col-12">
+                        <p>{{ 'maison.search_results'|trans|desc('Search results for') }}: "{{ search_value }}"</p>
+                    </div>
+                    {% for result in results %}
+                        <div class="col-12 py-5 {{ not loop.last ? 'border-bottom' : '' }}">
+                            <a href="{{ ez_url(result) }}" class="grey-light">
+                                <div class="d-flex">
+                                    {% set hasMedia = result.fields.image is defined or result.fields.video %}
+                                    {% if hasMedia %}
+                                        <div class="col-md-3 d-md-none d-lg-flex">
+                                            {% if result.fields.image is defined %}
+                                                <div class="img-fluid-container">
+                                                    {{ ez_render_field(result, 'image') }}
+                                                </div>
+                                            {% endif %}
+                                            {% if result.fields.video is defined %}
+                                                {{ ez_render_field(result, 'video') }}
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+                                    <div class="{{ hasMedia ? 'col-md-9' : '' }} col-sm-12 flex-column ml-lg-5">
+                                        <h2 class="heading-md">
+                                            {{ result.name }}
+                                        </h2>
+                                        {% if result.fields.intro is defined %}
+                                            <p>{{ ez_render_field(result, 'intro') }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                    {% if pagerfanta.haveToPaginate() %}
+                        <div class="col-12">
+                            {{ pagerfanta(pagerfanta, 'maison_template', {
+                                'pageParameter': '[page][search]'
+                            }) }}
+                        </div>
+                    {% endif %}
+                {% else %}
+                    <div class="col-12">
+                        <h2 class="heading-md">
+                            {{ 'maison.no_results'|trans|desc('No results for') ~ ': ' ~ search_value }}
+                        </h2>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

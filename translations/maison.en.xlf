@@ -86,6 +86,11 @@
         <target state="new"><![CDATA[Home Design Ideas & Tips]]></target>
         <note>key: maison.home_design_ideas_and_tips</note>
       </trans-unit>
+      <trans-unit id="58dcb99bbe681beb8f5a85694d6c1659913b8f0c" resname="maison.latest_blog">
+        <source>Latest Posts</source>
+        <target state="new">Latest Posts</target>
+        <note>key: maison.latest_blog</note>
+      </trans-unit>
       <trans-unit id="b543699fb8a628e960467d33f456f36149b3dbc9" resname="maison.message">
         <source>Message</source>
         <target state="new">Message</target>
@@ -95,6 +100,11 @@
         <source>Next Idea</source>
         <target state="new">Next Idea</target>
         <note>key: maison.next_idea</note>
+      </trans-unit>
+      <trans-unit id="d18f6cf3ead2e1b07587d200d98e870af550e1c1" resname="maison.no_results">
+        <source>No results for</source>
+        <target state="new">No results for</target>
+        <note>key: maison.no_results</note>
       </trans-unit>
       <trans-unit id="d4fda1d83b6eb2f0e02da1ad28123f4e986c5db3" resname="maison.phone">
         <source>Phone</source>
@@ -115,6 +125,11 @@
         <source>Professionals</source>
         <target state="new">Professionals</target>
         <note>key: maison.professionals</note>
+      </trans-unit>
+      <trans-unit id="1c7d47299379abadf9f0706eeb3cb31df1aa9cda" resname="maison.search_results">
+        <source>Search results for</source>
+        <target state="new">Search results for</target>
+        <note>key: maison.search_results</note>
       </trans-unit>
       <trans-unit id="bc61818eb1ac517a6b99f054b0eec36b8d1c3d2e" resname="maison.send_an_email">
         <source>Send an Email</source>

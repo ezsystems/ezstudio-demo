@@ -14,3 +14,6 @@ services:
     App\QueryType\ChildrenQueryType:
         tags:
             - {name: ezpublish.query_type}
+
+    App\QueryType\SearchQueryType:
+        $searchCriterionContentTypes: '%app.search.criterion_content_types%'

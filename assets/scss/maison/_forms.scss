@@ -17,6 +17,11 @@
             z-index: 5;
             color: #c9c9c9;
             font-size: 30px;
+            cursor: pointer;
+
+            &:hover {
+                color: $grey-light;
+            }
         }
     }
     &--contact {

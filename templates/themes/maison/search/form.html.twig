@@ -1,0 +1,6 @@
+{{ form_start(form, {'attr': { 'class': 'form form--search ml-auto form-inline w-100' } }) }}
+    <div class="input-group w-100">
+        <i id="search-submit" class="material-icons icon-search">search</i>
+        {{ form_widget(form.query) }}
+    </div>
+{{ form_end(form) }}

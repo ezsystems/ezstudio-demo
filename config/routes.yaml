@@ -4,3 +4,9 @@ app.contact.submitted:
         _controller: App\Controller\ContactFormController::submittedAction
         template: "@ezdesign/full/contact_form_submitted.html.twig"
     methods: [GET]
+
+app.search:
+    path: /search
+    methods: [GET]
+    defaults:
+        _controller: App\Controller\SearchController:searchAction
