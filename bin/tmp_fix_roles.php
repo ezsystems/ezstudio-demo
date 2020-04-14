@@ -53,7 +53,7 @@ $repository->sudo(
             'limitations' => [
                 [
                     'identifier' => 'Subtree',
-                    'values' => ['/1/43/51/', '/1/43/53/'],
+                    'values' => ['/1/43/51/', '/1/43/53/', '/1/59/'],
                 ],
             ],
         ];
