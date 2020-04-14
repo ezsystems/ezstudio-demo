@@ -17,7 +17,7 @@ use eZ\Publish\API\Repository\Values\Content\Query\SortClause;
 use eZ\Publish\Core\QueryType\OptionsResolverBasedQueryType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class SearchQueryType extends OptionsResolverBasedQueryType
+final class SearchQueryType extends OptionsResolverBasedQueryType
 {
     /** @var \eZ\Publish\API\Repository\SearchService */
     private $searchService;

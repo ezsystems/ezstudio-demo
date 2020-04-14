@@ -28,9 +28,10 @@
                                         </div>
                                     {% endif %}
                                     <div class="{{ hasMedia ? 'col-md-9' : '' }} col-sm-12 flex-column ml-lg-5">
-                                        <h2 class="heading-md">
+                                        <h2 class="heading-md mb-0">
                                             {{ result.name }}
                                         </h2>
+                                        <p class="text">{{ result.contentType.name }}</p>
                                         {% if result.fields.intro is defined %}
                                             <p>{{ ez_render_field(result, 'intro') }}</p>
                                         {% endif %}
@@ -42,7 +43,7 @@
                     {% if pagerfanta.haveToPaginate() %}
                         <div class="col-12">
                             {{ pagerfanta(pagerfanta, 'maison_template', {
-                                'pageParameter': '[page][search]'
+                                'pageParameter': '[search][page]'
                             }) }}
                         </div>
                     {% endif %}

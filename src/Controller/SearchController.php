@@ -20,7 +20,7 @@ use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class SearchController extends Controller
+final class SearchController extends Controller
 {
     /** @var \eZ\Publish\API\Repository\SearchService */
     private $searchService;

@@ -14,7 +14,6 @@ Encore.setOutputPath('public/assets/build')
 
 Encore.addEntry('maison', [
         path.resolve(__dirname, './assets/scss/maison/maison.scss'),
-        path.resolve(__dirname, './assets/js/maison/script.js'),
         path.resolve(__dirname, './assets/js/carouselMenu.js'),
     ])
     .addEntry('professionals', [

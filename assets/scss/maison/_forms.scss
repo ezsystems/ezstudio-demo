@@ -12,12 +12,14 @@
         }
         .icon-search {
             position: absolute;
-            right: 24px;
-            top: 5px;
+            right: 18px;
+            top: 4px;
             z-index: 5;
             color: #c9c9c9;
             font-size: 30px;
             cursor: pointer;
+            background: none;
+            border: none;
 
             &:hover {
                 color: $grey-light;

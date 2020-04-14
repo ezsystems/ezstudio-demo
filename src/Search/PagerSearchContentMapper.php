@@ -10,12 +10,12 @@ namespace App\Search;
 
 use Pagerfanta\Pagerfanta;
 
-class PagerSearchContentMapper
+final class PagerSearchContentMapper
 {
     /**
      * @param \Pagerfanta\Pagerfanta $pagerfanta
      *
-     * @return array
+     * @return \eZ\Publish\API\Repository\Values\Content\Content[]
      */
     public function map(Pagerfanta $pagerfanta): array
     {
