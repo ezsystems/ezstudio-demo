@@ -811,6 +811,18 @@
             field-settings:
                 textRows: 10
             validator-configuration: {  }
+        -
+            identifier: landing_page
+            type: ezlandingpage
+            name:
+                eng-GB: Landing page
+            description: 'Home landing page'
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 10
 #        -
 #            type: eztags
 #            name: tags
