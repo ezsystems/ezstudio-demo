@@ -1,0 +1,11 @@
+ezpublish:
+  system:
+    default:
+      universal_discovery_widget_module:
+        configuration:
+          block_gallery:
+            multiple: false
+            allowed_content_types: ['folder', 'gallery']
+          block_video:
+            multiple: false
+            allowed_content_types: ['video']

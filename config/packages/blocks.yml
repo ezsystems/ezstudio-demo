@@ -1,5 +1,22 @@
 ezplatform_page_fieldtype:
     blocks:
+        gallery:
+            attributes:
+                contentId:
+                    validators:
+                        content_type:
+                            message: You must select a Folder or Gallery
+                            options:
+                                types: ['folder', 'gallery']
+        video:
+            attributes:
+                contentId:
+                    validators:
+                        content_type:
+                            message: You must select an Video
+                            options:
+                                types: video
+
 #        hero:
 #            name: Hero
 #            category: default
@@ -26,4 +43,8 @@ ezplatform_page_fieldtype:
 #                            options:
 #                                pattern: '/[0-9]+/'
 #                            message: Choose a Content item
+#                        content_type:
+#                            message: You must select an Image
+#                            options:
+#                                types: image
 #
