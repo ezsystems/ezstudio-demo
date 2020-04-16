@@ -1,9 +1,4 @@
 services:
-    App\Event\Subscriber\BuildDemoSchemaSubscriber:
-        autoconfigure: true
-        arguments:
-            - 'src/Resources/schema/demo.yaml'
-
     App\Installer\PlatformEEDemoInstaller:
         autowire: true
         parent: EzSystems\PlatformInstallerBundle\Installer\CoreInstaller
