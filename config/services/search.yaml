@@ -4,8 +4,8 @@ services:
         autoconfigure: true
         public: false
 
-    App\Service\Search\QueryExecutor\LocationSearchQueryExecutor: ~
+    App\Search\QueryExecutor\LocationSearchQueryExecutor: ~
 
-    App\Service\Search\QueryExecutorInterface: '@App\Service\Search\QueryExecutor\LocationSearchQueryExecutor'
+    App\Search\QueryExecutorInterface: '@App\Search\QueryExecutor\LocationSearchQueryExecutor'
 
     App\Search\PagerSearchContentMapper: ~

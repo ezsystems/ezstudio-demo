@@ -9,8 +9,7 @@ declare(strict_types=1);
 namespace App\Mail;
 
 use App\Event\SendEmailEvent;
-use App\ValueObject\Email;
-use App\ValueObject\Message;
+use App\Values\Email;
 use Swift_Mailer;
 use Swift_Message;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;

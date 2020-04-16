@@ -8,17 +8,24 @@ declare(strict_types=1);
 
 namespace App\Mail;
 
-use App\ValueObject\Email;
+use App\Values\Email;
 
 interface MailerInterface
 {
     /**
-     * @param \App\ValueObject\Email $email
+     * @param \App\Values\Email $email
+     *
+     * @return int
      */
     public function send(Email $email): int;
 
     /**
-     * @return \App\ValueObject\Email
+     * @param string $subject
+     * @param string $body
+     * @param string $sender
+     * @param array $recipients
+     *
+     * @return \App\Values\Email
      */
     public function create(string $subject, string $body, string $sender, array $recipients): Email;
 }

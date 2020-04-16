@@ -20,6 +20,9 @@ abstract class AbstractRenderer
         $this->contentHelper = $contentHelper;
     }
 
+    /**
+     * @return \App\Helper\ContentHelper
+     */
     protected function getContentHelper(): ContentHelper
     {
         return $this->contentHelper;

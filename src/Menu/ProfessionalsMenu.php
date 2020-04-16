@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace App\Menu;
 
-use App\Value\MenuQueryParameters;
+use App\Values\MenuQueryParameters;
 
 final class ProfessionalsMenu extends AbstractMenuProvider implements MenuProviderInterface
 {

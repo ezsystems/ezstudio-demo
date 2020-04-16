@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace App\Twig;
 
 use App\QueryType\ContentSiblingQueryType;
-use App\ValueObject\ContentSiblingQueryParameters;
+use App\Values\ContentSiblingQueryParameters;
 use eZ\Publish\API\Repository\ContentService as ContentServiceInterface;
 use eZ\Publish\API\Repository\SearchService as SearchServiceInterface;
 use eZ\Publish\API\Repository\Values\Content\Content;

@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace App\Menu\CacheAware;
 
-use App\Value\MenuQueryParameters;
+use App\Values\MenuQueryParameters;
 
 interface MenuGeneratorInterface
 {

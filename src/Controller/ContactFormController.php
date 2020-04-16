@@ -8,10 +8,10 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Form\Data\ContactData;
 use App\Form\Type\ContactType;
 use App\Mail\MailerInterface;
-use App\Model\Contact;
-use App\ValueObject\Email;
+use App\Values\Email;
 use Exception;
 use eZ\Bundle\EzPublishCoreBundle\Controller;
 use eZ\Publish\Core\MVC\Symfony\View\View;
@@ -104,11 +104,11 @@ final class ContactFormController extends Controller
     }
 
     /**
-     * @param \App\Model\Contact $contact
+     * @param \App\Form\Data\ContactData $contact
      *
-     * @return \App\ValueObject\Email
+     * @return \App\Values\Email
      */
-    private function createEmail(Contact $contact): Email
+    private function createEmail(ContactData $contact): Email
     {
         return $this->mailer->create(
             $this->translator->trans(

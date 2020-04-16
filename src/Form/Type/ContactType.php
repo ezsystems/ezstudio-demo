@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace App\Form\Type;
 
-use App\Model\Contact;
+use App\Form\Data\ContactData;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -58,6 +58,6 @@ final class ContactType extends AbstractType
 
     public function configureOptions(OptionsResolver $resolver): void
     {
-        $resolver->setDefaults(['data_class' => Contact::class]);
+        $resolver->setDefaults(['data_class' => ContactData::class]);
     }
 }

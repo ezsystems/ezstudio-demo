@@ -9,17 +9,17 @@ declare(strict_types=1);
 namespace App\Menu\CacheAware;
 
 use App\Service\Cache\CacheServiceInterface;
-use App\Service\Search\QueryExecutorInterface;
-use App\Service\Search\SearchResultLocationExtractor;
+use App\Search\QueryExecutorInterface;
+use App\Search\SearchResultLocationExtractor;
 use App\Tree\LocationTreeBuilder;
-use App\Value\MenuQueryParameters;
+use App\Values\MenuQueryParameters;
 
 final class MenuGenerator implements MenuGeneratorInterface
 {
-    /** @var \App\Service\Cache\CacheServiceInterface */
+    /** @var \App\Cache\CacheServiceInterface */
     private $cacheService;
 
-    /** @var \App\Service\Search\QueryExecutorInterface */
+    /** @var \App\Search\QueryExecutorInterface */
     private $executor;
 
     public function __construct(
@@ -31,7 +31,7 @@ final class MenuGenerator implements MenuGeneratorInterface
     }
 
     /**
-     * @inheritDoc
+     * {@inheritDoc}
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */

@@ -7,12 +7,6 @@ services:
     App\Event\:
         resource: '../../src/Event/*'
 
-    App\Event\TemplateAttributeBlockNameListener:
-        tags:
-            - { name: kernel.event_subscriber }
-
-    App\Event\PageFieldType\Attribute\AttributeSerializationSubscriber: ~
-
     App\Event\Listener\RenderMenuListener:
         arguments:
             $credentialsResolver: '@EzSystems\EzRecommendationClient\Config\EzRecommendationClientCredentialsResolver'

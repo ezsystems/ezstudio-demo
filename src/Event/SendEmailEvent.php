@@ -8,12 +8,11 @@ declare(strict_types=1);
 
 namespace App\Event;
 
-use App\ValueObject\Email;
+use App\Values\Email;
 use Symfony\Contracts\EventDispatcher\Event;
 
 final class SendEmailEvent extends Event
 {
-    /** @var \App\ValueObject\Email */
     private $message;
 
     public function __construct(Email $message)
@@ -22,7 +21,7 @@ final class SendEmailEvent extends Event
     }
 
     /**
-     * @return \App\ValueObject\Email
+     * @return \App\Values\Email
      */
     public function getEmail(): Email
     {
