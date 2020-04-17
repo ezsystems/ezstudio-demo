@@ -29,7 +29,7 @@
                     {{ ez_render_field(content, 'intro') }}
                 </div>
                 <div class="card__desc">
-                    {{ ez_render_field(content, 'description')|previewPremiumContent(1) }}
+                    {{ ez_render_field(content, 'description')|renderPartialHtml(1) }}
                 </div>
             </div>
         </a>
