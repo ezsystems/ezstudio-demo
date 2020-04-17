@@ -85,7 +85,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section--standard mt-10">
+        <section class="section section--standard mt-8">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center pr-lg-0">
@@ -126,20 +126,11 @@
                 </div>
             </div>
         </section>
-        <section class="section section--standard my-10">
-            <div class="container">
+        <section class="section section--standard my-10 pb-5">
+            <div class="container pb-5">
                 <div class="row mt-">
                     <div class="col-lg-4 col-md-12">
-                        <h3 class="heading-lg">
-                            {{ 'maison.find_a_professional_to_help_you_with'|trans|desc('Find a professional to help you with') }}
-                        </h3>
-                        <h5 class="heading-sm mt-4">
-                            {{ 'maison.delivery_assembling_painting_renovation_etc.'|trans
-                            |desc('delivery, assembling, painting, renovation, etc.') }}
-                        </h5>
-                        <a href="/inspirations" class="btn btn--lg btn--blue mt-5">
-                            {{ 'maison.find_professionals'|trans|desc('Find Professionals') }}
-                        </a>
+                        {% include '@ezdesign/parts/find_professionals.html.twig' %}
                     </div>
                     <div class="col-lg-4 col--img d-lg-block d-none">
                         <img src="{{ asset('assets/images/living-room-1.jpg') }}">
