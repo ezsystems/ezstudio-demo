@@ -38,7 +38,8 @@ $col: '.col';
         img {
             border-radius: 8px;
             max-width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -97,4 +98,8 @@ $multiplier: .25;
         -webkit-border-top-right-radius: $calc;
         -webkit-border-bottom-right-radius: $calc;
     }
+}
+
+.ezlandingpage-field .container-fluid {
+    padding: 0;
 }

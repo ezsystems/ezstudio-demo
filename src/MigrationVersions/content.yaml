@@ -205,9 +205,9 @@
     always_available: true
     attributes:
         name: 'Business'
-    #        icon:
-    #            destinationContentId: reference:ref_content_image__media__images__inspirations__category_kitchen
-    #            alternativeText: null
+        icon:
+            destinationContentId: reference:ref_content_image__media__images__inspirations__category_home_office
+            alternativeText: null
     references:
         -
             identifier: ref_location_inspiration__sites__maison__inspirations__category_business

@@ -50,6 +50,7 @@ class PlatformEEDemoInstaller extends CoreInstaller
             'kaliop:migration:migrate --path=src/MigrationVersions/content.yaml -v -n',
             'kaliop:migration:migrate --path=src/MigrationVersions/professionals.yaml -v -n',
             'kaliop:migration:migrate --path=src/MigrationVersions/landing_page.yaml -v -n',
+            'kaliop:migration:migrate --path=src/MigrationVersions/home.yaml -v -n',
 //            'kaliop:migration:migrate --path=src/MigrationVersions/users.yaml -v -n',
         ];
 

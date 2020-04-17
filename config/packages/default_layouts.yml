@@ -1,11 +1,11 @@
 ezplatform_page_fieldtype:
     layouts:
-        1w__2_1__1:
-            identifier: '1w__2_1__1'
+        1w__1_1__1:
+            identifier: '1w__1_1__1'
             name: 'Mixed columns, 4 Zones'
             description: 'Mixed columns, 4 Zones'
             thumbnail: '/bundles/ezplatformpagefieldtype/images/layouts/default.png'
-            template: '@ezdesign/layouts/1w__2_1__1.html.twig'
+            template: '@ezdesign/layouts/1w__1_1__1.html.twig'
             zones:
                 top:
                     name: 'Top wide zone'
@@ -16,5 +16,31 @@ ezplatform_page_fieldtype:
                 bottom:
                     name: 'Bottom zone'
 
-#    blocks:
-#        contentList:
+    blocks:
+        embed:
+            views:
+                maison_pro:
+                    template: '@ezdesign/blocks/embed/maison_pro.html.twig'
+                    name: 'Become a Maison Pro'
+
+                find_professionals:
+                    template: '@ezdesign/blocks/embed/find_professionals.html.twig'
+                    name: 'Find a professional'
+
+                find_inspirations:
+                    template: '@ezdesign/blocks/embed/find_inspirations.html.twig'
+                    name: 'Find inspirations'
+
+                banner_wide:
+                    template: '@ezdesign/blocks/embed/banner_wide.html.twig'
+                    name: 'Banner wide'
+                    options:
+                        match: inspiration
+
+        contentlist:
+            views:
+                tiles:
+                    template: '@ezdesign/blocks/content_list/tiles.html.twig'
+                    name: 'Tiles'
+                    options:
+                        match: inspirations_category

@@ -1,0 +1,157 @@
+# references
+-
+    type: reference
+    mode: load
+    file: 'src/MigrationVersions/References/references.yml'
+    overwrite: true
+
+
+# Maison folder
+-
+    type: content
+    mode: update
+    match:
+        content_id: reference:ref_content_folder__sites__maison
+    lang: eng-GB
+    attributes:
+        landing_page: >- #json
+            {
+               "layout":"1w__1_1__1",
+               "zones":[
+                  {
+                     "id":"b-294fbffd-744a-6ac6-3f29-9783799c10b3",
+                     "name":"Top wide zone",
+                     "blocks":[
+                        {
+                           "visible":true,
+                           "id":"b-294fbffd-744a-6ac6-3f29-9783799c10b1",
+                           "type":"embed",
+                           "name":"Embed",
+                           "view":"banner_wide",
+                           "class":null,
+                           "style":null,
+                           "compiled":"\n",
+                           "since":null,
+                           "till":null,
+                           "attributes":[
+                              {
+                                 "id":"",
+                                 "name":"contentId",
+                                 "value":"[reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration]"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "id":"z-b92bce84-97f8-4f22-a539-5ba47db391b2",
+                     "name":"Middle left zone",
+                     "blocks":[
+                        {
+                           "visible":true,
+                           "id":"b-294fbffd-744a-6ac6-3f29-9783799c10b2",
+                           "type":"embed",
+                           "name":"Embed",
+                           "view":"find_inspirations",
+                           "class":null,
+                           "style":null,
+                           "compiled":"\n",
+                           "since":null,
+                           "till":null,
+                           "attributes":[
+                              {
+                                 "id":"",
+                                 "name":"contentId",
+                                 "value":"[reference:ref_content_folder__sites__maison__inspirations]"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "id":"z-b92bce84-97f8-4f22-a539-5ba47db391b1",
+                     "name":"Middle right zone",
+                     "blocks":[
+                        {
+                           "visible":true,
+                           "id":"b-294dnjkd-744a-6ad6-3f29-9783799c10b2",
+                           "type":"contentlist",
+                           "name":"Content List",
+                           "view":"tiles",
+                           "class":null,
+                           "style":null,
+                           "compiled":"\n",
+                           "since":null,
+                           "till":null,
+                           "attributes":[
+                              {
+                                 "id":"",
+                                 "name":"contentId",
+                                 "value":"[reference:ref_content_folder__sites__maison__inspirations]"
+                              },
+                              {
+                                 "id":"",
+                                 "name":"limit",
+                                 "value":"5"
+                              },
+                              {
+                                 "id":"",
+                                 "name":"contentType",
+                                 "value":"inspiration_category"
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "id":"z-b92bce84-97f8-4f22-a539-5ba47db391b3",
+                     "name":"Bottom zone",
+                     "blocks":[
+                        {
+                           "visible":true,
+                           "id":"b-294fbffd-744a-6ac6-3f29-9783799c10b4",
+                           "type":"embed",
+                           "name":"Embed",
+                           "view":"find_professionals",
+                           "class":null,
+                           "style":null,
+                           "compiled":"\n",
+                           "since":null,
+                           "till":null,
+                           "attributes":[
+                              {
+                                 "id":"",
+                                 "name":"contentId",
+                                 "value": "[reference:ref_content_folder__sites__professionals]"
+                              }
+                           ]
+                        },
+                        {
+                           "visible":true,
+                           "id":"b-294fbffd-744a-6ac6-3f29-9783799c10b5",
+                           "type":"embed",
+                           "name":"Embed",
+                           "view":"maison_pro",
+                           "class":null,
+                           "style":null,
+                           "compiled":"\n",
+                           "since":null,
+                           "till":null,
+                           "attributes":[
+                              {
+                                 "id":"",
+                                 "name":"contentId",
+                                 "value": "[reference:ref_content_folder__sites__maison__stores]"
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+
+-
+    type: reference
+    mode: save
+    file: 'src/MigrationVersions/References/references.yml'
+    overwrite: true

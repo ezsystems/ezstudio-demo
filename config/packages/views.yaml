@@ -98,6 +98,12 @@ ezplatform:
                         match:
                             Identifier\ContentType: form
 
+                block_item:
+                    inspiration:
+                        template: "@ezdesign/block_item/inspiration/wide.html.twig"
+                        match:
+                            Identifier\ContentType: inspiration
+
         professionals:
             content_view:
                 full:

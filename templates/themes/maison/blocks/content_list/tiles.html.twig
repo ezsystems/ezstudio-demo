@@ -1,0 +1,21 @@
+{% trans_default_domain 'maison' %}
+
+<div class="row mt-5 mt-md-0">
+    {% if contentArray is defined and contentArray|length > 0 %}
+        {% for content in contentArray %}
+            <div class="col-lg-4 col-md-6 tile tile--lg">
+                <a href="{{ path('ez_urlalias', {'locationId': content.location.id}) }}"
+                   class="tile__link d-flex flex-column align-items-center">
+                    {{ ez_render_field(content.content, 'icon') }}
+                    <span class="mt-auto">{{ ez_render_field(content.content, 'name') }}</span>
+                </a>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <div class="col-lg-4 col-md-6 tile tile--lg">
+        <a href="/inspirations" class="tile__link d-flex flex-column align-items-center">
+            <img src="{{ asset('assets/icons/all-ideas.png') }}">
+            <span class="mt-auto">{{ 'maison.all_ideas'|trans|desc('All ideas') }}</span>
+        </a>
+    </div>
+</div>

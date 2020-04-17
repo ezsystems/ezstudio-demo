@@ -1,0 +1,15 @@
+{% trans_default_domain 'maison' %}
+
+<div class="embed embed--wide">
+    <div class="banner-image">
+        {{ ez_render_field(content, 'image', {
+            'parameters': {'alias': 'original', 'class': 'img-fluid w-100'}
+        }) }}
+        <div class="title">
+            <h1 class="heading-lg">{{ ez_render_field(content, 'name') }}</h1>
+            <a href="{{ ez_path(content) }}" class="btn btn--lg btn--white mt-4">
+                {{ 'maison.explore_more'|trans|desc('Explore More') }}
+            </a>
+        </div>
+    </div>
+</div>

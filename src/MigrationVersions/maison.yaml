@@ -5,7 +5,7 @@
     file: 'src/MigrationVersions/References/references.yml'
     overwrite: true
 
-## Maison folder
+# Maison folder
 -
     type: content
     mode: create
@@ -29,6 +29,7 @@
             alternativeText: ''
         css: ~
         js: ~
+        landing_page: ~
     references:
         -
             identifier: ref_location_folder__sites__maison

@@ -46,16 +46,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <h4 class="heading-lg">
-                            {{ 'maison.find_a_professional_to_help_you_with'|trans|desc('Find a professional to help you with') }}
-                        </h4>
-                        <h5 class="heading-sm mt-4">
-                            {{ 'maison.delivery_assembling_painting_renovation_etc.'|trans
-                            |desc('delivery, assembling, painting, renovation, etc.') }}
-                        </h5>
-                        <a href="#" class="btn btn--lg btn--blue mt-5">
-                            {{ 'maison.find_professionals'|trans|desc('Find Professionals') }}
-                        </a>
+                        {% include '@ezdesign/parts/find_professionals.html.twig' %}
                     </div>
                     <div class="col-md-4 col--img d-lg-block d-none">
                         <img src="{{ asset('assets/images/store-col-img1.png') }}">
@@ -66,26 +57,6 @@
                 </div>
             </div>
         </section>
-        <section class="section section--standard my-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-lg-center my-5">
-                        <h4 class="heading-lg">{{ 'maison.become_a_maison_pro'|trans|desc('Become a Maison Pro') }}</h4>
-                        <p class="mt-4">
-                            {{ 'maison.we_are_always_looking_for_outstanding_local_contractors!'|trans|desc( 'We\'re always looking for outstanding local contractors!')|raw }}
-                        </p>
-                        <a href="" class="btn btn--lg btn--blue mt-4">
-                            {{ 'maison.apply_now'|trans|desc('Apply Now') }}
-                        </a>
-                        <p class="mt-5">
-                            {{ 'maison.click_here_to_view_maison_licensing_information'|trans({
-                                '%link_open%': '<a href="#">',
-                                '%link_close%': '</a>',
-                            })|desc('Click here to view %link_open% Maison licensing information %link_close%')|raw }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {% include '@ezdesign/parts/become_a_maison_pro.html.twig' %}
     </div>
 {% endblock %}

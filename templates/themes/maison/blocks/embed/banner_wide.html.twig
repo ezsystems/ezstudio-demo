@@ -1,0 +1,6 @@
+{% block block_content %}
+    {{ render_esi(controller('ez_content:viewAction', {
+        'locationId': locationId,
+        'viewType': 'block_item'
+    })) }}
+{% endblock %}
