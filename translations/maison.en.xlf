@@ -51,6 +51,11 @@
         <target state="new">delivery, assembling, painting, renovation, etc.</target>
         <note>key: maison.delivery_assembling_painting_renovation_etc.</note>
       </trans-unit>
+      <trans-unit id="87a311f1a0897510913d8d223e49e148b3b20ee2" resname="maison.discover_more_inspirations">
+        <source>Discover More Inspirations</source>
+        <target state="new">Discover More Inspirations</target>
+        <note>key: maison.discover_more_inspirations</note>
+      </trans-unit>
       <trans-unit id="c46c55822a635c77541d853dcf24f3644bc1136a" resname="maison.email">
         <source>E-mail</source>
         <target state="new">E-mail</target>
@@ -60,6 +65,16 @@
         <source>Everything your business needs in one central place</source>
         <target state="new">Everything your business needs in one central place</target>
         <note>key: maison.everything_your_business_needs_in_one_central_place</note>
+      </trans-unit>
+      <trans-unit id="70fb4731d9f6b1a58918622258c65b5c9fcbffb9" resname="maison.explore_more">
+        <source>Explore More</source>
+        <target state="new">Explore More</target>
+        <note>key: maison.explore_more</note>
+      </trans-unit>
+      <trans-unit id="aff0085da2ec5c926fbcb9f383226d747bac8586" resname="maison.find_a_inspirations_and_ideas_to_help_you_with">
+        <source>Find a inspirations and ideas to help you with</source>
+        <target state="new">Find a inspirations and ideas to help you with</target>
+        <note>key: maison.find_a_inspirations_and_ideas_to_help_you_with</note>
       </trans-unit>
       <trans-unit id="c535630dcf93bc77e918971ddce2c5d173fe4d5b" resname="maison.find_a_professional_to_help_you_with">
         <source>Find a professional to help you with</source>
@@ -125,6 +140,11 @@
         <source>Professionals</source>
         <target state="new">Professionals</target>
         <note>key: maison.professionals</note>
+      </trans-unit>
+      <trans-unit id="c924c13c9401ebf43a58ac317b82ef4493029b90" resname="maison.read_more">
+        <source>read more</source>
+        <target state="new">read more</target>
+        <note>key: maison.read_more</note>
       </trans-unit>
       <trans-unit id="1c7d47299379abadf9f0706eeb3cb31df1aa9cda" resname="maison.search_results">
         <source>Search results for</source>
