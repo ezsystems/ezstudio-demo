@@ -6,6 +6,6 @@ ezpublish:
           block_gallery:
             multiple: false
             allowed_content_types: ['folder', 'gallery']
-          block_video:
+          embed_video:
             multiple: false
             allowed_content_types: ['video']
