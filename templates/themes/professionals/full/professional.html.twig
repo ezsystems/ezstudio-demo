@@ -37,13 +37,13 @@
                     <div class="container bg-white rounded-2 py-5 px-5">
                         <div class="row">
                             <div class="col-12">
-                                <h2 class="heading-sm pb-3">About</h2>
+                                <h2 class="heading-sm pb-3">{{ 'professionals.about'|trans|desc('About') }}</h2>
                                 {{ ez_render_field(content, 'description') }}
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <h3 class="heading-sm">Portfolio</h3>
+                                <h3 class="heading-sm">{{ 'professionals.portfolio'|trans|desc('Portfolio') }}</h3>
                                 <div class="d-flex">
                                     {% set inspirations = ez_field_value(content, 'inspirations').destinationContentIds %}
                                     {% for contentId in inspirations %}
