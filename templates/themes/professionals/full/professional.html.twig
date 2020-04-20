@@ -49,7 +49,7 @@
                                     {% for contentId in inspirations %}
                                         {% set inspirationContent = app_content_by_content_id(contentId) %}
                                         <div class="p-4">
-                                            <a href="{{ path('ez_urlalias', {'contentId': contentId}) }}">
+                                            <a href="{{ ez_url(inspirationContent, { 'siteaccess': 'maison' }) }}">
                                                 {{ ez_render_field(inspirationContent, 'image', {
                                                     parameters: {
                                                         class: 'img-fluid'

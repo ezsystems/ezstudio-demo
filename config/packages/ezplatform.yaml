@@ -112,7 +112,8 @@ ezplatform:
             admin_group: [admin]
         default_siteaccess: maison
         match:
-            URIElement: 1
+            Map\URI:
+                admin: admin
             HostElement: 1
             # Uncomment if you've enabled SiteFactory
             # '@EzSystems\EzPlatformSiteFactory\SiteAccessMatcher': ~

@@ -4,7 +4,7 @@
     {% if contentArray is defined and contentArray|length > 0 %}
         {% for content in contentArray %}
             <div class="col-lg-4 col-md-6 tile tile--lg">
-                <a href="{{ path('ez_urlalias', {'locationId': content.location.id}) }}"
+                <a href="{{ ez_path(content.location) }}"
                    class="tile__link d-flex flex-column align-items-center">
                     {{ ez_render_field(content.content, 'icon') }}
                     <span class="mt-auto">{{ ez_render_field(content.content, 'name') }}</span>
