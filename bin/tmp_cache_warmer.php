@@ -20,7 +20,9 @@ $kernel->boot();
 $container = $kernel->getContainer();
 
 # warm cache for professionals
-$request = Request::create('/professionals');
+$request = Request::create('/');
+$request->server->set('SCRIPT_FILENAME', 'index.php');
+$request->headers->set('X-SITEACCESS', 'professionals');
 
 $response = $kernel->handle($request);
 if (strpos($response->getContent(), 'Professionals!') !== false) {

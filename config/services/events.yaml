@@ -12,3 +12,10 @@ services:
             $credentialsResolver: '@EzSystems\EzRecommendationClient\Config\EzRecommendationClientCredentialsResolver'
         tags:
             - { name: kernel.event_listener, event: ezplatform_admin_ui.menu_configure.main_menu, method: renderMenu, priority: -45 }
+
+    App\Event\Listener\RootDomainToSubdomainRedirectListener:
+        arguments:
+            $siteAccessService: '@ezpublish.siteaccess_service'
+            $rootDomainSiteAccess: '%app_default_siteaccess%'
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

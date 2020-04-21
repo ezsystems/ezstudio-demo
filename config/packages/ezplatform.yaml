@@ -73,6 +73,8 @@ parameters:
 
     app.subscribe_form.remote_id: subscribe_to_newsletter
 
+    app_default_siteaccess: maison
+
     # Settings for menu items rendering
     app.menu:
         maison_main:
@@ -125,7 +127,7 @@ ezplatform:
             # It's used to distinguish common siteaccesses from admin ones.
             # In case of multisite with multiple admin panels, remember to add any additional admin siteaccess to this group.
             admin_group: [admin]
-        default_siteaccess: maison
+        default_siteaccess: '%app_default_siteaccess%'
         match:
             Map\URI:
                 admin: admin
