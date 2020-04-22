@@ -86,6 +86,18 @@ final class ChildrenQueryType implements QueryType
             );
         }
 
+        if (!empty($parameters['main_location_only_for_depth_lower_than'])
+            && !empty($parameters['path_string'])
+        ) {
+            $pathStringDepth = substr_count($parameters['path_string'], '/') - 1;
+
+            if ($pathStringDepth < $parameters['main_location_only_for_depth_lower_than']) {
+                $criteria[] = new Query\Criterion\Location\IsMainLocation(
+                    Query\Criterion\Location\IsMainLocation::MAIN
+                );
+            }
+        }
+
         return $criteria;
     }
 

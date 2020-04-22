@@ -122,10 +122,12 @@ ezplatform:
                             limit: 12
                             query:
                                 query_type: "App:Children"
+                                limit: 9
                                 parameters:
                                     path_string: "@=location.pathString"
                                     depth: 6
                                     included_content_type_identifier: 'professional'
+                                    main_location_only_for_depth_lower_than: 6
                                 assign_results_to: professionals
 
                     professional:
