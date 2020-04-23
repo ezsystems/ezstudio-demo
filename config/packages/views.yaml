@@ -105,6 +105,11 @@ ezplatform:
                         match:
                             Identifier\ContentType: inspiration
 
+                    default:
+                        template: "@ezdesign/default/default.html.twig"
+                        match:
+                            Identifier\ContentType: [blog, blog_post, contact, article, store, store_list, inspiration_list, inspiration_category, home, landing_page, folder, file, video, image, gallery, form, user, user_group, professional]
+
         professionals:
             content_view:
                 full:

@@ -34,13 +34,9 @@ ezplatform_page_fieldtype:
                 banner_wide:
                     template: '@ezdesign/blocks/embed/banner_wide.html.twig'
                     name: 'Banner wide'
-                    options:
-                        match: inspiration
 
         contentlist:
             views:
                 tiles:
                     template: '@ezdesign/blocks/content_list/tiles.html.twig'
                     name: 'Tiles'
-                    options:
-                        match: inspirations_category

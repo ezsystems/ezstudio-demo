@@ -6,16 +6,20 @@
             <div class="col-lg-4 col-md-6 tile tile--lg">
                 <a href="{{ ez_path(content.location) }}"
                    class="tile__link d-flex flex-column align-items-center">
-                    {{ ez_render_field(content.content, 'icon') }}
+                    {% if contentType == 'inspiration_category' %}
+                        {{ ez_render_field(content.content, 'icon') }}
+                    {% endif %}
                     <span class="mt-auto">{{ ez_render_field(content.content, 'name') }}</span>
                 </a>
             </div>
         {% endfor %}
     {% endif %}
-    <div class="col-lg-4 col-md-6 tile tile--lg">
-        <a href="/inspirations" class="tile__link d-flex flex-column align-items-center">
-            <img src="{{ asset('assets/icons/all-ideas.png') }}">
-            <span class="mt-auto">{{ 'maison.all_ideas'|trans|desc('All ideas') }}</span>
-        </a>
-    </div>
+    {% if contentType == 'inspiration_category' %}
+        <div class="col-lg-4 col-md-6 tile tile--lg">
+            <a href="/inspirations" class="tile__link d-flex flex-column align-items-center">
+                <img src="{{ asset('assets/icons/all-ideas.png') }}">
+                <span class="mt-auto">{{ 'maison.all_ideas'|trans|desc('All ideas') }}</span>
+            </a>
+        </div>
+    {% endif %}
 </div>
