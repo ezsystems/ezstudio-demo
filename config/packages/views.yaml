@@ -97,6 +97,7 @@ ezplatform:
                         template: "@ezdesign/embed/subscribe.html.twig"
                         match:
                             Identifier\ContentType: form
+                            Id\Remote: "%app.subscribe_form.remote_id%"
 
                 block_item:
                     inspiration:
