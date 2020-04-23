@@ -22,11 +22,12 @@
             </div>
         </div>
         <div class="container">
+            {% set parentNodeLocation = location.parentLocation.parentLocation %}
             {{ render_esi(controller('app_menu::getMenuAction', {
                 type: 'inspirations',
                 template: '@ezdesign/menu/inspirations_menu.html.twig',
-                pathString: location.pathString,
-                rootLocationId: location.id
+                pathString: parentNodeLocation.pathString,
+                rootLocationId: parentNodeLocation.id
             })) }}
             <div class="row">
                 <div class="col-md-8 offset-md-2">
