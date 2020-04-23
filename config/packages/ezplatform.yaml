@@ -42,10 +42,6 @@ parameters:
     fastly_service_id: '%env(FASTLY_SERVICE_ID)%'
     fastly_key: '%env(FASTLY_KEY)%'
 
-    # Top menu parameters
-    app.top_menu.parent_location_id: 2
-    app.top_menu.included_content_type_identifier: ["folder", "inspiration_list"]
-
     # Location Ids of allowed user groups for viewing Articles with premium content
     # 12 - members, 13 administrator_users, 14 - editors
     app.premium_content.allowed_user_groups.location_ids: [12, 13, 14]
@@ -76,6 +72,25 @@ parameters:
     app.search.criterion_content_types: [inspiration, store, blog_post]
 
     app.subscribe_form.remote_id: subscribe_to_newsletter
+
+    # Settings for menu items rendering
+    app.menu:
+        maison_main:
+            inspirations:
+                location_id: 496
+            find_professionals:
+                location_id: 189
+                siteaccess: professionals
+        maison_top:
+            blog:
+                location_id: 537
+                label: Blog
+            store_locators:
+                location_id: 529
+                icon: '<i class="material-icons-outlined item-store-locators-pin">room</i>'
+        maison_footer:
+            connect_with_us:
+                location_id: 543
 
 ezplatform:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish

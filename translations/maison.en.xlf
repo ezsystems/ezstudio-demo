@@ -186,11 +186,6 @@
         <target state="new">Store Facts</target>
         <note>key: maison.store_facts</note>
       </trans-unit>
-      <trans-unit id="ceb2994486c98d5182b6fae0ef07f52155f945a9" resname="maison.store_locators">
-        <source>Store Locators</source>
-        <target state="new">Store Locators</target>
-        <note>key: maison.store_locators</note>
-      </trans-unit>
       <trans-unit id="d5a376738cbe359a96facf33ddb69dbc2bd9e134" resname="maison.trending_in_your_store">
         <source>Trending In Your Store</source>
         <target state="new">Trending In Your Store</target>

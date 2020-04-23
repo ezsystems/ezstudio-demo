@@ -11,16 +11,6 @@
         <target state="new">About</target>
         <note>key: professionals.about</note>
       </trans-unit>
-      <trans-unit id="8e644bb6dc56ca797d4819d95e8ad190f7e0011b" resname="professionals.become_a_pro">
-        <source>Become a Pro</source>
-        <target state="new">Become a Pro</target>
-        <note>key: professionals.become_a_pro</note>
-      </trans-unit>
-      <trans-unit id="cf88de5829e3ca83894e69318f4bb66fda2def0a" resname="professionals.login">
-        <source>Login</source>
-        <target state="new">Login</target>
-        <note>key: professionals.login</note>
-      </trans-unit>
       <trans-unit id="eb57ccd4a60320cede50072d75582caf1c67ee83" resname="professionals.portfolio">
         <source>Portfolio</source>
         <target state="new">Portfolio</target>

@@ -1,0 +1,50 @@
+{% extends '@KnpMenu/menu.html.twig' %}
+
+{% block root %}
+    {% if item is defined and item.children|length > 0 %}
+        <ul class="nav navbar-nav">
+            {% for item in item.children %}
+                {{ block('item') }}
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
+
+{% block item %}
+    {% if item.displayed %}
+        {%- set classes = item.attribute('class') is not empty ? [item.attribute('class')] : [] %}
+        {%- set classes = classes|merge(['nav-item']) %}
+        {%- set attributes = item.attributes %}
+        {%- if classes is not empty %}
+            {%- set attributes = attributes|merge({'class': classes|join(' ')}) %}
+        {%- endif %}
+        {# displaying the item #}
+        {% import 'knp_menu.html.twig' as knp_menu %}
+        <li{{ knp_menu.attributes(attributes) }}>
+            {%- if item.uri is not empty and (not matcher.isCurrent(item) or options.currentAsLink) %}
+                {{ block('linkElement') }}
+            {%- else %}
+                {{ block('spanElement') }}
+            {%- endif %}
+        </li>
+    {% endif %}
+{% endblock %}
+
+{% block linkElement %}
+    {% import 'knp_menu.html.twig' as knp_menu %}
+    {% set link_attributes = item.linkAttributes|merge({
+        'href': item.uri,
+        'aria-controls': item.name,
+        'class': ('nav-link' ~ (matcher.isCurrent(item) ? ' ' ~ options.currentClass|trim)) ~ (item.linkAttributes.class is defined ?  ' ' ~ item.linkAttributes.class|trim)
+    }) %}
+    <a{{ knp_menu.attributes(link_attributes) }}>
+        {{ block('label') }}
+        {% if item.extras.icon is defined %}
+            {{ item.extras.icon|raw }}
+        {% endif %}
+    </a>
+{% endblock %}
+
+{% block spanElement %}
+    {{ block('linkElement') }}
+{% endblock %}

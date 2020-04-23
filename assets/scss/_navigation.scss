@@ -1,0 +1,52 @@
+.navbar {
+    &--main-menu {
+        .nav-item {
+            &.active {
+                .nav-link {
+                    color: $blue-lighter;
+                }
+            }
+            &:last-child .nav-link {
+                padding-right: 0.5em;
+            }
+        }
+        .nav-link {
+            font-size: 17px;
+            line-height: 28px;
+            color: $grey-dark;
+            font-weight: 500;
+            padding-left: 1em;
+            padding-right: 1em;
+
+            &:hover {
+                color: $blue-lighter;
+            }
+        }
+    }
+    &--footer-nav {
+        .navbar-nav {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .nav-link {
+            color: $grey-light;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $blue-lighter;
+            }
+        }
+    }
+    &-nav {
+        .nav-link {
+            color: $grey-light;
+
+            &.active{
+                color: $blue-lighter;
+            }
+        }
+    }
+}

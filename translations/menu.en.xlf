@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="169254c45fa4ed7ea11c00541ffb17b0cde39625" resname="blog">
+        <source>Blog</source>
+        <target state="new">Blog</target>
+        <note>key: blog</note>
+      </trans-unit>
+      <trans-unit id="98f90d616a69434d881f4df9432eb984175191b5" resname="connect_with_us">
+        <source>Connect with us</source>
+        <target state="new">Connect with us</target>
+        <note>key: connect_with_us</note>
+      </trans-unit>
+      <trans-unit id="3923caa36a8686636be633584c164b353f884c62" resname="find_professionals">
+        <source>Find professionals</source>
+        <target state="new">Find professionals</target>
+        <note>key: find_professionals</note>
+      </trans-unit>
+      <trans-unit id="f9df4bb6bce2ca305f17c5eaa703a06fb832cc4c" resname="inspirations">
+        <source>Inspirations</source>
+        <target state="new">Inspirations</target>
+        <note>key: inspirations</note>
+      </trans-unit>
+      <trans-unit id="7ea9c24dfbaed0a1a3a0077ba10bed3338fffc88" resname="store_locators">
+        <source>Store locators</source>
+        <target state="new">Store locators</target>
+        <note>key: store_locators</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

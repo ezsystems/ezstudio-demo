@@ -1,25 +1,63 @@
 .navbar {
-    &--main-menu {
+    &--top {
         .nav-item {
-            &.active {
-                .nav-link {
-                    color: $blue-lighter;
-                }
+            &::before {
+                content: " | ";
+                font-size: 12px;
             }
-            &:last-child .nav-link {
-                padding-right: 0.5em;
+            &:first-child::before {
+                content: none;
             }
         }
         .nav-link {
-            font-size: 17px;
-            line-height: 28px;
-            color: $grey-dark;
-            font-weight: 500;
-            padding-left: 1em;
-            padding-right: 1em;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 0 1.3em;
+            display: inline;
 
             &:hover {
                 color: $blue-lighter;
+            }
+            .item-store-locators-pin {
+                position: relative;
+                top: 3px;
+                font-size: 17px;
+            }
+        }
+    }
+    &__user-quick-nav {
+        .nav-item {
+            &::before {
+                content: none;
+            }
+        }
+        .nav-cart {
+            position: relative;
+            padding-right: 5px;
+
+            .badge {
+                background-color: $orange;
+                color: $white;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 100;
+                border-radius: 1rem;
+                padding: 0.15em 0.3em;
+                position: absolute;
+                top: -15px;
+                right: -3px;
+            }
+        }
+        .nav-signin {
+            font-size: 16px;
+            line-height: 26px;
+            color: $grey-light;
+            position: relative;
+
+            .material-icons-outlined {
+                font-size: 26px;
+                position: absolute;
+                left: -10px;
             }
         }
     }
@@ -32,21 +70,5 @@
         z-index: 2;
         background-color: $white;
         border-radius: 8px;
-    }
-    &--footer-nav {
-        .navbar-nav {
-            width: 100%;
-            justify-content: space-between;
-        }
-        .nav-link {
-            color: $grey-light;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 23px;
-
-            &:hover {
-                color: $blue-lighter;
-            }
-        }
     }
 }

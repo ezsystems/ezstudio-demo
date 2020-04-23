@@ -16,3 +16,12 @@ services:
             $providers: !tagged_iterator 'menu_provider_supported_strategy'
 
     App\Menu\CacheAware\MenuGenerator: ~
+
+    App\Menu\MenuBuilder:
+        arguments:
+            $menuIncludedItems: '%app.menu%'
+        tags:
+            - { name: knp_menu.menu_builder, method: createMaisonMainMenu, alias: maison_main }
+            - { name: knp_menu.menu_builder, method: createMaisonHeaderMenu, alias: maison_top }
+            - { name: knp_menu.menu_builder, method: createMaisonFooterMenu, alias: maison_footer }
+            - { name: knp_menu.menu_builder, method: createProfessionalsMainMenu, alias: professionals_main }
