@@ -20,5 +20,5 @@
     </p>
 </div>
 <div class="mt-5">
-    <a href="/professionals" class="btn btn--lg btn--blue mt-3">{{ 'maison.find_professionals'|trans|desc('Find Professionals') }}</a>
+    <a href="{{ url('ez_urlalias', { 'locationId': locationId, 'siteaccess': 'professionals' }) }}" class="btn btn--lg btn--blue mt-3">{{ 'maison.find_professionals'|trans|desc('Find Professionals') }}</a>
 </div>

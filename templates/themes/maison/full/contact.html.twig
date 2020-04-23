@@ -52,7 +52,7 @@
                 </div>
                 <div class="col-lg-6 pl-lg-5 mt-xs-5">
                     <div class="pl-lg-5">
-                        {% include '@ezdesign/parts/find_professionals.html.twig' %}
+                        {% include '@ezdesign/parts/find_professionals.html.twig' with { 'locationId': professionals_location_id } only %}
                     </div>
                 </div>
             </div>

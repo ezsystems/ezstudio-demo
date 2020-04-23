@@ -49,9 +49,6 @@ class MenuBuilder implements TranslationContainerInterface
     /** @var array */
     private $menuIncludedItems;
 
-    /** @var array */
-    private $translations;
-
     public function __construct(
         FactoryInterface $factory,
         RouterInterface $router,

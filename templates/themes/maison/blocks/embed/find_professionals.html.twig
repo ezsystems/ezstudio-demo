@@ -6,7 +6,7 @@
         <img src="{{ asset('assets/images/store-col-img2.png') }}">
     </div>
     <div class="col-lg-4 col-md-12">
-        {% include '@ezdesign/parts/find_professionals.html.twig' %}
+        {% include '@ezdesign/parts/find_professionals.html.twig' with { 'locationId': locationId } only %}
     </div>
 </div>
 

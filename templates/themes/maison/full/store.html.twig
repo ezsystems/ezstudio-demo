@@ -130,7 +130,7 @@
             <div class="container pb-5">
                 <div class="row mt-">
                     <div class="col-lg-4 col-md-12">
-                        {% include '@ezdesign/parts/find_professionals.html.twig' %}
+                        {% include '@ezdesign/parts/find_professionals.html.twig' with { 'locationId': professionals_location_id } only %}
                     </div>
                     <div class="col-lg-4 col--img d-lg-block d-none">
                         <img src="{{ asset('assets/images/living-room-1.jpg') }}">
