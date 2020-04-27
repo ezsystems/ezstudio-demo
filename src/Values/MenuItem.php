@@ -6,7 +6,7 @@
  */
 declare(strict_types=1);
 
-namespace App\Tree\Values;
+namespace App\Values;
 
 final class MenuItem
 {

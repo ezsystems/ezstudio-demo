@@ -6,17 +6,16 @@
  */
 declare(strict_types=1);
 
-namespace App\Tree;
+namespace App\Menu\Item;
 
-use App\Tree\Values\MenuItem;
+use App\Values\MenuItem;
 
-final class LocationTreeBuilder
+final class LocationTreeBuilder implements ItemBuilderInterface
 {
     /**
-     * @param \eZ\Publish\API\Repository\Values\Content\Location[]
-     * @return MenuItem[]
+     * {@inheritDoc}
      */
-    public static function build(array &$locations, int $parentLocationId = 0): array
+    public function build(array &$locations, int $parentLocationId = 0): array
     {
         $branch = [];
 

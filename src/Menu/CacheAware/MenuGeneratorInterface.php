@@ -8,12 +8,17 @@ declare(strict_types=1);
 
 namespace App\Menu\CacheAware;
 
+use App\Menu\Item\ItemBuilderInterface;
 use App\Values\MenuQueryParameters;
 
 interface MenuGeneratorInterface
 {
     /**
-     * @return \App\Tree\Values\MenuItem[]
+     * @param \App\Values\MenuQueryParameters $queryParameters
+     * @param \App\Menu\Item\ItemBuilderInterface $builder
+     * @param string $key
+     *
+     * @return array
      */
-    public function generate(MenuQueryParameters $queryParameters, string $key): array;
+    public function generate(MenuQueryParameters $queryParameters, ItemBuilderInterface $builder, string $key): array;
 }

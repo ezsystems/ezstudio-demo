@@ -17,6 +17,18 @@ services:
 
     App\Menu\CacheAware\MenuGenerator: ~
 
+    App\Menu\Item\LocationBuilder: ~
+
+    App\Menu\Item\LocationTreeBuilder: ~
+
+    App\Menu\InspirationsMenu:
+        arguments:
+            $builder: '@App\Menu\Item\LocationBuilder'
+
+    App\Menu\ProfessionalsMenu:
+        arguments:
+            $builder: '@App\Menu\Item\LocationTreeBuilder'
+
     App\Menu\MenuBuilder:
         arguments:
             $menuIncludedItems: '%app.menu%'

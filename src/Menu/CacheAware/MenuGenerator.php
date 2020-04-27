@@ -8,10 +8,10 @@ declare(strict_types=1);
 
 namespace App\Menu\CacheAware;
 
+use App\Menu\Item\ItemBuilderInterface;
 use App\Service\Cache\CacheServiceInterface;
 use App\Search\QueryExecutorInterface;
 use App\Search\SearchResultLocationExtractor;
-use App\Tree\LocationTreeBuilder;
 use App\Values\MenuQueryParameters;
 
 final class MenuGenerator implements MenuGeneratorInterface
@@ -35,8 +35,11 @@ final class MenuGenerator implements MenuGeneratorInterface
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\InvalidArgumentException
      */
-    public function generate(MenuQueryParameters $queryParameters, string $key): array
-    {
+    public function generate(
+        MenuQueryParameters $queryParameters,
+        ItemBuilderInterface $builder,
+        string $key
+    ): array {
         $item = $this->cacheService->getItem($key);
 
         if ($item->isHit()) {
@@ -44,9 +47,10 @@ final class MenuGenerator implements MenuGeneratorInterface
         }
 
         $locationSearchResults = $this->executor->getResults($queryParameters);
+
         $menuItems = SearchResultLocationExtractor::extract($locationSearchResults);
 
-        $menu = LocationTreeBuilder::build($menuItems, $queryParameters->getRootLocationId());
+        $menu = $builder->build($menuItems, $queryParameters->getRootLocationId());
 
         $item->expiresAfter((int) $this->cacheService->getCacheExpirationTime());
         $item->set($menu);
