@@ -88,7 +88,6 @@ class MenuBuilder implements TranslationContainerInterface
 
         if (isset($this->menuIncludedItems[self::MAISON_HEADER])) {
             $menu->addChild('Customer Services');
-            $menu->addChild('Join our email list');
             $this->addChildren(
                 $menu,
                 $this->menuIncludedItems[self::MAISON_HEADER]

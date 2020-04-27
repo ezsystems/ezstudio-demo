@@ -4,15 +4,16 @@
     <nav class="navbar navbar-expand-lg navbar--top header__top">
         <div class="container">
             <div class="dropdown">
-                <div href="#" class="nav-link dropdown-toggle pl-md-0" id="languageSwitcherDropdown" role="button"
-                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    EN
-                </div>
-                <div class="dropdown-menu" aria-labelledby="languageSwitcherDropdown">
-                    <a class="dropdown-item" href="#">FR</a>
-                    <a class="dropdown-item" href="#">DE</a>
-                    <a class="dropdown-item" href="#">NO</a>
-                </div>
+                <a class="nav-link pl-md-0">EN</a>
+{#                <div href="#" class="nav-link dropdown-toggle pl-md-0" id="languageSwitcherDropdown" role="button"#}
+{#                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{#                    EN#}
+{#                </div>#}
+{#                <div class="dropdown-menu" aria-labelledby="languageSwitcherDropdown">#}
+{#                    <a class="dropdown-item" href="#">FR</a>#}
+{#                    <a class="dropdown-item" href="#">DE</a>#}
+{#                    <a class="dropdown-item" href="#">NO</a>#}
+{#                </div>#}
             </div>
             <div class="mr-md-auto">
                 {{ knp_menu_render('maison_top', {
@@ -21,20 +22,20 @@
                     'ancestorClass': 'active'
                 }) }}
             </div>
-            <ul class="navbar-nav navbar__user-quick-nav flex-row">
-                <li class="nav-item">
-                    <a href="#" class="nav-link nav-signin px-4">
-                        <i class="user-icon material-icons-outlined">account_circle</i>
-                        {{ 'maison.sign_in'|trans|desc('Sign in') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link nav-cart">
-                        <i class="material-icons-outlined">local_grocery_store</i>
-                        <span class="badge">93</span>
-                    </a>
-                </li>
-            </ul>
+{#            <ul class="navbar-nav navbar__user-quick-nav flex-row">#}
+{#                <li class="nav-item">#}
+{#                    <a href="#" class="nav-link nav-signin px-4">#}
+{#                        <i class="user-icon material-icons-outlined">account_circle</i>#}
+{#                        {{ 'maison.sign_in'|trans|desc('Sign in') }}#}
+{#                    </a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a href="#" class="nav-link nav-cart">#}
+{#                        <i class="material-icons-outlined">local_grocery_store</i>#}
+{#                        <span class="badge">93</span>#}
+{#                    </a>#}
+{#                </li>#}
+{#            </ul>#}
         </div>
     </nav>
     <nav class="navbar navbar-expand-lg header__bottom px-0">
