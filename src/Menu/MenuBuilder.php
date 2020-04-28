@@ -25,6 +25,7 @@ class MenuBuilder implements TranslationContainerInterface
     private const TRANSLATION_DOMAIN = 'menu';
     private const ITEM_INSPIRATIONS = 'inspirations';
     private const ITEM_FIND_PROFESSIONALS = 'find_professionals';
+    private const ITEM_CUSTOMER_SERVICE = 'customer_service';
     private const ITEM_BLOG = 'blog';
     private const ITEM_STORE_LOCATORS = 'store_locators';
     private const ITEM_CONNECT_WITH_US = 'connect_with_us';
@@ -32,6 +33,7 @@ class MenuBuilder implements TranslationContainerInterface
     private const MENU_ITEMS = [
         self::ITEM_INSPIRATIONS,
         self::ITEM_FIND_PROFESSIONALS,
+        self::ITEM_CUSTOMER_SERVICE,
         self::ITEM_BLOG,
         self::ITEM_STORE_LOCATORS,
         self::ITEM_CONNECT_WITH_US
@@ -87,7 +89,6 @@ class MenuBuilder implements TranslationContainerInterface
         $menu = $this->factory->createItem('root');
 
         if (isset($this->menuIncludedItems[self::MAISON_HEADER])) {
-            $menu->addChild('Customer Services');
             $this->addChildren(
                 $menu,
                 $this->menuIncludedItems[self::MAISON_HEADER]
@@ -159,6 +160,7 @@ class MenuBuilder implements TranslationContainerInterface
         return [
             (new Message(self::ITEM_INSPIRATIONS, self::TRANSLATION_DOMAIN))->setDesc('Inspirations'),
             (new Message(self::ITEM_FIND_PROFESSIONALS, self::TRANSLATION_DOMAIN))->setDesc('Find professionals'),
+            (new Message(self::ITEM_CUSTOMER_SERVICE, self::TRANSLATION_DOMAIN))->setDesc('Customer Service'),
             (new Message(self::ITEM_BLOG, self::TRANSLATION_DOMAIN))->setDesc('Blog'),
             (new Message(self::ITEM_STORE_LOCATORS, self::TRANSLATION_DOMAIN))->setDesc('Store locators'),
             (new Message(self::ITEM_CONNECT_WITH_US, self::TRANSLATION_DOMAIN))->setDesc('Connect with us'),

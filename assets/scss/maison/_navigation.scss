@@ -5,6 +5,9 @@
                 content: " | ";
                 font-size: 12px;
             }
+            &:first-child::before {
+                content: none;
+            }
         }
         .nav-link {
             font-size: 14px;

@@ -58,30 +58,30 @@
         <section class="section section mt-8">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <h2 class="heading-sm">{{ 'maison.store_details'|trans|desc('Store details') }}</h2>
                         <div class="mt-3">{{ ez_render_field(content, 'description') }}</div>
                     </div>
-                    <div class="col-lg-6 mt-lg-0 mt-5">
-                        <h2 class="heading-sm">{{ 'maison.trending_in_your_store'|trans|desc('Trending In Your Store') }}</h2>
-                        <div class="row">
-                            {% for i in 1..6 %}
-                                <div class="col-md-4 mb-4">
-                                    <div class="card card--recommendation">
-                                        <div class="card__body">
-                                            <figure class="img-fluid-container">
-                                                <img src="{{ asset('assets/images/armchair.jpg') }}">
-                                            </figure>
-                                            <p class="product-price">$739.00</p>
-                                        </div>
-                                        <div class="card__footer">
-                                            <a href="#">VIKEN Armchair</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
+{#                    <div class="col-lg-6 mt-lg-0 mt-5">#}
+{#                        <h2 class="heading-sm">{{ 'maison.trending_in_your_store'|trans|desc('Trending In Your Store') }}</h2>#}
+{#                        <div class="row">#}
+{#                            {% for i in 1..6 %}#}
+{#                                <div class="col-md-4 mb-4">#}
+{#                                    <div class="card card--recommendation">#}
+{#                                        <div class="card__body">#}
+{#                                            <figure class="img-fluid-container">#}
+{#                                                <img src="{{ asset('assets/images/armchair.jpg') }}">#}
+{#                                            </figure>#}
+{#                                            <p class="product-price">$739.00</p>#}
+{#                                        </div>#}
+{#                                        <div class="card__footer">#}
+{#                                            <a href="#">VIKEN Armchair</a>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </section>

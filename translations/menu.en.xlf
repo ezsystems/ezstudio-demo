@@ -16,6 +16,11 @@
         <target state="new">Connect with us</target>
         <note>key: connect_with_us</note>
       </trans-unit>
+      <trans-unit id="9318b2e9446ba2b512f22b13c1daa8fc6e3b07de" resname="customer_service">
+        <source>Customer Service</source>
+        <target state="new">Customer Service</target>
+        <note>key: customer_service</note>
+      </trans-unit>
       <trans-unit id="3923caa36a8686636be633584c164b353f884c62" resname="find_professionals">
         <source>Find professionals</source>
         <target state="new">Find professionals</target>

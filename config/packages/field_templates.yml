@@ -1,7 +1,0 @@
-ezpublish:
-    system:
-        admin_group:
-            field_templates:
-                -
-                    template: "@ezdesign/fields/eztags_field.html.twig"
-                    priority: 10

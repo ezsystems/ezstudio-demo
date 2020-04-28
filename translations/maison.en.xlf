@@ -166,11 +166,6 @@
         <target state="new">SF</target>
         <note>key: maison.sf</note>
       </trans-unit>
-      <trans-unit id="af0b6ccbc502f23f52886f4e309baa4e7f533412" resname="maison.sign_in">
-        <source>Sign in</source>
-        <target state="new">Sign in</target>
-        <note>key: maison.sign_in</note>
-      </trans-unit>
       <trans-unit id="aa4a5d4add004c4f9eb4daa2f81e5b5744f7d5cf" resname="maison.store_categories">
         <source>Store Categories</source>
         <target state="new">Store Categories</target>
@@ -185,11 +180,6 @@
         <source>Store Facts</source>
         <target state="new">Store Facts</target>
         <note>key: maison.store_facts</note>
-      </trans-unit>
-      <trans-unit id="d5a376738cbe359a96facf33ddb69dbc2bd9e134" resname="maison.trending_in_your_store">
-        <source>Trending In Your Store</source>
-        <target state="new">Trending In Your Store</target>
-        <note>key: maison.trending_in_your_store</note>
       </trans-unit>
       <trans-unit id="be782e4476dffadced9b46f315c68434fc05f0ec" resname="maison.trustworthy_and_fast_services">
         <source>Trustworthy and fast services</source>
