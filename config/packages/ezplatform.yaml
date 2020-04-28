@@ -72,6 +72,8 @@ parameters:
 
     app.professionals.location_id: 189
 
+    app_connect_with_us_location_id: 543
+
     # Settings for menu items rendering
     app.menu:
         maison_main:
@@ -81,15 +83,16 @@ parameters:
                 location_id: '%app.professionals.location_id%'
                 siteaccess: professionals
         maison_top:
+            customer_service:
+                location_id: '%app_connect_with_us_location_id%'
             blog:
                 location_id: 537
-                label: Blog
             store_locators:
                 location_id: 529
                 icon: '<i class="material-icons-outlined item-store-locators-pin">room</i>'
         maison_footer:
             connect_with_us:
-                location_id: 543
+                location_id: '%app_connect_with_us_location_id%'
 
 ezplatform:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish
@@ -126,8 +129,6 @@ ezplatform:
             admin_group: [admin]
         default_siteaccess: '%app_default_siteaccess%'
         match:
-            Map\URI:
-                admin: admin
             HostElement: 1
             # Uncomment if you've enabled SiteFactory
             # '@EzSystems\EzPlatformSiteFactory\SiteAccessMatcher': ~
