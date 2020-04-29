@@ -8,63 +8,63 @@
 {% endblock %}
 
 {% block content %}
-<div class="page bg-white-smoke">
-    <section class="section banner banner--full-width bg-blue-lighter">
-        <div class="banner__title container">
-            <h1 class="text-center text-white">{{ 'professionals.professionals'|trans|desc('Professionals') }}</h1>
-        </div>
-    </section>
-    <section class="section section--overlap pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="container bg-white rounded-2 py-5 px-5 h-100">
-                        <div class="img-rounded-container">
-                            {{ ez_render_field(content, 'photo', {
-                                parameters: {
-                                    alias: 'professional_photo',
-                                    class: 'img-fluid'
-                                }
-                            }) }}
-                        </div>
-                        <div class="text-center pt-3">
-                            <h2 class="heading-sm">{{ content.getFieldValue('name').text }}</h2>
-                            {{ ez_render_field(content, 'intro') }}
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-6">
-                    <div class="container bg-white rounded-2 py-5 px-5">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2 class="heading-sm pb-3">{{ 'professionals.about'|trans|desc('About') }}</h2>
-                                {{ ez_render_field(content, 'description') }}
+    <div class="page bg-white-smoke">
+        <section class="section banner banner--full-width bg-blue-lighter">
+            <div class="banner__title container">
+                <h1 class="text-center text-white">{{ 'professionals.professionals'|trans|desc('Professionals') }}</h1>
+            </div>
+        </section>
+        <section class="section section--overlap pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="container bg-white rounded-2 py-5 px-5 h-100">
+                            <div class="img-rounded-container">
+                                {{ ez_render_field(content, 'photo', {
+                                    parameters: {
+                                        alias: 'professional_photo',
+                                        class: 'img-fluid'
+                                    }
+                                }) }}
+                            </div>
+                            <div class="text-center pt-3">
+                                <h2 class="heading-sm">{{ content.getFieldValue('name').text }}</h2>
+                                {{ ez_render_field(content, 'intro') }}
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h3 class="heading-sm">{{ 'professionals.portfolio'|trans|desc('Portfolio') }}</h3>
-                                <div class="d-flex">
-                                    {% set inspirations = ez_field_value(content, 'inspirations').destinationContentIds %}
-                                    {% for contentId in inspirations %}
-                                        {% set inspirationContent = app_content_by_content_id(contentId) %}
-                                        <div class="p-4">
-                                            <a href="{{ ez_url(inspirationContent, { 'siteaccess': 'maison' }) }}">
-                                                {{ ez_render_field(inspirationContent, 'image', {
-                                                    parameters: {
-                                                        class: 'img-fluid'
-                                                    }
-                                                }) }}
-                                            </a>
-                                        </div>
-                                    {% endfor %}
+                    </div>
+                    <div class="col-lg-9 col-md-6">
+                        <div class="container bg-white rounded-2 py-5 px-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="heading-sm pb-3">{{ 'professionals.about'|trans|desc('About') }}</h2>
+                                    {{ ez_render_field(content, 'description') }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="heading-sm">{{ 'professionals.portfolio'|trans|desc('Portfolio') }}</h3>
+                                    <div class="d-flex">
+                                        {% set inspirations = ez_field_value(content, 'inspirations').destinationContentIds %}
+                                        {% for contentId in inspirations %}
+                                            {% set inspirationContent = app_content_by_content_id(contentId) %}
+                                            <div class="p-4">
+                                                <a href="{{ ez_url(inspirationContent, { 'siteaccess': 'maison' }) }}">
+                                                    {{ ez_render_field(inspirationContent, 'image', {
+                                                        parameters: {
+                                                            class: 'img-fluid'
+                                                        }
+                                                    }) }}
+                                                </a>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 {% endblock %}

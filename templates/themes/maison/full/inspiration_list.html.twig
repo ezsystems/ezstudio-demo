@@ -8,54 +8,56 @@
 {% endblock %}
 
 {% block content %}
-<section class="page">
-    <div class="banner banner--full-width">
-        <div class="banner__image">
-            <figure class="ezimage-field">
-                <img src="{{ asset('assets/images/inspiration-banner.jpg') }}">
-            </figure>
-        </div>
-        <div class="banner__title container text-center">
-            <h1 class="banner__heading">
-                {{ ez_render_field(content, 'name') }}
-            </h1>
-        </div>
-    </div>
-    <div class="container">
-        {% set locationId = location.id %}
-        {% set pathString = location.pathString %}
+    <div class="page">
+        <section class="banner banner--full-width">
+            <div class="banner__image">
+                <figure class="ezimage-field">
+                    <img src="{{ asset('assets/images/inspiration-banner.jpg') }}">
+                </figure>
+            </div>
+            <div class="banner__title container text-center">
+                <h1 class="banner__heading">
+                    {{ ez_render_field(content, 'name') }}
+                </h1>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                {% set locationId = location.id %}
+                {% set pathString = location.pathString %}
 
-        {% if location.path|length - location.depth == 1 %}
-            {% set locationId = location.parentLocation.id  %}
-            {% set pathString = location.parentLocation.pathString %}
-        {% endif %}
-
-        {{ render_esi(controller('app_menu::getMenuAction', {
-            type: 'inspirations',
-            template: '@ezdesign/menu/inspirations_menu.html.twig',
-            pathString: pathString,
-            rootLocationId: locationId
-        })) }}
-        <div class="row">
-            {% if inspirations is defined and inspirations|length > 0  %}
-                {% for inspiration in inspirations %}
-                    <div class="col-md-6 mb-5">
-                        {{ render_esi(controller('ez_content:viewAction', {
-                            locationId: inspiration.valueObject.contentInfo.mainLocationId,
-                            viewType: 'card'
-                        })) }}
-                    </div>
-                {% endfor %}
-                {% if inspirations.haveToPaginate() %}
-                    <div class="col-12">
-                        {{ pagerfanta(inspirations, 'maison_template', {
-                            routeName: location,
-                            routeParams: ezplatform.requestStack.masterRequest.query.all
-                        }) }}
-                    </div>
+                {% if location.path|length - location.depth == 1 %}
+                    {% set locationId = location.parentLocation.id  %}
+                    {% set pathString = location.parentLocation.pathString %}
                 {% endif %}
-            {% endif %}
-        </div>
+
+                {{ render_esi(controller('app_menu::getMenuAction', {
+                    type: 'inspirations',
+                    template: '@ezdesign/menu/inspirations_menu.html.twig',
+                    pathString: pathString,
+                    rootLocationId: locationId
+                })) }}
+                <div class="row">
+                    {% if inspirations is defined and inspirations|length > 0  %}
+                        {% for inspiration in inspirations %}
+                            <div class="col-md-6 mb-5">
+                                {{ render_esi(controller('ez_content:viewAction', {
+                                    locationId: inspiration.valueObject.contentInfo.mainLocationId,
+                                    viewType: 'card'
+                                })) }}
+                            </div>
+                        {% endfor %}
+                        {% if inspirations.haveToPaginate() %}
+                            <div class="col-12">
+                                {{ pagerfanta(inspirations, 'maison_template', {
+                                    routeName: location,
+                                    routeParams: ezplatform.requestStack.masterRequest.query.all
+                                }) }}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </section>
     </div>
-</section>
 {% endblock %}

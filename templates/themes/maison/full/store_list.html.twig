@@ -40,11 +40,7 @@
                         {% endfor %}
                     {% endif %}
                 </div>
-            </div>
-        </section>
-        <section class="section section--standard my-7">
-            <div class="container">
-                <div class="row">
+                <div class="row my-7">
                     <div class="col-lg-4 col-md-12">
                         {% include '@ezdesign/parts/find_professionals.html.twig' with { 'locationId': professionals_location_id } only %}
                     </div>
@@ -55,8 +51,8 @@
                         <img src="{{ asset('assets/images/store-col-img2.png') }}">
                     </div>
                 </div>
+                {% include '@ezdesign/parts/become_a_maison_pro.html.twig' %}
             </div>
         </section>
-        {% include '@ezdesign/parts/become_a_maison_pro.html.twig' %}
     </div>
 {% endblock %}

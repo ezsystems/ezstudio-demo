@@ -3,7 +3,7 @@
 {% trans_default_domain 'maison' %}
 
 {% block content %}
-    <section class="page py-5">
+    <div class="page py-5">
         <div class="container">
             <div class="row">
                 {% if results is defined and results|length > 0 %}
@@ -56,5 +56,5 @@
                 {% endif %}
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}

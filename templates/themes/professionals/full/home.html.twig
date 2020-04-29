@@ -8,15 +8,15 @@
 {% endblock %}
 
 {% block content %}
-<div class="page">
-    <h1 class="heading-lg text-center">Professionals!</h1>
-    <div class="container">
-        {{ render_esi(controller('app_menu::getMenuAction', {
-            type: 'professionals',
-            template: '@ezdesign/parts/professionals_catalog.html.twig',
-            pathString: ezplatform.rootLocation.pathString,
-            rootLocationId: ezplatform.rootLocation.id
-        })) }}
+    <div class="page">
+        <h1 class="heading-lg text-center">Professionals!</h1>
+        <div class="container">
+            {{ render_esi(controller('app_menu::getMenuAction', {
+                type: 'professionals',
+                template: '@ezdesign/parts/professionals_catalog.html.twig',
+                pathString: ezplatform.rootLocation.pathString,
+                rootLocationId: ezplatform.rootLocation.id
+            })) }}
+        </div>
     </div>
-</div>
 {% endblock %}

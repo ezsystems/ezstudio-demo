@@ -8,8 +8,8 @@
 {% endblock %}
 
 {% block content %}
-    <section class="page">
-        <div class="banner banner--full-width">
+    <div class="page">
+        <section class="banner banner--full-width">
             <div class="banner__image">
                 <figure class="ezimage-field">
                     <img src="{{ asset('assets/images/inspiration-banner.jpg') }}">
@@ -20,43 +20,40 @@
                     <span>{{ 'maison.home_design_ideas_and_tips'|trans|desc('Home Design Ideas & Tips') }}</span>
                 </h1>
             </div>
-        </div>
-        <div class="container">
-            {% set parentNodeLocation = location.parentLocation.parentLocation %}
-            {{ render_esi(controller('app_menu::getMenuAction', {
-                type: 'inspirations',
-                template: '@ezdesign/menu/inspirations_menu.html.twig',
-                pathString: parentNodeLocation.pathString,
-                rootLocationId: parentNodeLocation.id
-            })) }}
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <article class="article article--full-page">
-                        <h2 class="article__title text-center">
-                            {{ ez_render_field(content, 'name') }}
-                        </h2>
-                        <div class="article__image img-fluid-container">
-                            {{ ez_render_field(content, 'image') }}
-                        </div>
-                        <div class="article__intro">
-                            {{ ez_render_field(content, 'intro') }}
-                        </div>
-                        <div class="article__desc">
-                            {{ ez_render_field(content, 'description') }}
-                        </div>
-                    </article>
+        </section>
+        <section class="section">
+            <div class="container">
+                {% set parentNodeLocation = location.parentLocation.parentLocation %}
+                {{ render_esi(controller('app_menu::getMenuAction', {
+                    type: 'inspirations',
+                    template: '@ezdesign/menu/inspirations_menu.html.twig',
+                    pathString: parentNodeLocation.pathString,
+                    rootLocationId: parentNodeLocation.id
+                })) }}
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <article class="article article--full-page">
+                            <h2 class="article__title text-center">
+                                {{ ez_render_field(content, 'name') }}
+                            </h2>
+                            <div class="article__image img-fluid-container">
+                                {{ ez_render_field(content, 'image') }}
+                            </div>
+                            <div class="article__intro">
+                                {{ ez_render_field(content, 'intro') }}
+                            </div>
+                            <div class="article__desc">
+                                {{ ez_render_field(content, 'description') }}
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8 offset-md-2 ">
-
-                </div>
-            </div>
-        </div>
-        {{ content_pagination(
-            '@ezdesign/pagination/content_pagination.html.twig',
-            content,
-            location.parentLocationId
-        ) }}
-    </section>
+            {{ content_pagination(
+                '@ezdesign/pagination/content_pagination.html.twig',
+                content,
+                location.parentLocationId
+            ) }}
+        </section>
+    </div>
 {% endblock %}
