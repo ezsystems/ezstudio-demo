@@ -11,9 +11,9 @@ namespace App\Event\Listener;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 
-class AdminRedirectListener
+final class AdminRedirectListener
 {
-    const ADMIN_DOMAIN = 'admin';
+    private const ADMIN_DOMAIN = 'admin';
 
     public function onKernelRequest(RequestEvent $event)
     {

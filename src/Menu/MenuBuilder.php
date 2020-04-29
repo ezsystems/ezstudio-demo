@@ -16,7 +16,7 @@ use Knp\Menu\ItemInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-class MenuBuilder implements TranslationContainerInterface
+final class MenuBuilder implements TranslationContainerInterface
 {
     private const MAISON_MAIN = 'maison_main';
     private const MAISON_HEADER = 'maison_top';

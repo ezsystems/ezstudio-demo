@@ -13,7 +13,7 @@ use eZ\Publish\API\Repository\Values\Content\Content;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
-class ImageExtension extends AbstractExtension
+final class ImageExtension extends AbstractExtension
 {
     private $contentService;
 

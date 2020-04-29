@@ -14,7 +14,7 @@ use eZ\Publish\API\Repository\Values\Content\Location;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
-class AppLocationExtension extends AbstractExtension
+final class AppLocationExtension extends AbstractExtension
 {
     /** @var \eZ\Publish\API\Repository\LocationService */
     private $locationService;
