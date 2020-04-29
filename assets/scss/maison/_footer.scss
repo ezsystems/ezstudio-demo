@@ -1,6 +1,8 @@
 @import "../footer";
 
-.footer {
+$footer: '.footer';
+
+#{($footer)} {
     padding: 65px 0 130px;
     background-color: $white-whisper;
 

@@ -1,14 +1,17 @@
-.img-fluid-container {
-    img {
-        max-width: 100%;
-        object-fit: cover;
-        height: auto;
-    }
-}
+$img: '.img';
 
-.img-rounded-container {
-    img {
-        @include rounded(50%);
+#{($img)} {
+    &-fluid-container {
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            height: auto;
+        }
+    }
+    &-rounded-container {
+        img {
+            @include rounded(50%);
+        }
     }
 }
 

@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <div class="container bg-white rounded-2 py-5 px-5 h-100">
+                        <div class="bg-white rounded-2 py-5 px-5 h-100">
                             <div class="img-rounded-container">
                                 {{ ez_render_field(content, 'photo', {
                                     parameters: {
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-6">
-                        <div class="container bg-white rounded-2 py-5 px-5">
+                        <div class="bg-white rounded-2 py-5 px-5">
                             <div class="row">
                                 <div class="col-12">
                                     <h2 class="heading-sm pb-3">{{ 'professionals.about'|trans|desc('About') }}</h2>
@@ -44,17 +44,19 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h3 class="heading-sm">{{ 'professionals.portfolio'|trans|desc('Portfolio') }}</h3>
-                                    <div class="d-flex">
+                                    <div class="row">
                                         {% set inspirations = ez_field_value(content, 'inspirations').destinationContentIds %}
                                         {% for contentId in inspirations %}
                                             {% set inspirationContent = app_content_by_content_id(contentId) %}
-                                            <div class="p-4">
+                                            <div class="col-lg-4 mb-4 card border-0">
                                                 <a href="{{ ez_url(inspirationContent, { 'siteaccess': 'maison' }) }}">
-                                                    {{ ez_render_field(inspirationContent, 'image', {
-                                                        parameters: {
-                                                            class: 'img-fluid'
-                                                        }
-                                                    }) }}
+                                                    <div class="card__portfolio">
+                                                        {{ ez_render_field(inspirationContent, 'image', {
+                                                            parameters: {
+                                                                class: 'img-fluid'
+                                                            }
+                                                        }) }}
+                                                    </div>
                                                 </a>
                                             </div>
                                         {% endfor %}

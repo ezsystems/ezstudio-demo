@@ -1,4 +1,6 @@
-.banner {
+$banner: '.banner';
+
+#{($banner)} {
     position: relative;
     z-index: 1;
 

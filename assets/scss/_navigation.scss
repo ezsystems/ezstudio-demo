@@ -1,4 +1,6 @@
-.navbar {
+$navbar: '.navbar';
+
+#{($navbar)} {
     &--main-menu {
         .nav-item {
             &.active {
@@ -24,7 +26,7 @@
         }
     }
     &--footer-nav {
-        .navbar-nav {
+        #{($navbar)}-nav {
             width: 100%;
             justify-content: space-between;
         }

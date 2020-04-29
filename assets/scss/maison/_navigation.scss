@@ -1,4 +1,6 @@
-.navbar {
+$navbar: '.navbar';
+
+#{($navbar)} {
     &--top {
         .nav-item {
             &::before {

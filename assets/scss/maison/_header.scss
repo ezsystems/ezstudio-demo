@@ -1,4 +1,6 @@
-.header {
+$header: '.header';
+
+#{($header)} {
     background-color: $white;
 
     &__top {

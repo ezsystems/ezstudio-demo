@@ -1,4 +1,6 @@
-.embed {
+$embed: '.embed';
+
+#{($embed)} {
     position: relative;
 
     &--wide {

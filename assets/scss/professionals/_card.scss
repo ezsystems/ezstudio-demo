@@ -19,6 +19,17 @@ $card: '.card';
             }
         }
     }
+    &__portfolio {
+        border: none;
+        .ezimage-field {
+            height: 170px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     &__image {
         .ezimage-field {
             margin: 0;

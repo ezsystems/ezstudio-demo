@@ -4,9 +4,15 @@ $tile: '.tile';
     & {
         border-radius: 8px;
         border: 1px solid $white-whisper;
+        padding-left: 0;
+        padding-right: 0;
 
         &:hover {
-            border-color: $blue-lighter;
+            background-color: $blue-lighter;
+
+            #{($tile)}__link {
+                color: $white;
+            }
         }
     }
 
