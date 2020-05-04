@@ -94,6 +94,8 @@ parameters:
             connect_with_us:
                 location_id: '%app_connect_with_us_location_id%'
 
+    ezsettings.default.workflows: []
+
 ezplatform:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'varnish' you can point it to Varnish
     http_cache:
