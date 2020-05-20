@@ -177,6 +177,7 @@ ezplatform:
                     - 43 # Media
                     - 48 # Setup
                     - 59 # Forms
+                    - 56 # Site skeletons
             subtree_paths:
                 content: /1/2/
                 media: /1/43/
