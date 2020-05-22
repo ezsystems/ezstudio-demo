@@ -34,6 +34,16 @@
             identifier: ref_section__form
             attribute: id
 
+-
+    type: section
+    mode: create
+    name: Site skeleton
+    identifier: site_skeleton
+    references:
+        -
+            identifier: ref_section__site_skeleton
+            attribute: id
+
 ## Content types
 
 # folder content type

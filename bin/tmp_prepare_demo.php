@@ -39,6 +39,37 @@ $kernel->boot();
 $container = $kernel->getContainer();
 $repository = $container->get('ezpublish.api.repository');
 
+
+////////////////
+// set image field type as thumbnail
+$contentTypeService = $repository->getContentTypeService();
+
+$ctList = ['folder', 'user', 'image', 'article', 'video', 'inspiration', 'store_list', 'blog_post', 'professional', 'home'];
+$fieldIdList = [];
+
+foreach ($ctList as $contentType) {
+    $ct = $contentTypeService->loadContentTypeByIdentifier($contentType);
+    foreach ($ct->getFieldDefinitions() as $field) {
+        if ($field->fieldTypeIdentifier === 'ezimage' || $field->fieldTypeIdentifier === 'ezimageasset') {
+            $fieldIdList[] = $field->id;
+            break;
+        }
+    }
+}
+
+$conn = $container->get('doctrine')->getConnection();
+
+$count = $conn->executeUpdate(
+    'UPDATE ezcontentclass_attribute SET is_thumbnail = 1 WHERE id IN (:ids)',
+    ['ids' => $fieldIdList],
+    ['ids' => \Doctrine\DBAL\Connection::PARAM_INT_ARRAY]
+);
+
+echo 'Content Types updated: ' . $count . PHP_EOL;
+
+
+////////////////
+// fix roles
 $roleId = 1;
 
 /** @var \eZ\Publish\Core\Repository\Values\User\Role $role */
@@ -73,6 +104,6 @@ $repository->sudo(
         $updatedRoleDraft = $roleService->addPolicyByRoleDraft($roleDraft, $policyCreateStruct);
         $roleService->publishRoleDraft($updatedRoleDraft);
 
-        echo  'OK' . PHP_EOL;
+        echo  'Roles updated' . PHP_EOL;
     }
 );

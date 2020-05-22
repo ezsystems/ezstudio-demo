@@ -51,6 +51,9 @@ parameters:
     # form builder
     ezsettings.default.form_builder.forms_location_id: 59
 
+    # site factory
+    ezsettings.default.site_factory.site_skeletons_location_id: 61
+
     # e-mail address used for form submission
     app.contact_form.sender_email: no-reply@ez.no
 
@@ -70,29 +73,34 @@ parameters:
 
     app_default_siteaccess: maison
 
-    app.professionals.location_id: 189
+    app.professionals.location_id: 190
 
-    app_connect_with_us_location_id: 543
+    app_connect_with_us_location_id: 544
 
     # Settings for menu items rendering
     app.menu:
         maison_main:
             inspirations:
-                location_id: 496
+                location_id: 497
+                siteaccess: maison
             find_professionals:
                 location_id: '%app.professionals.location_id%'
                 siteaccess: professionals
         maison_top:
             customer_service:
                 location_id: '%app_connect_with_us_location_id%'
+                siteaccess: maison
             blog:
-                location_id: 537
+                location_id: 538
+                siteaccess: maison
             store_locators:
-                location_id: 529
+                location_id: 530
                 icon: '<i class="material-icons-outlined item-store-locators-pin">room</i>'
+                siteaccess: maison
         maison_footer:
             connect_with_us:
                 location_id: '%app_connect_with_us_location_id%'
+                siteaccess: maison
 
     ezsettings.default.workflows: []
 
@@ -159,7 +167,7 @@ ezplatform:
             design: maison
             content:
                 tree_root:
-                    location_id: 188
+                    location_id: 189
 
         admin_group:
             # System languages. Note that by default, content, content types, and other data are in eng-GB locale,
@@ -177,7 +185,7 @@ ezplatform:
                     - 43 # Media
                     - 48 # Setup
                     - 59 # Forms
-                    - 56 # Site skeletons
+                    - 61 # Site skeletons
             subtree_paths:
                 content: /1/2/
                 media: /1/43/

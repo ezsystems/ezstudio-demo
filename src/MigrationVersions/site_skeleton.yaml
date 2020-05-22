@@ -1,0 +1,30 @@
+# references
+-
+    type: reference
+    mode: load
+    file: 'src/MigrationVersions/References/references.yml'
+    overwrite: true
+
+-
+    type: content
+    mode: create
+    content_type: folder
+    section: reference:ref_section__site_skeleton
+    parent_location: 1
+    attributes:
+        name: 'Site skeletons'
+        short_name: ''
+        show_children: true
+    references:
+        -
+            identifier: ref_location_folder__site_skeleton
+            attribute: location_id
+        -
+            identifier: ref_content_folder__site_skeleton
+            attribute: content_id
+
+-
+    type: reference
+    mode: save
+    file: 'src/MigrationVersions/References/references.yml'
+    overwrite: true

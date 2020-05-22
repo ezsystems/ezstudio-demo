@@ -150,8 +150,7 @@
         "ezplatform-install": [
             "@php bin/console ezplatform:install ezplatform-ee-demo",
             "@php bin/console ezplatform:graphql:generate-schema",
-            "@php bin/tmp_fix_roles.php",
-            "@php bin/tmp_cache_warmer.php"
+            "@php bin/tmp_prepare_demo.php"
         ],
         "fix-cs": "@php ./bin/php-cs-fixer fix -v --show-progress=estimating"
     },
