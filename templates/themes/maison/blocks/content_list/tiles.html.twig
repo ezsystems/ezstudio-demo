@@ -7,7 +7,7 @@
                 <a href="{{ ez_path(content.location) }}"
                    class="tile__link d-flex flex-column align-items-center">
                     {% if contentType == 'inspiration_category' %}
-                        {{ ez_render_field(content.content, 'icon') }}
+                        {{ ez_render_field(content.content, 'category_icon') }}
                     {% endif %}
                     <span class="mt-auto">{{ ez_render_field(content.content, 'name') }}</span>
                 </a>
