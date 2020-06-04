@@ -21,15 +21,29 @@
     always_available: true
     attributes:
         name: Maison
-        description:
-            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        description: >- #json
+            <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml"
+                     xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
+            </section>
         image: null
         logo:
             destinationContentId: reference:ref_content_image__media__images__logo__maison_logo
             alternativeText: ''
         css: ~
         js: ~
-        landing_page: ~
+        landing_page: >- #json
+            {
+                "layout":"default",
+                "zones":[
+                    {
+                        "id":"b-294fbffd-744a-6ac6-3f29-5ba47db36474",
+                        "name":"default",
+                        "blocks":[
+                        ]
+                    }
+                ]
+            }
     references:
         -
             identifier: ref_location_folder__sites__maison
