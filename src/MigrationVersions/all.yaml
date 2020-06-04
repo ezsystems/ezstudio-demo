@@ -50,7 +50,7 @@
 -
     type: content_type
     mode: update
-    content_type_group: 1
+    content_type_group: Content
     identifier: folder
     name: Folder
     description: 'A generic entity used to set up structures for storing content entities (articles, etc.).'
@@ -145,7 +145,7 @@
 -
     type: content_type
     mode: create
-    content_type_group: 3
+    content_type_group: Media
     identifier: gallery
     name: Gallery
     name_pattern: <name>
@@ -176,7 +176,7 @@
 -
     type: content_type
     mode: update
-    content_type_group: 3
+    content_type_group: Media
     identifier: image
     name: Image
     name_pattern: <name>
@@ -230,7 +230,7 @@
 -
     type: content_type
     mode: create
-    content_type_group: 1
+    content_type_group: Content
     identifier: article
     name: Article
     description: 'Article is to be used for storing single-page articles. Note: be careful, don''t use it for storing a case study, use the dedicated Case Study content type for that.'
