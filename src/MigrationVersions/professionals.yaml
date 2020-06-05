@@ -27,7 +27,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
     other_parent_locations:
@@ -327,10 +326,8 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__home_additions'
@@ -465,7 +462,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
     other_parent_locations:
@@ -500,7 +496,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__granite_countertops'
@@ -598,7 +593,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
@@ -869,7 +863,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
@@ -936,7 +929,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
@@ -1107,7 +1099,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__electricians__electrical_repair'
         - 'reference:ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__custom_drapery'
@@ -1141,7 +1132,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__landscape_and_backyards'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
@@ -1241,7 +1231,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__green_building'
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__home_extensions'
@@ -1618,7 +1607,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
     other_parent_locations:
@@ -1786,7 +1774,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__barn_design_and_construction'
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__architectural_design'
@@ -1921,9 +1908,7 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__tree_services__land_clearing'
         - 'reference:ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__heating_repair'
@@ -1987,7 +1972,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__siding_sales'
@@ -2021,11 +2005,9 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__fireplaces__fireplace_sales'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__window_dealers__weather_stripping'
@@ -2091,7 +2073,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__sauna_installation'
@@ -2161,7 +2142,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__fireplaces__fireplace_installation'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__door_dealers__exterior_door_installation'
@@ -2222,7 +2202,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
@@ -2497,7 +2476,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
@@ -2532,7 +2510,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
     other_parent_locations:
@@ -2634,11 +2611,9 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__custom_hot_tubs'
@@ -2706,7 +2681,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
@@ -2946,7 +2920,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__landscape_and_backyards'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__home_additions'
@@ -3010,10 +2983,8 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__landscape_planssite_planning'
@@ -3241,7 +3212,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
@@ -3473,7 +3443,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
@@ -3579,7 +3548,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__plumbers__emergency_plumbing'
@@ -3612,7 +3580,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__landscape_and_backyards'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
@@ -3682,7 +3649,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
     other_parent_locations:
@@ -3756,7 +3722,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
     other_parent_locations:
@@ -3793,7 +3758,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
     other_parent_locations:
@@ -3928,7 +3892,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
     other_parent_locations:
@@ -3964,7 +3927,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__home_extensions'
@@ -4030,8 +3992,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
     other_parent_locations:
@@ -4128,7 +4088,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
@@ -4202,7 +4161,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
     other_parent_locations:
@@ -4236,7 +4194,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__patio_construction'
@@ -4269,7 +4226,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
     other_parent_locations:
@@ -4375,7 +4331,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__custom_furniture'
         - 'reference:ref_location_folder__sites__professionals__home_services__plumbers__tankless_water_heater_repair'
@@ -4408,7 +4363,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__tree_services__land_clearing'
         - 'reference:ref_location_folder__sites__professionals__home_services__painters__door_painting'
@@ -4440,7 +4394,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
@@ -4510,7 +4463,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
     other_parent_locations:
@@ -4544,7 +4496,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
     other_parent_locations:
@@ -4613,7 +4564,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
@@ -4648,7 +4598,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
     other_parent_locations:
@@ -4752,8 +4701,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
     other_parent_locations:
@@ -4858,7 +4805,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
     other_parent_locations:
@@ -5162,7 +5108,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
     other_parent_locations:
@@ -5332,7 +5277,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
     other_parent_locations:
@@ -5436,7 +5380,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__energy_efficient_homes'
@@ -5602,7 +5545,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
@@ -5643,7 +5585,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__energy_efficient_homes'
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__basement_remodeling'
@@ -5710,7 +5651,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__universal_design'
@@ -5874,7 +5814,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
     other_parent_locations:
@@ -5909,8 +5848,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__tree_services__stump_grinding'
         - 'reference:ref_location_folder__sites__professionals__home_services__electricians__electrical_repair'
@@ -6213,7 +6150,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
@@ -6251,7 +6187,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__wall_upholstery'
         - 'reference:ref_location_folder__sites__professionals__home_services__painters__interior_painting'
@@ -6317,7 +6252,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
     other_parent_locations:
@@ -6451,10 +6385,8 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__living_room_design'
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__bathroom_design'
@@ -6554,7 +6486,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__an_architect_workspace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_entertainment_centers'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__window_dealers__window_sales'
@@ -6587,7 +6518,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__sustainable_design'
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__home_builders__home_remodeling'
@@ -6683,7 +6613,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__carpet_dealers__custom_flooring'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__countertop_installation'
@@ -6712,7 +6641,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
@@ -6783,7 +6711,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
     other_parent_locations:
@@ -6884,7 +6811,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
     other_parent_locations:
@@ -6954,7 +6880,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__bathroom_design'
@@ -6990,7 +6915,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__electricians__electrical_repair'
         - 'reference:ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__furnace_installation'
@@ -7058,7 +6982,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__kitchen_remodel_tips'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_cleaning'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__carpet_dealers__custom_flooring'
@@ -7353,8 +7276,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
     other_parent_locations:
@@ -7463,7 +7384,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__door_dealers__bifold_doors'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__countertop_sales'
@@ -7562,11 +7482,9 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__plumbers__toilet_repair'
         - 'reference:ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__furniture_refinishing'
@@ -7596,7 +7514,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
@@ -7630,10 +7547,8 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__universal_design'
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__universal_design'
@@ -7697,8 +7612,6 @@
             alternativeText: null
         inspirations:
             destinationContentIds:
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
     other_parent_locations:
@@ -7732,7 +7645,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__bedroom_colors_according_to_science'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_art_of_cooking'
@@ -7768,7 +7680,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_sales'
@@ -7803,7 +7714,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__painters__texture_painting'
         - 'reference:ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__heat_pump_repair'
@@ -7871,7 +7781,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__pantry_design'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__siding_installation'
@@ -7901,7 +7810,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
     other_parent_locations:
@@ -7938,7 +7846,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__fireplaces__outdoor_fireplace_construction'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__tile_sales'
@@ -8238,7 +8145,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_shelving'
@@ -8307,7 +8213,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__borough_heights_residence'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__siding_sales'
         - 'reference:ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__quartz_countertops'
@@ -8372,7 +8277,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__organize_your_office'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__transitional_kitchen_inspiration'
     other_parent_locations:
@@ -8442,7 +8346,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__tree_services__hedge_trimming'
@@ -8544,7 +8447,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__the_patio_with_dining_options'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
@@ -8679,7 +8581,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__luxurious_living_room'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__traditional_living_space'
     other_parent_locations:
@@ -8888,7 +8789,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__find_place_for_work_in_a_busy_home'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__refresh_your_home_for_spring'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__graphic_designer_office_ideas'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__outdoor_space_for_breakfast_outside'
@@ -9024,7 +8924,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__exterior_patio_dining_under_trellis'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__landscape_and_backyards'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__design_and_remodeling__home_builders__green_building'
@@ -9092,7 +8991,6 @@
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__modern_grey_kitchen'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__new_idea_to_improve_your_workplace'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__home_services__roofing_and_gutters__roof_repair'
@@ -9366,7 +9264,6 @@
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__minimalist_luxury_in_a_small_and_stylish_bedroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__workspace_for_creative_collaboration'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__deck_designbarn_design_and_construction'
@@ -9432,8 +9329,6 @@
         inspirations:
             destinationContentIds:
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__backyards_and_landscape'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__custom_master_bathroom'
-                - 'reference:ref_content_inspiration__sites__maison__inspirations__master_spacious_bathroom'
                 - 'reference:ref_content_inspiration__sites__maison__inspirations__woods_edge_living_room'
     other_parent_locations:
         - 'reference:ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__porch_design_and_construction'
