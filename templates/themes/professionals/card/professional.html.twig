@@ -8,7 +8,7 @@
 
                 {% for inspiration in inspirations %}
                     {% set inspirationContent = app_content_by_content_id(inspiration) %}
-                        {{ ez_render_field(inspirationContent, 'image', {
+                        {{ ez_render_field(inspirationContent, 'teaser_image', {
                             parameters: {
                                 class: 'img-fluid'
                             }

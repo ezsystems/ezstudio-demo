@@ -18,7 +18,7 @@
                             <div class="col-lg-2 col-md-3 carousel__menu-item">
                                 <a href="{{ path('ez_urlalias', {'locationId': item.locationId}) }}"
                                    class="carousel__menu-link d-flex flex-column align-items-center">
-                                    {% set imageAssetsContent = get_image_asset_by_content_id(item.contentId, 'icon') %}
+                                    {% set imageAssetsContent = get_image_asset_by_content_id(item.contentId, 'category_icon') %}
                                     {% if imageAssetsContent is not null %}
                                         {{ ez_render_field(imageAssetsContent, 'image') }}
                                     {% endif %}

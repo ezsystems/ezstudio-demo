@@ -10,7 +10,7 @@
     mode: create
     content_type_group: Content
     identifier: inspiration_list
-    name: 'Inspirations List'
+    name: 'Inspiration List'
     description: ''
     name_pattern: '<name>'
     url_name_pattern: ''
@@ -31,6 +31,32 @@
             field-settings: {  }
             validator-configuration:
                 StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
 
 #inspiration_category content type
 -
@@ -62,10 +88,36 @@
             validator-configuration:
                 StringLengthValidator: { maxStringLength: null, minStringLength: null }
         -
-            identifier: icon
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: category_icon
             type: ezimageasset
             name:
-                eng-GB: Icon
+                eng-GB: Category Icon
             description: {  }
             required: false
             searchable: true
@@ -85,16 +137,16 @@
     name:
         eng-GB: Inspiration
     description: {  }
-    name_pattern: '<name>'
+    name_pattern: '<title>'
     url_name_pattern: ''
     is_container: false
     lang: eng-GB
     attributes:
         -
-            identifier: name
+            identifier: title
             type: ezstring
             name:
-                eng-GB: Name
+                eng-GB: Title
             description: {  }
             required: false
             searchable: true
@@ -106,10 +158,10 @@
             validator-configuration:
                 StringLengthValidator: { maxStringLength: null, minStringLength: null }
         -
-            identifier: intro
+            identifier: teaser_text
             type: eztext
             name:
-                eng-GB: Intro
+                eng-GB: Teaser Text
             description: {  }
             required: false
             searchable: true
@@ -121,8 +173,22 @@
                 textRows: 10
             validator-configuration: {  }
         -
+            identifier: teaser_image
+            type: ezimageasset
+            name:
+                eng-GB: Teaser Image
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+            field-settings: {  }
+            validator-configuration: {  }
+        -
             identifier: description
-            type: eztext
+            type: ezrichtext
             name:
                 eng-GB: Description
             description: {  }
@@ -131,23 +197,8 @@
             info-collector: false
             disable-translation: false
             category: content
-            position: 3
-            field-settings:
-                textRows: 10
-            validator-configuration: {  }
-        -
-            identifier: image
-            type: ezimageasset
-            name:
-                eng-GB: Image
-            description: {  }
-            required: false
-            searchable: true
-            info-collector: false
-            disable-translation: false
-            category: content
             position: 4
-            field-settings: {  }
+            field-settings: { }
             validator-configuration: {  }
 
 #store list content type
