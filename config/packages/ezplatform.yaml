@@ -76,7 +76,7 @@ parameters:
 
     app.professionals.location_id: 190
 
-    app_connect_with_us_location_id: 544
+    app_connect_with_us_location_id: 541
 
     # Settings for menu items rendering
     app.menu:
@@ -92,10 +92,10 @@ parameters:
                 location_id: '%app_connect_with_us_location_id%'
                 siteaccess: maison
             blog:
-                location_id: 538
+                location_id: 535
                 siteaccess: maison
             store_locators:
-                location_id: 530
+                location_id: 527
                 icon: '<i class="material-icons-outlined item-store-locators-pin">room</i>'
                 siteaccess: maison
         maison_footer:
