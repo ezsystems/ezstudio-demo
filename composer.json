@@ -99,6 +99,7 @@
         "ezsystems/behatbundle": "^8.0@dev",
         "ezsystems/ezplatform-code-style": "^0.1.0",
         "ezsystems/fastest": "^1.7",
+        "friends-of-behat/mink-browserkit-driver": "^1.4",
         "friends-of-behat/mink-extension": "^2.4",
         "friends-of-behat/symfony-extension": "^2.1@beta",
         "overblog/graphiql-bundle": "^0.2",
@@ -164,7 +165,8 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": true
+            "allow-contrib": true,
+            "require": "~5.0.0 || 5.1.*"
         },
         "branch-alias": {
             "dev-master": "3.1.x-dev"
