@@ -1239,6 +1239,133 @@
                 multilingualOptions: { eng-GB: ['Hand Crafted', 'Sustainably Sourced', 'Fair Trade', Local, Organic] }
             validator-configuration: {  }
 
+#room_list content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: room_list
+    name: 'Room List'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+
+#room content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: room
+    name: 'Room'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: false
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: product
+            type: ezcontentquery
+            name:
+                eng-GB: Product
+            description: { }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings:
+                QueryType: 'App:Children'
+                ReturnedType: product
+                Parameters: {  }
+                EnablePagination: true
+                ItemsPerPage: 10
+            validator-configuration: {  }
+
 -
     type: reference
     mode: save
