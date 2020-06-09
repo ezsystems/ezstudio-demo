@@ -894,6 +894,351 @@
 #            position: 100
 #            category: metadata
 
+#product_list content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: product_list
+    name: 'Product List'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+
+#product_category content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: product_category
+    name: 'Product Category'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+
+#product content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: product
+    name:
+        eng-GB: Product
+    description: {  }
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: false
+    lang: eng-GB
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: 'Teaser Text'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimageasset
+            name:
+                eng-GB: 'Teaser Image'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: additional_image_1
+            type: ezimageasset
+            name:
+                eng-GB: 'Additional Image 1'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: additional_image_2
+            type: ezimageasset
+            name:
+                eng-GB: 'Additional Image 2'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 5
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: additional_image_3
+            type: ezimageasset
+            name:
+                eng-GB: 'Additional Image 3'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 6
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: price
+            type: ezstring
+            name:
+                eng-GB: Price
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 7
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: sku
+            type: ezstring
+            name:
+                eng-GB: SKU
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 8
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: room
+            type: ezobjectrelation
+            name:
+                eng-GB: Room
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 9
+            field-settings:
+                selectionMethod: 0
+                selectionRoot: null
+                selectionContentTypes: [room]
+            validator-configuration: {  }
+        -
+            identifier: product_description
+            type: ezrichtext
+            name:
+                eng-GB: 'Product Description'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 10
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: color
+            type: ezmatrix
+            name:
+                eng-GB: Color
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 11
+            field-settings:
+                minimum_rows: 1
+                columns: [{ name: Name, identifier: name }, { name: Code, identifier: code }]
+            validator-configuration: {  }
+        -
+            identifier: dimensions
+            type: ezrichtext
+            name:
+                eng-GB: Dimensions
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 12
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: care_instructions
+            type: ezrichtext
+            name:
+                eng-GB: 'Care Instructions'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 13
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: assembly_instructions
+            type: ezrichtext
+            name:
+                eng-GB: 'Assembly Instructions'
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 14
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: product_attributes
+            type: ezselection
+            name:
+                eng-GB: 'Product Attributes'
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 15
+            field-settings:
+                isMultiple: true
+                options: ['Hand Crafted', 'Sustainably Sourced', 'Fair Trade', Local, Organic]
+                multilingualOptions: { eng-GB: ['Hand Crafted', 'Sustainably Sourced', 'Fair Trade', Local, Organic] }
+            validator-configuration: {  }
+
 -
     type: reference
     mode: save
