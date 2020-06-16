@@ -14,7 +14,7 @@
                         <div class="col-12 py-5 {{ not loop.last ? 'border-bottom' : '' }}">
                             <a href="{{ ez_url(result) }}" class="grey-light">
                                 <div class="d-flex">
-                                    {% set hasMedia = result.fields.image is defined or result.fields.video %}
+                                    {% set hasMedia = result.fields.image is defined or result.fields.video is defined %}
                                     {% if hasMedia %}
                                         <div class="col-md-3 d-md-none d-lg-flex">
                                             {% if result.fields.image is defined %}
