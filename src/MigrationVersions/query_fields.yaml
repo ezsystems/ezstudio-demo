@@ -1,0 +1,75 @@
+# blog post content type
+-
+    type: content_type
+    mode: update
+    identifier: blog
+    attributes:
+        -
+            identifier: highlighted_post_1
+            type: ezcontentquery
+            name: "Highlighted post 1"
+            description: 'First highlighted blog post'
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 2
+            field-settings:
+                QueryType: Children
+                ReturnedType: blog_post
+                EnablePagination: false
+                ItemsPerPage: 0
+                Parameters:
+                    content: '@=content'
+                    filter:
+                        content_type: ['@=returnedType']
+                    offset: 0
+                    limit: 1
+                    sort: 'date_published desc'
+        -
+            identifier: highlighted_post_2
+            type: ezcontentquery
+            name: "Highlighted post 2"
+            description: 'First highlighted blog post'
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 3
+            field-settings:
+                QueryType: Children
+                ReturnedType: blog_post
+                EnablePagination: false
+                ItemsPerPage: 0
+                Parameters:
+                    content: '@=content'
+                    filter:
+                        content_type: ['@=returnedType']
+                    offset: 1
+                    limit: 1
+                    sort: 'date_published desc'
+        -
+            identifier: posts
+            type: ezcontentquery
+            name: "Posts"
+            description: 'First highlighted blog post'
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 4
+            field-settings:
+                QueryType: Children
+                ReturnedType: blog_post
+                EnablePagination: true
+                ItemsPerPage: 10
+                Parameters:
+                    content: '@=content'
+                    filter:
+                        content_type: ['@=returnedType']
+                    offset: 2
+                    sort: 'date_published desc'
+

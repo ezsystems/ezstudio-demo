@@ -11,52 +11,19 @@
     <div class="page mt-5 pb-5">
         <div class="container">
             <div class="row mb-5">
-                {% if blog_post_list is defined and blog_post_list|length > 0 %}
-                    {% for post in blog_post_list %}
-                        {% if loop.index == 1 %}
-                            <div class="col-lg-8 col-md-6">
-                                {{ render_esi(controller('ez_content:viewAction', {
-                                    locationId: post.valueObject.contentInfo.mainLocationId,
-                                    viewType: 'card'
-                                })) }}
-                            </div>
-                        {% endif %}
-                        {% if loop.index == 2 %}
-                            <div class="col-lg-4 col-md-6 mt-md-0 mt-sm-5">
-                                {{ render_esi(controller('ez_content:viewAction', {
-                                    locationId: post.valueObject.contentInfo.mainLocationId,
-                                    viewType: 'card'
-                                })) }}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
+                <div class="col-lg-8 col-md-6">
+                    {{ ez_render_field(content, 'highlighted_post_1', {itemViewType: 'card'}) }}
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-0 mt-sm-5">
+                    {{ ez_render_field(content, 'highlighted_post_2', {itemViewType: 'card'}) }}
+                </div>
             </div>
             {% include '@ezdesign/parts/subscribe.html.twig' with {'subscribe_form_remote_id': subscribe_form_remote_id} only %}
             <div class="row mb-5">
                 <div class="col-12 pb-5">
                     <h4>{{ 'maison.latest_blog'|trans|desc('Latest Posts') }}</h4>
                 </div>
-                {% if blog_post_list is defined and blog_post_list|length > 2 %}
-                    {% for post in blog_post_list %}
-                        {% if loop.index > 2 %}
-                            <div class="col-md-4 mt-md-0 mt-sm-5">
-                                {{ render_esi(controller('ez_content:viewAction', {
-                                    locationId: post.valueObject.contentInfo.mainLocationId,
-                                    viewType: 'card'
-                                })) }}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-                {% if blog_post_list.haveToPaginate() %}
-                    <div class="col-12 mt-md-0 mt-sm-5">
-                        {{ pagerfanta(inspirations, 'maison_template', {
-                            routeName: location,
-                            routeParams: ezplatform.requestStack.masterRequest.query.all
-                        }) }}
-                    </div>
-                {% endif %}
+                {{ ez_render_field(content, 'posts', {itemViewType: 'card'}) }}
             </div>
         </div>
     </div>

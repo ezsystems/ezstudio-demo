@@ -52,18 +52,10 @@ ezplatform:
                             professionals_location_id: '%app.professionals.location_id%'
 
                     blog:
-                        controller: "ez_query:pagingQueryAction"
                         template: "@ezdesign/full/blog.html.twig"
                         match:
                             Identifier\ContentType: blog
                         params:
-                            query:
-                                query_type: "App:Children"
-                                parameters:
-                                    parent_location_id: "@=location.id"
-                                    included_content_type_identifier: 'blog_post'
-                                    sort_clauses: 'ascending'
-                                assign_results_to: blog_post_list
                             subscribe_form_remote_id: "%app.subscribe_form.remote_id%"
 
                     blog_post:
@@ -115,6 +107,13 @@ ezplatform:
                         match:
                             Identifier\ContentType: [blog, blog_post, contact, article, store, store_list, inspiration_list, inspiration_category, home, landing_page, folder, file, video, image, gallery, form, user, user_group, professional]
 
+                content_query_field:
+                    blog_posts:
+                        match:
+                            Identifier\ContentType: blog
+                            '@EzSystems\EzPlatformQueryFieldType\eZ\ContentView\FieldDefinitionIdentifierMatcher': posts
+                        template: "@ezdesign/content_query/blog_posts.html.twig"
+
         professionals:
             content_view:
                 full:
@@ -155,3 +154,52 @@ ezplatform:
                         template: "@ezdesign/card/professional_catalog.html.twig"
                         match:
                             Identifier\ContentType: folder
+
+        resellers:
+            pagelayout: "@ezdesign/pagelayout.html.twig"
+
+            field_templates:
+                - { template: '@ezdesign/fields/ezform_field.html.twig', priority: 30}
+
+            content_view:
+                full:
+                    folder:
+                        template: "@ezdesign/full/reseller_homepage.html.twig"
+                        match:
+                            Identifier\ContentType: reseller_homepage
+
+                    contact:
+                        template: "@ezdesign/full/reseller_contact_page.html.twig"
+                        match:
+                            Identifier\ContentType: reseller_contact_page
+
+                    page:
+                        template: "@ezdesign/full/reseller_page.html.twig"
+                        match:
+                            Identifier\ContentType: reseller_page
+
+                    news:
+                        controller: ez_query:contentQueryAction
+                        template: "@ezdesign/full/reseller_news.html.twig"
+                        match:
+                            Identifier\ContentType: reseller_news
+                        params:
+                            query:
+                                query_type: Children
+                                parameters:
+                                    location: '@=location'
+                                assign_results_to: items
+
+        admin_group:
+            content_view:
+                line:
+                    image:
+                        match:
+                            Identifier\ContentType: image
+                        template: "@ezdesign/line/image.html.twig"
+                content_query_field:
+                    gallery_images:
+                        match:
+                            Identifier\ContentType: tagged_gallery
+                            '@EzSystems\EzPlatformQueryFieldType\eZ\ContentView\FieldDefinitionIdentifierMatcher': images
+                        template: "@ezdesign/content_query_field/gallery_images.html.twig"
