@@ -1511,6 +1511,360 @@
             category: content
             position: 5
 
+#customer_service content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: customer_service
+    name: 'Customer Service'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: true
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: description
+            type: ezrichtext
+            name:
+                eng-GB: Description
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: options
+            type: ezobjectrelationlist
+            name:
+                eng-GB: Options
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 5
+            field-settings: {}
+            validator-configuration: {  }
+
+#faq content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: faq
+    name: 'FAQ'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: false
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: description
+            type: ezrichtext
+            name:
+                eng-GB: Description
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+
+#contact_us content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: contact_us
+    name: 'Contact Us'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: false
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: description
+            type: ezrichtext
+            name:
+                eng-GB: Description
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            type: ezform
+            name: Contact Us Form
+            identifier: form
+            description: Form
+            required: false
+            searchable: false
+            category: content
+            position: 5
+        -
+            identifier: local_phone_number
+            type: ezstring
+            name:
+                eng-GB: Local Phone Number
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 6
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: global_phone_number
+            type: ezstring
+            name:
+                eng-GB: Global Phone Number
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 7
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: email
+            type: ezemail
+            name:
+                eng-GB: Email Address
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 8
+            field-settings: {}
+            validator-configuration: {  }
+
+#location_finder content type
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: location_finder
+    name: 'Location Finder'
+    description: ''
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: false
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+        -
+            identifier: description
+            type: ezrichtext
+            name:
+                eng-GB: Description
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: address
+            type: ezgmaplocation
+            name:
+                eng-GB: Address
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 5
+            field-settings: {}
+            validator-configuration: {  }
+
+
 -
     type: reference
     mode: save
