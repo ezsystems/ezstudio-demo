@@ -52,18 +52,10 @@ ezplatform:
                             professionals_location_id: '%app.professionals.location_id%'
 
                     blog:
-                        controller: "ez_query:pagingQueryAction"
                         template: "@ezdesign/full/blog.html.twig"
                         match:
                             Identifier\ContentType: blog
                         params:
-                            query:
-                                query_type: "App:Children"
-                                parameters:
-                                    parent_location_id: "@=location.id"
-                                    included_content_type_identifier: 'blog_post'
-                                    sort_clauses: 'ascending'
-                                assign_results_to: blog_post_list
                             subscribe_form_remote_id: "%app.subscribe_form.remote_id%"
 
                     blog_post:
@@ -114,6 +106,13 @@ ezplatform:
                         template: "@ezdesign/default/default.html.twig"
                         match:
                             Identifier\ContentType: [blog, blog_post, contact, article, store, store_list, inspiration_list, inspiration_category, home, landing_page, folder, file, video, image, gallery, form, user, user_group, professional]
+
+                content_query_field:
+                    blog_posts:
+                        match:
+                            Identifier\ContentType: blog
+                            '@EzSystems\EzPlatformQueryFieldType\eZ\ContentView\FieldDefinitionIdentifierMatcher': posts
+                        template: "@ezdesign/content_query/blog_posts.html.twig"
 
         professionals:
             content_view:

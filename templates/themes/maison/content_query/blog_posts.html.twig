@@ -1,0 +1,19 @@
+{% for item in items %}
+    <div class="col-md-4 mt-md-0 mt-sm-5">
+    {{ render(controller("ez_content:viewAction", {
+        "contentId": item.id,
+        "content": item,
+        "viewType": itemViewType
+    })) }}
+    </div>
+{% endfor %}
+
+{% if isPaginationEnabled and items.haveToPaginate() %}
+    <div class="col-12 mt-md-0 mt-sm-5">
+    {{ pagerfanta( items, 'maison_template', {
+        'pageParameter': pageParameter,
+        'routeName': '_ez_content_view',
+        'routeParams' : {'contentId': content.id, 'locationId': location.id }
+    } ) }}
+    </div>
+{% endif %}
