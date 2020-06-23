@@ -1465,7 +1465,7 @@
     always_available: true
     attributes:
         name: '5 Patio Arrangements to Inspire Your Outdoor Room'
-        intro: >-
+        teaser_text: >-
             <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
                 <para>If you’re planning to invest in a new patio set or looking for a fresh way to rearrange your current furniture, take a peek at these eight setups, each offering an invitation to get outside. All include combinations of outdoor furniture — cafe tables, chairs, benches, lounges and more — and at least one other garden element that makes the scene that much more enticing.</para>
             </section>
@@ -1530,7 +1530,7 @@
     always_available: true
     attributes:
         name: 'Bathroom of the Week'
-        intro: >-
+        teaser_text: >-
             <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
                 <para>When bathroom designer Michelle Fee decided it was time to remodel the master bath in her 1980s Atlanta home, it turned out to be way more complicated than designing someone else’s bathroom. “I’ve seen everything, so I kept thinking, ‘What do I choose?’ ” Fee says.</para>
             </section>
@@ -1579,7 +1579,7 @@
     always_available: true
     attributes:
         name: 'How to Remodel Your Kitchen'
-        intro: >-
+        teaser_text: >-
             <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
                 <para>Follow these 7 steps to a successful kitchen remodel, from figuring out what you need to signing off on the final review</para>
             </section>
@@ -1641,7 +1641,7 @@
     always_available: true
     attributes:
         name: 'How to Remodel Your Bathroom'
-        intro: >-
+        teaser_text: >-
             <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
                 <para>This master bathroom uses dark wooden and gray floors paired with white walls for a timeless traditional bathroom.</para>
             </section>
@@ -1682,7 +1682,7 @@
     always_available: true
     attributes:
         name: 'Kitchen of the week'
-        intro: >-
+        teaser_text: >-
             <section xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml" xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
                 <para>This inspirational remodeled kitchen in Austin pairs a light wood with the beige floor. Traditional features like a farmhouse sink, coupled with classic white shaker cabinets and offset with gray backsplash, ceramic tiling, and black counter-tops gives a timeless yet modern feel.</para>
             </section>
