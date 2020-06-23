@@ -1,2 +1,3 @@
 platform_search:
     resource: '@PlatformSearchBundle/Resources/config/routing.yaml'
+    prefix: '%admin-routes-prefix%'
