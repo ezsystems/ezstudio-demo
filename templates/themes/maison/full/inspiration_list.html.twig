@@ -50,7 +50,6 @@
                         {% if inspirations.haveToPaginate() %}
                             <div class="col-12">
                                 {{ pagerfanta(inspirations, 'maison_template', {
-                                    routeName: location,
                                     routeParams: ezplatform.requestStack.masterRequest.query.all
                                 }) }}
                             </div>
