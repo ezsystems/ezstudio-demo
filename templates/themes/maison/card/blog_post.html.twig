@@ -9,7 +9,7 @@
             <h2 class="heading-md">{{ ez_render_field(content, 'name') }}</h2>
         </div>
         <div class="card__body">
-            {% set intro = ez_render_field(content, 'intro')|striptags %}
+            {% set intro = ez_render_field(content, 'teaser_text')|striptags %}
             <p>
                 {{ intro|slice(0, 150)|trim|raw }}{{ intro|length > 150 ? '...' }}
                 <a href="{{ ez_url(content) }}">{{ 'maison.read_more'|trans|desc('read more') }}</a>

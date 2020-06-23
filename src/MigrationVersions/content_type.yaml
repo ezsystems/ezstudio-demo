@@ -516,12 +516,38 @@
             type: ezstring
             name: Name
             description: 'Name or title of the blog.'
-            required: false
+            required: true
             searchable: true
             info-collector: false
             disable-translation: false
             category: content
             position: 1
+        -
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
 
 # blog post content type
 -
@@ -533,7 +559,7 @@
     description: 'These are individual blog posts and are created beneath Blog Content Types.'
     name_pattern: '<name>'
     url_name_pattern: ''
-    is_container: true
+    is_container: false
     attributes:
         -
             identifier: name
@@ -547,23 +573,26 @@
             category: content
             position: 1
         -
-            identifier: intro
+            identifier: teaser_text
             type: ezrichtext
-            name: Intro
-            description: 'Shown at the Schedule block view.'
+            name:
+                eng-GB: Teaser Text
+            description: {  }
             required: false
             searchable: true
             info-collector: false
             disable-translation: false
             category: content
             position: 2
+            field-settings: {  }
+            validator-configuration: {  }
         -
-            identifier: description
-            type: ezrichtext
-            name: Description
-            description: 'Content of the blog post.'
-            required: true
-            searchable: true
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
             info-collector: false
             disable-translation: false
             category: content
@@ -580,6 +609,17 @@
             category: content
             position: 4
         -
+            identifier: description
+            type: ezrichtext
+            name: Description
+            description: 'Content of the blog post.'
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 5
+        -
             identifier: publication_date
             type: ezdatetime
             name: 'Publication date'
@@ -589,7 +629,7 @@
             info-collector: false
             disable-translation: false
             category: content
-            position: 5
+            position: 6
             default-value: 1507544622
             field-settings:
                 defaultType: 1
@@ -605,7 +645,7 @@
             info-collector: false
             disable-translation: false
             category: content
-            position: 6
+            position: 7
         -
             identifier: authors_position
             type: ezstring
@@ -616,7 +656,7 @@
             info-collector: false
             disable-translation: false
             category: content
-            position: 7
+            position: 8
 
 #professional content type
 -
