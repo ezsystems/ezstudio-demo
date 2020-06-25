@@ -83,12 +83,30 @@
             validator-configuration:
                 StringLengthValidator: { maxStringLength: 100, minStringLength: false }
         -
-            type: ezrichtext
-            name: Summary
-            identifier: short_description
-            category: content
-            description: 'Displayed as a separate paragraph at top.'
+            identifier: teaser_text
+            type: eztext
+            name:
+                eng-GB: Teaser Text
+            description: {  }
+            required: false
             searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 2
+            field-settings:
+                textRows: 10
+            validator-configuration: {  }
+        -
+            identifier: teaser_image
+            type: ezimage
+            name: Teaser Image
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: false
+            category: content
             position: 3
         -
             type: ezrichtext
@@ -98,13 +116,6 @@
             description: 'Body of text.'
             searchable: true
             position: 4
-        -
-            type: ezimage
-            name: Image
-            identifier: image
-            category: content
-            description: 'Image for header.'
-            position: 5
         -
             type: ezboolean
             name: Display sub items
@@ -527,7 +538,7 @@
                      xmlns:ezxhtml="http://ez.no/xmlns/ezpublish/docbook/xhtml"
                      xmlns:ezcustom="http://ez.no/xmlns/ezpublish/docbook/custom" version="5.0-variant ezpublish-1.0">
             </section>
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites

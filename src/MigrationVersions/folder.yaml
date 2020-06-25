@@ -48,7 +48,7 @@
         name: Inspirations
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__media__images__inspirations
@@ -70,7 +70,7 @@
         name: Professionals
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__media__images__professionals
@@ -92,7 +92,7 @@
         name: 'Catalog'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__media__images__professionals__catalog
@@ -114,7 +114,7 @@
         name: Logo
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__media__images__logo
