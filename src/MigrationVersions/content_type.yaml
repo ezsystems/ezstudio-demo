@@ -934,13 +934,13 @@
 #            position: 100
 #            category: metadata
 
-#product_list content type
+#product_category content type
 -
     type: content_type
     mode: create
     content_type_group: Content
-    identifier: product_list
-    name: 'Product List'
+    identifier: product_category
+    name: 'Product Category'
     description: ''
     name_pattern: '<name>'
     url_name_pattern: ''
@@ -988,13 +988,13 @@
             category: content
             position: 3
 
-#product_category content type
+#product_subcategory content type
 -
     type: content_type
     mode: create
     content_type_group: Content
-    identifier: product_category
-    name: 'Product Category'
+    identifier: product_subcategory
+    name: 'Product Sub-Category'
     description: ''
     name_pattern: '<name>'
     url_name_pattern: ''
@@ -1173,10 +1173,10 @@
             validator-configuration:
                 StringLengthValidator: { maxStringLength: null, minStringLength: null }
         -
-            identifier: room
+            identifier: room_category
             type: ezobjectrelation
             name:
-                eng-GB: Room
+                eng-GB: Room Category
             description: {  }
             required: false
             searchable: true
@@ -1277,6 +1277,23 @@
                 isMultiple: true
                 options: ['Hand Crafted', 'Sustainably Sourced', 'Fair Trade', Local, Organic]
                 multilingualOptions: { eng-GB: ['Hand Crafted', 'Sustainably Sourced', 'Fair Trade', Local, Organic] }
+            validator-configuration: {  }
+        -
+            identifier: country_of_availability
+            type: ezselection
+            name:
+                eng-GB: 'Country of Availability'
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 16
+            field-settings:
+                isMultiple: true
+                options: [ROW, Norway, Germany, France]
+                multilingualOptions: { eng-GB: [ROW, Norway, Germany, France] }
             validator-configuration: {  }
 
 #room_list content type
@@ -1413,74 +1430,6 @@
     content_type_group: Content
     identifier: b2b_program
     name: 'B2B Program'
-    description: ''
-    name_pattern: '<name>'
-    url_name_pattern: ''
-    is_container: true
-    attributes:
-        -
-            identifier: name
-            type: ezstring
-            name:
-                eng-GB: Name
-            description: {  }
-            required: true
-            searchable: true
-            info-collector: false
-            disable-translation: false
-            category: content
-            position: 1
-            field-settings: {  }
-            validator-configuration:
-                StringLengthValidator: { maxStringLength: null, minStringLength: null }
-        -
-            identifier: teaser_text
-            type: eztext
-            name:
-                eng-GB: Teaser Text
-            description: {  }
-            required: false
-            searchable: true
-            info-collector: false
-            disable-translation: false
-            category: content
-            position: 2
-            field-settings:
-                textRows: 10
-            validator-configuration: {  }
-        -
-            identifier: teaser_image
-            type: ezimage
-            name: Teaser Image
-            description: {  }
-            required: false
-            searchable: false
-            info-collector: false
-            disable-translation: false
-            category: content
-            position: 3
-        -
-            identifier: description
-            type: ezrichtext
-            name:
-                eng-GB: 'Description'
-            description: {  }
-            required: false
-            searchable: true
-            info-collector: false
-            disable-translation: false
-            category: content
-            position: 4
-            field-settings: {  }
-            validator-configuration: {  }
-
-#program_registration content type
--
-    type: content_type
-    mode: create
-    content_type_group: Content
-    identifier: program_registration
-    name: 'Program Registration'
     description: ''
     name_pattern: '<name>'
     url_name_pattern: ''

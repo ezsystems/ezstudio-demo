@@ -35,7 +35,6 @@
                             {% if professionals.haveToPaginate() %}
                                 <div class="col-12 d-flex justify-content-center">
                                     {{ pagerfanta(professionals, 'maison_template', {
-                                        routeName: location,
                                         routeParams: ezplatform.requestStack.masterRequest.query.all
                                     }) }}
                                 </div>

@@ -56,7 +56,7 @@
         name: 'Design and remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling
@@ -86,7 +86,7 @@
         name: 'Architects & Building Designers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/52.jpg
             filename: 52.jpg
             alternativeText: ''
@@ -115,7 +115,7 @@
         name: 'Custom Home'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__custom_home
@@ -141,7 +141,7 @@
         name: 'Building Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__building_design
@@ -167,7 +167,7 @@
         name: 'New Home Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__new_home_construction
@@ -193,7 +193,7 @@
         name: 'Architectural Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__architectural_design
@@ -219,7 +219,7 @@
         name: 'Home Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__home_remodeling
@@ -245,7 +245,7 @@
         name: 'Home Additions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__home_additions
@@ -271,7 +271,7 @@
         name: 'Green Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__green_building
@@ -297,7 +297,7 @@
         name: 'Sustainable Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__sustainable_design
@@ -323,7 +323,7 @@
         name: 'Energy-Efficient Homes'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__energy_efficient_homes
@@ -349,7 +349,7 @@
         name: 'Universal Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__universal_design
@@ -375,7 +375,7 @@
         name: 'Home Extensions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__home_extensions
@@ -401,7 +401,7 @@
         name: 'Barn Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__architects_and_building_designers__barn_design_and_construction
@@ -429,7 +429,7 @@
         name: 'Design-Build Firms'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/41.jpg
             filename: 41.jpg
             alternativeText: ''
@@ -458,7 +458,7 @@
         name: 'Custom Home'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__custom_home
@@ -483,7 +483,7 @@
         name: 'Building Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__building_design
@@ -508,7 +508,7 @@
         name: 'New Home Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__new_home_construction
@@ -533,7 +533,7 @@
         name: 'Architectural Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__architectural_design
@@ -558,7 +558,7 @@
         name: 'Home Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__home_remodeling
@@ -583,7 +583,7 @@
         name: 'Home Additions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__home_additions
@@ -608,7 +608,7 @@
         name: 'Green Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__green_building
@@ -633,7 +633,7 @@
         name: 'Sustainable Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__sustainable_design
@@ -658,7 +658,7 @@
         name: 'Energy-Efficient Homes'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__energy_efficient_homes
@@ -683,7 +683,7 @@
         name: 'Universal Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__universal_design
@@ -708,7 +708,7 @@
         name: 'Home Extensions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__home_extensions
@@ -733,7 +733,7 @@
         name: 'Barn Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__design_build_firms__barn_design_and_construction
@@ -761,7 +761,7 @@
         name: 'General Contractors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/30.jpg
             filename: 30.jpg
             alternativeText: ''
@@ -789,7 +789,7 @@
         name: 'New Home Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__new_home_construction
@@ -814,7 +814,7 @@
         name: 'Home Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__home_remodeling
@@ -839,7 +839,7 @@
         name: 'General Contracting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__general_contracting
@@ -864,7 +864,7 @@
         name: 'Custom Home'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__custom_home
@@ -889,7 +889,7 @@
         name: 'Home Additions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__home_additions
@@ -914,7 +914,7 @@
         name: 'Green Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__green_building
@@ -939,7 +939,7 @@
         name: 'Home Extensions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__home_extensions
@@ -964,7 +964,7 @@
         name: 'Energy-Efficient Homes'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__energy_efficient_homes
@@ -989,7 +989,7 @@
         name: 'Bathroom Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__bathroom_remodeling
@@ -1014,7 +1014,7 @@
         name: 'Basement Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__basement_remodeling
@@ -1039,7 +1039,7 @@
         name: 'Garage Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__garage_building
@@ -1064,7 +1064,7 @@
         name: 'Porch Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__general_contractors__porch_design_and_construction
@@ -1092,7 +1092,7 @@
         name: 'Home Builders'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/11.png
             filename: 11.png
             alternativeText: ''
@@ -1121,7 +1121,7 @@
         name: 'New Home Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__home_builders__new_home_construction
@@ -1146,7 +1146,7 @@
         name: 'Home Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__home_builders__home_remodeling
@@ -1171,7 +1171,7 @@
         name: 'General Contracting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__home_builders__general_contracting
@@ -1196,7 +1196,7 @@
         name: 'Custom Home'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__home_builders__custom_home
@@ -1221,7 +1221,7 @@
         name: 'Home Additions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__home_builders__home_additions
@@ -1246,7 +1246,7 @@
         name: 'Green Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__home_builders__green_building
@@ -1274,7 +1274,7 @@
         name: 'Interior Designers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/40.jpg
             filename: 40.jpg
             alternativeText: ''
@@ -1303,7 +1303,7 @@
         name: 'Universal Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__universal_design
@@ -1328,7 +1328,7 @@
         name: 'Sustainable Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__sustainable_design
@@ -1353,7 +1353,7 @@
         name: 'Interior Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__interior_design
@@ -1378,7 +1378,7 @@
         name: 'Space Planning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__space_planning
@@ -1403,7 +1403,7 @@
         name: 'Kids Bedroom Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__kids_bedroom_design
@@ -1428,7 +1428,7 @@
         name: 'Bedroom Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__bedroom_design
@@ -1453,7 +1453,7 @@
         name: 'Living Room Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__living_room_design
@@ -1478,7 +1478,7 @@
         name: 'Bathroom Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__bathroom_design
@@ -1503,7 +1503,7 @@
         name: 'Nursery Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__nursery_design
@@ -1528,7 +1528,7 @@
         name: 'Playroom Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__playroom_design
@@ -1553,7 +1553,7 @@
         name: 'Kitchen Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__kitchen_design
@@ -1578,7 +1578,7 @@
         name: 'Dining Room Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__interior_designers__dining_room_design
@@ -1606,7 +1606,7 @@
         name: 'Kitchen & Bathroom Remodelers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/4.jpg
             filename: 4.jpg
             alternativeText: ''
@@ -1635,7 +1635,7 @@
         name: 'Bathroom Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__bathroom_remodeling
@@ -1660,7 +1660,7 @@
         name: 'Kitchen Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__kitchen_remodeling
@@ -1685,7 +1685,7 @@
         name: 'Home Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__home_remodeling
@@ -1710,7 +1710,7 @@
         name: 'Home Additions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__home_additions
@@ -1735,7 +1735,7 @@
         name: 'Green Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__green_building
@@ -1760,7 +1760,7 @@
         name: 'Home Extensions'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__home_extensions
@@ -1785,7 +1785,7 @@
         name: 'Basement Remodeling'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__basement_remodeling
@@ -1810,7 +1810,7 @@
         name: 'Sustainable Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__sustainable_design
@@ -1835,7 +1835,7 @@
         name: 'Universal Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__universal_design
@@ -1860,7 +1860,7 @@
         name: 'Outdoor Kitchen Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__outdoor_kitchen_construction
@@ -1885,7 +1885,7 @@
         name: 'Home Restoration'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__home_restoration
@@ -1910,7 +1910,7 @@
         name: 'Cabinet Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__design_and_remodeling__kitchen_and_bathroom_remodelers__cabinet_installation
@@ -1940,7 +1940,7 @@
         name: 'Outdoor and garden'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden
@@ -1968,7 +1968,7 @@
         name: 'Landscape Architects'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/39.jpg
             filename: 39.jpg
             alternativeText: ''
@@ -1996,7 +1996,7 @@
         name: 'Landscape Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__landscape_design
@@ -2021,7 +2021,7 @@
         name: 'Drought Tolerant Landscaping'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__drought_tolerant_landscaping
@@ -2046,7 +2046,7 @@
         name: 'Garden Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__garden_design
@@ -2071,7 +2071,7 @@
         name: 'Custom Water Features'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__custom_water_features
@@ -2096,7 +2096,7 @@
         name: 'Swimming Pool Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__swimming_pool_design
@@ -2121,7 +2121,7 @@
         name: 'Pool Landscaping'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__pool_landscaping
@@ -2146,7 +2146,7 @@
         name: Hardscaping
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__hardscaping
@@ -2171,7 +2171,7 @@
         name: 'Gazebo Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__gazebo_design_and_construction
@@ -2196,7 +2196,7 @@
         name: 'Patio Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__patio_design
@@ -2221,7 +2221,7 @@
         name: 'Landscape PlansSite Planning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__landscape_planssite_planning
@@ -2246,7 +2246,7 @@
         name: 'Shed Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__shed_design_and_construction
@@ -2271,7 +2271,7 @@
         name: 'Swimming Pool Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__landscape_architects__swimming_pool_construction
@@ -2299,7 +2299,7 @@
         name: 'Swimming Pool Builders'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/19.jpg
             filename: 19.jpg
             alternativeText: ''
@@ -2328,7 +2328,7 @@
         name: 'Swimming Pool Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__swimming_pool_design
@@ -2353,7 +2353,7 @@
         name: 'Pool Deck Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__pool_deck_design_and_construction
@@ -2378,7 +2378,7 @@
         name: 'Pool Lighting Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__pool_lighting_installation
@@ -2403,7 +2403,7 @@
         name: 'Hot Tub Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__hot_tub_installation
@@ -2428,7 +2428,7 @@
         name: 'Sauna Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__sauna_installation
@@ -2453,7 +2453,7 @@
         name: 'Pool Liner Replacement'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__pool_liner_replacement
@@ -2478,7 +2478,7 @@
         name: 'Pond Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__pond_construction
@@ -2503,7 +2503,7 @@
         name: 'Aboveground Pools'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__aboveground_pools
@@ -2528,7 +2528,7 @@
         name: 'Aboveground Pool Liner Replacement'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__aboveground_pool_liner_replacement
@@ -2553,7 +2553,7 @@
         name: 'Custom Hot Tubs'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__custom_hot_tubs
@@ -2578,7 +2578,7 @@
         name: 'Pool Covers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__swimming_pool_builders__pool_covers
@@ -2606,7 +2606,7 @@
         name: 'Deck & Patio Builders'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/38.jpg
             filename: 38.jpg
             alternativeText: ''
@@ -2635,7 +2635,7 @@
         name: 'Balcony Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__balcony_design_and_construction
@@ -2660,7 +2660,7 @@
         name: 'Deck Building'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__deck_building
@@ -2685,7 +2685,7 @@
         name: 'Porch Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__porch_design_and_construction
@@ -2710,7 +2710,7 @@
         name: 'Pool Deck Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__pool_deck_design_and_construction
@@ -2735,7 +2735,7 @@
         name: 'Pergola Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__pergola_construction
@@ -2760,7 +2760,7 @@
         name: 'Sunroom Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__sunroom_design_and_construction
@@ -2785,7 +2785,7 @@
         name: 'Gazebo Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__gazebo_design_and_construction
@@ -2810,7 +2810,7 @@
         name: 'Deck Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__deck_repair
@@ -2835,7 +2835,7 @@
         name: 'Patio Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__patio_construction
@@ -2860,7 +2860,7 @@
         name: 'Deck DesignBarn Design & Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__deck_designbarn_design_and_construction
@@ -2885,7 +2885,7 @@
         name: 'Patio Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__outdoor_and_garden__deck_and_patio_builders__patio_design
@@ -2913,7 +2913,7 @@
         name: 'Stone, Pavers & Concrete'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/37.jpg
             filename: 37.jpg
             alternativeText: ''
@@ -2942,7 +2942,7 @@
         name: 'Concrete Driveway Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__concrete_driveway_installation'
@@ -2967,7 +2967,7 @@
         name: 'Retaining Wall Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__retaining_wall_construction'
@@ -2992,7 +2992,7 @@
         name: 'Stone MasonryBrick Siding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__stone_masonrybrick_siding'
@@ -3017,7 +3017,7 @@
         name: 'Patio Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__patio_construction'
@@ -3042,7 +3042,7 @@
         name: 'Stamped ConcreteDecorative Concrete'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__stamped_concretedecorative_concrete'
@@ -3067,7 +3067,7 @@
         name: 'Concrete Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__concrete_construction'
@@ -3092,7 +3092,7 @@
         name: 'Brick Masonry'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__brick_masonry'
@@ -3117,7 +3117,7 @@
         name: 'MasonryStone Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__masonrystone_installation'
@@ -3142,7 +3142,7 @@
         name: Excavating
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__outdoor_and_garden__stone_pavers_and_concrete__excavating'
@@ -3171,7 +3171,7 @@
         name: 'Home Improvement'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement
@@ -3199,7 +3199,7 @@
         name: 'Building Supplies'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/49.jpg
             filename: 49.jpg
             alternativeText: ''
@@ -3227,7 +3227,7 @@
         name: 'Brick Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__building_supplies__brick_sales
@@ -3252,7 +3252,7 @@
         name: 'Concrete Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__building_supplies__concrete_sales
@@ -3277,7 +3277,7 @@
         name: 'Stone Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__building_supplies__stone_sales
@@ -3302,7 +3302,7 @@
         name: 'Tile Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__building_supplies__tile_sales
@@ -3330,7 +3330,7 @@
         name: 'Cabinets & Cabinetry'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/18.png
             filename: 18.png
             alternativeText: ''
@@ -3358,7 +3358,7 @@
         name: 'Cabinet Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__cabinet_sales
@@ -3383,7 +3383,7 @@
         name: 'Custom Cabinet Doors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_cabinet_doors
@@ -3408,7 +3408,7 @@
         name: 'Custom Kitchen Cabinets'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_kitchen_cabinets
@@ -3433,7 +3433,7 @@
         name: 'Cabinet Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__cabinet_installation
@@ -3458,7 +3458,7 @@
         name: 'Pantry Design'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__pantry_design
@@ -3483,7 +3483,7 @@
         name: 'Custom Cabinets'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_cabinets
@@ -3508,7 +3508,7 @@
         name: 'Custom Bookcases'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_bookcases
@@ -3533,7 +3533,7 @@
         name: 'Custom Built-ins'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_built_ins
@@ -3558,7 +3558,7 @@
         name: 'Custom Pantries'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_pantries
@@ -3583,7 +3583,7 @@
         name: 'Custom Entertainment Centers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_entertainment_centers
@@ -3608,7 +3608,7 @@
         name: 'Custom Shelving'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__custom_shelving
@@ -3633,7 +3633,7 @@
         name: 'Cabinet Refacing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__cabinets_and_cabinetry__cabinet_refacing
@@ -3661,7 +3661,7 @@
         name: 'Carpet Dealers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/50.jpg
             filename: 50.jpg
             alternativeText: ''
@@ -3689,7 +3689,7 @@
         name: 'Carpet Cleaning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_cleaning
@@ -3714,7 +3714,7 @@
         name: 'Carpet Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_repair
@@ -3739,7 +3739,7 @@
         name: 'Carpet Stretching'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_stretching
@@ -3764,7 +3764,7 @@
         name: 'Custom Rugs'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__custom_rugs
@@ -3789,7 +3789,7 @@
         name: 'Carpet Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_installation
@@ -3814,7 +3814,7 @@
         name: 'Carpet Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__carpet_sales
@@ -3839,7 +3839,7 @@
         name: 'Custom Flooring'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__custom_flooring
@@ -3864,7 +3864,7 @@
         name: 'Rug Cleaning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__carpet_dealers__rug_cleaning
@@ -3892,7 +3892,7 @@
         name: 'Door Dealers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/43.jpg
             filename: 43.jpg
             alternativeText: ''
@@ -3920,7 +3920,7 @@
         name: 'Door Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__door_sales
@@ -3945,7 +3945,7 @@
         name: 'Custom Exterior Doors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__custom_exterior_doors
@@ -3970,7 +3970,7 @@
         name: 'Interior Door Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__interior_door_installation
@@ -3995,7 +3995,7 @@
         name: 'Exterior Door Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__exterior_door_installation
@@ -4020,7 +4020,7 @@
         name: 'Sliding Door Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__sliding_door_installation
@@ -4045,7 +4045,7 @@
         name: 'Custom Retractable Screens'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__custom_retractable_screens
@@ -4070,7 +4070,7 @@
         name: 'Custom Interior Doors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__custom_interior_doors
@@ -4095,7 +4095,7 @@
         name: 'Door Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__door_repair
@@ -4120,7 +4120,7 @@
         name: 'Sliding Door Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__sliding_door_repair
@@ -4145,7 +4145,7 @@
         name: 'Custom Folding Doors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__custom_folding_doors
@@ -4170,7 +4170,7 @@
         name: 'Bifold Doors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__bifold_doors
@@ -4195,7 +4195,7 @@
         name: 'Weather Stripping'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__door_dealers__weather_stripping
@@ -4223,7 +4223,7 @@
         name: Fireplaces
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/33.jpg
             filename: 33.jpg
             alternativeText: ''
@@ -4251,7 +4251,7 @@
         name: 'Custom Fireplaces'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__custom_fireplaces
@@ -4276,7 +4276,7 @@
         name: 'Wood Stove Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__wood_stove_installation
@@ -4301,7 +4301,7 @@
         name: 'Gas Fireplace Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__gas_fireplace_installation
@@ -4326,7 +4326,7 @@
         name: 'Pellet Stove Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__pellet_stove_installation
@@ -4351,7 +4351,7 @@
         name: 'Fireplace Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__fireplace_sales
@@ -4376,7 +4376,7 @@
         name: 'Fireplace Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__fireplace_installation
@@ -4401,7 +4401,7 @@
         name: 'Outdoor Fireplace Construction'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__outdoor_fireplace_construction
@@ -4426,7 +4426,7 @@
         name: 'Electric Fireplace Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__electric_fireplace_installation
@@ -4451,7 +4451,7 @@
         name: 'Fireplace Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__fireplace_repair
@@ -4476,7 +4476,7 @@
         name: 'Gas Fireplace Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__gas_fireplace_repair
@@ -4501,7 +4501,7 @@
         name: 'Electric Fireplace Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__electric_fireplace_repair
@@ -4526,7 +4526,7 @@
         name: 'Wood Stove Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__fireplaces__wood_stove_repair
@@ -4554,7 +4554,7 @@
         name: 'Paint & Wall Coverings'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/34.jpg
             filename: 34.jpg
             alternativeText: ''
@@ -4582,7 +4582,7 @@
         name: 'Paint Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__paint_and_wall_coverings__paint_sales
@@ -4607,7 +4607,7 @@
         name: 'Wallcovering Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__paint_and_wall_coverings__wallcovering_sales
@@ -4635,7 +4635,7 @@
         name: 'Siding & Exteriors'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/35.jpg
             filename: 35.jpg
             alternativeText: ''
@@ -4663,7 +4663,7 @@
         name: 'Siding Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__siding_sales
@@ -4688,7 +4688,7 @@
         name: 'Vinyl Siding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__vinyl_siding
@@ -4713,7 +4713,7 @@
         name: 'Cedar Siding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__cedar_siding
@@ -4738,7 +4738,7 @@
         name: 'Siding Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__siding_installation
@@ -4763,7 +4763,7 @@
         name: 'Aluminum Siding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__aluminum_siding
@@ -4788,7 +4788,7 @@
         name: 'Soffit Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__soffit_installation
@@ -4813,7 +4813,7 @@
         name: 'Brick Siding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__brick_siding
@@ -4838,7 +4838,7 @@
         name: 'Stucco Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__stucco_installation
@@ -4863,7 +4863,7 @@
         name: 'Gutter Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__gutter_installation
@@ -4888,7 +4888,7 @@
         name: 'Siding Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__siding_repair
@@ -4913,7 +4913,7 @@
         name: 'Soffit Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__soffit_repair
@@ -4938,7 +4938,7 @@
         name: 'Fiber Cement Siding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__siding_and_exteriors__fiber_cement_siding
@@ -4966,7 +4966,7 @@
         name: 'Tile, Stone & Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/51.jpg
             filename: 51.jpg
             alternativeText: ''
@@ -4994,7 +4994,7 @@
         name: 'Countertop Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__countertop_sales'
@@ -5019,7 +5019,7 @@
         name: 'Granite Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__granite_countertops'
@@ -5044,7 +5044,7 @@
         name: 'Quartz Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__quartz_countertops'
@@ -5069,7 +5069,7 @@
         name: 'Marble Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__marble_countertops'
@@ -5094,7 +5094,7 @@
         name: 'Natural Stone Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__natural_stone_countertops'
@@ -5119,7 +5119,7 @@
         name: 'Tile Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__tile_installation'
@@ -5144,7 +5144,7 @@
         name: 'Custom Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__custom_countertops'
@@ -5169,7 +5169,7 @@
         name: 'Tile Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__tile_sales'
@@ -5194,7 +5194,7 @@
         name: 'Tile Countertops'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__tile_countertops'
@@ -5219,7 +5219,7 @@
         name: 'Stone Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__stone_installation'
@@ -5244,7 +5244,7 @@
         name: 'Countertop Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__countertop_installation'
@@ -5269,7 +5269,7 @@
         name: 'Backsplash Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: 'ref_location_folder__sites__professionals__home_improvement__tile_stone_and_countertops__backsplash_installation'
@@ -5297,7 +5297,7 @@
         name: 'Window Dealers'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/36.jpg
             filename: 36.jpg
             alternativeText: ''
@@ -5325,7 +5325,7 @@
         name: 'Custom Windows'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__custom_windows
@@ -5350,7 +5350,7 @@
         name: 'Window Sales'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__window_sales
@@ -5375,7 +5375,7 @@
         name: 'Window Replacement'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__window_replacement
@@ -5400,7 +5400,7 @@
         name: 'Window Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__window_installation
@@ -5425,7 +5425,7 @@
         name: 'Window Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__window_repair
@@ -5450,7 +5450,7 @@
         name: 'Window Screen Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__window_screen_installation
@@ -5475,7 +5475,7 @@
         name: 'Custom Retractable Screens'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__custom_retractable_screens
@@ -5500,7 +5500,7 @@
         name: 'Skylight Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__skylight_installation
@@ -5525,7 +5525,7 @@
         name: 'Bifold Windows'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__bifold_windows
@@ -5550,7 +5550,7 @@
         name: 'Window Screen Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__window_screen_repair
@@ -5575,7 +5575,7 @@
         name: 'Weather Stripping'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__weather_stripping
@@ -5600,7 +5600,7 @@
         name: 'Awning Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_improvement__window_dealers__awning_installation
@@ -5629,7 +5629,7 @@
         name: 'Home Services'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services
@@ -5657,7 +5657,7 @@
         name: 'Air Conditioning & Heating'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/48.jpg
             filename: 48.jpg
             alternativeText: ''
@@ -5685,7 +5685,7 @@
         name: 'Air Conditioning Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__air_conditioning_installation
@@ -5710,7 +5710,7 @@
         name: 'Furnace Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__furnace_installation
@@ -5735,7 +5735,7 @@
         name: 'Air Conditioning Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__air_conditioning_repair
@@ -5760,7 +5760,7 @@
         name: 'Heating System Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__heating_system_installation
@@ -5785,7 +5785,7 @@
         name: 'Heating Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__heating_repair
@@ -5810,7 +5810,7 @@
         name: 'Heat Pump Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__heat_pump_installation
@@ -5835,7 +5835,7 @@
         name: 'Furnace Cleaning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__furnace_cleaning
@@ -5860,7 +5860,7 @@
         name: 'Heat Pump Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__air_conditioning_and_heating__heat_pump_repair
@@ -5888,7 +5888,7 @@
         name: Electricians
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/46.jpg
             filename: 46.jpg
             alternativeText: ''
@@ -5916,7 +5916,7 @@
         name: 'Electrical Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__electrical_repair
@@ -5941,7 +5941,7 @@
         name: 'Electrical Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__electrical_installation
@@ -5966,7 +5966,7 @@
         name: 'Circuit Breaker Installation & Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__circuit_breaker_installation_and_repair
@@ -5991,7 +5991,7 @@
         name: 'House Wiring'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__house_wiring
@@ -6016,7 +6016,7 @@
         name: 'Electrical Outlet & Light Switch Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__electrical_outlet_and_light_switch_installation
@@ -6041,7 +6041,7 @@
         name: 'Electrical Inspection'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__electrical_inspection
@@ -6066,7 +6066,7 @@
         name: 'GFCI Outlet Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__gfci_outlet_installation
@@ -6091,7 +6091,7 @@
         name: 'Generator Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__generator_installation
@@ -6116,7 +6116,7 @@
         name: 'Exhaust Fan Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__exhaust_fan_installation
@@ -6141,7 +6141,7 @@
         name: 'Ceiling Fan Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__ceiling_fan_installation
@@ -6166,7 +6166,7 @@
         name: 'Smoke Detector Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__smoke_detector_installation
@@ -6191,7 +6191,7 @@
         name: 'Energy-Efficient Homes'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__electricians__energy_efficient_homes
@@ -6219,7 +6219,7 @@
         name: 'Furniture Repair & Upholstery'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/28.jpg
             filename: 28.jpg
             alternativeText: ''
@@ -6247,7 +6247,7 @@
         name: 'Wall Upholstery'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__wall_upholstery
@@ -6272,7 +6272,7 @@
         name: 'Custom Drapery'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__custom_drapery
@@ -6297,7 +6297,7 @@
         name: 'Custom Furniture'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__custom_furniture
@@ -6322,7 +6322,7 @@
         name: 'Upholstery Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__upholstery_repair
@@ -6347,7 +6347,7 @@
         name: 'Custom Upholstery'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__custom_upholstery
@@ -6372,7 +6372,7 @@
         name: 'Antique Restoration'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__antique_restoration
@@ -6397,7 +6397,7 @@
         name: 'Upholstery Cleaning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__upholstery_cleaning
@@ -6422,7 +6422,7 @@
         name: 'Pool Table Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__pool_table_repair
@@ -6447,7 +6447,7 @@
         name: 'Furniture Refinishing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__furniture_refinishing
@@ -6472,7 +6472,7 @@
         name: 'Leather Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__leather_repair
@@ -6497,7 +6497,7 @@
         name: 'Furniture Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__furniture_repair
@@ -6522,7 +6522,7 @@
         name: 'Custom Embroidery'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__furniture_repair_and_upholstery__custom_embroidery
@@ -6550,7 +6550,7 @@
         name: Movers
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/47.jpg
             filename: 47.jpg
             alternativeText: ''
@@ -6578,7 +6578,7 @@
         name: 'Local Moving'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__movers__local_moving
@@ -6603,7 +6603,7 @@
         name: 'Long Distance Moving'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__movers__long_distance_moving
@@ -6628,7 +6628,7 @@
         name: 'Piano Moving'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__movers__piano_moving
@@ -6656,7 +6656,7 @@
         name: Painters
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/21.jpg
             filename: 21.jpg
             alternativeText: ''
@@ -6684,7 +6684,7 @@
         name: 'Interior Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__interior_painting
@@ -6709,7 +6709,7 @@
         name: 'Exterior Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__exterior_painting
@@ -6734,7 +6734,7 @@
         name: 'Ceiling Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__ceiling_painting
@@ -6759,7 +6759,7 @@
         name: 'Decorative Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__decorative_painting
@@ -6784,7 +6784,7 @@
         name: 'Texture Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__texture_painting
@@ -6809,7 +6809,7 @@
         name: 'Faux Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__faux_painting
@@ -6834,7 +6834,7 @@
         name: 'Door Painting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__door_painting
@@ -6859,7 +6859,7 @@
         name: 'Lead Paint Removal'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__lead_paint_removal
@@ -6884,7 +6884,7 @@
         name: 'Drywall Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__drywall_repair
@@ -6909,7 +6909,7 @@
         name: 'Wallpaper Removal'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__wallpaper_removal
@@ -6934,7 +6934,7 @@
         name: 'Popcorn Ceiling Removal'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__popcorn_ceiling_removal
@@ -6959,7 +6959,7 @@
         name: 'Wallpaper Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__painters__wallpaper_installation
@@ -6987,7 +6987,7 @@
         name: Plumbers
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/44.jpg
             filename: 44.jpg
             alternativeText: ''
@@ -7015,7 +7015,7 @@
         name: 'Emergency Plumbing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__emergency_plumbing
@@ -7040,7 +7040,7 @@
         name: 'Plumbing Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__plumbing_repair
@@ -7065,7 +7065,7 @@
         name: 'Tankless Water Heater Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__tankless_water_heater_installation
@@ -7090,7 +7090,7 @@
         name: 'Water Line Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__water_line_installation
@@ -7115,7 +7115,7 @@
         name: 'Drain Cleaning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__drain_cleaning
@@ -7140,7 +7140,7 @@
         name: 'Plumbing Inspection'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__plumbing_inspection
@@ -7165,7 +7165,7 @@
         name: 'Faucet Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__faucet_repair
@@ -7190,7 +7190,7 @@
         name: 'Toilet Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__toilet_repair
@@ -7215,7 +7215,7 @@
         name: 'Sewer Line Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__sewer_line_repair
@@ -7240,7 +7240,7 @@
         name: 'Tankless Water Heater Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__tankless_water_heater_repair
@@ -7265,7 +7265,7 @@
         name: 'Toilet Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__toilet_installation
@@ -7290,7 +7290,7 @@
         name: 'Sump Pump Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__plumbers__sump_pump_installation
@@ -7318,7 +7318,7 @@
         name: 'Roofing & Gutters'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/45.jpg
             filename: 45.jpg
             alternativeText: ''
@@ -7346,7 +7346,7 @@
         name: 'Roof Replacement'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__roof_replacement
@@ -7371,7 +7371,7 @@
         name: 'Tile Roofing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__tile_roofing
@@ -7396,7 +7396,7 @@
         name: 'Roof Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__roof_installation
@@ -7421,7 +7421,7 @@
         name: 'Roof Repair'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__roof_repair
@@ -7446,7 +7446,7 @@
         name: 'Metal Roofing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__metal_roofing
@@ -7471,7 +7471,7 @@
         name: 'Asphalt Shingle Roofing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__asphalt_shingle_roofing
@@ -7496,7 +7496,7 @@
         name: 'Gutter Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__gutter_installation
@@ -7521,7 +7521,7 @@
         name: 'Composition Roofing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__composition_roofing
@@ -7546,7 +7546,7 @@
         name: 'Rubber Roofing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__rubber_roofing
@@ -7571,7 +7571,7 @@
         name: 'Slate Roofing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__slate_roofing
@@ -7596,7 +7596,7 @@
         name: 'Soffit Installation'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__soffit_installation
@@ -7621,7 +7621,7 @@
         name: 'Roof Inspection'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__roofing_and_gutters__roof_inspection
@@ -7649,7 +7649,7 @@
         name: 'Tree Services'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image:
+        teaser_image:
             path: vendor/ezsystems/ezplatform-demo-assets/images/professionals/catalog/42.jpg
             filename: 42.jpg
             alternativeText: ''
@@ -7678,7 +7678,7 @@
         name: 'Hedge Trimming'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__hedge_trimming
@@ -7703,7 +7703,7 @@
         name: 'Stump Grinding'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__stump_grinding
@@ -7728,7 +7728,7 @@
         name: 'Tree Planting'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__tree_planting
@@ -7753,7 +7753,7 @@
         name: 'Tree Removal'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__tree_removal
@@ -7778,7 +7778,7 @@
         name: 'Land Clearing'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__land_clearing
@@ -7803,7 +7803,7 @@
         name: 'Stump Removal'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__stump_removal
@@ -7828,7 +7828,7 @@
         name: 'Tree Pruning'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__tree_pruning
@@ -7853,7 +7853,7 @@
         name: 'Wood Chipping'
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__wood_chipping
@@ -7878,7 +7878,7 @@
         name: Mulching
         description:
             xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
-        image: null
+        teaser_image: null
     references:
         -
             identifier: ref_location_folder__sites__professionals__home_services__tree_services__mulching

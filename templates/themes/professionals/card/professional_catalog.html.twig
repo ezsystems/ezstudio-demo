@@ -2,8 +2,8 @@
 
 <div class="card box-shadow mb-3">
     <div class="card__image">
-        {% if not ez_field_is_empty( content, 'image' ) %}
-            {{ ez_render_field(content, 'image', {
+        {% if not ez_field_is_empty( content, 'teaser_image' ) %}
+            {{ ez_render_field(content, 'teaser_image', {
                 parameters: {
                     alias: 'catalog_card',
                     class: 'img-fluid'
