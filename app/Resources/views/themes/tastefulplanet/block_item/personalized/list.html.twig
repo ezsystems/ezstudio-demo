@@ -1,0 +1,15 @@
+<div class="card card--horizontal">
+    <div class="card-img">
+        <img class="img-fluid w-100 card-img" src="{{ recommendation.image }}" alt="{{ recommendation.title }}" title="{{ recommendation.title }}"/>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            <a class="card-title__link" href="{{ recommendation.uri }}" data-recommendation-ping-api="{{ recommendation.clickRecommended }}">
+                {{recommendation.title}}
+            </a>
+        </h5>
+        <div class="card-text">
+            {{recommendation.intro}}
+        </div>
+    </div>
+</div>

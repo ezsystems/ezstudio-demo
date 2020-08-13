@@ -1,0 +1,11 @@
+<div class="row cards-container">
+    <div class="card-deck">
+        {% if recommendations is defined %}
+            {% for recommendation in recommendations %}
+                {% include '@ezdesign/block_item/personalized/card.html.twig' %}
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+{% include 'EzRecommendationClientBundle::event_tracking.html.twig' %}
