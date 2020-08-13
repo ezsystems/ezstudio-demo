@@ -48,7 +48,7 @@ instructions on installing other distributions _(like [ezplatform "clean"](https
 
 These instructions assume you have already installed:
 - PHP _(7.1 or higher)_
-- Web Server _(Recommended: Apache / Nginx. Use of php's built-in development server is also possible)_
+- Web Server _(Recommended: Apache / Nginx. Use of php's built in development server is also possible)_
 - Database server _(MySQL 5.5+ or MariaDB 10.0+)_
 - [Composer](https://doc.ezplatform.com/en/latest/getting_started/about_composer/)
 - Git _(for development)_
@@ -64,7 +64,7 @@ composer create-project --keep-vcs ezsystems/ezplatform-ee-demo ezplatform ^2
 cd ezplatform
 ```
 
-_Note: If composer is installed locally instead of globally, the first command will start with `php composer.phar`._
+_Note: If  composer is installed localy instead of globally, the first command will start with `php composer.phar`._
 
 During the installation process you will be asked to input things like database host name, login, password, etc.
 They will be placed in `<ezplatform>/app/config/parameters.yml`.
@@ -83,7 +83,7 @@ eZ Platform aims to be **100% content compatible** with eZ Publish 5.x, 4.x and 
 Unlike eZ Publish Platform 5.x, eZ Platform does not ship with eZ Publish Legacy (4.x). But this is available by optional installing [LegacyBridge](https://github.com/ezsystems/LegacyBridge/releases/) to allow eZ Platform and eZ Publish Legacy to run together, this is only recommended for migration use cases and not for new installations.
 
 ## COPYRIGHT
-Copyright (C) 1999-2019 eZ Systems AS. All rights reserved.
+Copyright (C) 1999-2020 eZ Systems AS. All rights reserved.
 
 ## LICENSE
 - http://ez.no/Products/About-our-Software/Licenses-and-agreements/eZ-Business-Use-License-Agreement-eZ-BUL-Version-2.1 eZ Business Use License Agreement eZ BUL Version 2.1
