@@ -145,7 +145,7 @@ parameters:
     app.home.tastes_location_id: 207
 
     # form builder
-    ezsettings.default.form_builder.forms_location_id: 239
+    ezsettings.default.form_builder.forms_location_id: 249
 
     # Location Ids of allowed user groups for viewing Articles with premium content
     # 12 - members, 13 administrator_users, 14 - editors
