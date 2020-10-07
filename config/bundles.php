@@ -69,4 +69,6 @@ return [
     EzSystems\EzRecommendationClientBundle\EzRecommendationClientBundle::class => ['all' => true],
     EzSystems\PersonalizedBlockBundle\EzSystemsPersonalizedBlockBundle::class => ['all' => true],
     Ibexa\Platform\Bundle\Permissions\PlatformPermissionsBundle::class => ['all' => true],
+    Ibexa\Platform\Bundle\Connector\Dam\IbexaPlatformConnectorDamBundle::class => ['all' => true],
+    Ibexa\Platform\Bundle\Segmentation\IbexaPlatformSegmentationBundle::class => ['all' => true],
 ];
